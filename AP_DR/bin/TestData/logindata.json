@@ -1,0 +1,22 @@
+ {
+    "Admin":[
+    {
+      "email" : "kahmed@ap.org",
+      "password" : "admin",
+      "role": "Test engineer",
+      "machineReableName": "aptest"
+    }],
+   "add-user":[
+     {
+       "email" : "Sautomation_test@gmail.com",
+       "password" : "Test@709",
+       "org": "software ghar",
+       "orgId": "ap786",
+       "mdmid" : "786ap",
+       "userId" : "Auto709",
+       "lastName": "engineer",
+       "firstName": "automation",
+       "systemRole": "write automation script"
+     }]
+  }
+

@@ -1,0 +1,22 @@
+ {
+    "Admin":[
+    {
+      "email" : "ripcord@ap.org",
+      "password" : "admin",
+      "role": "Test engineer",
+      "machineReableName": "aptest"
+    }],
+   "add-user":[
+     {
+       "email" : "sohaib.naseer@visionetsystems.com",
+       "password" : "Test@123..",
+       "org": "software Testing ",
+       "orgId": "ap786",
+       "mdmid" : "786ap",
+       "userId" : "Auto7090",
+       "lastName": "engineer11",
+       "firstName": "automation01",
+       "systemRole": "customer"
+     }]
+  }
+

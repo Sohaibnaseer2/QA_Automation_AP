@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="1">
+    <listeners>
+        <listener class-name="com.apdr.listeners.TestListener" />
+    </listeners>
+
+    <test name="Regression Test Suite ">
+    
+        <classes>
+            <class name="com.apdr.testcases.LogInTestCases"></class> 
+            <class name="com.apdr.testcases.AddNewsStoryContent"></class>
+            <class name="com.apdr.testcases.NewsAlertContent"></class>
+			<class name="com.apdr.testcases.BannerContent"></class>
+		    <class name="com.apdr.testcases.AddPhotoContent"></class>
+			<class name="com.apdr.testcases.AddAudioContent"></class>
+            <class name="com.apdr.testcases.AddVideoContent"></class>
+            <class name="com.apdr.testcases.AddUser"></class>
+        	           
+       		<class name="com.apdr.testcases.Adduploadcsvcontent"></class>
+            <class name="com.apdr.testcases.Importusers"></class>
+
+<!--
+        	<class name="com.apdr.testcases.Notifyusers"></class>-->
+    
+        </classes>
+
+    </test>
+
+</suite> <!-- Suite -->

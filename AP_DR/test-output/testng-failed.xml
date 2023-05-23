@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.apdr.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="1" name="Regression Test Suite (failed)">
+    <classes>
+      <class name="com.apdr.testcases.AddVideoContent">
+        <methods>
+          <include name="initialization"/>
+          <include name="addContentInitialization"/>
+          <include name="clickOnSaveButton"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.AddVideoContent -->
+      <class name="com.apdr.testcases.AddUser">
+        <methods>
+          <include name="addUserInitialization"/>
+          <include name="initialization"/>
+          <include name="select_Users_role"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.AddUser -->
+    </classes>
+  </test> <!-- Regression Test Suite (failed) -->
+</suite> <!-- Failed suite [Suite] -->
