@@ -8,12 +8,38 @@
     <classes>
       <class name="com.apdr.testcases.AddAudioContent">
         <methods>
+          <include name="addVideoFile"/>
           <include name="teardown"/>
+          <include name="add_Slug_Speaker_Intro_For_Audio"/>
+          <include name="hover_Over_Content_Button"/>
           <include name="clickOnSaveButton"/>
           <include name="addContentInitialization"/>
           <include name="initialization"/>
+          <include name="addVideoContent"/>
         </methods>
       </class> <!-- com.apdr.testcases.AddAudioContent -->
+      <class name="com.apdr.testcases.LogInTestCases">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialization"/>
+          <include name="loginIntialization"/>
+          <include name="loginToApDr"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.LogInTestCases -->
+      <class name="com.apdr.testcases.NewsAlertContent">
+        <methods>
+          <include name="click_Save_Button"/>
+          <include name="add_DateLine_For_News_Alert"/>
+          <include name="addVideoContent"/>
+          <include name="addNewsAlertContentInitialization"/>
+          <include name="add_News_Alert_Slug"/>
+          <include name="add__Alert_News"/>
+          <include name="initialization"/>
+          <include name="select_News_Alert_Category"/>
+          <include name="hover_Over_Content_Button"/>
+          <include name="add_EdsNote_For_News_Alert"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.NewsAlertContent -->
     </classes>
   </test> <!-- Regression Test Suite (failed) -->
 </suite> <!-- Failed suite [Suite] -->

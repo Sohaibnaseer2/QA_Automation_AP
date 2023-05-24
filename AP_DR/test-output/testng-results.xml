@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="7" passed="5" failed="1" skipped="0">
+<testng-results ignored="7" total="52" passed="45" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-23T19:32:14 PKT" name="Suite" finished-at="2023-05-23T19:33:00 PKT" duration-ms="45453">
+  <suite started-at="2023-05-24T18:27:43 PKT" name="Suite" finished-at="2023-05-24T18:29:57 PKT" duration-ms="133624">
     <groups>
     </groups>
-    <test started-at="2023-05-23T19:32:14 PKT" name="Regression Test Suite " finished-at="2023-05-23T19:33:00 PKT" duration-ms="45453">
+    <test started-at="2023-05-24T18:27:43 PKT" name="Regression Test Suite " finished-at="2023-05-24T18:29:57 PKT" duration-ms="133624">
       <class name="com.apdr.testcases.AddAudioContent">
-        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddAudioContent@188b6035]" started-at="2023-05-23T19:32:23 PKT" name="addContentInitialization" finished-at="2023-05-23T19:32:23 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="58" status="PASS">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddAudioContent@c6b2dd9]" started-at="2023-05-24T18:27:51 PKT" name="addContentInitialization" finished-at="2023-05-24T18:27:51 PKT" depends-on-methods="com.apdr.testcases.NewsAlertContent.addNewsAlertContentInitialization, com.apdr.testcases.AddPhotoContent.addContentInitialization, com.apdr.testcases.AddNewsStoryContent.addNewsStoryContentInitialization, com.apdr.testcases.BannerContent.BannerContentInitialization, com.apdr.testcases.AddVideoContent.addContentInitialization, com.apdr.testcases.AddUser.addUserInitialization, com.apdr.setup.TestBase.initialization" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddAudioContent@188b6035]" started-at="2023-05-23T19:32:41 PKT" name="hover_Over_Content_Button" finished-at="2023-05-23T19:32:42 PKT" duration-ms="1531" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddAudioContent@c6b2dd9]" started-at="2023-05-24T18:28:05 PKT" name="hover_Over_Content_Button" finished-at="2023-05-24T18:28:07 PKT" duration-ms="2060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddAudioContent@188b6035]" started-at="2023-05-23T19:32:42 PKT" name="addVideoContent" finished-at="2023-05-23T19:32:46 PKT" duration-ms="3821" status="PASS">
+        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddAudioContent@c6b2dd9]" started-at="2023-05-24T18:28:07 PKT" name="addVideoContent" finished-at="2023-05-24T18:28:11 PKT" duration-ms="4356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVideoContent -->
-        <test-method signature="add_Slug_Speaker_Intro_For_Audio(java.lang.String)[pri:3, instance:com.apdr.testcases.AddAudioContent@188b6035]" started-at="2023-05-23T19:32:46 PKT" name="add_Slug_Speaker_Intro_For_Audio" data-provider="audioDataProvider" finished-at="2023-05-23T19:32:46 PKT" duration-ms="251" status="PASS">
+        <test-method signature="add_Slug_Speaker_Intro_For_Audio(java.lang.String)[pri:3, instance:com.apdr.testcases.AddAudioContent@c6b2dd9]" started-at="2023-05-24T18:28:11 PKT" name="add_Slug_Speaker_Intro_For_Audio" data-provider="audioDataProvider" finished-at="2023-05-24T18:28:12 PKT" duration-ms="600" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,99 +30,292 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_Slug_Speaker_Intro_For_Audio -->
-        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddAudioContent@188b6035]" started-at="2023-05-23T19:32:46 PKT" name="addVideoFile" finished-at="2023-05-23T19:32:50 PKT" duration-ms="3931" status="PASS">
+        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddAudioContent@c6b2dd9]" started-at="2023-05-24T18:28:12 PKT" name="addVideoFile" finished-at="2023-05-24T18:28:16 PKT" duration-ms="4058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVideoFile -->
-        <test-method signature="clickOnSaveButton()[pri:5, instance:com.apdr.testcases.AddAudioContent@188b6035]" started-at="2023-05-23T19:32:50 PKT" name="clickOnSaveButton" finished-at="2023-05-23T19:33:00 PKT" duration-ms="9399" status="FAIL">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : }
-  (Session info: chrome=113.0.5672.127): {Alert text : 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ISBLT-9310', ip: '10.200.20.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62019}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: de58857932e9e139d90fad03d195c2d8
-*** Element info: {Using=name, value=field_audio_file_0_remove_button}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
-  (Session info: chrome=113.0.5672.127): {Alert text : 
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ISBLT-9310', ip: '10.200.20.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62019}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: de58857932e9e139d90fad03d195c2d8
-*** Element info: {Using=name, value=field_audio_file_0_remove_button}
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-at org.openqa.selenium.By$ByName.findElement(By.java:284)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at com.apdr.pageobjects.AddAudioContentPage.viewAudioRemoveButton(AddAudioContentPage.java:90)
-at com.apdr.testcases.AddAudioContent.clickOnSaveButton(AddAudioContent.java:82)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+        <test-method signature="clickOnSaveButton()[pri:5, instance:com.apdr.testcases.AddAudioContent@c6b2dd9]" started-at="2023-05-24T18:28:16 PKT" name="clickOnSaveButton" finished-at="2023-05-24T18:28:21 PKT" duration-ms="4962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSaveButton -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.AddAudioContent@188b6035]" started-at="2023-05-23T19:33:00 PKT" name="teardown" finished-at="2023-05-23T19:33:00 PKT" duration-ms="167" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.AddAudioContent@c6b2dd9]" started-at="2023-05-24T18:29:56 PKT" name="teardown" finished-at="2023-05-24T18:29:57 PKT" duration-ms="613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.apdr.testcases.AddAudioContent -->
+      <class name="com.apdr.testcases.AddPhotoContent">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddPhotoContent@1c6c6f24]" started-at="2023-05-24T18:27:51 PKT" name="addContentInitialization" finished-at="2023-05-24T18:27:51 PKT" depends-on-methods="com.apdr.testcases.AddNewsStoryContent.addNewsStoryContentInitialization, com.apdr.testcases.BannerContent.BannerContentInitialization, com.apdr.testcases.AddVideoContent.addContentInitialization, com.apdr.testcases.AddUser.addUserInitialization, com.apdr.setup.TestBase.initialization" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addContentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddPhotoContent@1c6c6f24]" started-at="2023-05-24T18:28:28 PKT" name="hover_Over_Content_Button" finished-at="2023-05-24T18:28:31 PKT" duration-ms="3294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_Content_Button -->
+        <test-method signature="addPhotoContent(java.lang.String)[pri:2, instance:com.apdr.testcases.AddPhotoContent@1c6c6f24]" started-at="2023-05-24T18:28:31 PKT" name="addPhotoContent" data-provider="imageDataProvider" finished-at="2023-05-24T18:29:22 PKT" duration-ms="50611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Image upload through upgraded Automation testing script,Nature scenre,Add pakistani Mountaine images,Pakistan,punjab,Islamabad,find the best stock byline photo,find the best byTitile photo,AP,find the best credit line photo,Please don't copy this image,add transref for the best photo,International Category,verification test;]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPhotoContent -->
+        <test-method signature="click_On_SaveButton()[pri:3, instance:com.apdr.testcases.AddPhotoContent@1c6c6f24]" started-at="2023-05-24T18:29:22 PKT" name="click_On_SaveButton" finished-at="2023-05-24T18:29:24 PKT" duration-ms="2140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_On_SaveButton -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.AddPhotoContent@1c6c6f24]" started-at="2023-05-24T18:29:57 PKT" name="teardown" finished-at="2023-05-24T18:29:57 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.apdr.testcases.AddPhotoContent -->
+      <class name="com.apdr.testcases.AddVideoContent">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddVideoContent@1744a475]" started-at="2023-05-24T18:27:51 PKT" name="addContentInitialization" finished-at="2023-05-24T18:27:51 PKT" depends-on-methods="com.apdr.testcases.AddUser.addUserInitialization, com.apdr.setup.TestBase.initialization" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addContentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddVideoContent@1744a475]" started-at="2023-05-24T18:29:36 PKT" name="hover_Over_Content_Button" finished-at="2023-05-24T18:29:37 PKT" duration-ms="1509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_Content_Button -->
+        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddVideoContent@1744a475]" started-at="2023-05-24T18:29:37 PKT" name="addVideoContent" finished-at="2023-05-24T18:29:41 PKT" duration-ms="3400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addVideoContent -->
+        <test-method signature="add_Slug_Headline_Source_For_Video(java.lang.String)[pri:3, instance:com.apdr.testcases.AddVideoContent@1744a475]" started-at="2023-05-24T18:29:41 PKT" name="add_Slug_Headline_Source_For_Video" data-provider="videoDataProvider" finished-at="2023-05-24T18:29:41 PKT" duration-ms="450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Slug_Headline_Source_For_Video -->
+        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddVideoContent@1744a475]" started-at="2023-05-24T18:29:41 PKT" name="addVideoFile" finished-at="2023-05-24T18:29:48 PKT" duration-ms="7183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addVideoFile -->
+        <test-method signature="add_Body_For_Video(java.lang.String)[pri:5, instance:com.apdr.testcases.AddVideoContent@1744a475]" started-at="2023-05-24T18:29:48 PKT" name="add_Body_For_Video" data-provider="videoDataProvider" finished-at="2023-05-24T18:29:48 PKT" duration-ms="204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Body_For_Video -->
+        <test-method signature="clickOnSaveButton()[pri:6, instance:com.apdr.testcases.AddVideoContent@1744a475]" started-at="2023-05-24T18:29:48 PKT" name="clickOnSaveButton" finished-at="2023-05-24T18:29:50 PKT" duration-ms="1623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSaveButton -->
+      </class> <!-- com.apdr.testcases.AddVideoContent -->
+      <class name="com.apdr.testcases.BannerContent">
+        <test-method is-config="true" signature="BannerContentInitialization()[pri:0, instance:com.apdr.testcases.BannerContent@444cc791]" started-at="2023-05-24T18:27:51 PKT" name="BannerContentInitialization" finished-at="2023-05-24T18:27:51 PKT" depends-on-methods="com.apdr.testcases.AddVideoContent.addContentInitialization, com.apdr.testcases.AddUser.addUserInitialization, com.apdr.setup.TestBase.initialization" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BannerContentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.BannerContent@444cc791]" started-at="2023-05-24T18:29:30 PKT" name="hover_Over_Content_Button" finished-at="2023-05-24T18:29:32 PKT" duration-ms="1311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_Content_Button -->
+        <test-method signature="Banner_Link()[pri:2, instance:com.apdr.testcases.BannerContent@444cc791]" started-at="2023-05-24T18:29:32 PKT" name="Banner_Link" finished-at="2023-05-24T18:29:33 PKT" duration-ms="1295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Banner_Link -->
+        <test-method signature="Banner_Title_Text()[pri:3, instance:com.apdr.testcases.BannerContent@444cc791]" started-at="2023-05-24T18:29:33 PKT" name="Banner_Title_Text" finished-at="2023-05-24T18:29:33 PKT" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Banner_Title_Text -->
+        <test-method signature="clickOnSaveButton()[pri:4, instance:com.apdr.testcases.BannerContent@444cc791]" started-at="2023-05-24T18:29:33 PKT" name="clickOnSaveButton" finished-at="2023-05-24T18:29:36 PKT" duration-ms="2524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSaveButton -->
+      </class> <!-- com.apdr.testcases.BannerContent -->
+      <class name="com.apdr.testcases.AddUser">
+        <test-method is-config="true" signature="addUserInitialization()[pri:0, instance:com.apdr.testcases.AddUser@3fbcfe81]" started-at="2023-05-24T18:27:51 PKT" name="addUserInitialization" finished-at="2023-05-24T18:27:51 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserInitialization -->
+        <test-method signature="hover_Over_AddUser_Link()[pri:1, instance:com.apdr.testcases.AddUser@3fbcfe81]" started-at="2023-05-24T18:29:50 PKT" name="hover_Over_AddUser_Link" finished-at="2023-05-24T18:29:52 PKT" duration-ms="2037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_AddUser_Link -->
+        <test-method signature="add_Role_For_Users(java.lang.String)[pri:2, instance:com.apdr.testcases.AddUser@3fbcfe81]" started-at="2023-05-24T18:29:52 PKT" name="add_Role_For_Users" data-provider="addUserData" finished-at="2023-05-24T18:29:52 PKT" duration-ms="256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Role_For_Users -->
+        <test-method signature="add_Pass_And_Confirm_Password(java.lang.String)[pri:3, instance:com.apdr.testcases.AddUser@3fbcfe81]" started-at="2023-05-24T18:29:52 PKT" name="add_Pass_And_Confirm_Password" data-provider="addUserData" finished-at="2023-05-24T18:29:53 PKT" duration-ms="259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Pass_And_Confirm_Password -->
+        <test-method signature="add_Org_Name_And_Org_Id(java.lang.String)[pri:4, instance:com.apdr.testcases.AddUser@3fbcfe81]" started-at="2023-05-24T18:29:53 PKT" name="add_Org_Name_And_Org_Id" data-provider="addUserData" finished-at="2023-05-24T18:29:53 PKT" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Org_Name_And_Org_Id -->
+        <test-method signature="add_User_MDMID(java.lang.String)[pri:5, instance:com.apdr.testcases.AddUser@3fbcfe81]" started-at="2023-05-24T18:29:53 PKT" name="add_User_MDMID" data-provider="addUserData" finished-at="2023-05-24T18:29:53 PKT" duration-ms="114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_User_MDMID -->
+        <test-method signature="add_User_Informtion(java.lang.String)[pri:6, instance:com.apdr.testcases.AddUser@3fbcfe81]" started-at="2023-05-24T18:29:53 PKT" name="add_User_Informtion" data-provider="addUserData" finished-at="2023-05-24T18:29:54 PKT" duration-ms="453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_User_Informtion -->
+        <test-method signature="click_On_Create_New_Account_Button()[pri:7, instance:com.apdr.testcases.AddUser@3fbcfe81]" started-at="2023-05-24T18:29:54 PKT" name="click_On_Create_New_Account_Button" finished-at="2023-05-24T18:29:56 PKT" duration-ms="2904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_On_Create_New_Account_Button -->
+      </class> <!-- com.apdr.testcases.AddUser -->
+      <class name="com.apdr.testcases.AddNewsStoryContent">
+        <test-method is-config="true" signature="addNewsStoryContentInitialization()[pri:0, instance:com.apdr.testcases.AddNewsStoryContent@1c5c616f]" started-at="2023-05-24T18:27:51 PKT" name="addNewsStoryContentInitialization" finished-at="2023-05-24T18:27:51 PKT" depends-on-methods="com.apdr.testcases.BannerContent.BannerContentInitialization, com.apdr.testcases.AddVideoContent.addContentInitialization, com.apdr.testcases.AddUser.addUserInitialization, com.apdr.setup.TestBase.initialization" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewsStoryContentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddNewsStoryContent@1c5c616f]" started-at="2023-05-24T18:29:24 PKT" name="hover_Over_Content_Button" finished-at="2023-05-24T18:29:25 PKT" duration-ms="1328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_Content_Button -->
+        <test-method signature="clickOnNewsStoryLink()[pri:2, instance:com.apdr.testcases.AddNewsStoryContent@1c5c616f]" started-at="2023-05-24T18:29:25 PKT" name="clickOnNewsStoryLink" finished-at="2023-05-24T18:29:28 PKT" duration-ms="2200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnNewsStoryLink -->
+        <test-method signature="addSlugForNewStory(java.lang.String)[pri:3, instance:com.apdr.testcases.AddNewsStoryContent@1c5c616f]" started-at="2023-05-24T18:29:28 PKT" name="addSlugForNewStory" data-provider="newsStoryContent" finished-at="2023-05-24T18:29:28 PKT" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSlugForNewStory -->
+        <test-method signature="addheadLineForNewStory(java.lang.String)[pri:4, instance:com.apdr.testcases.AddNewsStoryContent@1c5c616f]" started-at="2023-05-24T18:29:28 PKT" name="addheadLineForNewStory" data-provider="newsStoryContent" finished-at="2023-05-24T18:29:28 PKT" duration-ms="94" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addheadLineForNewStory -->
+        <test-method signature="addsummaryForNewStory(java.lang.String)[pri:5, instance:com.apdr.testcases.AddNewsStoryContent@1c5c616f]" started-at="2023-05-24T18:29:28 PKT" name="addsummaryForNewStory" data-provider="newsStoryContent" finished-at="2023-05-24T18:29:28 PKT" duration-ms="58" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addsummaryForNewStory -->
+        <test-method signature="addbodyForNewStory(java.lang.String)[pri:6, instance:com.apdr.testcases.AddNewsStoryContent@1c5c616f]" started-at="2023-05-24T18:29:28 PKT" name="addbodyForNewStory" data-provider="newsStoryContent" finished-at="2023-05-24T18:29:28 PKT" duration-ms="84" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addbodyForNewStory -->
+        <test-method signature="addByLineAndByTitleForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@1c5c616f]" started-at="2023-05-24T18:29:28 PKT" name="addByLineAndByTitleForNewStory" data-provider="newsStoryContent" finished-at="2023-05-24T18:29:28 PKT" duration-ms="152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addByLineAndByTitleForNewStory -->
+        <test-method signature="adddateLineForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@1c5c616f]" started-at="2023-05-24T18:29:28 PKT" name="adddateLineForNewStory" data-provider="newsStoryContent" finished-at="2023-05-24T18:29:28 PKT" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adddateLineForNewStory -->
+        <test-method signature="selectNewsStoryCategory()[pri:8, instance:com.apdr.testcases.AddNewsStoryContent@1c5c616f]" started-at="2023-05-24T18:29:28 PKT" name="selectNewsStoryCategory" finished-at="2023-05-24T18:29:28 PKT" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectNewsStoryCategory -->
+        <test-method signature="addEdsNoteForNewStory(java.lang.String)[pri:9, instance:com.apdr.testcases.AddNewsStoryContent@1c5c616f]" started-at="2023-05-24T18:29:28 PKT" name="addEdsNoteForNewStory" data-provider="newsStoryContent" finished-at="2023-05-24T18:29:28 PKT" duration-ms="60" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEdsNoteForNewStory -->
+        <test-method signature="clickOnSaveButton()[pri:10, instance:com.apdr.testcases.AddNewsStoryContent@1c5c616f]" started-at="2023-05-24T18:29:28 PKT" name="clickOnSaveButton" finished-at="2023-05-24T18:29:30 PKT" duration-ms="1787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSaveButton -->
+      </class> <!-- com.apdr.testcases.AddNewsStoryContent -->
       <class name="com.apdr.testcases.LogInTestCases">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@4a34e9f]" started-at="2023-05-23T19:32:14 PKT" name="initialization" finished-at="2023-05-23T19:32:23 PKT" duration-ms="8196" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@7a1f45ed]" started-at="2023-05-24T18:27:43 PKT" name="initialization" finished-at="2023-05-24T18:27:51 PKT" duration-ms="7461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@4a34e9f]" started-at="2023-05-23T19:32:23 PKT" name="loginIntialization" finished-at="2023-05-23T19:32:23 PKT" depends-on-methods="com.apdr.testcases.AddAudioContent.addContentInitialization, com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@7a1f45ed]" started-at="2023-05-24T18:27:51 PKT" name="loginIntialization" finished-at="2023-05-24T18:27:51 PKT" depends-on-methods="com.apdr.testcases.AddAudioContent.addContentInitialization, com.apdr.testcases.NewsAlertContent.addNewsAlertContentInitialization, com.apdr.testcases.AddPhotoContent.addContentInitialization, com.apdr.testcases.AddNewsStoryContent.addNewsStoryContentInitialization, com.apdr.testcases.BannerContent.BannerContentInitialization, com.apdr.testcases.AddVideoContent.addContentInitialization, com.apdr.testcases.AddUser.addUserInitialization, com.apdr.setup.TestBase.initialization" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntialization -->
-        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@4a34e9f]" started-at="2023-05-23T19:32:23 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-05-23T19:32:40 PKT" duration-ms="17642" status="PASS">
+        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@7a1f45ed]" started-at="2023-05-24T18:27:51 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-05-24T18:28:05 PKT" duration-ms="13196" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,11 +326,84 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApDr -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.LogInTestCases@4a34e9f]" started-at="2023-05-23T19:33:00 PKT" name="teardown" finished-at="2023-05-23T19:33:00 PKT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.LogInTestCases@7a1f45ed]" started-at="2023-05-24T18:29:57 PKT" name="teardown" finished-at="2023-05-24T18:29:57 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.apdr.testcases.LogInTestCases -->
+      <class name="com.apdr.testcases.NewsAlertContent">
+        <test-method is-config="true" signature="addNewsAlertContentInitialization()[pri:0, instance:com.apdr.testcases.NewsAlertContent@2eb917d0]" started-at="2023-05-24T18:27:51 PKT" name="addNewsAlertContentInitialization" finished-at="2023-05-24T18:27:51 PKT" depends-on-methods="com.apdr.testcases.AddPhotoContent.addContentInitialization, com.apdr.testcases.AddNewsStoryContent.addNewsStoryContentInitialization, com.apdr.testcases.BannerContent.BannerContentInitialization, com.apdr.testcases.AddVideoContent.addContentInitialization, com.apdr.testcases.AddUser.addUserInitialization, com.apdr.setup.TestBase.initialization" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewsAlertContentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.NewsAlertContent@2eb917d0]" started-at="2023-05-24T18:28:21 PKT" name="hover_Over_Content_Button" finished-at="2023-05-24T18:28:22 PKT" duration-ms="1468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_Content_Button -->
+        <test-method signature="addVideoContent(java.lang.String)[pri:2, instance:com.apdr.testcases.NewsAlertContent@2eb917d0]" started-at="2023-05-24T18:28:23 PKT" name="addVideoContent" data-provider="newsAlertContent" finished-at="2023-05-24T18:28:25 PKT" duration-ms="2009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addVideoContent -->
+        <test-method signature="add_News_Alert_Slug(java.lang.String)[pri:3, instance:com.apdr.testcases.NewsAlertContent@2eb917d0]" started-at="2023-05-24T18:28:25 PKT" name="add_News_Alert_Slug" data-provider="newsAlertContent" finished-at="2023-05-24T18:28:25 PKT" duration-ms="142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_News_Alert_Slug -->
+        <test-method signature="add__Alert_News(java.lang.String)[pri:4, instance:com.apdr.testcases.NewsAlertContent@2eb917d0]" started-at="2023-05-24T18:28:25 PKT" name="add__Alert_News" data-provider="newsAlertContent" finished-at="2023-05-24T18:28:25 PKT" duration-ms="132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add__Alert_News -->
+        <test-method signature="add_DateLine_For_News_Alert(java.lang.String)[pri:5, instance:com.apdr.testcases.NewsAlertContent@2eb917d0]" started-at="2023-05-24T18:28:25 PKT" name="add_DateLine_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-05-24T18:28:25 PKT" duration-ms="220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_DateLine_For_News_Alert -->
+        <test-method signature="select_News_Alert_Category()[pri:6, instance:com.apdr.testcases.NewsAlertContent@2eb917d0]" started-at="2023-05-24T18:28:25 PKT" name="select_News_Alert_Category" finished-at="2023-05-24T18:28:25 PKT" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_News_Alert_Category -->
+        <test-method signature="add_EdsNote_For_News_Alert(java.lang.String)[pri:7, instance:com.apdr.testcases.NewsAlertContent@2eb917d0]" started-at="2023-05-24T18:28:25 PKT" name="add_EdsNote_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-05-24T18:28:25 PKT" duration-ms="94" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_EdsNote_For_News_Alert -->
+        <test-method signature="click_Save_Button()[pri:8, instance:com.apdr.testcases.NewsAlertContent@2eb917d0]" started-at="2023-05-24T18:28:25 PKT" name="click_Save_Button" finished-at="2023-05-24T18:28:28 PKT" duration-ms="2578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_Save_Button -->
+      </class> <!-- com.apdr.testcases.NewsAlertContent -->
     </test> <!-- Regression Test Suite  -->
   </suite> <!-- Suite -->
 </testng-results>

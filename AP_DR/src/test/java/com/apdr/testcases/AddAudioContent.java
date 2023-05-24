@@ -44,7 +44,7 @@ public class AddAudioContent extends TestBase {
     @Story("As a Admin I need to hover the content button")
     public void hover_Over_Content_Button() throws InterruptedException {
 
-        homeObj.hoverOnContentButton();
+    	homeObj.hoverOnContentButton();
     }
 
     @Test(priority = 2)

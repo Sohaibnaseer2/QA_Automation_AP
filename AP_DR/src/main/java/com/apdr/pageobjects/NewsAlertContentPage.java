@@ -20,8 +20,12 @@ public class NewsAlertContentPage extends TestBase {
     }
     WebDriverWait wait = new WebDriverWait(driver, WaitUtils.elementWait);
     JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
+    Actions builder = new Actions(driver);
+    
+    
+    @FindBy(linkText  = "Add Content") 
+	 WebElement contentBtn;
+    
     //News alert link text locator
     @FindBy(linkText = "News Alert")
     WebElement newAlertLink;
@@ -58,6 +62,12 @@ public class NewsAlertContentPage extends TestBase {
     @FindBy(id = "edit-submit")
     WebElement saveBtn;
 
+	/*
+	 * public void hoverOnContentButton() throws InterruptedException {
+	 * wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
+	 * //builder.moveToElement(contentBtn).build().perform(); contentBtn.click();}
+	 */
+    
     public String clickOnNewsAlertLink(){
         wait.until(ExpectedConditions.elementToBeClickable(newAlertLink));
         newAlertLink.click();

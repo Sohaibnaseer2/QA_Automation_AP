@@ -32,12 +32,19 @@ public class HomePage extends TestBase {
 
 	// People button locator
 
-	@FindBy(linkText= "Add User")
+	@FindBy(linkText = "Add User")
 	WebElement AddUserBtn;
 
 	// content button locator
-	@FindBy(css = "a.toolbar-icon.toolbar-icon-system-admin-content")
-	WebElement contentBtn;
+
+
+    @FindBy(linkText  = "Add Content") 
+	 WebElement contentBtn;
+    
+		/*
+		 * @FindBy(css = "a.toolbar-icon.toolbar-icon-system-admin-content") WebElement
+		 * contentBtn;
+		 */
 
 	// add role button locator
 	@FindBy(css = "a.button.button-action.button--primary.button--small")
@@ -58,7 +65,6 @@ public class HomePage extends TestBase {
 	// add role success message
 	@FindBy(css = "div.messages.messages--status")
 	WebElement addRoleSuccessMessage;
-
 
 	public boolean is_User_Profile_Is_Displayed_On_Home_Page() {
 		wait.until(ExpectedConditions.visibilityOf(userProfile));
@@ -88,24 +94,25 @@ public class HomePage extends TestBase {
 	 * } }
 	 */
 
-	public void hoverOnContentButton() throws InterruptedException {
-		builder.moveToElement(contentBtn).perform();
-		List<WebElement> list = driver.findElements(By.linkText("Add content"));
-		wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
-		/*
-		 * List<WebElement> list =
-		 * driver.findElements(By.xpath("//div[1]/ul/li[2]/ul/li"));
-		 */
-		System.out.println(list.size());
-		for (int i = 0; i < list.size(); i++) {
-			System.out.println(list.get(i).getText());
-			if (list.get(i).getText().contains("Add content")) {
-				list.get(i).click();
-				break;
-			}
-		}
-	}
-
+	
+	  public void hoverOnContentButton() throws InterruptedException {
+		 wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
+	  builder.moveToElement(contentBtn).build().perform();
+	 // contentBtn.click();}
+	  
+	 List<WebElement> list = driver.findElements(By.linkText("Add Content"));
+	 // wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
+	  
+	//  List<WebElement> list = driver.findElements(By.xpath("//div[1]/ul/li[2]/ul/li"));
+	  
+	  System.out.println(list.size()); 
+	  for (int i = 0; i < list.size(); i++) {
+	  System.out.println(list.get(i).getText()); 
+	  if(list.get(i).getText().equalsIgnoreCase("Add Content")) 
+	  { contentBtn.click();
+	  break;
+	  } } }
+	 
 	public void clickOnAddRoleButton() {
 		wait.until(ExpectedConditions.elementToBeClickable(addroleBtn));
 		addroleBtn.click();
@@ -131,8 +138,9 @@ public class HomePage extends TestBase {
 		boolean message = addRoleSuccessMessage.isDisplayed();
 		return message;
 	}
-	public void clickOnuserButton() throws InterruptedException{
-		
+
+	public void clickOnuserButton() throws InterruptedException {
+
 		wait.until(ExpectedConditions.elementToBeClickable(AddUserBtn));
 		AddUserBtn.click();
 		/*
@@ -140,13 +148,5 @@ public class HomePage extends TestBase {
 		 * builder.moveToElement(AddUserBtn).perform();
 		 */
 	}
-	
-	
-	
-	
-	
-	
-		
-	}
 
-
+}

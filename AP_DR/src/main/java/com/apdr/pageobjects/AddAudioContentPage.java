@@ -21,7 +21,9 @@ public class AddAudioContentPage extends TestBase {
     WebDriverWait wait = new WebDriverWait(driver, WaitUtils.elementWait);
     Actions builder = new Actions(driver);
 
-
+    @FindBy(linkText  = "Add Content") 
+	 WebElement contentBtn;
+    
     //Audio link locaotr
     @FindBy(linkText = "Audio")
     WebElement audioBtn;
@@ -50,6 +52,13 @@ public class AddAudioContentPage extends TestBase {
     @FindBy(id = "edit-submit")
     WebElement saveBtn;
 
+	/*
+	 * public void hoverOnContentButton() throws InterruptedException {
+	 * wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
+	 * //builder.moveToElement(contentBtn).build().perform(); contentBtn.click();
+	 * 
+	 * }
+	 */
     
     public String clickOnAudioButton(){
         wait.until(ExpectedConditions.elementToBeClickable(audioBtn));
