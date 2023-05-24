@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">50 methods,   50 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddAudioContent" class="method navigator-link" hash-for-method="clickOnSaveButton">clickOnSaveButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,52 +118,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.BannerContent" class="method navigator-link" hash-for-method="Banner_Link">Banner_Link</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.BannerContent" class="method navigator-link" hash-for-method="Banner_Title_Text">Banner_Title_Text</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddNewsStoryContent" class="method navigator-link" hash-for-method="addByLineAndByTitleForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">addByLineAndByTitleForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddNewsStoryContent" class="method navigator-link" hash-for-method="addEdsNoteForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">addEdsNoteForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.Adduploadcsvcontent" class="method navigator-link" hash-for-method="addFiletest">addFiletest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddPhotoContent" class="method navigator-link" hash-for-method="addPhotoContent(Image upload through upgraded Automation testing script,Nature scenre,Add pakistani Mountaine images...)">addPhotoContent(Image upload through upgraded Automation testing script,Nature scenre,Add pakistani Mountaine images...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddNewsStoryContent" class="method navigator-link" hash-for-method="addSlugForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">addSlugForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddAudioContent" class="method navigator-link" hash-for-method="addVideoContent">addVideoContent</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddVideoContent" class="method navigator-link" hash-for-method="addVideoContent">addVideoContent</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.NewsAlertContent" class="method navigator-link" hash-for-method="addVideoContent(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)">addVideoContent(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,152 +128,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddVideoContent" class="method navigator-link" hash-for-method="addVideoFile">addVideoFile</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddVideoContent" class="method navigator-link" hash-for-method="add_Body_For_Video(Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam Univers...)">add_Body_For_Video(Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam Univers...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.NewsAlertContent" class="method navigator-link" hash-for-method="add_DateLine_For_News_Alert(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)">add_DateLine_For_News_Alert(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.NewsAlertContent" class="method navigator-link" hash-for-method="add_EdsNote_For_News_Alert(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)">add_EdsNote_For_News_Alert(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.NewsAlertContent" class="method navigator-link" hash-for-method="add_News_Alert_Slug(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)">add_News_Alert_Slug(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddUser" class="method navigator-link" hash-for-method="add_Org_Name_And_Org_Id(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)">add_Org_Name_And_Org_Id(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddUser" class="method navigator-link" hash-for-method="add_Pass_And_Confirm_Password(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)">add_Pass_And_Confirm_Password(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddUser" class="method navigator-link" hash-for-method="add_Role_For_Users(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)">add_Role_For_Users(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddVideoContent" class="method navigator-link" hash-for-method="add_Slug_Headline_Source_For_Video(Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam Univers...)">add_Slug_Headline_Source_For_Video(Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam Univers...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddAudioContent" class="method navigator-link" hash-for-method="add_Slug_Speaker_Intro_For_Audio(Audio upload through upgraded Automation testing script,Audionic,Audionic is the #1 Audio Brand in P...)">add_Slug_Speaker_Intro_For_Audio(Audio upload through upgraded Automation testing script,Audionic,Audionic is the #1 Audio Brand in P...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddUser" class="method navigator-link" hash-for-method="add_User_Informtion(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)">add_User_Informtion(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddUser" class="method navigator-link" hash-for-method="add_User_MDMID(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)">add_User_MDMID(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.NewsAlertContent" class="method navigator-link" hash-for-method="add__Alert_News(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)">add__Alert_News(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddNewsStoryContent" class="method navigator-link" hash-for-method="addbodyForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">addbodyForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddNewsStoryContent" class="method navigator-link" hash-for-method="adddateLineForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">adddateLineForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddNewsStoryContent" class="method navigator-link" hash-for-method="addheadLineForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">addheadLineForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddNewsStoryContent" class="method navigator-link" hash-for-method="addsummaryForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">addsummaryForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddNewsStoryContent" class="method navigator-link" hash-for-method="clickOnNewsStoryLink">clickOnNewsStoryLink</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.BannerContent" class="method navigator-link" hash-for-method="clickOnSaveButton">clickOnSaveButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddAudioContent" class="method navigator-link" hash-for-method="clickOnSaveButton">clickOnSaveButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddVideoContent" class="method navigator-link" hash-for-method="clickOnSaveButton">clickOnSaveButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.Adduploadcsvcontent" class="method navigator-link" hash-for-method="clickOnSaveButton">clickOnSaveButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddNewsStoryContent" class="method navigator-link" hash-for-method="clickOnSaveButton">clickOnSaveButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddUser" class="method navigator-link" hash-for-method="click_On_Create_New_Account_Button">click_On_Create_New_Account_Button</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddPhotoContent" class="method navigator-link" hash-for-method="click_On_SaveButton">click_On_SaveButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.NewsAlertContent" class="method navigator-link" hash-for-method="click_Save_Button">click_Save_Button</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddUser" class="method navigator-link" hash-for-method="hover_Over_AddUser_Link">hover_Over_AddUser_Link</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.BannerContent" class="method navigator-link" hash-for-method="hover_Over_Content_Button">hover_Over_Content_Button</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddPhotoContent" class="method navigator-link" hash-for-method="hover_Over_Content_Button">hover_Over_Content_Button</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.NewsAlertContent" class="method navigator-link" hash-for-method="hover_Over_Content_Button">hover_Over_Content_Button</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -314,42 +138,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.Adduploadcsvcontent" class="method navigator-link" hash-for-method="hover_Over_Content_Button">hover_Over_Content_Button</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddVideoContent" class="method navigator-link" hash-for-method="hover_Over_Content_Button">hover_Over_Content_Button</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddNewsStoryContent" class="method navigator-link" hash-for-method="hover_Over_Content_Button">hover_Over_Content_Button</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.Importusers" class="method navigator-link" hash-for-method="hover_Over_Import_Button">hover_Over_Import_Button</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.Importusers" class="method navigator-link" hash-for-method="hover_Over_Import_file">hover_Over_Import_file</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.LogInTestCases" class="method navigator-link" hash-for-method="loginToApDr(ripcord@ap.org,admin,Test engineer,aptest)">loginToApDr(ripcord@ap.org,admin,Test engineer,aptest)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.AddNewsStoryContent" class="method navigator-link" hash-for-method="selectNewsStoryCategory">selectNewsStoryCategory</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.apdr.testcases.NewsAlertContent" class="method navigator-link" hash-for-method="select_News_Alert_Category">select_News_Alert_Category</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -364,6 +153,51 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.apdr.testcases.AddAudioContent</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnSaveButton">
+                  </a> <!-- clickOnSaveButton -->
+                  <span class="method-name">clickOnSaveButton</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=113.0.5672.127): {Alert text : 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISBLT-9310&apos;, ip: &apos;10.200.20.72&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62019}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de58857932e9e139d90fad03d195c2d8
+*** Element info: {Using=name, value=field_audio_file_0_remove_button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.apdr.pageobjects.AddAudioContentPage.viewAudioRemoveButton(AddAudioContentPage.java:90)
+	at com.apdr.testcases.AddAudioContent.clickOnSaveButton(AddAudioContent.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -394,383 +228,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="clickOnSaveButton">
-                  </a> <!-- clickOnSaveButton -->
-                  <span class="method-name">clickOnSaveButton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="hover_Over_Content_Button">
-                  </a> <!-- hover_Over_Content_Button -->
-                  <span class="method-name">hover_Over_Content_Button</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.apdr.testcases.BannerContent</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Banner_Link">
-                  </a> <!-- Banner_Link -->
-                  <span class="method-name">Banner_Link</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Banner_Title_Text">
-                  </a> <!-- Banner_Title_Text -->
-                  <span class="method-name">Banner_Title_Text</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickOnSaveButton">
-                  </a> <!-- clickOnSaveButton -->
-                  <span class="method-name">clickOnSaveButton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="hover_Over_Content_Button">
-                  </a> <!-- hover_Over_Content_Button -->
-                  <span class="method-name">hover_Over_Content_Button</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.apdr.testcases.Adduploadcsvcontent</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addFiletest">
-                  </a> <!-- addFiletest -->
-                  <span class="method-name">addFiletest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickOnSaveButton">
-                  </a> <!-- clickOnSaveButton -->
-                  <span class="method-name">clickOnSaveButton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="hover_Over_Content_Button">
-                  </a> <!-- hover_Over_Content_Button -->
-                  <span class="method-name">hover_Over_Content_Button</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.apdr.testcases.AddNewsStoryContent</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addByLineAndByTitleForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">
-                  </a> <!-- addByLineAndByTitleForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...) -->
-                  <span class="method-name">addByLineAndByTitleForNewStory</span>
-                  <span class="parameters">(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addEdsNoteForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">
-                  </a> <!-- addEdsNoteForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...) -->
-                  <span class="method-name">addEdsNoteForNewStory</span>
-                  <span class="parameters">(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addSlugForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">
-                  </a> <!-- addSlugForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...) -->
-                  <span class="method-name">addSlugForNewStory</span>
-                  <span class="parameters">(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addbodyForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">
-                  </a> <!-- addbodyForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...) -->
-                  <span class="method-name">addbodyForNewStory</span>
-                  <span class="parameters">(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="adddateLineForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">
-                  </a> <!-- adddateLineForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...) -->
-                  <span class="method-name">adddateLineForNewStory</span>
-                  <span class="parameters">(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addheadLineForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">
-                  </a> <!-- addheadLineForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...) -->
-                  <span class="method-name">addheadLineForNewStory</span>
-                  <span class="parameters">(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addsummaryForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we&#039;r...)">
-                  </a> <!-- addsummaryForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...) -->
-                  <span class="method-name">addsummaryForNewStory</span>
-                  <span class="parameters">(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickOnNewsStoryLink">
-                  </a> <!-- clickOnNewsStoryLink -->
-                  <span class="method-name">clickOnNewsStoryLink</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickOnSaveButton">
-                  </a> <!-- clickOnSaveButton -->
-                  <span class="method-name">clickOnSaveButton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="hover_Over_Content_Button">
-                  </a> <!-- hover_Over_Content_Button -->
-                  <span class="method-name">hover_Over_Content_Button</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectNewsStoryCategory">
-                  </a> <!-- selectNewsStoryCategory -->
-                  <span class="method-name">selectNewsStoryCategory</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.apdr.testcases.AddVideoContent</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addVideoContent">
-                  </a> <!-- addVideoContent -->
-                  <span class="method-name">addVideoContent</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addVideoFile">
-                  </a> <!-- addVideoFile -->
-                  <span class="method-name">addVideoFile</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add_Body_For_Video(Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam Univers...)">
-                  </a> <!-- add_Body_For_Video(Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam Univers...) -->
-                  <span class="method-name">add_Body_For_Video</span>
-                  <span class="parameters">(Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add_Slug_Headline_Source_For_Video(Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam Univers...)">
-                  </a> <!-- add_Slug_Headline_Source_For_Video(Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam Univers...) -->
-                  <span class="method-name">add_Slug_Headline_Source_For_Video</span>
-                  <span class="parameters">(Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickOnSaveButton">
-                  </a> <!-- clickOnSaveButton -->
-                  <span class="method-name">clickOnSaveButton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="hover_Over_Content_Button">
-                  </a> <!-- hover_Over_Content_Button -->
-                  <span class="method-name">hover_Over_Content_Button</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.apdr.testcases.NewsAlertContent</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addVideoContent(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)">
-                  </a> <!-- addVideoContent(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...) -->
-                  <span class="method-name">addVideoContent</span>
-                  <span class="parameters">(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add_DateLine_For_News_Alert(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)">
-                  </a> <!-- add_DateLine_For_News_Alert(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...) -->
-                  <span class="method-name">add_DateLine_For_News_Alert</span>
-                  <span class="parameters">(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add_EdsNote_For_News_Alert(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)">
-                  </a> <!-- add_EdsNote_For_News_Alert(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...) -->
-                  <span class="method-name">add_EdsNote_For_News_Alert</span>
-                  <span class="parameters">(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add_News_Alert_Slug(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)">
-                  </a> <!-- add_News_Alert_Slug(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...) -->
-                  <span class="method-name">add_News_Alert_Slug</span>
-                  <span class="parameters">(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add__Alert_News(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)">
-                  </a> <!-- add__Alert_News(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...) -->
-                  <span class="method-name">add__Alert_News</span>
-                  <span class="parameters">(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="click_Save_Button">
-                  </a> <!-- click_Save_Button -->
-                  <span class="method-name">click_Save_Button</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="hover_Over_Content_Button">
-                  </a> <!-- hover_Over_Content_Button -->
-                  <span class="method-name">hover_Over_Content_Button</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="select_News_Alert_Category">
-                  </a> <!-- select_News_Alert_Category -->
-                  <span class="method-name">select_News_Alert_Category</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.apdr.testcases.AddUser</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="add_Org_Name_And_Org_Id(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)">
-                  </a> <!-- add_Org_Name_And_Org_Id(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...) -->
-                  <span class="method-name">add_Org_Name_And_Org_Id</span>
-                  <span class="parameters">(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add_Pass_And_Confirm_Password(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)">
-                  </a> <!-- add_Pass_And_Confirm_Password(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...) -->
-                  <span class="method-name">add_Pass_And_Confirm_Password</span>
-                  <span class="parameters">(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add_Role_For_Users(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)">
-                  </a> <!-- add_Role_For_Users(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...) -->
-                  <span class="method-name">add_Role_For_Users</span>
-                  <span class="parameters">(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add_User_Informtion(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)">
-                  </a> <!-- add_User_Informtion(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...) -->
-                  <span class="method-name">add_User_Informtion</span>
-                  <span class="parameters">(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="add_User_MDMID(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)">
-                  </a> <!-- add_User_MDMID(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...) -->
-                  <span class="method-name">add_User_MDMID</span>
-                  <span class="parameters">(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="click_On_Create_New_Account_Button">
-                  </a> <!-- click_On_Create_New_Account_Button -->
-                  <span class="method-name">click_On_Create_New_Account_Button</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="hover_Over_AddUser_Link">
-                  </a> <!-- hover_Over_AddUser_Link -->
-                  <span class="method-name">hover_Over_AddUser_Link</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.apdr.testcases.AddPhotoContent</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addPhotoContent(Image upload through upgraded Automation testing script,Nature scenre,Add pakistani Mountaine images...)">
-                  </a> <!-- addPhotoContent(Image upload through upgraded Automation testing script,Nature scenre,Add pakistani Mountaine images...) -->
-                  <span class="method-name">addPhotoContent</span>
-                  <span class="parameters">(Image upload through upgraded Automation testing script,Nature scenre,Add pakistani Mountaine images,Pakistan,punjab,Islamabad,find the best stock byline photo,find the best byTitile photo,AP,find the best credit line photo,Please don't copy this image,add transref for the best photo,International Category,verification test;)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="click_On_SaveButton">
-                  </a> <!-- click_On_SaveButton -->
-                  <span class="method-name">click_On_SaveButton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="hover_Over_Content_Button">
                   </a> <!-- hover_Over_Content_Button -->
                   <span class="method-name">hover_Over_Content_Button</span>
@@ -794,28 +251,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.apdr.testcases.Importusers</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="hover_Over_Import_Button">
-                  </a> <!-- hover_Over_Import_Button -->
-                  <span class="method-name">hover_Over_Import_Button</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="hover_Over_Import_file">
-                  </a> <!-- hover_Over_Import_file -->
-                  <span class="method-name">hover_Over_Import_file</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -832,15 +267,7 @@
   &lt;test thread-count=&quot;1&quot; name=&quot;Regression Test Suite &quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.apdr.testcases.LogInTestCases&quot;/&gt;
-      &lt;class name=&quot;com.apdr.testcases.AddNewsStoryContent&quot;/&gt;
-      &lt;class name=&quot;com.apdr.testcases.NewsAlertContent&quot;/&gt;
-      &lt;class name=&quot;com.apdr.testcases.BannerContent&quot;/&gt;
-      &lt;class name=&quot;com.apdr.testcases.AddPhotoContent&quot;/&gt;
       &lt;class name=&quot;com.apdr.testcases.AddAudioContent&quot;/&gt;
-      &lt;class name=&quot;com.apdr.testcases.AddVideoContent&quot;/&gt;
-      &lt;class name=&quot;com.apdr.testcases.AddUser&quot;/&gt;
-      &lt;class name=&quot;com.apdr.testcases.Adduploadcsvcontent&quot;/&gt;
-      &lt;class name=&quot;com.apdr.testcases.Importusers&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regression Test Suite  --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -854,7 +281,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Regression Test Suite  (10 classes)</span>
+                <span class="test-name">Regression Test Suite  (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -880,212 +307,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(50);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'hover_Over_Content_Button')
-data.setCell(0, 2, 'com.apdr.testcases.BannerContent')
-data.setCell(0, 3, 20251);
+data.setCell(0, 1, 'loginToApDr')
+data.setCell(0, 2, 'com.apdr.testcases.LogInTestCases')
+data.setCell(0, 3, 17642);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'hover_Over_Content_Button')
-data.setCell(1, 2, 'com.apdr.testcases.AddPhotoContent')
-data.setCell(1, 3, 20248);
+data.setCell(1, 1, 'clickOnSaveButton')
+data.setCell(1, 2, 'com.apdr.testcases.AddAudioContent')
+data.setCell(1, 3, 9399);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'hover_Over_Content_Button')
-data.setCell(2, 2, 'com.apdr.testcases.NewsAlertContent')
-data.setCell(2, 3, 20228);
+data.setCell(2, 1, 'addVideoFile')
+data.setCell(2, 2, 'com.apdr.testcases.AddAudioContent')
+data.setCell(2, 3, 3931);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'hover_Over_Content_Button')
+data.setCell(3, 1, 'addVideoContent')
 data.setCell(3, 2, 'com.apdr.testcases.AddAudioContent')
-data.setCell(3, 3, 20195);
+data.setCell(3, 3, 3821);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'hover_Over_Content_Button')
-data.setCell(4, 2, 'com.apdr.testcases.AddVideoContent')
-data.setCell(4, 3, 20189);
+data.setCell(4, 2, 'com.apdr.testcases.AddAudioContent')
+data.setCell(4, 3, 1531);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'addPhotoContent')
-data.setCell(5, 2, 'com.apdr.testcases.AddPhotoContent')
-data.setCell(5, 3, 10959);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'clickOnSaveButton')
-data.setCell(6, 2, 'com.apdr.testcases.AddAudioContent')
-data.setCell(6, 3, 10034);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginToApDr')
-data.setCell(7, 2, 'com.apdr.testcases.LogInTestCases')
-data.setCell(7, 3, 9575);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'addVideoFile')
-data.setCell(8, 2, 'com.apdr.testcases.AddVideoContent')
-data.setCell(8, 3, 7157);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'addFiletest')
-data.setCell(9, 2, 'com.apdr.testcases.Adduploadcsvcontent')
-data.setCell(9, 3, 3737);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'addVideoFile')
-data.setCell(10, 2, 'com.apdr.testcases.AddAudioContent')
-data.setCell(10, 3, 3722);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'clickOnSaveButton')
-data.setCell(11, 2, 'com.apdr.testcases.Adduploadcsvcontent')
-data.setCell(11, 3, 3136);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'click_On_Create_New_Account_Button')
-data.setCell(12, 2, 'com.apdr.testcases.AddUser')
-data.setCell(12, 3, 3086);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'addVideoContent')
-data.setCell(13, 2, 'com.apdr.testcases.AddVideoContent')
-data.setCell(13, 3, 3037);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'clickOnSaveButton')
-data.setCell(14, 2, 'com.apdr.testcases.BannerContent')
-data.setCell(14, 3, 2932);
-data.setCell(15, 0, 15)
-data.setCell(15, 1, 'clickOnSaveButton')
-data.setCell(15, 2, 'com.apdr.testcases.AddNewsStoryContent')
-data.setCell(15, 3, 2768);
-data.setCell(16, 0, 16)
-data.setCell(16, 1, 'clickOnSaveButton')
-data.setCell(16, 2, 'com.apdr.testcases.AddVideoContent')
-data.setCell(16, 3, 2592);
-data.setCell(17, 0, 17)
-data.setCell(17, 1, 'clickOnNewsStoryLink')
-data.setCell(17, 2, 'com.apdr.testcases.AddNewsStoryContent')
-data.setCell(17, 3, 2324);
-data.setCell(18, 0, 18)
-data.setCell(18, 1, 'click_On_SaveButton')
-data.setCell(18, 2, 'com.apdr.testcases.AddPhotoContent')
-data.setCell(18, 3, 2210);
-data.setCell(19, 0, 19)
-data.setCell(19, 1, 'addVideoContent')
-data.setCell(19, 2, 'com.apdr.testcases.NewsAlertContent')
-data.setCell(19, 3, 1909);
-data.setCell(20, 0, 20)
-data.setCell(20, 1, 'Banner_Link')
-data.setCell(20, 2, 'com.apdr.testcases.BannerContent')
-data.setCell(20, 3, 1861);
-data.setCell(21, 0, 21)
-data.setCell(21, 1, 'click_Save_Button')
-data.setCell(21, 2, 'com.apdr.testcases.NewsAlertContent')
-data.setCell(21, 3, 1671);
-data.setCell(22, 0, 22)
-data.setCell(22, 1, 'hover_Over_AddUser_Link')
-data.setCell(22, 2, 'com.apdr.testcases.AddUser')
-data.setCell(22, 3, 1605);
-data.setCell(23, 0, 23)
-data.setCell(23, 1, 'hover_Over_Content_Button')
-data.setCell(23, 2, 'com.apdr.testcases.Adduploadcsvcontent')
-data.setCell(23, 3, 1459);
-data.setCell(24, 0, 24)
-data.setCell(24, 1, 'hover_Over_Content_Button')
-data.setCell(24, 2, 'com.apdr.testcases.AddNewsStoryContent')
-data.setCell(24, 3, 1341);
-data.setCell(25, 0, 25)
-data.setCell(25, 1, 'hover_Over_Import_Button')
-data.setCell(25, 2, 'com.apdr.testcases.Importusers')
-data.setCell(25, 3, 1278);
-data.setCell(26, 0, 26)
-data.setCell(26, 1, 'addVideoContent')
-data.setCell(26, 2, 'com.apdr.testcases.AddAudioContent')
-data.setCell(26, 3, 1267);
-data.setCell(27, 0, 27)
-data.setCell(27, 1, 'add_Slug_Headline_Source_For_Video')
-data.setCell(27, 2, 'com.apdr.testcases.AddVideoContent')
-data.setCell(27, 3, 368);
-data.setCell(28, 0, 28)
-data.setCell(28, 1, 'add_User_Informtion')
-data.setCell(28, 2, 'com.apdr.testcases.AddUser')
-data.setCell(28, 3, 346);
-data.setCell(29, 0, 29)
-data.setCell(29, 1, 'add_Slug_Speaker_Intro_For_Audio')
-data.setCell(29, 2, 'com.apdr.testcases.AddAudioContent')
-data.setCell(29, 3, 339);
-data.setCell(30, 0, 30)
-data.setCell(30, 1, 'addByLineAndByTitleForNewStory')
-data.setCell(30, 2, 'com.apdr.testcases.AddNewsStoryContent')
-data.setCell(30, 3, 230);
-data.setCell(31, 0, 31)
-data.setCell(31, 1, 'add_Pass_And_Confirm_Password')
-data.setCell(31, 2, 'com.apdr.testcases.AddUser')
-data.setCell(31, 3, 212);
-data.setCell(32, 0, 32)
-data.setCell(32, 1, 'hover_Over_Import_file')
-data.setCell(32, 2, 'com.apdr.testcases.Importusers')
-data.setCell(32, 3, 187);
-data.setCell(33, 0, 33)
-data.setCell(33, 1, 'add_Org_Name_And_Org_Id')
-data.setCell(33, 2, 'com.apdr.testcases.AddUser')
-data.setCell(33, 3, 184);
-data.setCell(34, 0, 34)
-data.setCell(34, 1, 'select_News_Alert_Category')
-data.setCell(34, 2, 'com.apdr.testcases.NewsAlertContent')
-data.setCell(34, 3, 158);
-data.setCell(35, 0, 35)
-data.setCell(35, 1, 'selectNewsStoryCategory')
-data.setCell(35, 2, 'com.apdr.testcases.AddNewsStoryContent')
-data.setCell(35, 3, 151);
-data.setCell(36, 0, 36)
-data.setCell(36, 1, 'add__Alert_News')
-data.setCell(36, 2, 'com.apdr.testcases.NewsAlertContent')
-data.setCell(36, 3, 151);
-data.setCell(37, 0, 37)
-data.setCell(37, 1, 'adddateLineForNewStory')
-data.setCell(37, 2, 'com.apdr.testcases.AddNewsStoryContent')
-data.setCell(37, 3, 151);
-data.setCell(38, 0, 38)
-data.setCell(38, 1, 'add_News_Alert_Slug')
-data.setCell(38, 2, 'com.apdr.testcases.NewsAlertContent')
-data.setCell(38, 3, 144);
-data.setCell(39, 0, 39)
-data.setCell(39, 1, 'addheadLineForNewStory')
-data.setCell(39, 2, 'com.apdr.testcases.AddNewsStoryContent')
-data.setCell(39, 3, 139);
-data.setCell(40, 0, 40)
-data.setCell(40, 1, 'Banner_Title_Text')
-data.setCell(40, 2, 'com.apdr.testcases.BannerContent')
-data.setCell(40, 3, 136);
-data.setCell(41, 0, 41)
-data.setCell(41, 1, 'add_Body_For_Video')
-data.setCell(41, 2, 'com.apdr.testcases.AddVideoContent')
-data.setCell(41, 3, 132);
-data.setCell(42, 0, 42)
-data.setCell(42, 1, 'addSlugForNewStory')
-data.setCell(42, 2, 'com.apdr.testcases.AddNewsStoryContent')
-data.setCell(42, 3, 131);
-data.setCell(43, 0, 43)
-data.setCell(43, 1, 'add_Role_For_Users')
-data.setCell(43, 2, 'com.apdr.testcases.AddUser')
-data.setCell(43, 3, 130);
-data.setCell(44, 0, 44)
-data.setCell(44, 1, 'addbodyForNewStory')
-data.setCell(44, 2, 'com.apdr.testcases.AddNewsStoryContent')
-data.setCell(44, 3, 118);
-data.setCell(45, 0, 45)
-data.setCell(45, 1, 'add_User_MDMID')
-data.setCell(45, 2, 'com.apdr.testcases.AddUser')
-data.setCell(45, 3, 110);
-data.setCell(46, 0, 46)
-data.setCell(46, 1, 'addsummaryForNewStory')
-data.setCell(46, 2, 'com.apdr.testcases.AddNewsStoryContent')
-data.setCell(46, 3, 94);
-data.setCell(47, 0, 47)
-data.setCell(47, 1, 'add_EdsNote_For_News_Alert')
-data.setCell(47, 2, 'com.apdr.testcases.NewsAlertContent')
-data.setCell(47, 3, 89);
-data.setCell(48, 0, 48)
-data.setCell(48, 1, 'add_DateLine_For_News_Alert')
-data.setCell(48, 2, 'com.apdr.testcases.NewsAlertContent')
-data.setCell(48, 3, 82);
-data.setCell(49, 0, 49)
-data.setCell(49, 1, 'addEdsNoteForNewStory')
-data.setCell(49, 2, 'com.apdr.testcases.AddNewsStoryContent')
-data.setCell(49, 3, 47);
+data.setCell(5, 1, 'add_Slug_Speaker_Intro_For_Audio')
+data.setCell(5, 2, 'com.apdr.testcases.AddAudioContent')
+data.setCell(5, 3, 251);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -1100,67 +351,11 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">9 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.apdr.testcases.AddAudioContent</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">initialization</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.apdr.testcases.BannerContent</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">initialization</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.apdr.testcases.Adduploadcsvcontent</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">initialization</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.apdr.testcases.AddNewsStoryContent</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">initialization</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.apdr.testcases.NewsAlertContent</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">initialization</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.apdr.testcases.AddVideoContent</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">initialization</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.apdr.testcases.AddUser</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">initialization</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.apdr.testcases.AddPhotoContent</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">initialization</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.apdr.testcases.Importusers</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">initialization</span>
                 <br/>
@@ -1181,301 +376,58 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.Importusers</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">addContentInitialization</span>
-                <span class="method-start">6128 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.Adduploadcsvcontent</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">addContentInitialization</span>
-                <span class="method-start">6195 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.AddUser</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">addUserInitialization</span>
-                <span class="method-start">6205 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.AddVideoContent</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">addContentInitialization</span>
-                <span class="method-start">6208 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.apdr.testcases.AddAudioContent</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">addContentInitialization</span>
-                <span class="method-start">6209 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.AddPhotoContent</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">addContentInitialization</span>
-                <span class="method-start">6212 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.BannerContent</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">BannerContentInitialization</span>
-                <span class="method-start">6216 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.NewsAlertContent</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">addNewsAlertContentInitialization</span>
-                <span class="method-start">6218 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.AddNewsStoryContent</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">addNewsStoryContentInitialization</span>
-                <span class="method-start">6220 ms</span>
+                <span class="method-start">8198 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.apdr.testcases.LogInTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">loginIntialization</span>
-                <span class="method-start">6223 ms</span>
+                <span class="method-start">8256 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginToApDr(ripcord@ap.org,admin,Test engineer,aptest)</span>
-                <span class="method-start">6296 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.AddNewsStoryContent</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">hover_Over_Content_Button</span>
-                <span class="method-start">16058 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickOnNewsStoryLink</span>
-                <span class="method-start">17413 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addSlugForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</span>
-                <span class="method-start">19749 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addheadLineForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</span>
-                <span class="method-start">19885 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addsummaryForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</span>
-                <span class="method-start">20028 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addbodyForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</span>
-                <span class="method-start">20127 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addByLineAndByTitleForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</span>
-                <span class="method-start">20250 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">adddateLineForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</span>
-                <span class="method-start">20488 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">selectNewsStoryCategory</span>
-                <span class="method-start">20642 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addEdsNoteForNewStory(upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we'r...)</span>
-                <span class="method-start">20796 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickOnSaveButton</span>
-                <span class="method-start">20846 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.NewsAlertContent</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">hover_Over_Content_Button</span>
-                <span class="method-start">23617 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addVideoContent(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)</span>
-                <span class="method-start">43848 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add_News_Alert_Slug(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)</span>
-                <span class="method-start">45761 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add__Alert_News(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)</span>
-                <span class="method-start">45910 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add_DateLine_For_News_Alert(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)</span>
-                <span class="method-start">46076 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">select_News_Alert_Category</span>
-                <span class="method-start">46162 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add_EdsNote_For_News_Alert(Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. ...)</span>
-                <span class="method-start">46323 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">click_Save_Button</span>
-                <span class="method-start">46418 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.BannerContent</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">hover_Over_Content_Button</span>
-                <span class="method-start">48095 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Banner_Link</span>
-                <span class="method-start">68348 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Banner_Title_Text</span>
-                <span class="method-start">70214 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickOnSaveButton</span>
-                <span class="method-start">70352 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.AddPhotoContent</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">hover_Over_Content_Button</span>
-                <span class="method-start">73290 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addPhotoContent(Image upload through upgraded Automation testing script,Nature scenre,Add pakistani Mountaine images...)</span>
-                <span class="method-start">93541 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">click_On_SaveButton</span>
-                <span class="method-start">104506 ms</span>
+                <span class="method-start">8319 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.apdr.testcases.AddAudioContent</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">hover_Over_Content_Button</span>
-                <span class="method-start">106719 ms</span>
+                <span class="method-start">26117 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addVideoContent</span>
-                <span class="method-start">126916 ms</span>
+                <span class="method-start">27653 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">add_Slug_Speaker_Intro_For_Audio(Audio upload through upgraded Automation testing script,Audionic,Audionic is the #1 Audio Brand in P...)</span>
-                <span class="method-start">128186 ms</span>
+                <span class="method-start">31478 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addVideoFile</span>
-                <span class="method-start">128530 ms</span>
+                <span class="method-start">31732 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">clickOnSaveButton</span>
-                <span class="method-start">132258 ms</span>
+                <span class="method-start">35665 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">45270 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.AddVideoContent</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">hover_Over_Content_Button</span>
-                <span class="method-start">142296 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addVideoContent</span>
-                <span class="method-start">162487 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add_Slug_Headline_Source_For_Video(Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam Univers...)</span>
-                <span class="method-start">165530 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addVideoFile</span>
-                <span class="method-start">165901 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add_Body_For_Video(Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam Univers...)</span>
-                <span class="method-start">173064 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickOnSaveButton</span>
-                <span class="method-start">173202 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.AddUser</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">hover_Over_AddUser_Link</span>
-                <span class="method-start">175797 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add_Role_For_Users(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)</span>
-                <span class="method-start">177414 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add_Pass_And_Confirm_Password(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)</span>
-                <span class="method-start">177546 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add_Org_Name_And_Org_Id(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)</span>
-                <span class="method-start">177782 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add_User_MDMID(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)</span>
-                <span class="method-start">177968 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">add_User_Informtion(sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,autom...)</span>
-                <span class="method-start">178084 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">click_On_Create_New_Account_Button</span>
-                <span class="method-start">178432 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.Adduploadcsvcontent</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">hover_Over_Content_Button</span>
-                <span class="method-start">181521 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addFiletest</span>
-                <span class="method-start">182989 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickOnSaveButton</span>
-                <span class="method-start">186740 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.apdr.testcases.Importusers</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">hover_Over_Import_Button</span>
-                <span class="method-start">189879 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">hover_Over_Import_file</span>
-                <span class="method-start">191165 ms</span>
-              </div> <!-- test-method -->
+              <div class="chronological-class-name">com.apdr.testcases.LogInTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">45437 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

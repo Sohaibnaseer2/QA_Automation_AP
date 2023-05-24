@@ -3,6 +3,7 @@ package com.apdr.testcases;
 import com.apdr.pageobjects.AddPhotoContentPage;
 import com.apdr.pageobjects.AddVideoContentPage;
 import com.apdr.pageobjects.HomePage;
+import com.apdr.pageobjects.LoginPage;
 import com.apdr.setup.TestBase;
 import com.apdr.utalities.DataUtils;
 import io.qameta.allure.Description;
@@ -11,6 +12,7 @@ import io.qameta.allure.Story;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -22,7 +24,7 @@ public class AddPhotoContent extends TestBase {
 
         super();
     }
-
+    LoginPage  loginObj;
     HomePage homeObj;
     AddPhotoContentPage addPhoteContentObj;
     AddVideoContentPage addcontentobj;
@@ -30,7 +32,7 @@ public class AddPhotoContent extends TestBase {
 
     @BeforeTest
     public void addContentInitialization(){
-
+    	loginObj = new LoginPage();
         homeObj= new HomePage();
         addcontentobj= new AddVideoContentPage();
         addPhoteContentObj= new AddPhotoContentPage();
@@ -80,5 +82,10 @@ public class AddPhotoContent extends TestBase {
     public void click_On_SaveButton() {
 		/* addcontentobj.viewRemoveButton(); */ 
     	addPhoteContentObj.clickOnSaveButton();
+    }
+    
+    @AfterTest
+    public void teardown() {
+  	  driver.quit();
     }
 }

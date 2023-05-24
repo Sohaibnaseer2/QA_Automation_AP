@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Regression Test Suite </h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>50/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 22 19:20:50 PKT 2023</td>
+<td>Started on:</td><td>Tue May 23 19:32:14 PKT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>191 seconds (191369 ms)</td>
+<tr><td>Total time:</td><td>45 seconds (45453 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,103 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.apdr.testcases.AddAudioContent.clickOnSaveButton()'><b>clickOnSaveButton</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=113.0.5672.127): {Alert text : 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISBLT-9310&apos;, ip: &apos;10.200.20.72&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62019}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de58857932e9e139d90fad03d195c2d8
+*** Element info: {Using=name, value=field_audio_file_0_remove_button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.apdr.pageobjects.AddAudioContentPage.viewAudioRemoveButton(AddAudioContentPage.java:90)
+	at com.apdr.testcases.AddAudioContent.clickOnSaveButton(AddAudioContent.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1594722615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1594722615'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=113.0.5672.127): {Alert text : 
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ISBLT-9310&apos;, ip: &apos;10.200.20.72&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:62019}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de58857932e9e139d90fad03d195c2d8
+*** Element info: {Using=name, value=field_audio_file_0_remove_button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.apdr.pageobjects.AddAudioContentPage.viewAudioRemoveButton(AddAudioContentPage.java:90)
+	at com.apdr.testcases.AddAudioContent.clickOnSaveButton(AddAudioContent.java:82)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>com.apdr.testcases.AddAudioContent@188b6035</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,255 +172,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.apdr.testcases.BannerContent.Banner_Link()'><b>Banner_Link</b><br>Test class: com.apdr.testcases.BannerContent</td>
-<td></td>
-<td>1</td>
-<td>com.apdr.testcases.BannerContent@ca93621</td></tr>
-<tr>
-<td title='com.apdr.testcases.BannerContent.Banner_Title_Text()'><b>Banner_Title_Text</b><br>Test class: com.apdr.testcases.BannerContent</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.BannerContent@ca93621</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.addByLineAndByTitleForNewStory()'><b>addByLineAndByTitleForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@3f985a86</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.addEdsNoteForNewStory()'><b>addEdsNoteForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@3f985a86</td></tr>
-<tr>
-<td title='com.apdr.testcases.Adduploadcsvcontent.addFiletest()'><b>addFiletest</b><br>Test class: com.apdr.testcases.Adduploadcsvcontent</td>
-<td></td>
-<td>3</td>
-<td>com.apdr.testcases.Adduploadcsvcontent@1c5c616f</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddPhotoContent.addPhotoContent()'><b>addPhotoContent</b><br>Test class: com.apdr.testcases.AddPhotoContent<br>Parameters: Image upload through upgraded Automation testing script,Nature scenre,Add pakistani Mountaine images,Pakistan,punjab,Islamabad,find the best stock byline photo,find the best byTitile photo,AP,find the best credit line photo,Please don't copy this image,add transref for the best photo,International Category,verification test;</td>
-<td></td>
-<td>10</td>
-<td>com.apdr.testcases.AddPhotoContent@73437222</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.addSlugForNewStory()'><b>addSlugForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@3f985a86</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.addVideoContent()'><b>addVideoContent</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td>
-<td></td>
-<td>1</td>
-<td>com.apdr.testcases.NewsAlertContent@6a48a7f3</td></tr>
-<tr>
 <td title='com.apdr.testcases.AddAudioContent.addVideoContent()'><b>addVideoContent</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
 <td></td>
-<td>1</td>
-<td>com.apdr.testcases.AddAudioContent@c6b2dd9</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddVideoContent.addVideoContent()'><b>addVideoContent</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
-<td></td>
 <td>3</td>
-<td>com.apdr.testcases.AddVideoContent@2eb917d0</td></tr>
+<td>com.apdr.testcases.AddAudioContent@188b6035</td></tr>
 <tr>
 <td title='com.apdr.testcases.AddAudioContent.addVideoFile()'><b>addVideoFile</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
 <td></td>
 <td>3</td>
-<td>com.apdr.testcases.AddAudioContent@c6b2dd9</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddVideoContent.addVideoFile()'><b>addVideoFile</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
-<td></td>
-<td>7</td>
-<td>com.apdr.testcases.AddVideoContent@2eb917d0</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddVideoContent.add_Body_For_Video()'><b>add_Body_For_Video</b><br>Test class: com.apdr.testcases.AddVideoContent<br>Parameters: Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddVideoContent@2eb917d0</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.add_DateLine_For_News_Alert()'><b>add_DateLine_For_News_Alert</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.NewsAlertContent@6a48a7f3</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.add_EdsNote_For_News_Alert()'><b>add_EdsNote_For_News_Alert</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.NewsAlertContent@6a48a7f3</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.add_News_Alert_Slug()'><b>add_News_Alert_Slug</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.NewsAlertContent@6a48a7f3</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddUser.add_Org_Name_And_Org_Id()'><b>add_Org_Name_And_Org_Id</b><br>Test class: com.apdr.testcases.AddUser<br>Parameters: sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddUser@1c6c6f24</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddUser.add_Pass_And_Confirm_Password()'><b>add_Pass_And_Confirm_Password</b><br>Test class: com.apdr.testcases.AddUser<br>Parameters: sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddUser@1c6c6f24</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddUser.add_Role_For_Users()'><b>add_Role_For_Users</b><br>Test class: com.apdr.testcases.AddUser<br>Parameters: sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddUser@1c6c6f24</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddVideoContent.add_Slug_Headline_Source_For_Video()'><b>add_Slug_Headline_Source_For_Video</b><br>Test class: com.apdr.testcases.AddVideoContent<br>Parameters: Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddVideoContent@2eb917d0</td></tr>
+<td>com.apdr.testcases.AddAudioContent@188b6035</td></tr>
 <tr>
 <td title='com.apdr.testcases.AddAudioContent.add_Slug_Speaker_Intro_For_Audio()'><b>add_Slug_Speaker_Intro_For_Audio</b><br>Test class: com.apdr.testcases.AddAudioContent<br>Parameters: Audio upload through upgraded Automation testing script,Audionic,Audionic is the #1 Audio Brand in Pakistan.</td>
 <td></td>
 <td>0</td>
-<td>com.apdr.testcases.AddAudioContent@c6b2dd9</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddUser.add_User_Informtion()'><b>add_User_Informtion</b><br>Test class: com.apdr.testcases.AddUser<br>Parameters: sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddUser@1c6c6f24</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddUser.add_User_MDMID()'><b>add_User_MDMID</b><br>Test class: com.apdr.testcases.AddUser<br>Parameters: sohaib.naseer@visionetsystems.com,Test@123..,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddUser@1c6c6f24</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.add__Alert_News()'><b>add__Alert_News</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.NewsAlertContent@6a48a7f3</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.addbodyForNewStory()'><b>addbodyForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@3f985a86</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.adddateLineForNewStory()'><b>adddateLineForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@3f985a86</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.addheadLineForNewStory()'><b>addheadLineForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@3f985a86</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.addsummaryForNewStory()'><b>addsummaryForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@3f985a86</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.clickOnNewsStoryLink()'><b>clickOnNewsStoryLink</b><br>Test class: com.apdr.testcases.AddNewsStoryContent</td>
-<td></td>
-<td>2</td>
-<td>com.apdr.testcases.AddNewsStoryContent@3f985a86</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.clickOnSaveButton()'><b>clickOnSaveButton</b><br>Test class: com.apdr.testcases.AddNewsStoryContent</td>
-<td></td>
-<td>2</td>
-<td>com.apdr.testcases.AddNewsStoryContent@3f985a86</td></tr>
-<tr>
-<td title='com.apdr.testcases.BannerContent.clickOnSaveButton()'><b>clickOnSaveButton</b><br>Test class: com.apdr.testcases.BannerContent</td>
-<td></td>
-<td>2</td>
-<td>com.apdr.testcases.BannerContent@ca93621</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddAudioContent.clickOnSaveButton()'><b>clickOnSaveButton</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
-<td></td>
-<td>10</td>
-<td>com.apdr.testcases.AddAudioContent@c6b2dd9</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddVideoContent.clickOnSaveButton()'><b>clickOnSaveButton</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
-<td></td>
-<td>2</td>
-<td>com.apdr.testcases.AddVideoContent@2eb917d0</td></tr>
-<tr>
-<td title='com.apdr.testcases.Adduploadcsvcontent.clickOnSaveButton()'><b>clickOnSaveButton</b><br>Test class: com.apdr.testcases.Adduploadcsvcontent</td>
-<td></td>
-<td>3</td>
-<td>com.apdr.testcases.Adduploadcsvcontent@1c5c616f</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddUser.click_On_Create_New_Account_Button()'><b>click_On_Create_New_Account_Button</b><br>Test class: com.apdr.testcases.AddUser</td>
-<td></td>
-<td>3</td>
-<td>com.apdr.testcases.AddUser@1c6c6f24</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddPhotoContent.click_On_SaveButton()'><b>click_On_SaveButton</b><br>Test class: com.apdr.testcases.AddPhotoContent</td>
-<td></td>
-<td>2</td>
-<td>com.apdr.testcases.AddPhotoContent@73437222</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.click_Save_Button()'><b>click_Save_Button</b><br>Test class: com.apdr.testcases.NewsAlertContent</td>
-<td></td>
-<td>1</td>
-<td>com.apdr.testcases.NewsAlertContent@6a48a7f3</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddUser.hover_Over_AddUser_Link()'><b>hover_Over_AddUser_Link</b><br>Test class: com.apdr.testcases.AddUser</td>
-<td></td>
-<td>1</td>
-<td>com.apdr.testcases.AddUser@1c6c6f24</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.AddNewsStoryContent</td>
-<td></td>
-<td>1</td>
-<td>com.apdr.testcases.AddNewsStoryContent@3f985a86</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.NewsAlertContent</td>
-<td></td>
-<td>20</td>
-<td>com.apdr.testcases.NewsAlertContent@6a48a7f3</td></tr>
-<tr>
-<td title='com.apdr.testcases.BannerContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.BannerContent</td>
-<td></td>
-<td>20</td>
-<td>com.apdr.testcases.BannerContent@ca93621</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddPhotoContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.AddPhotoContent</td>
-<td></td>
-<td>20</td>
-<td>com.apdr.testcases.AddPhotoContent@73437222</td></tr>
+<td>com.apdr.testcases.AddAudioContent@188b6035</td></tr>
 <tr>
 <td title='com.apdr.testcases.AddAudioContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
 <td></td>
-<td>20</td>
-<td>com.apdr.testcases.AddAudioContent@c6b2dd9</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddVideoContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
-<td></td>
-<td>20</td>
-<td>com.apdr.testcases.AddVideoContent@2eb917d0</td></tr>
-<tr>
-<td title='com.apdr.testcases.Adduploadcsvcontent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.Adduploadcsvcontent</td>
-<td></td>
 <td>1</td>
-<td>com.apdr.testcases.Adduploadcsvcontent@1c5c616f</td></tr>
-<tr>
-<td title='com.apdr.testcases.Importusers.hover_Over_Import_Button()'><b>hover_Over_Import_Button</b><br>Test class: com.apdr.testcases.Importusers</td>
-<td></td>
-<td>1</td>
-<td>com.apdr.testcases.Importusers@1744a475</td></tr>
-<tr>
-<td title='com.apdr.testcases.Importusers.hover_Over_Import_file()'><b>hover_Over_Import_file</b><br>Test class: com.apdr.testcases.Importusers</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.Importusers@1744a475</td></tr>
+<td>com.apdr.testcases.AddAudioContent@188b6035</td></tr>
 <tr>
 <td title='com.apdr.testcases.LogInTestCases.loginToApDr()'><b>loginToApDr</b><br>Test class: com.apdr.testcases.LogInTestCases<br>Parameters: ripcord@ap.org,admin,Test engineer,aptest</td>
 <td></td>
-<td>9</td>
-<td>com.apdr.testcases.LogInTestCases@444cc791</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.selectNewsStoryCategory()'><b>selectNewsStoryCategory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@3f985a86</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.select_News_Alert_Category()'><b>select_News_Alert_Category</b><br>Test class: com.apdr.testcases.NewsAlertContent</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.NewsAlertContent@6a48a7f3</td></tr>
+<td>17</td>
+<td>com.apdr.testcases.LogInTestCases@4a34e9f</td></tr>
 </table><p>
 </body>
 </html>

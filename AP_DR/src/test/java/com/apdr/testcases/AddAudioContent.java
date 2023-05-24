@@ -3,12 +3,14 @@ package com.apdr.testcases;
 import com.apdr.pageobjects.AddAudioContentPage;
 import com.apdr.pageobjects.AddVideoContentPage;
 import com.apdr.pageobjects.HomePage;
+import com.apdr.pageobjects.LoginPage;
 import com.apdr.setup.TestBase;
 import com.apdr.utalities.DataUtils;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -19,7 +21,8 @@ public class AddAudioContent extends TestBase {
     public AddAudioContent(){
         super();
     }
-
+    
+    LoginPage  loginObj;
     HomePage homeObj;
     AddAudioContentPage addAudioContentObj;
     AddVideoContentPage addcontentobj;
@@ -27,10 +30,11 @@ public class AddAudioContent extends TestBase {
 
     @BeforeTest
     public void addContentInitialization(){
-
+    	loginObj = new LoginPage();
         homeObj= new HomePage();
         addcontentobj= new AddVideoContentPage();
         addAudioContentObj = new AddAudioContentPage();
+        
     }
 
 
@@ -70,7 +74,7 @@ public class AddAudioContent extends TestBase {
       addAudioContentObj.add_Audio_file();
     }
 
-    @Test(priority = 6)
+    @Test(priority = 5)
     @Description("Admin will click on the save button ")
     @Feature("Add Audio content")
     @Story("As a Admin I need to click on the save button to add Audio with content on APDR")
@@ -79,4 +83,8 @@ public class AddAudioContent extends TestBase {
         addcontentobj.clickOnSaveButton();
     }
 
+    @AfterTest
+    public void teardown() {
+  	  driver.quit();
+    }
 }

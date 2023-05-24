@@ -6,20 +6,14 @@
   </listeners>
   <test thread-count="1" name="Regression Test Suite (failed)">
     <classes>
-      <class name="com.apdr.testcases.AddVideoContent">
+      <class name="com.apdr.testcases.AddAudioContent">
         <methods>
-          <include name="initialization"/>
-          <include name="addContentInitialization"/>
+          <include name="teardown"/>
           <include name="clickOnSaveButton"/>
-        </methods>
-      </class> <!-- com.apdr.testcases.AddVideoContent -->
-      <class name="com.apdr.testcases.AddUser">
-        <methods>
-          <include name="addUserInitialization"/>
+          <include name="addContentInitialization"/>
           <include name="initialization"/>
-          <include name="select_Users_role"/>
         </methods>
-      </class> <!-- com.apdr.testcases.AddUser -->
+      </class> <!-- com.apdr.testcases.AddAudioContent -->
     </classes>
   </test> <!-- Regression Test Suite (failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -9,6 +9,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import org.testng.annotations.Listeners;
@@ -26,7 +27,7 @@ public class LogInTestCases extends TestBase {
     }
     @BeforeTest
     public void loginIntialization(){
-        loginObj = new LoginPage();;
+        loginObj = new LoginPage();
         homeObj= new HomePage();
     }
 
@@ -43,4 +44,11 @@ public class LogInTestCases extends TestBase {
     Assert.assertTrue(result,"User is unable to login and to land on the home page");
   }
 
+  
+  @AfterTest
+  public void teardown() {
+	  driver.quit();
+  }
+  
+  
 }
