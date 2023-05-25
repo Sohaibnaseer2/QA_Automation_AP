@@ -19,7 +19,7 @@
 		   
 			
             <class name="com.apdr.testcases.AddVideoContent"></class>
-            <class name="com.apdr.testcases.AddUser"></class>
+           <!-- <class name="com.apdr.testcases.AddUser"></class>-->
         	           
         	<!--           
        		<class name="com.apdr.testcases.Adduploadcsvcontent"></class>

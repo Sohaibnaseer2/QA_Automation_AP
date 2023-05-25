@@ -21,7 +21,7 @@ public class DataUtils {
         //java object
         Object obj=null;
         try {
-            obj = parser.parse(new FileReader(".\\TestData\\contentData.json"));
+            obj = parser.parse(new FileReader(System.getProperty("user.dir") +"/TestData/contentData.json"));
             //Parse java object to json object
         } catch (IOException | ParseException exception) {
             exception.printStackTrace();
@@ -62,7 +62,7 @@ public class DataUtils {
         //java object
         Object obj=null;
         try {
-            obj = parser.parse(new FileReader(".\\TestData\\contentData.json"));
+            obj = parser.parse(new FileReader(System.getProperty("user.dir") +"/TestData/contentData.json"));
             //Parse java object to json object
         } catch (IOException | ParseException exception) {
             exception.printStackTrace();
@@ -102,7 +102,7 @@ public class DataUtils {
         //java object
         Object obj = null;
         try {
-            obj = parser.parse(new FileReader(".\\TestData\\logindata.json"));
+            obj = parser.parse(new FileReader(System.getProperty("user.dir") +"/TestData/logindata.json"));
             //Parse java object to json object
         } catch (IOException | ParseException exception) {
             exception.printStackTrace();
@@ -141,7 +141,7 @@ public class DataUtils {
         //java object
         Object obj=null;
         try {
-            obj = parser.parse(new FileReader(".\\TestData\\contentData.json"));
+            obj = parser.parse(new FileReader(System.getProperty("user.dir") +"/TestData/contentData.json"));
             //Parse java object to json object
         } catch (IOException | ParseException exception) {
             exception.printStackTrace();
@@ -193,7 +193,7 @@ public class DataUtils {
         //java object
         Object obj=null;
         try {
-            obj = parser.parse(new FileReader(".\\TestData\\contentData.json"));
+            obj = parser.parse(new FileReader(System.getProperty("user.dir") +"/TestData/contentData.json"));
             //Parse java object to json object
         } catch (IOException | ParseException exception) {
             exception.printStackTrace();
@@ -234,7 +234,7 @@ public class DataUtils {
         //java object
         Object obj=null;
         try {
-            obj = parser.parse(new FileReader(".\\TestData\\contentData.json"));
+            obj = parser.parse(new FileReader(System.getProperty("user.dir") +"/TestData/contentData.json"));
             //Parse java object to json object
         } catch (IOException | ParseException exception) {
             exception.printStackTrace();
@@ -278,7 +278,7 @@ public class DataUtils {
         //java object
         Object obj = null;
         try {
-            obj = parser.parse(new FileReader(".\\TestData\\logindata.json"));
+            obj = parser.parse(new FileReader(System.getProperty("user.dir") +"/TestData/logindata.json"));
             //Parse java object to json object
         } catch (IOException | ParseException exception) {
             exception.printStackTrace();
