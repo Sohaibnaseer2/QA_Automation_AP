@@ -7,7 +7,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -47,6 +47,12 @@ public class TestBase {
         String browserName = prop.getProperty("browser");
         if (browserName.equals("chrome")) {
         	WebDriverManager.chromedriver().setup();
+        	 ChromeOptions options = new ChromeOptions();
+        	
+			 options.addArguments("headless");
+        	 options.addArguments("no-sandbox");
+        	 options.addArguments("disable-dev-shm-usage");
+        	
             /*System.setProperty("webdriver.chrome.driver","chrome/chromedriver.exe");*/
 //            ChromeOptions options = new ChromeOptions();
 //            options.addArguments("--lang= locale-of-choice");
