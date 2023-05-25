@@ -9,122 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Regression Test Suite </a></td><td class="num">0</td><td class="num attn">9</td><td class="num">0</td><td class="num">0</td><td class="num">428</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Regression Test Suite </a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32,217</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Test Suite  &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.apdr.testcases.LogInTestCases</td><td><a href="#m0">initialization</a></td><td rowspan="1">1685013805025</td><td rowspan="1">106</td></tr><tr><th colspan="4">Regression Test Suite  &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.apdr.testcases.LogInTestCases</td><td><a href="#m1">loginIntialization</a></td><td rowspan="1">1685013805299</td><td rowspan="1">-1685013805299</td></tr><tr class="skippedeven"><td><a href="#m2">teardown</a></td><td rowspan="1">1685013805441</td><td rowspan="1">-1685013805441</td></tr><tr class="skippedodd"><td rowspan="1">com.apdr.testcases.NewsAlertContent</td><td><a href="#m3">addNewsAlertContentInitialization</a></td><td rowspan="1">1685013805298</td><td rowspan="1">-1685013805298</td></tr><tr><th colspan="4">Regression Test Suite  &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.apdr.testcases.LogInTestCases</td><td><a href="#m4">loginToApDr</a></td><td rowspan="1">1685013805360</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="8">com.apdr.testcases.NewsAlertContent</td><td><a href="#m5">addVideoContent</a></td><td rowspan="1">1685013805391</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m6">add_DateLine_For_News_Alert</a></td><td rowspan="1">1685013805416</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m7">add_EdsNote_For_News_Alert</a></td><td rowspan="1">1685013805430</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m8">add_News_Alert_Slug</a></td><td rowspan="1">1685013805399</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m9">add__Alert_News</a></td><td rowspan="1">1685013805408</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m10">click_Save_Button</a></td><td rowspan="1">1685013805435</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m11">hover_Over_Content_Button</a></td><td rowspan="1">1685013805382</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m12">select_News_Alert_Category</a></td><td rowspan="1">1685013805423</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Test Suite  &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.apdr.testcases.LogInTestCases</td><td><a href="#m0">loginToApDr</a></td><td rowspan="1">1685017419470</td><td rowspan="1">14280</td></tr><tr class="passedodd"><td rowspan="8">com.apdr.testcases.NewsAlertContent</td><td><a href="#m1">addVideoContent</a></td><td rowspan="1">1685017435542</td><td rowspan="1">3567</td></tr><tr class="passedodd"><td><a href="#m2">add_DateLine_For_News_Alert</a></td><td rowspan="1">1685017439297</td><td rowspan="1">77</td></tr><tr class="passedodd"><td><a href="#m3">add_EdsNote_For_News_Alert</a></td><td rowspan="1">1685017439514</td><td rowspan="1">74</td></tr><tr class="passedodd"><td><a href="#m4">add_News_Alert_Slug</a></td><td rowspan="1">1685017439115</td><td rowspan="1">92</td></tr><tr class="passedodd"><td><a href="#m5">add__Alert_News</a></td><td rowspan="1">1685017439212</td><td rowspan="1">81</td></tr><tr class="passedodd"><td><a href="#m6">click_Save_Button</a></td><td rowspan="1">1685017439591</td><td rowspan="1">1009</td></tr><tr class="passedodd"><td><a href="#m7">hover_Over_Content_Button</a></td><td rowspan="1">1685017433905</td><td rowspan="1">1623</td></tr><tr class="passedodd"><td><a href="#m8">select_News_Alert_Category</a></td><td rowspan="1">1685017439378</td><td rowspan="1">132</td></tr></tbody>
 </table>
-<h2>Regression Test Suite </h2><h3 id="m0">com.apdr.testcases.LogInTestCases#initialization</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sohaib.naseer\git\repository\AP_DR\AP_DR\chrome\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.apdr.setup.TestBase.initialization(TestBase.java:49)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.apdr.testcases.LogInTestCases#loginIntialization</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.apdr.testcases.LogInTestCases#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.apdr.testcases.NewsAlertContent#addNewsAlertContentInitialization</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.apdr.testcases.LogInTestCases#loginToApDr</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>ripcord@ap.org,admin,Test engineer,aptest</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sohaib.naseer\git\repository\AP_DR\AP_DR\chrome\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.apdr.setup.TestBase.initialization(TestBase.java:49)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.apdr.testcases.NewsAlertContent#addVideoContent</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sohaib.naseer\git\repository\AP_DR\AP_DR\chrome\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.apdr.setup.TestBase.initialization(TestBase.java:49)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.apdr.testcases.NewsAlertContent#add_DateLine_For_News_Alert</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sohaib.naseer\git\repository\AP_DR\AP_DR\chrome\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.apdr.setup.TestBase.initialization(TestBase.java:49)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.apdr.testcases.NewsAlertContent#add_EdsNote_For_News_Alert</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sohaib.naseer\git\repository\AP_DR\AP_DR\chrome\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.apdr.setup.TestBase.initialization(TestBase.java:49)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.apdr.testcases.NewsAlertContent#add_News_Alert_Slug</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sohaib.naseer\git\repository\AP_DR\AP_DR\chrome\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.apdr.setup.TestBase.initialization(TestBase.java:49)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.apdr.testcases.NewsAlertContent#add__Alert_News</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sohaib.naseer\git\repository\AP_DR\AP_DR\chrome\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.apdr.setup.TestBase.initialization(TestBase.java:49)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.apdr.testcases.NewsAlertContent#click_Save_Button</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sohaib.naseer\git\repository\AP_DR\AP_DR\chrome\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.apdr.setup.TestBase.initialization(TestBase.java:49)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.apdr.testcases.NewsAlertContent#hover_Over_Content_Button</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sohaib.naseer\git\repository\AP_DR\AP_DR\chrome\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.apdr.setup.TestBase.initialization(TestBase.java:49)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">com.apdr.testcases.NewsAlertContent#select_News_Alert_Category</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sohaib.naseer\git\repository\AP_DR\AP_DR\chrome\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at com.apdr.setup.TestBase.initialization(TestBase.java:49)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Regression Test Suite </h2><h3 id="m0">com.apdr.testcases.LogInTestCases#loginToApDr</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>ripcord@ap.org,admin,Test engineer,aptest</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.apdr.testcases.NewsAlertContent#addVideoContent</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.apdr.testcases.NewsAlertContent#add_DateLine_For_News_Alert</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.apdr.testcases.NewsAlertContent#add_EdsNote_For_News_Alert</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.apdr.testcases.NewsAlertContent#add_News_Alert_Slug</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.apdr.testcases.NewsAlertContent#add__Alert_News</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.apdr.testcases.NewsAlertContent#click_Save_Button</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.apdr.testcases.NewsAlertContent#hover_Over_Content_Button</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.apdr.testcases.NewsAlertContent#select_News_Alert_Category</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -16,6 +16,9 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import com.apdr.utalities.WaitUtils;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
@@ -43,7 +46,8 @@ public class TestBase {
     public void initialization() {
         String browserName = prop.getProperty("browser");
         if (browserName.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver","chrome/chromedriver.exe");
+        	WebDriverManager.chromedriver().setup();
+            /*System.setProperty("webdriver.chrome.driver","chrome/chromedriver.exe");*/
 //            ChromeOptions options = new ChromeOptions();
 //            options.addArguments("--lang= locale-of-choice");
             driver = new ChromeDriver();
