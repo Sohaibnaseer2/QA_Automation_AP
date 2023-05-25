@@ -43,7 +43,7 @@ public class TestBase {
     public void initialization() {
         String browserName = prop.getProperty("browser");
         if (browserName.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "chrome/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C:/Users/sohaib.naseer/git/repository/AP_DR/chrome/chromedriver.exe");
 //            ChromeOptions options = new ChromeOptions();
 //            options.addArguments("--lang= locale-of-choice");
             driver = new ChromeDriver();
