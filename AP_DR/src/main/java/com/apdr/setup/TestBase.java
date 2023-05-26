@@ -49,8 +49,8 @@ public class TestBase {
         	WebDriverManager.chromedriver().setup();
 			
 			  ChromeOptions options = new ChromeOptions(); 
-			  //options.setHeadless(true);
-			 options.addArguments("--Headless=new");
+			  options.setHeadless(true);
+			 //options.addArguments("--Headless=new");
         	 
             /*System.setProperty("webdriver.chrome.driver","chrome/chromedriver.exe");*/
 //                    
