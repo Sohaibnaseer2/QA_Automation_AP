@@ -9,8 +9,8 @@
     
         <classes>
             <class name="com.apdr.testcases.LogInTestCases"></class> 
-           <!-- <class name="com.apdr.testcases.NewsAlertContent"></class>
-            <class name="com.apdr.testcases.AddNewsStoryContent"></class>-->
+            <class name="com.apdr.testcases.NewsAlertContent"></class>
+            <class name="com.apdr.testcases.AddNewsStoryContent"></class>
          <!--    
             <class name="com.apdr.testcases.AddAudioContent"></class>
            
