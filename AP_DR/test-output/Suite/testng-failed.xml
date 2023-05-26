@@ -20,6 +20,23 @@
           <include name="add_EdsNote_For_News_Alert" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.apdr.testcases.NewsAlertContent -->
+      <class name="com.apdr.testcases.AddNewsStoryContent">
+        <methods>
+          <include name="clickOnNewsStoryLink"/>
+          <include name="addByLineAndByTitleForNewStory" invocation-numbers="0"/>
+          <include name="addsummaryForNewStory" invocation-numbers="0"/>
+          <include name="addNewsStoryContentInitialization"/>
+          <include name="addEdsNoteForNewStory" invocation-numbers="0"/>
+          <include name="addbodyForNewStory" invocation-numbers="0"/>
+          <include name="addheadLineForNewStory" invocation-numbers="0"/>
+          <include name="clickOnSaveButton"/>
+          <include name="hover_Over_Content_Button"/>
+          <include name="initialization"/>
+          <include name="addSlugForNewStory" invocation-numbers="0"/>
+          <include name="selectNewsStoryCategory"/>
+          <include name="adddateLineForNewStory" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.AddNewsStoryContent -->
     </classes>
   </test> <!-- Regression Test Suite (failed) -->
 </suite> <!-- Failed suite [Suite] -->
