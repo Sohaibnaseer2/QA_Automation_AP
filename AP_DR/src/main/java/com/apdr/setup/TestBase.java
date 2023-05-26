@@ -47,16 +47,13 @@ public class TestBase {
         String browserName = prop.getProperty("browser");
         if (browserName.equals("chrome")) {
         	WebDriverManager.chromedriver().setup();
-        	ChromeOptions options = new ChromeOptions();
-        	 options.setHeadless(true);
+			
+			  ChromeOptions options = new ChromeOptions(); 
+			  //options.setHeadless(true);
+			 options.addArguments("--Headless=new");
         	 
-				/*
-				 * options.addArguments("no-sandbox"); options.addArguments("headless");
-				 * options.addArguments("disable-dev-shm-usage");
-				 */
             /*System.setProperty("webdriver.chrome.driver","chrome/chromedriver.exe");*/
-//            ChromeOptions options = new ChromeOptions();
-//            options.addArguments("--lang= locale-of-choice");
+//                    
             driver = new ChromeDriver(options);
 
         }
