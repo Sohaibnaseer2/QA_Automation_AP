@@ -48,13 +48,13 @@ public class TestBase {
         if (browserName.equals("chrome")) {
         	WebDriverManager.chromedriver().setup();
 			
-			 // ChromeOptions options = new ChromeOptions(); 
+			  ChromeOptions options = new ChromeOptions(); 
 			  //options.setHeadless(true);
-			 //options.addArguments("--Headless=chrome");
+			 options.addArguments("--Headless=new");
         	 
             /*System.setProperty("webdriver.chrome.driver","chrome/chromedriver.exe");*/
 //                    
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(options);
 
         }
 
