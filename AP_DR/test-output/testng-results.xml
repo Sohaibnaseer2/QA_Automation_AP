@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="10" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-25T23:13:17 PKT" name="Suite" finished-at="2023-05-25T23:13:49 PKT" duration-ms="31511">
+  <suite started-at="2023-05-26T15:48:22 PKT" name="Suite" finished-at="2023-05-26T15:48:59 PKT" duration-ms="36789">
     <groups>
     </groups>
-    <test started-at="2023-05-25T23:13:17 PKT" name="Regression Test Suite " finished-at="2023-05-25T23:13:49 PKT" duration-ms="31511">
+    <test started-at="2023-05-26T15:48:22 PKT" name="Regression Test Suite " finished-at="2023-05-26T15:48:59 PKT" duration-ms="36789">
       <class name="com.apdr.testcases.LogInTestCases">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@702c436b]" started-at="2023-05-25T23:13:17 PKT" name="initialization" finished-at="2023-05-25T23:13:25 PKT" duration-ms="8007" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@9d3c67]" started-at="2023-05-26T15:48:22 PKT" name="initialization" finished-at="2023-05-26T15:48:32 PKT" duration-ms="9471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@702c436b]" started-at="2023-05-25T23:13:25 PKT" name="loginIntialization" finished-at="2023-05-25T23:13:25 PKT" depends-on-methods="com.apdr.testcases.NewsAlertContent.addNewsAlertContentInitialization, com.apdr.setup.TestBase.initialization" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@9d3c67]" started-at="2023-05-26T15:48:32 PKT" name="loginIntialization" finished-at="2023-05-26T15:48:32 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntialization -->
-        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@702c436b]" started-at="2023-05-25T23:13:25 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-05-25T23:13:40 PKT" duration-ms="15240" status="PASS">
+        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@9d3c67]" started-at="2023-05-26T15:48:32 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-05-26T15:48:59 PKT" duration-ms="26967" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,84 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApDr -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.LogInTestCases@702c436b]" started-at="2023-05-25T23:13:48 PKT" name="teardown" finished-at="2023-05-25T23:13:49 PKT" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.LogInTestCases@9d3c67]" started-at="2023-05-26T15:48:59 PKT" name="teardown" finished-at="2023-05-26T15:48:59 PKT" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.apdr.testcases.LogInTestCases -->
-      <class name="com.apdr.testcases.NewsAlertContent">
-        <test-method is-config="true" signature="addNewsAlertContentInitialization()[pri:0, instance:com.apdr.testcases.NewsAlertContent@7a2b1eb4]" started-at="2023-05-25T23:13:25 PKT" name="addNewsAlertContentInitialization" finished-at="2023-05-25T23:13:25 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="66" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewsAlertContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.NewsAlertContent@7a2b1eb4]" started-at="2023-05-25T23:13:41 PKT" name="hover_Over_Content_Button" finished-at="2023-05-25T23:13:42 PKT" duration-ms="1565" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addVideoContent(java.lang.String)[pri:2, instance:com.apdr.testcases.NewsAlertContent@7a2b1eb4]" started-at="2023-05-25T23:13:42 PKT" name="addVideoContent" data-provider="newsAlertContent" finished-at="2023-05-25T23:13:46 PKT" duration-ms="3343" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addVideoContent -->
-        <test-method signature="add_News_Alert_Slug(java.lang.String)[pri:3, instance:com.apdr.testcases.NewsAlertContent@7a2b1eb4]" started-at="2023-05-25T23:13:46 PKT" name="add_News_Alert_Slug" data-provider="newsAlertContent" finished-at="2023-05-25T23:13:46 PKT" duration-ms="88" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_News_Alert_Slug -->
-        <test-method signature="add__Alert_News(java.lang.String)[pri:4, instance:com.apdr.testcases.NewsAlertContent@7a2b1eb4]" started-at="2023-05-25T23:13:46 PKT" name="add__Alert_News" data-provider="newsAlertContent" finished-at="2023-05-25T23:13:46 PKT" duration-ms="76" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add__Alert_News -->
-        <test-method signature="add_DateLine_For_News_Alert(java.lang.String)[pri:5, instance:com.apdr.testcases.NewsAlertContent@7a2b1eb4]" started-at="2023-05-25T23:13:46 PKT" name="add_DateLine_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-05-25T23:13:46 PKT" duration-ms="65" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_DateLine_For_News_Alert -->
-        <test-method signature="select_News_Alert_Category()[pri:6, instance:com.apdr.testcases.NewsAlertContent@7a2b1eb4]" started-at="2023-05-25T23:13:46 PKT" name="select_News_Alert_Category" finished-at="2023-05-25T23:13:46 PKT" duration-ms="93" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- select_News_Alert_Category -->
-        <test-method signature="add_EdsNote_For_News_Alert(java.lang.String)[pri:7, instance:com.apdr.testcases.NewsAlertContent@7a2b1eb4]" started-at="2023-05-25T23:13:46 PKT" name="add_EdsNote_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-05-25T23:13:46 PKT" duration-ms="65" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Upgraded Automation Testing Alerts.Please ignore,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_EdsNote_For_News_Alert -->
-        <test-method signature="click_Save_Button()[pri:8, instance:com.apdr.testcases.NewsAlertContent@7a2b1eb4]" started-at="2023-05-25T23:13:46 PKT" name="click_Save_Button" finished-at="2023-05-25T23:13:48 PKT" duration-ms="2416" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- click_Save_Button -->
-      </class> <!-- com.apdr.testcases.NewsAlertContent -->
     </test> <!-- Regression Test Suite  -->
   </suite> <!-- Suite -->
 </testng-results>
