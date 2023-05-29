@@ -1,5 +1,7 @@
 package com.apdr.pageobjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -15,7 +17,7 @@ public class Importuserspage extends TestBase{
 
         PageFactory.initElements(driver, this);
     }
-    WebDriverWait wait = new WebDriverWait(driver, WaitUtils.elementWait);
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	
     @FindBy(linkText = "Import/Notify Users")
 	WebElement ClicktabImportUsers;

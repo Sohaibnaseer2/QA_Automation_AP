@@ -13,10 +13,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class AddVideoMediaPage extends TestBase {
-    WebDriverWait wait = new WebDriverWait(driver, WaitUtils.elementWait);
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     Actions builder = new Actions(driver);
 
     @FindBy(xpath = "//*[@id='block-seven-primary-local-tasks']/nav/nav/ul/li[2]/a")

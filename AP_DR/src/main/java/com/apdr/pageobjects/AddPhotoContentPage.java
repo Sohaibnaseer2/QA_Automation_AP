@@ -16,6 +16,7 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -27,7 +28,7 @@ public class AddPhotoContentPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	WebDriverWait wait = new WebDriverWait(driver, WaitUtils.elementWait);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Actions builder = new Actions(driver);
 

@@ -1,5 +1,7 @@
 package com.apdr.pageobjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -15,7 +17,7 @@ public class AddBannerPage extends TestBase {
 	public AddBannerPage() {
 	PageFactory.initElements(driver, this);
 }
-WebDriverWait wait = new WebDriverWait(driver, WaitUtils.Duration);
+WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
 
 
