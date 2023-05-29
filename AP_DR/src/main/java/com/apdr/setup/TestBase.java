@@ -5,6 +5,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -49,8 +50,8 @@ public class TestBase {
         	WebDriverManager.chromedriver().setup();
 			
 			 ChromeOptions options = new ChromeOptions(); 
-			  //options.setHeadless(true);
-			 options.addArguments("--Headless=new");
+			  options.setHeadless(true);
+			 //options.addArguments("--Headless=new");
         	 
             /*System.setProperty("webdriver.chrome.driver","chrome/chromedriver.exe");*/
 //                    
@@ -63,6 +64,11 @@ public class TestBase {
         driver.manage().timeouts().pageLoadTimeout(WaitUtils.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(WaitUtils.IMPLICIT_WAIT, TimeUnit.SECONDS);
         driver.get(prop.getProperty("url"));
+        Dimension currentDimension = driver. manage(). window(). getSize();
+        int height = currentDimension. getHeight();
+        int width = currentDimension. getWidth();
+        System. out. println("Current height: "+ height);
+        System. out. println("Current width: "+width);
     }
 
     public static WebDriver getDriver() {
