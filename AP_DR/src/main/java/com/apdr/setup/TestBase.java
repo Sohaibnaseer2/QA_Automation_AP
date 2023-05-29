@@ -51,7 +51,7 @@ public class TestBase {
         if (browserName.equals("chrome")) {
         	WebDriverManager.chromedriver().setup();
 			
-			 //ChromeOptions options = new ChromeOptions(); 
+			 ChromeOptions options = new ChromeOptions(); 
 			 //options.setHeadless(true);
 				/*
 				 * options.addArguments("--headless=new");
@@ -60,11 +60,11 @@ public class TestBase {
 				 * options.addArguments("--no-sandbox");
 				 * options.addArguments("window-size=800,600");
 				 */
-			// options.addArguments("--Headless=new");
+			options.addArguments("--Headless=new");
         	 
             /*System.setProperty("webdriver.chrome.driver","chrome/chromedriver.exe");*/
 //                    
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(options);
 
         }
 
