@@ -70,7 +70,7 @@ public class AddVideoContent extends TestBase {
     @Description("Admin will add body for video file ")
     @Feature("Add video content")
     @Story("As a Admin I need to add body for video file")
-    public void add_Body_For_Video(String data){
+    public void add_Body_For_Video(String data) throws InterruptedException{
         String[] formInfo= data.split(",");
         addcontentobj.addBodyForVideo(formInfo[3]);
 
@@ -80,8 +80,8 @@ public class AddVideoContent extends TestBase {
     @Description("Admin will click on the save button ")
     @Feature("Add video content")
     @Story("As a Admin I need to click on the save button to add video with content on APDR")
-    public void clickOnSaveButton() {
-		/* addcontentobj.viewRemoveButton(); */ 
+    public void clickOnSaveButton() throws InterruptedException {
+		//addcontentobj.viewRemoveButton();  
         addcontentobj.clickOnSaveButton();
     }
 }

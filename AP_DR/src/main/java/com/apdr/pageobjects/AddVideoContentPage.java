@@ -48,7 +48,7 @@ public class AddVideoContentPage extends TestBase {
     WebElement addFileButton;
 
     //remove button locator
-    @FindBy(name = "field_video_file_2_0_remove_button")
+    @FindBy(xpath = "//input[@id='edit-field-video-file-2-0-remove-button--5B0MBvXCuTQ']")
     WebElement removeBtn;
 
     //Body Input Field locator
@@ -105,13 +105,14 @@ public class AddVideoContentPage extends TestBase {
         robot.setAutoDelay(1000);
     }
 
-    public void addBodyForVideo(String body){
-
+    public void addBodyForVideo(String body) throws InterruptedException{
+    	Thread.sleep(3000);
         js.executeScript("arguments[0].scrollIntoView(true);",bodyInputField);
         bodyInputField.sendKeys(body);
-    }
+    }	
 
-	  public void viewRemoveButton(){
+	  public void viewRemoveButton() throws InterruptedException{
+		  Thread.sleep(3000);
 	  wait.until(ExpectedConditions.visibilityOf(removeBtn));
 	  }
 	 
