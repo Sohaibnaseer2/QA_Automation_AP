@@ -10,7 +10,7 @@
         <classes>
         
             <class name="com.apdr.testcases.LogInTestCases"></class> 
-          <!--  <class name="com.apdr.testcases.NewsAlertContent"></class>-->
+          <class name="com.apdr.testcases.NewsAlertContent"></class>
            
             <!--<class name="com.apdr.testcases.AddVideoContent"></class>-->
 
