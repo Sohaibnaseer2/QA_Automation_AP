@@ -6,9 +6,10 @@
       "role": "Test engineer",
       "machineReableName": "aptest"
     }],
+   
    "add-user":[
      {
-       "email" : "sohaib.naseer@visionetsystems.com",
+       "email" : "umair@visionetsystems.com",
        "password" : "Test@123..",
        "org": "software Testing ",
        "orgId": "ap786",
