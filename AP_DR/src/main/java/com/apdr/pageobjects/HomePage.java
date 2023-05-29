@@ -39,7 +39,8 @@ public class HomePage extends TestBase {
 	// content button locator
 
 	
-	  @FindBy(linkText = "Add Content") WebElement contentBtn;
+	  @FindBy(linkText = "Add Content")
+	  WebElement contentBtn;
 	 
 	  
 	/*
