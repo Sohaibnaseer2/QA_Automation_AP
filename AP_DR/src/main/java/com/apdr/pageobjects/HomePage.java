@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class HomePage extends TestBase {
@@ -19,7 +20,7 @@ public class HomePage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	WebDriverWait wait = new WebDriverWait(driver, WaitUtils.elementWait);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
 	Actions builder = new Actions(driver);
 
 	// User profile icon locator
@@ -37,10 +38,15 @@ public class HomePage extends TestBase {
 
 	// content button locator
 
-	
-	  @FindBy(linkText = "Add Content")
+	/*
+	 * @FindBy(linkText = "Add Content") WebElement contentBtn;
+	 */
+	  
+	  @FindBy(xpath = "//a[normalize-space()='Add Content']")
 	  WebElement contentBtn;
-	 
+	  
+	
+
 	
 	/*
 	 * @FindBy(css = "a.toolbar-icon.toolbar-icon-system-admin-content") WebElement
@@ -97,7 +103,7 @@ public class HomePage extends TestBase {
 	 */
 
 	public void hoverOnContentButton() throws InterruptedException {
-		wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
+		wait.until(ExpectedConditions.visibilityOf(contentBtn));
 		builder.moveToElement(contentBtn).build().perform();
 		contentBtn.click();
 	}

@@ -15,7 +15,7 @@ public class AddBannerPage extends TestBase {
 	public AddBannerPage() {
 	PageFactory.initElements(driver, this);
 }
-WebDriverWait wait = new WebDriverWait(driver, WaitUtils.elementWait);
+WebDriverWait wait = new WebDriverWait(driver, WaitUtils.Duration);
 
 
 

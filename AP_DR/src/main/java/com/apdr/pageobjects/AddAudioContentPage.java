@@ -12,13 +12,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.time.Duration;
 
 public class AddAudioContentPage extends TestBase {
 
     public AddAudioContentPage() {
         PageFactory.initElements(driver, this);
     }
-    WebDriverWait wait = new WebDriverWait(driver, WaitUtils.elementWait);
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
     Actions builder = new Actions(driver);
 
     @FindBy(linkText  = "Add Content") 

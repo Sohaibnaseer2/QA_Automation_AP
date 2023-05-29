@@ -14,6 +14,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import com.apdr.utalities.WaitUtils;
@@ -43,32 +44,44 @@ public class TestBase {
         }
     }
 
-    @BeforeTest
+   
+	@BeforeTest
     public void initialization() {
         String browserName = prop.getProperty("browser");
         if (browserName.equals("chrome")) {
         	WebDriverManager.chromedriver().setup();
 			
-			 ChromeOptions options = new ChromeOptions(); 
-			  options.setHeadless(true);
-			 //options.addArguments("--Headless=new");
+			 //ChromeOptions options = new ChromeOptions(); 
+			 //options.setHeadless(true);
+				/*
+				 * options.addArguments("--headless=new");
+				 * options.addArguments("--disable-extensions");
+				 * options.addArguments("--disable-dev-shm-usage");
+				 * options.addArguments("--no-sandbox");
+				 * options.addArguments("window-size=800,600");
+				 */
+			// options.addArguments("--Headless=new");
         	 
             /*System.setProperty("webdriver.chrome.driver","chrome/chromedriver.exe");*/
 //                    
-            driver = new ChromeDriver(options);
+            driver = new ChromeDriver();
 
         }
 
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        driver.manage().timeouts().pageLoadTimeout(WaitUtils.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(WaitUtils.IMPLICIT_WAIT, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
+    
+        //driver.manage().timeouts().pageLoadTimeout(WaitUtils.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(WaitUtils.IMPLICIT_WAIT, TimeUnit.SECONDS);
         driver.get(prop.getProperty("url"));
-        Dimension currentDimension = driver. manage(). window(). getSize();
-        int height = currentDimension. getHeight();
-        int width = currentDimension. getWidth();
-        System. out. println("Current height: "+ height);
-        System. out. println("Current width: "+width);
+		/*
+		 * Dimension currentDimension = driver. manage(). window(). getSize(); int
+		 * height = currentDimension. getHeight(); int width = currentDimension.
+		 * getWidth(); System. out. println("Current height: "+ height); System. out.
+		 * println("Current width: "+width);
+		 */
     }
 
     public static WebDriver getDriver() {
