@@ -34,7 +34,7 @@
    ],
    "news-alert": [
      {
-       "slug" : "Upgraded Automation Testing Alerts.Please ignore",
+       "slug" : "Jenkins pipeline Automation",
        "Alert" : "Monitor the web for interesting new content. ",
        "Dateline": "NEW. S30 E27 | 05/20/22",
        "edsNote": "EDS Notes means the 7.450% notes due 2029 issued"
