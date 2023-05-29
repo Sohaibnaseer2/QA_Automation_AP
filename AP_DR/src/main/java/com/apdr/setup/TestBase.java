@@ -51,20 +51,22 @@ public class TestBase {
         if (browserName.equals("chrome")) {
         	WebDriverManager.chromedriver().setup();
 			
-			 ChromeOptions options = new ChromeOptions(); 
+			// ChromeOptions options = new ChromeOptions(); 
 			 //options.setHeadless(true);
+				
 				/*
-				 * options.addArguments("--headless=new");
-				 * options.addArguments("--disable-extensions");
-				 * options.addArguments("--disable-dev-shm-usage");
-				 * options.addArguments("--no-sandbox");
-				 * options.addArguments("window-size=800,600");
+				 * options.addArguments("--headless"); options.addArguments("--disable-gpu");
+				 * options.addArguments("--window-size=800,600");
+				 * options.addArguments("--allow-insecure-localhost");
 				 */
-			options.addArguments("--Headless=new");
+
+			 //specifically this line here :)
+			 
+			//options.addArguments("--Headless=new");
         	 
             /*System.setProperty("webdriver.chrome.driver","chrome/chromedriver.exe");*/
 //                    
-            driver = new ChromeDriver(options);
+            driver = new ChromeDriver();
 
         }
 
@@ -76,6 +78,7 @@ public class TestBase {
         //driver.manage().timeouts().pageLoadTimeout(WaitUtils.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         //driver.manage().timeouts().implicitlyWait(WaitUtils.IMPLICIT_WAIT, TimeUnit.SECONDS);
         driver.get(prop.getProperty("url"));
+		
 		/*
 		 * Dimension currentDimension = driver. manage(). window(). getSize(); int
 		 * height = currentDimension. getHeight(); int width = currentDimension.
