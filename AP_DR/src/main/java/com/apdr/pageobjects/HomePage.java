@@ -102,6 +102,7 @@ public class HomePage extends TestBase {
 		contentBtn.click();
 	}
 
+	
 	/*
 	 * List<WebElement> list = driver.findElements(By.linkText("Add Content")); //
 	 * wait.until(ExpectedConditions.elementToBeClickable(contentBtn));

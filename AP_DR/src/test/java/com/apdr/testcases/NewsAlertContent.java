@@ -48,8 +48,6 @@ public class NewsAlertContent extends TestBase {
         Assert.assertEquals(titleTxt, "Create News Alert", "Admin is not able to click on the News Alert Link");
 
 
-
-
         newsAlertObj.addEdsNote(formInfo[3]);
 
     }

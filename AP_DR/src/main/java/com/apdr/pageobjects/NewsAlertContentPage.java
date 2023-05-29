@@ -23,8 +23,9 @@ public class NewsAlertContentPage extends TestBase {
     Actions builder = new Actions(driver);
     
     
-    @FindBy(linkText  = "Add Content") 
-	 WebElement contentBtn;
+	/*
+	 * @FindBy(linkText = "Add Content") WebElement contentBtn;
+	 */
     
     //News alert link text locator
     @FindBy(linkText = "News Alert")
@@ -62,11 +63,13 @@ public class NewsAlertContentPage extends TestBase {
     @FindBy(id = "edit-submit")
     WebElement saveBtn;
 
+	
 	/*
 	 * public void hoverOnContentButton() throws InterruptedException {
 	 * wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
-	 * //builder.moveToElement(contentBtn).build().perform(); contentBtn.click();}
+	 * builder.moveToElement(contentBtn).build().perform(); contentBtn.click();}
 	 */
+	 
     
     public String clickOnNewsAlertLink(){
         wait.until(ExpectedConditions.elementToBeClickable(newAlertLink));
