@@ -51,22 +51,18 @@ public class TestBase {
         if (browserName.equals("chrome")) {
         	WebDriverManager.chromedriver().setup();
 			
-			// ChromeOptions options = new ChromeOptions(); 
+			ChromeOptions options = new ChromeOptions(); 
 			 //options.setHeadless(true);
+			options.addArguments("--Headless=new");
 				
-				/*
-				 * options.addArguments("--headless"); options.addArguments("--disable-gpu");
-				 * options.addArguments("--window-size=800,600");
-				 * options.addArguments("--allow-insecure-localhost");
-				 */
-
-			 //specifically this line here :)
+			/*
+			 * options.addArguments("--disable-gpu");
+			 * options.addArguments("--window-size=800,600");
+			 * options.addArguments("--allow-insecure-localhost");
+			 */
 			 
-			//options.addArguments("--Headless=new");
-        	 
-            /*System.setProperty("webdriver.chrome.driver","chrome/chromedriver.exe");*/
-//                    
-            driver = new ChromeDriver();
+       
+            driver = new ChromeDriver(options);
 
         }
 
