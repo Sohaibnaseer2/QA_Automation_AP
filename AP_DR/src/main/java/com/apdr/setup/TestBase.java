@@ -49,7 +49,7 @@ public class TestBase {
     public void initialization() {
         String browserName = prop.getProperty("browser");
         if (browserName.equals("chrome")) {
-        	WebDriverManager.chromedriver().setup();
+        	//WebDriverManager.chromedriver().setup();
 			
 			ChromeOptions options = new ChromeOptions(); 
 			 //options.setHeadless(true);
