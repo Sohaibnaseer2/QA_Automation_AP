@@ -17,7 +17,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class AddVideoMediaPage extends TestBase {
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
     Actions builder = new Actions(driver);
 
     @FindBy(xpath = "//*[@id='block-seven-primary-local-tasks']/nav/nav/ul/li[2]/a")

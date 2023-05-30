@@ -17,7 +17,7 @@ public class Importuserspage extends TestBase{
 
         PageFactory.initElements(driver, this);
     }
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
 	
     @FindBy(linkText = "Import/Notify Users")
 	WebElement ClicktabImportUsers;

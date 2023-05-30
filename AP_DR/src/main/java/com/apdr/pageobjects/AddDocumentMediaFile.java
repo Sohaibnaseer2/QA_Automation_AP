@@ -19,7 +19,7 @@ public class AddDocumentMediaFile extends TestBase {
     public AddDocumentMediaFile(){
         PageFactory.initElements(driver, this);
     }
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
     Actions builder = new Actions(driver);
 
     //document link test

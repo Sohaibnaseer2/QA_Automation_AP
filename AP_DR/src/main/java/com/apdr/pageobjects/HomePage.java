@@ -20,7 +20,7 @@ public class HomePage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
 	Actions builder = new Actions(driver);
 
 	// User profile icon locator

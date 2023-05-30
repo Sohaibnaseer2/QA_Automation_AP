@@ -17,7 +17,7 @@ public class AddBannerPage extends TestBase {
 	public AddBannerPage() {
 	PageFactory.initElements(driver, this);
 }
-WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
 
 //Audio link locator
 @FindBy(linkText = "Banner")

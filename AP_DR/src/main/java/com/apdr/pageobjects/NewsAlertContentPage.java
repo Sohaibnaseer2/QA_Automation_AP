@@ -20,7 +20,7 @@ public class NewsAlertContentPage extends TestBase {
     public NewsAlertContentPage() {
         PageFactory.initElements(driver, this);
     }
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
     JavascriptExecutor js = (JavascriptExecutor) driver;
     Actions builder = new Actions(driver);
     
