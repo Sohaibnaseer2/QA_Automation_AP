@@ -87,7 +87,7 @@ public class AddVideoContentPage extends TestBase {
 
         addFileButton.click();
        // addFileButton.sendKeys("C:\\Users\\muhammad.sabahat\\Desktop\\ApVideoUpload\\ApDr.mp4");
-        StringSelection ss = new StringSelection("../QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp4");
+        StringSelection ss = new StringSelection("/home/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp4");
       // StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APvideo.mp4");
        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
