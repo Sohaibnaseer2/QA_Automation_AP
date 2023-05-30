@@ -78,9 +78,9 @@ public class AddAudioContent extends TestBase {
     @Description("Admin will click on the save button ")
     @Feature("Add Audio content")
     @Story("As a Admin I need to click on the save button to add Audio with content on APDR")
-    public void clickOnSaveButton(){
+    public void clickOnSaveButton() throws InterruptedException{
         //addAudioContentObj.viewAudioRemoveButton();
-        addcontentobj.clickOnSaveButton();
+    	addAudioContentObj.clickOnSaveButton();
     }
 
     @AfterTest

@@ -19,7 +19,7 @@ public class AddAudioContentPage extends TestBase {
     public AddAudioContentPage() {
         PageFactory.initElements(driver, this);
     }
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
     Actions builder = new Actions(driver);
 
     @FindBy(linkText  = "Add Content") 
@@ -100,7 +100,8 @@ public class AddAudioContentPage extends TestBase {
     public void viewAudioRemoveButton(){
         wait.until(ExpectedConditions.visibilityOf(removeBtn));
     }
-    public void clickOnSaveButton(){
+    public void clickOnSaveButton() throws InterruptedException{
+    	Thread.sleep(5000);
         saveBtn.click();
     }
 

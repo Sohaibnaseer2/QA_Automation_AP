@@ -49,11 +49,17 @@ public class TestBase {
     public void initialization() {
         String browserName = prop.getProperty("browser");
         if (browserName.equals("chrome")) {
-        	//WebDriverManager.chromedriver().setup();
+			/*
+			 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
+			 */
+        	
+        	
 			
-			ChromeOptions options = new ChromeOptions(); 
-			options.addArguments("--Headless=new");
-			driver = new ChromeDriver(options);
+			  ChromeOptions options = new ChromeOptions();
+			  options.addArguments("--Headless=new"); 
+			  driver = new ChromeDriver(options);
+			 
+			
 			//options.setHeadless(true);
 			/*
 			 * options.addArguments("--disable-gpu");
