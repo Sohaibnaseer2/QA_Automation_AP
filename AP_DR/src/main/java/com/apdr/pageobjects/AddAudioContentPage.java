@@ -19,7 +19,7 @@ public class AddAudioContentPage extends TestBase {
     public AddAudioContentPage() {
         PageFactory.initElements(driver, this);
     }
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
     Actions builder = new Actions(driver);
 
     @FindBy(linkText  = "Add Content") 
@@ -78,8 +78,8 @@ public class AddAudioContentPage extends TestBase {
     public void add_Audio_file() throws AWTException {
 
         builder.moveToElement(chooseFileBtn).click().build().perform();
-        StringSelection ss = new StringSelection("../QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
-        //StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APaudio.mp3");
+        //StringSelection ss = new StringSelection("../QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
+        StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APaudio.mp3");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
         

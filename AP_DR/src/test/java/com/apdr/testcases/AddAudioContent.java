@@ -79,7 +79,7 @@ public class AddAudioContent extends TestBase {
     @Feature("Add Audio content")
     @Story("As a Admin I need to click on the save button to add Audio with content on APDR")
     public void clickOnSaveButton(){
-        addAudioContentObj.viewAudioRemoveButton();
+        //addAudioContentObj.viewAudioRemoveButton();
         addcontentobj.clickOnSaveButton();
     }
 

@@ -51,11 +51,11 @@ public class TestBase {
         if (browserName.equals("chrome")) {
         	//WebDriverManager.chromedriver().setup();
 			
-			ChromeOptions options = new ChromeOptions(); 
+			//ChromeOptions options = new ChromeOptions(); 
 			 //options.setHeadless(true);
 			
-			options.addArguments("--remote-allow-origins=*");
-			options.addArguments("--Headless=new");
+		
+			//options.addArguments("--Headless=new");
 			/*
 			 * options.addArguments("--disable-gpu");
 			 * options.addArguments("--window-size=800,600");
@@ -63,7 +63,7 @@ public class TestBase {
 			 */
 			 
        
-            driver = new ChromeDriver(options);
+            driver = new ChromeDriver();
 
         }
 
