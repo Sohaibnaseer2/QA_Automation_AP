@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-30T16:28:45 PKT" name="Suite" finished-at="2023-05-30T16:29:08 PKT" duration-ms="23297">
+  <suite started-at="2023-05-30T18:31:54 PKT" name="Suite" finished-at="2023-05-30T18:32:13 PKT" duration-ms="19247">
     <groups>
     </groups>
-    <test started-at="2023-05-30T16:28:45 PKT" name="Regression Test Suite " finished-at="2023-05-30T16:29:08 PKT" duration-ms="23297">
+    <test started-at="2023-05-30T18:31:54 PKT" name="Regression Test Suite " finished-at="2023-05-30T18:32:13 PKT" duration-ms="19247">
       <class name="com.apdr.testcases.LogInTestCases">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@64bce832]" started-at="2023-05-30T16:28:45 PKT" name="initialization" finished-at="2023-05-30T16:28:55 PKT" duration-ms="10111" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@64bce832]" started-at="2023-05-30T18:31:54 PKT" name="initialization" finished-at="2023-05-30T18:32:02 PKT" duration-ms="8183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@64bce832]" started-at="2023-05-30T16:28:55 PKT" name="loginIntialization" finished-at="2023-05-30T16:28:55 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@64bce832]" started-at="2023-05-30T18:32:02 PKT" name="loginIntialization" finished-at="2023-05-30T18:32:02 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntialization -->
-        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@64bce832]" started-at="2023-05-30T16:28:55 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-05-30T16:29:08 PKT" duration-ms="12840" status="PASS">
+        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@64bce832]" started-at="2023-05-30T18:32:02 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-05-30T18:32:13 PKT" duration-ms="10700" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApDr -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.LogInTestCases@64bce832]" started-at="2023-05-30T16:29:08 PKT" name="teardown" finished-at="2023-05-30T16:29:08 PKT" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.LogInTestCases@64bce832]" started-at="2023-05-30T18:32:13 PKT" name="teardown" finished-at="2023-05-30T18:32:13 PKT" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

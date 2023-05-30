@@ -53,8 +53,9 @@ public class TestBase {
 			
 			ChromeOptions options = new ChromeOptions(); 
 			 //options.setHeadless(true);
+			
+			options.addArguments("--remote-allow-origins=*");
 			options.addArguments("--Headless=new");
-				
 			/*
 			 * options.addArguments("--disable-gpu");
 			 * options.addArguments("--window-size=800,600");
@@ -68,8 +69,8 @@ public class TestBase {
 
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtils.IMPLICIT_WAIT));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(WaitUtils.PAGE_LOAD_TIMEOUT));
     
         //driver.manage().timeouts().pageLoadTimeout(WaitUtils.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         //driver.manage().timeouts().implicitlyWait(WaitUtils.IMPLICIT_WAIT, TimeUnit.SECONDS);
