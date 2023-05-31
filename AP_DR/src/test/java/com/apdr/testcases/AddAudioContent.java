@@ -1,6 +1,8 @@
 package com.apdr.testcases;
 
+import com.apdr.listeners.TestListener;
 import com.apdr.pageobjects.AddAudioContentPage;
+
 import com.apdr.pageobjects.AddVideoContentPage;
 import com.apdr.pageobjects.HomePage;
 import com.apdr.pageobjects.LoginPage;
@@ -12,10 +14,12 @@ import io.qameta.allure.Story;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.awt.*;
 
+@Listeners(TestListener.class)
 public class AddAudioContent extends TestBase {
 
     public AddAudioContent(){

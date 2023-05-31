@@ -78,18 +78,23 @@ public class AddAudioContentPage extends TestBase {
     public void add_Audio_file() throws AWTException {
 
 		  builder.moveToElement(chooseFileBtn).click().build().perform();
-		  StringSelection ss = new StringSelection("/home/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
+		  StringSelection ss = new StringSelection("/home/testadmin/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
 		  //StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APaudio.mp3");
 		  Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 		  
 		  
 		  //imitate mouse events like ENTER, CTRL+C, CTRL+V
 		  
-		  Robot robot = new Robot(); robot.setAutoDelay(500);
-		  robot.keyPress(KeyEvent.VK_CONTROL); robot.keyPress(KeyEvent.VK_V);
-		  robot.keyRelease(KeyEvent.VK_CONTROL); robot.keyRelease(KeyEvent.VK_K);
-		  robot.keyPress(KeyEvent.VK_ENTER); robot.setAutoDelay(500);
-		  robot.keyPress(KeyEvent.VK_ENTER); robot.keyRelease(KeyEvent.VK_ENTER);
+		  Robot robot = new Robot(); 
+		  robot.setAutoDelay(500);
+		  robot.keyPress(KeyEvent.VK_CONTROL); 
+		  robot.keyPress(KeyEvent.VK_V);
+		  robot.keyRelease(KeyEvent.VK_CONTROL);
+		  robot.keyRelease(KeyEvent.VK_K);
+		  robot.keyPress(KeyEvent.VK_ENTER);
+		  robot.setAutoDelay(500);
+		  robot.keyPress(KeyEvent.VK_ENTER); 
+		  robot.keyRelease(KeyEvent.VK_ENTER);
 		 
     }
 

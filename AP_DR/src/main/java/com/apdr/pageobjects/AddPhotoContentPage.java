@@ -32,7 +32,7 @@ public class AddPhotoContentPage extends TestBase {
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Actions builder = new Actions(driver);
 
-	// Phote link locator
+	// Photo link locator
 	@FindBy(linkText = "Photo")
 	WebElement photoBtn;
 

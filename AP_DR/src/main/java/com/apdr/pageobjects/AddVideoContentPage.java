@@ -23,6 +23,7 @@ public class AddVideoContentPage extends TestBase {
     }
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
     JavascriptExecutor js = ((JavascriptExecutor) driver);
+    Actions builder = new Actions(driver);
 
     //video link text locator
     @FindBy(linkText = "Video")
@@ -85,10 +86,10 @@ public class AddVideoContentPage extends TestBase {
 
     public void addVideoFileFromLocalRepository() throws AWTException {
 
-        addFileButton.click();
-       // addFileButton.sendKeys("C:\\Users\\muhammad.sabahat\\Desktop\\ApVideoUpload\\ApDr.mp4");
-        StringSelection ss = new StringSelection("/home/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp4");
-      // StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APvideo.mp4");
+    	builder.moveToElement(addFileButton).click().build().perform();
+       
+        StringSelection ss = new StringSelection("/home/testadmin/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp4");
+      //StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APvideo.mp4");
        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
         //imitate mouse events like ENTER, CTRL+C, CTRL+V
@@ -97,18 +98,17 @@ public class AddVideoContentPage extends TestBase {
         robot.setAutoDelay(1000);
         robot.keyPress(KeyEvent.VK_CONTROL);
         robot.keyPress(KeyEvent.VK_V);
-        robot.setAutoDelay(1000);
         robot.keyRelease(KeyEvent.VK_CONTROL);
         robot.keyRelease(KeyEvent.VK_K);
         robot.keyPress(KeyEvent.VK_ENTER);
-        robot.setAutoDelay(1000);
+        robot.setAutoDelay(5000);
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
-        robot.setAutoDelay(1000);
+        robot.setAutoDelay(5000);
     }
 
     public void addBodyForVideo(String body) throws InterruptedException{
-    	Thread.sleep(3000);
+    	Thread.sleep(10000);
         js.executeScript("arguments[0].scrollIntoView(true);",bodyInputField);
         bodyInputField.sendKeys(body);
     }	
@@ -118,8 +118,8 @@ public class AddVideoContentPage extends TestBase {
 	  wait.until(ExpectedConditions.visibilityOf(removeBtn));
 	  }
 	 
-     public void clickOnSaveButton() {
-
+     public void clickOnSaveButton() throws InterruptedException {
+    	 Thread.sleep(5000);
         saveBtn.click();
     }
 

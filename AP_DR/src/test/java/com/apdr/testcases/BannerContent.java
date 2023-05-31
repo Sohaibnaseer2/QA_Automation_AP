@@ -63,7 +63,7 @@ public class BannerContent extends TestBase {
     @Description("Admin will click on the save button ")
     @Feature("Add video content")
     @Story("As a Admin I need to click on the save button of Banner page.")
-    public void clickOnSaveButton() {
+    public void click_On_Save_Button() throws InterruptedException {
 		 
         addcontentobj.clickOnSaveButton();
     }
