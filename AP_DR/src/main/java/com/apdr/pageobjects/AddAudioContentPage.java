@@ -80,7 +80,7 @@ public class AddAudioContentPage extends TestBase {
     	//chooseFileBtn.click();
     	Thread.sleep(2000);
     	//chooseFileBtn.sendKeys("C:\\Users\\sohaib.naseer\\Desktop\\APaudio.mp3");
-    	chooseFileBtn.sendKeys("/home/Umair/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
+    	chooseFileBtn.sendKeys("/home/testadmin/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
 		/*
 		 * builder.moveToElement(chooseFileBtn).click().build().perform();
 		 * //StringSelection ss = new StringSelection(
