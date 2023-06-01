@@ -50,13 +50,17 @@ public class TestBase {
 			/*
 			 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
 			 */
- 
-			 
 			
 			  ChromeOptions options = new ChromeOptions();
-			  options.addArguments("--Headless=new"); driver = new ChromeDriver(options);
+			 // options.addArguments("--Headless=new");
+			  
+			  options.addArguments("--Headless=new");
+			  options.addArguments("--no-sandbox");
+			  options.addArguments("--disable-gpu");
+			  driver = new ChromeDriver(options);
 			 
-			// options.setHeadless(true);
+			 
+			//options.setHeadless(true);
 			/*
 			 * options.addArguments("--disable-gpu");
 			 * options.addArguments("--window-size=800,600");

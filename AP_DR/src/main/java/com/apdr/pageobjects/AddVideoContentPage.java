@@ -87,25 +87,25 @@ public class AddVideoContentPage extends TestBase {
     public void addVideoFileFromLocalRepository() throws AWTException {
 
     	builder.moveToElement(addFileButton).click().build().perform();
-       
+    	addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\Desktop\\APvideo.mp4");
+    	
+    	
+    	
        // StringSelection ss = new StringSelection("/home/testadmin/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp4");
-      StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APvideo.mp4");
-       Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-
-        //imitate mouse events like ENTER, CTRL+C, CTRL+V
-
-        Robot robot = new Robot();
-        robot.setAutoDelay(1000);
-        robot.keyPress(KeyEvent.VK_CONTROL);
-        robot.keyPress(KeyEvent.VK_V);
-        robot.keyRelease(KeyEvent.VK_CONTROL);
-        robot.keyRelease(KeyEvent.VK_K);
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.setAutoDelay(5000);
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
-        robot.setAutoDelay(5000);
-    }
+		/*
+		 * StringSelection ss = new
+		 * StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APvideo.mp4");
+		 * Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+		 * 
+		 * //imitate mouse events like ENTER, CTRL+C, CTRL+V
+		 * 
+		 * Robot robot = new Robot(); robot.setAutoDelay(1000);
+		 * robot.keyPress(KeyEvent.VK_CONTROL); robot.keyPress(KeyEvent.VK_V);
+		 * robot.keyRelease(KeyEvent.VK_CONTROL); robot.keyRelease(KeyEvent.VK_K);
+		 * robot.keyPress(KeyEvent.VK_ENTER); robot.setAutoDelay(5000);
+		 * robot.keyPress(KeyEvent.VK_ENTER); robot.keyRelease(KeyEvent.VK_ENTER);
+		 * robot.setAutoDelay(5000);
+		 */    }
 
     public void addBodyForVideo(String body) throws InterruptedException{
     	Thread.sleep(10000);
