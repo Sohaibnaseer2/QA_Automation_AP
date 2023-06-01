@@ -88,8 +88,8 @@ public class AddVideoContentPage extends TestBase {
 
     	builder.moveToElement(addFileButton).click().build().perform();
        
-        StringSelection ss = new StringSelection("/home/testadmin/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp4");
-      //StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APvideo.mp4");
+       // StringSelection ss = new StringSelection("/home/testadmin/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp4");
+      StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APvideo.mp4");
        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
         //imitate mouse events like ENTER, CTRL+C, CTRL+V

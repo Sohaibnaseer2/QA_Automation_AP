@@ -74,7 +74,7 @@ public class AddAudioContent extends TestBase {
     @Description("Admin will select Audio file from local repo and will upload to APDR ")
     @Feature("Add Audio content")
     @Story("As a Admin I need to upload a Audio file")
-    public void addVideoFile() throws AWTException {
+    public void addVideoFile() throws AWTException, InterruptedException {
       addAudioContentObj.add_Audio_file();
     }
 

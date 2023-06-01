@@ -1,65 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="8" passed="7" failed="0" skipped="0">
+<testng-results ignored="1" total="7" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-31T18:09:31 PKT" name="Suite" finished-at="2023-05-31T18:10:34 PKT" duration-ms="62696">
+  <suite started-at="2023-06-01T18:07:34 PKT" name="Suite" finished-at="2023-06-01T18:08:17 PKT" duration-ms="42510">
     <groups>
     </groups>
-    <test started-at="2023-05-31T18:09:31 PKT" name="Regression Test Suite " finished-at="2023-05-31T18:10:34 PKT" duration-ms="62696">
-      <class name="com.apdr.testcases.AddVideoContent">
-        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddVideoContent@36328d33]" started-at="2023-05-31T18:09:37 PKT" name="addContentInitialization" finished-at="2023-05-31T18:09:37 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="40" status="PASS">
+    <test started-at="2023-06-01T18:07:34 PKT" name="Regression Test Suite " finished-at="2023-06-01T18:08:17 PKT" duration-ms="42510">
+      <class name="com.apdr.testcases.AddAudioContent">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddAudioContent@545b995e]" started-at="2023-06-01T18:07:42 PKT" name="addContentInitialization" finished-at="2023-06-01T18:07:42 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddVideoContent@36328d33]" started-at="2023-05-31T18:09:49 PKT" name="hover_Over_Content_Button" finished-at="2023-05-31T18:09:50 PKT" duration-ms="1363" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddAudioContent@545b995e]" started-at="2023-06-01T18:07:56 PKT" name="hover_Over_Content_Button" finished-at="2023-06-01T18:07:58 PKT" duration-ms="1522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddVideoContent@36328d33]" started-at="2023-05-31T18:09:50 PKT" name="addVideoContent" finished-at="2023-05-31T18:09:53 PKT" duration-ms="3207" status="PASS">
+        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddAudioContent@545b995e]" started-at="2023-06-01T18:07:58 PKT" name="addVideoContent" finished-at="2023-06-01T18:08:00 PKT" duration-ms="2780" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVideoContent -->
-        <test-method signature="add_Slug_Headline_Source_For_Video(java.lang.String)[pri:3, instance:com.apdr.testcases.AddVideoContent@36328d33]" started-at="2023-05-31T18:09:53 PKT" name="add_Slug_Headline_Source_For_Video" data-provider="videoDataProvider" finished-at="2023-05-31T18:09:54 PKT" duration-ms="253" status="PASS">
+        <test-method signature="add_Slug_Speaker_Intro_For_Audio(java.lang.String)[pri:3, instance:com.apdr.testcases.AddAudioContent@545b995e]" started-at="2023-06-01T18:08:00 PKT" name="add_Slug_Speaker_Intro_For_Audio" data-provider="audioDataProvider" finished-at="2023-06-01T18:08:01 PKT" duration-ms="347" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.]]>
+                <![CDATA[Audio upload through upgraded Automation testing script,Audionic,Audionic is the #1 Audio Brand in Pakistan.]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add_Slug_Headline_Source_For_Video -->
-        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddVideoContent@36328d33]" started-at="2023-05-31T18:09:54 PKT" name="addVideoFile" finished-at="2023-05-31T18:10:09 PKT" duration-ms="15299" status="PASS">
+        </test-method> <!-- add_Slug_Speaker_Intro_For_Audio -->
+        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddAudioContent@545b995e]" started-at="2023-06-01T18:08:01 PKT" name="addVideoFile" finished-at="2023-06-01T18:08:03 PKT" duration-ms="2234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVideoFile -->
-        <test-method signature="add_Body_For_Video(java.lang.String)[pri:5, instance:com.apdr.testcases.AddVideoContent@36328d33]" started-at="2023-05-31T18:10:09 PKT" name="add_Body_For_Video" data-provider="videoDataProvider" finished-at="2023-05-31T18:10:19 PKT" duration-ms="10135" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Video upload through upgraded Automation testing script,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_Body_For_Video -->
-        <test-method signature="clickOnSaveButton()[pri:6, instance:com.apdr.testcases.AddVideoContent@36328d33]" started-at="2023-05-31T18:10:19 PKT" name="clickOnSaveButton" finished-at="2023-05-31T18:10:33 PKT" duration-ms="14422" status="PASS">
+        <test-method signature="clickOnSaveButton()[pri:5, instance:com.apdr.testcases.AddAudioContent@545b995e]" started-at="2023-06-01T18:08:03 PKT" name="clickOnSaveButton" finished-at="2023-06-01T18:08:17 PKT" duration-ms="13639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSaveButton -->
-      </class> <!-- com.apdr.testcases.AddVideoContent -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.AddAudioContent@545b995e]" started-at="2023-06-01T18:08:17 PKT" name="teardown" finished-at="2023-06-01T18:08:17 PKT" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.apdr.testcases.AddAudioContent -->
       <class name="com.apdr.testcases.LogInTestCases">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@63fbfaeb]" started-at="2023-05-31T18:09:31 PKT" name="initialization" finished-at="2023-05-31T18:09:37 PKT" duration-ms="5934" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@e57b96d]" started-at="2023-06-01T18:07:34 PKT" name="initialization" finished-at="2023-06-01T18:07:42 PKT" duration-ms="7501" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@63fbfaeb]" started-at="2023-05-31T18:09:37 PKT" name="loginIntialization" finished-at="2023-05-31T18:09:37 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@e57b96d]" started-at="2023-06-01T18:07:42 PKT" name="loginIntialization" finished-at="2023-06-01T18:07:42 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntialization -->
-        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@63fbfaeb]" started-at="2023-05-31T18:09:37 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-05-31T18:09:49 PKT" duration-ms="11648" status="PASS">
+        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@e57b96d]" started-at="2023-06-01T18:07:42 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-06-01T18:07:56 PKT" duration-ms="14122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApDr -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.LogInTestCases@63fbfaeb]" started-at="2023-05-31T18:10:33 PKT" name="teardown" finished-at="2023-05-31T18:10:34 PKT" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.LogInTestCases@e57b96d]" started-at="2023-06-01T18:08:17 PKT" name="teardown" finished-at="2023-06-01T18:08:17 PKT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

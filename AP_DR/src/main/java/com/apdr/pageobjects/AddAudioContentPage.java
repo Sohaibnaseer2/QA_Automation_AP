@@ -25,7 +25,7 @@ public class AddAudioContentPage extends TestBase {
     @FindBy(linkText  = "Add Content") 
 	 WebElement contentBtn;
     
-    //Audio link locaotr
+    //Audio link locator
     @FindBy(linkText = "Audio")
     WebElement audioBtn;
 
@@ -42,7 +42,7 @@ public class AddAudioContentPage extends TestBase {
     WebElement introInputField;
 
     //choose file button locator
-    @FindBy(id = "edit-field-audio-file-0-upload")
+    @FindBy(xpath = "//input[@id='edit-field-audio-file-0-upload']")
     WebElement chooseFileBtn;
 
     //Remove button locator
@@ -75,28 +75,30 @@ public class AddAudioContentPage extends TestBase {
         introInputField.sendKeys(_intro);
     }
 
-    public void add_Audio_file() throws AWTException {
-
-		  builder.moveToElement(chooseFileBtn).click().build().perform();
-		  StringSelection ss = new StringSelection("/home/testadmin/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
-		  //StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APaudio.mp3");
-		  Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-		  
-		  
-		  //imitate mouse events like ENTER, CTRL+C, CTRL+V
-		  
-		  Robot robot = new Robot(); 
-		  robot.setAutoDelay(500);
-		  robot.keyPress(KeyEvent.VK_CONTROL); 
-		  robot.keyPress(KeyEvent.VK_V);
-		  robot.keyRelease(KeyEvent.VK_CONTROL);
-		  robot.keyRelease(KeyEvent.VK_K);
-		  robot.keyPress(KeyEvent.VK_ENTER);
-		  robot.setAutoDelay(500);
-		  robot.keyPress(KeyEvent.VK_ENTER); 
-		  robot.keyRelease(KeyEvent.VK_ENTER);
-		 
-    }
+    public void add_Audio_file() throws AWTException, InterruptedException {
+    	builder.moveToElement(chooseFileBtn).click().build().perform();
+    	//chooseFileBtn.click();
+    	Thread.sleep(2000);
+    	//chooseFileBtn.sendKeys("C:\\Users\\sohaib.naseer\\Desktop\\APaudio.mp3");
+    	chooseFileBtn.sendKeys("/home/Umair/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
+		/*
+		 * builder.moveToElement(chooseFileBtn).click().build().perform();
+		 * //StringSelection ss = new StringSelection(
+		 * "/home/testadmin/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
+		 * StringSelection ss = new
+		 * StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APaudio.mp3");
+		 * Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+		 * 
+		 * 
+		 * //imitate mouse events like ENTER, CTRL+C, CTRL+V
+		 * 
+		 * Robot robot = new Robot(); robot.setAutoDelay(500);
+		 * robot.keyPress(KeyEvent.VK_CONTROL); robot.keyPress(KeyEvent.VK_V);
+		 * robot.keyRelease(KeyEvent.VK_CONTROL); robot.keyRelease(KeyEvent.VK_K);
+		 * robot.keyPress(KeyEvent.VK_ENTER); robot.setAutoDelay(500);
+		 * robot.keyPress(KeyEvent.VK_ENTER); robot.keyRelease(KeyEvent.VK_ENTER);
+		 * 
+		 */    }
 
     public void viewAudioRemoveButton(){
         wait.until(ExpectedConditions.visibilityOf(removeBtn));
