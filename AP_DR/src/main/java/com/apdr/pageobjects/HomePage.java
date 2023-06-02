@@ -39,14 +39,15 @@ public class HomePage extends TestBase {
 	// content button locator
 
 	
-	  @FindBy(linkText = "Add Content")
-	  WebElement contentBtn;
+	/*
+	 * @FindBy(linkText = "Add Content") WebElement contentBtn;
+	 */
 	 
 	  
-	/*
-	 * @FindBy(xpath = "//a[normalize-space()='Add Content']") WebElement
-	 * contentBtn;
-	 */
+	
+	  @FindBy(xpath = "//a[normalize-space()='Add Content']") WebElement
+	  contentBtn;
+	 
 	  
 	
 
@@ -106,8 +107,10 @@ public class HomePage extends TestBase {
 	 */
 
 	public void hoverOnContentButton() throws InterruptedException {
-		wait.until(ExpectedConditions.visibilityOf(contentBtn));
+		
+		wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
 		builder.moveToElement(contentBtn).build().perform();
+		//contentBtn.click();
 		contentBtn.click();
 	}
 

@@ -21,9 +21,9 @@ public class AddAudioContentPage extends TestBase {
     }
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
     Actions builder = new Actions(driver);
-
-    @FindBy(linkText  = "Add Content") 
-	 WebElement contentBtn;
+	/*
+	 * @FindBy(linkText = "Add Content") WebElement contentBtn;
+	 */
     
     //Audio link locator
     @FindBy(linkText = "Audio")

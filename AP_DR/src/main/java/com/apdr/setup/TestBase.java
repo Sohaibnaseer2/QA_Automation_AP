@@ -52,15 +52,21 @@ public class TestBase {
 			 */
 			
 			  ChromeOptions options = new ChromeOptions();
-			 // options.addArguments("--Headless=new");
+				
+				  options.addArguments("headless");
+				  options.addArguments("window-size=1200,1100");
+				 
+			    driver = new ChromeDriver(options);
 			  
-			  options.addArguments("--Headless=new");
-			  options.addArguments("--no-sandbox");
-			  options.addArguments("--disable-gpu");
-			  driver = new ChromeDriver(options);
+			  
+				/*
+				 * options.addArguments("--Headless=new"); options.addArguments("--no-sandbox");
+				 * options.addArguments("--disable-gpu"); driver = new ChromeDriver(options);
+				 */
 			 
-			 
-			//options.setHeadless(true);
+				/*
+				 * options.setHeadless(true); driver = new ChromeDriver(options);
+				 */
 			/*
 			 * options.addArguments("--disable-gpu");
 			 * options.addArguments("--window-size=800,600");
@@ -70,6 +76,8 @@ public class TestBase {
 		}
 
 		//driver.manage().window().maximize();
+		driver.manage().window().setSize(new Dimension(1200,1100));
+
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtils.IMPLICIT_WAIT));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(WaitUtils.PAGE_LOAD_TIMEOUT));
@@ -80,12 +88,12 @@ public class TestBase {
 		// TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 
-		/*
-		 * Dimension currentDimension = driver. manage(). window(). getSize(); int
-		 * height = currentDimension. getHeight(); int width = currentDimension.
-		 * getWidth(); System. out. println("Current height: "+ height); System. out.
-		 * println("Current width: "+width);
-		 */
+		
+		  Dimension currentDimension = driver. manage(). window(). getSize(); int
+		  height = currentDimension. getHeight(); int width = currentDimension.
+		  getWidth(); System. out. println("Current height: "+ height); System. out.
+		  println("Current width: "+width);
+		 
 	}
 
 	public static WebDriver getDriver() {

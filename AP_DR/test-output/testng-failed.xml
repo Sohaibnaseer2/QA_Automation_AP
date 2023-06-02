@@ -8,26 +8,18 @@
     <classes>
       <class name="com.apdr.testcases.NewsAlertContent">
         <methods>
-          <include name="addVideoContent"/>
+          <include name="addVideoContent" invocation-numbers="0"/>
           <include name="initialization"/>
-          <include name="add_DateLine_For_News_Alert"/>
+          <include name="add_DateLine_For_News_Alert" invocation-numbers="0"/>
           <include name="click_Save_Button"/>
-          <include name="add_EdsNote_For_News_Alert"/>
-          <include name="add_News_Alert_Slug"/>
+          <include name="add_EdsNote_For_News_Alert" invocation-numbers="0"/>
+          <include name="add_News_Alert_Slug" invocation-numbers="0"/>
           <include name="select_News_Alert_Category"/>
-          <include name="add__Alert_News"/>
+          <include name="add__Alert_News" invocation-numbers="0"/>
           <include name="addNewsAlertContentInitialization"/>
           <include name="hover_Over_Content_Button"/>
         </methods>
       </class> <!-- com.apdr.testcases.NewsAlertContent -->
-      <class name="com.apdr.testcases.LogInTestCases">
-        <methods>
-          <include name="loginToApDr"/>
-          <include name="initialization"/>
-          <include name="loginIntialization"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.apdr.testcases.LogInTestCases -->
     </classes>
   </test> <!-- Regression Test Suite (failed) -->
 </suite> <!-- Failed suite [Suite] -->
