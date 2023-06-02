@@ -47,31 +47,13 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 
-			/*
-			 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
-			 */
-			
-			  ChromeOptions options = new ChromeOptions();
+			  	ChromeOptions options = new ChromeOptions();
+
 				
 				  options.addArguments("headless");
 				  options.addArguments("window-size=1200,1100");
 				 
-			    driver = new ChromeDriver(options);
-			  
-			  
-				/*
-				 * options.addArguments("--Headless=new"); options.addArguments("--no-sandbox");
-				 * options.addArguments("--disable-gpu"); driver = new ChromeDriver(options);
-				 */
-			 
-				/*
-				 * options.setHeadless(true); driver = new ChromeDriver(options);
-				 */
-			/*
-			 * options.addArguments("--disable-gpu");
-			 * options.addArguments("--window-size=800,600");
-			 * options.addArguments("--allow-insecure-localhost");
-			 */
+				  driver = new ChromeDriver(options);
 
 		}
 
@@ -82,18 +64,8 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtils.IMPLICIT_WAIT));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(WaitUtils.PAGE_LOAD_TIMEOUT));
 
-		// driver.manage().timeouts().pageLoadTimeout(WaitUtils.PAGE_LOAD_TIMEOUT,
-		// TimeUnit.SECONDS);
-		// driver.manage().timeouts().implicitlyWait(WaitUtils.IMPLICIT_WAIT,
-		// TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
-
-		
-		  Dimension currentDimension = driver. manage(). window(). getSize(); int
-		  height = currentDimension. getHeight(); int width = currentDimension.
-		  getWidth(); System. out. println("Current height: "+ height); System. out.
-		  println("Current width: "+width);
-		 
+ 
 	}
 
 	public static WebDriver getDriver() {

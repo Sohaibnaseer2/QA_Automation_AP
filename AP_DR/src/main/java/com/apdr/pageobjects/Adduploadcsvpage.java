@@ -40,21 +40,10 @@ public class Adduploadcsvpage extends TestBase {
 	
     public void FileClickable() throws AWTException {
     	builder.moveToElement(selecfileBtn).click().build().perform();
-        StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\TEstUserfile.csv");
-        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-
-      //imitate mouse events like ENTER, CTRL+C, CTRL+V
-
-        Robot robot = new Robot();
-        robot.setAutoDelay(500);
-        robot.keyPress(KeyEvent.VK_CONTROL);
-        robot.keyPress(KeyEvent.VK_V);
-        robot.keyRelease(KeyEvent.VK_CONTROL);
-        robot.keyRelease(KeyEvent.VK_K);
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.setAutoDelay(500);
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
+    	selecfileBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/TEstUserfile.csv");
+    	//selecfileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\TEstUserfile.csv");
+    	
+    	
     }
     	
 	}

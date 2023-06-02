@@ -38,26 +38,9 @@ public class HomePage extends TestBase {
 
 	// content button locator
 
-	
-	/*
-	 * @FindBy(linkText = "Add Content") WebElement contentBtn;
-	 */
-	 
-	  
-	
-	  @FindBy(xpath = "//a[normalize-space()='Add Content']") WebElement
-	  contentBtn;
-	 
-	  
-	
-
-	
-	/*
-	 * @FindBy(css = "a.toolbar-icon.toolbar-icon-system-admin-content") WebElement
-	 * contentBtn;
-	 */
-	  
-	 
+	@FindBy(xpath = "//a[normalize-space()='Add Content']") 
+	WebElement contentBtn;
+	 	 
 	// add role button locator
 	@FindBy(css = "a.button.button-action.button--primary.button--small")
 	WebElement addroleBtn;
@@ -84,49 +67,12 @@ public class HomePage extends TestBase {
 		return profileIcon;
 	}
 
-	/*
-	 * public void hoverOnPeopleButton() throws InterruptedException {
-	 * builder.moveToElement(AddUserBtn).perform(); }
-	 */
-	/*
-	 * List<WebElement> list = driver.findElements(By.linkText("Add User"));
-	 * 
-	 * 
-	 * wait.until(ExpectedConditions.elementToBeClickable(AddUserBtn));
-	 * AddUserBtn.click();}
-	 */
-
-	/*
-	 * List<WebElement> list =
-	 * driver.findElements(By.xpath("(//a[@href='/admin/people/create'])[2]"));
-	 * 
-	 * System.out.println(list.size()); for (int i = 0; i < list.size(); i++) {
-	 * System.out.println(list.get(i).getText()); if
-	 * (list.get(i).getText().contains("Add user")) { list.get(i).click(); break; }
-	 * } }
-	 */
-
 	public void hoverOnContentButton() throws InterruptedException {
 		
 		wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
 		builder.moveToElement(contentBtn).build().perform();
-		//contentBtn.click();
 		contentBtn.click();
 	}
-
-	
-	/*
-	 * List<WebElement> list = driver.findElements(By.linkText("Add Content")); //
-	 * wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
-	 * 
-	 * // List<WebElement> list =
-	 * driver.findElements(By.xpath("//div[1]/ul/li[2]/ul/li"));
-	 * 
-	 * System.out.println(list.size()); for (int i = 0; i < list.size(); i++) {
-	 * System.out.println(list.get(i).getText());
-	 * if(list.get(i).getText().equalsIgnoreCase("Add Content")) {
-	 * contentBtn.click(); break; } } }
-	 */
 
 	public void clickOnAddRoleButton() {
 		wait.until(ExpectedConditions.elementToBeClickable(addroleBtn));
@@ -158,10 +104,7 @@ public class HomePage extends TestBase {
 
 		wait.until(ExpectedConditions.elementToBeClickable(AddUserBtn));
 		AddUserBtn.click();
-		/*
-		 * wait.until(ExpectedConditions.visibilityOf(AddUserBtn));
-		 * builder.moveToElement(AddUserBtn).perform();
-		 */
+		
 	}
 
 }

@@ -21,9 +21,7 @@ public class AddAudioContentPage extends TestBase {
     }
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
     Actions builder = new Actions(driver);
-	/*
-	 * @FindBy(linkText = "Add Content") WebElement contentBtn;
-	 */
+	
     
     //Audio link locator
     @FindBy(linkText = "Audio")
@@ -53,14 +51,6 @@ public class AddAudioContentPage extends TestBase {
     @FindBy(id = "edit-submit")
     WebElement saveBtn;
 
-	/*
-	 * public void hoverOnContentButton() throws InterruptedException {
-	 * wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
-	 * //builder.moveToElement(contentBtn).build().perform(); contentBtn.click();
-	 * 
-	 * }
-	 */
-    
     public String clickOnAudioButton(){
         wait.until(ExpectedConditions.elementToBeClickable(audioBtn));
         audioBtn.click();
@@ -75,30 +65,14 @@ public class AddAudioContentPage extends TestBase {
         introInputField.sendKeys(_intro);
     }
 
-    public void add_Audio_file() throws AWTException, InterruptedException {
+    public void add_Audio_file() throws AWTException, InterruptedException{
     	builder.moveToElement(chooseFileBtn).click().build().perform();
     	//chooseFileBtn.click();
+
+    	chooseFileBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
+    	//chooseFileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APaudio.mp3");
     	Thread.sleep(2000);
-    	//chooseFileBtn.sendKeys("C:\\Users\\sohaib.naseer\\Desktop\\APaudio.mp3");
-    	chooseFileBtn.sendKeys("/home/testadmin/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
-		/*
-		 * builder.moveToElement(chooseFileBtn).click().build().perform();
-		 * //StringSelection ss = new StringSelection(
-		 * "/home/testadmin/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
-		 * StringSelection ss = new
-		 * StringSelection("C:\\Users\\sohaib.naseer\\Desktop\\APaudio.mp3");
-		 * Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-		 * 
-		 * 
-		 * //imitate mouse events like ENTER, CTRL+C, CTRL+V
-		 * 
-		 * Robot robot = new Robot(); robot.setAutoDelay(500);
-		 * robot.keyPress(KeyEvent.VK_CONTROL); robot.keyPress(KeyEvent.VK_V);
-		 * robot.keyRelease(KeyEvent.VK_CONTROL); robot.keyRelease(KeyEvent.VK_K);
-		 * robot.keyPress(KeyEvent.VK_ENTER); robot.setAutoDelay(500);
-		 * robot.keyPress(KeyEvent.VK_ENTER); robot.keyRelease(KeyEvent.VK_ENTER);
-		 * 
-		 */    }
+		    }
 
     public void viewAudioRemoveButton(){
         wait.until(ExpectedConditions.visibilityOf(removeBtn));
