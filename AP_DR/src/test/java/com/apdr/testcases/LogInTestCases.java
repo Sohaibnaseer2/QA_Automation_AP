@@ -45,10 +45,9 @@ public class LogInTestCases extends TestBase {
   }
 
   
-  @AfterTest
-  public void teardown() {
-	  driver.quit();
-  }
+	/*
+	 * @AfterTest public void teardown() { driver.quit(); }
+	 */
   
   
 }

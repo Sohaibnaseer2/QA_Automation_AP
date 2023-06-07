@@ -61,6 +61,11 @@ public class HomePage extends TestBase {
 	@FindBy(css = "div.messages.messages--status")
 	WebElement addRoleSuccessMessage;
 
+	/// click on Content Listing
+	@FindBy(xpath = "//a[normalize-space()='Content Listing']")
+	WebElement contentlisting;
+	
+	
 	public boolean is_User_Profile_Is_Displayed_On_Home_Page() {
 		wait.until(ExpectedConditions.visibilityOf(userProfile));
 		boolean profileIcon = userProfile.isDisplayed();
@@ -107,4 +112,10 @@ public class HomePage extends TestBase {
 		
 	}
 
+   public void hoverOnContentListingButton() throws InterruptedException {		
+		wait.until(ExpectedConditions.elementToBeClickable(contentlisting));
+		builder.moveToElement(contentlisting).build().perform();
+		contentlisting.click();
+	}
+	
 }

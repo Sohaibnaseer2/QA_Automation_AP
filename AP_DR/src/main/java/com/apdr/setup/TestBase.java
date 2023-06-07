@@ -47,13 +47,14 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 
+			/*
+			 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
+			 */
+			
 			  	ChromeOptions options = new ChromeOptions();
-
-				
-				  options.addArguments("headless");
-				  options.addArguments("window-size=1200,1100");
-				 
-				  driver = new ChromeDriver(options);
+			  	options.addArguments("headless");
+				 options.addArguments("window-size=1200,1100");
+				 driver = new ChromeDriver(options);
 
 		}
 

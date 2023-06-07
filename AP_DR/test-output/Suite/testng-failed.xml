@@ -6,14 +6,13 @@
   </listeners>
   <test thread-count="5" name="Regression Test Suite (failed)">
     <classes>
-      <class name="com.apdr.testcases.AddPhotoContent">
+      <class name="com.apdr.testcases.Deletecontent">
         <methods>
+          <include name="DeletecontentInitialization"/>
           <include name="initialization"/>
-          <include name="addPhotoContent" invocation-numbers="0"/>
-          <include name="teardown"/>
-          <include name="addContentInitialization"/>
+          <include name="Select_Value_From_Content_Type"/>
         </methods>
-      </class> <!-- com.apdr.testcases.AddPhotoContent -->
+      </class> <!-- com.apdr.testcases.Deletecontent -->
     </classes>
   </test> <!-- Regression Test Suite (failed) -->
 </suite> <!-- Failed suite [Suite] -->
