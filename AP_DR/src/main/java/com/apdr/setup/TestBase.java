@@ -47,19 +47,20 @@ public class TestBase {
 	@BeforeTest
 	public void initialization() {
 		String browserName = prop.getProperty("browser");
-		if (browserName.equals("Firefox")) {
+		if (browserName.equals("chrome")) {
 
-			/*
-			 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
-			 */
+			
+			  //WebDriverManager.chromedriver().setup(); 
+			  //driver = new ChromeDriver();
+			  
+			 
 			
 			
 			  ChromeOptions options = new ChromeOptions();
-			  options.addArguments("headless");
+			  options.addArguments("--headless");
 			  options.addArguments("--no-sandbox");
 			  options.addArguments("window-size=1200,1100"); 
-			  driver = new
-			  ChromeDriver(options);
+			  driver = new ChromeDriver(options);
 			 
 
 			/*
