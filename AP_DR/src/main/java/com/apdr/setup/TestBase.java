@@ -8,6 +8,8 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -45,17 +47,25 @@ public class TestBase {
 	@BeforeTest
 	public void initialization() {
 		String browserName = prop.getProperty("browser");
-		if (browserName.equals("chrome")) {
+		if (browserName.equals("Firefox")) {
 
 			/*
 			 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
 			 */
 			
-			  	ChromeOptions options = new ChromeOptions();
-			  	options.addArguments("headless");
-				 options.addArguments("window-size=1200,1100");
-				 driver = new ChromeDriver(options);
+			/*
+			 * ChromeOptions options = new ChromeOptions();
+			 * options.addArguments("headless");
+			 * options.addArguments("window-size=1200,1100"); driver = new
+			 * ChromeDriver(options);
+			 */
 
+				 FirefoxOptions options1 = new FirefoxOptions();
+				 options1.addArguments("--headless");
+				 options1.addArguments("window-size=1200,1100");
+				 driver = new FirefoxDriver(options1);
+				 
+				 
 		}
 
 		//driver.manage().window().maximize();
