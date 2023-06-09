@@ -6,44 +6,21 @@
   </listeners>
   <test thread-count="5" name="Regression Test Suite (failed)">
     <classes>
-      <class name="com.apdr.testcases.AddNewsStoryContent">
+      <class name="com.apdr.testcases.AddPhotoContent">
         <methods>
-          <include name="clickOnSaveButton"/>
-          <include name="addNewsStoryContentInitialization"/>
-          <include name="addheadLineForNewStory"/>
-          <include name="clickOnNewsStoryLink"/>
+          <include name="addPhotoContent" invocation-numbers="0"/>
           <include name="initialization"/>
-          <include name="addByLineAndByTitleForNewStory"/>
-          <include name="addbodyForNewStory"/>
-          <include name="adddateLineForNewStory"/>
-          <include name="addSlugForNewStory"/>
-          <include name="hover_Over_Content_Button"/>
-          <include name="selectNewsStoryCategory"/>
-          <include name="addsummaryForNewStory"/>
-          <include name="addEdsNoteForNewStory"/>
+          <include name="teardown"/>
+          <include name="addContentInitialization"/>
         </methods>
-      </class> <!-- com.apdr.testcases.AddNewsStoryContent -->
-      <class name="com.apdr.testcases.NewsAlertContent">
+      </class> <!-- com.apdr.testcases.AddPhotoContent -->
+      <class name="com.apdr.testcases.Adduploadcsvcontent">
         <methods>
-          <include name="addVideoContent"/>
-          <include name="add_DateLine_For_News_Alert"/>
           <include name="initialization"/>
-          <include name="click_Save_Button"/>
-          <include name="add_EdsNote_For_News_Alert"/>
-          <include name="select_News_Alert_Category"/>
-          <include name="add_News_Alert_Slug"/>
-          <include name="add__Alert_News"/>
-          <include name="addNewsAlertContentInitialization"/>
-          <include name="hover_Over_Content_Button"/>
+          <include name="addFiletest"/>
+          <include name="addContentInitialization"/>
         </methods>
-      </class> <!-- com.apdr.testcases.NewsAlertContent -->
-      <class name="com.apdr.testcases.LogInTestCases">
-        <methods>
-          <include name="loginToApDr"/>
-          <include name="loginIntialization"/>
-          <include name="initialization"/>
-        </methods>
-      </class> <!-- com.apdr.testcases.LogInTestCases -->
+      </class> <!-- com.apdr.testcases.Adduploadcsvcontent -->
     </classes>
   </test> <!-- Regression Test Suite (failed) -->
 </suite> <!-- Failed suite [Suite] -->

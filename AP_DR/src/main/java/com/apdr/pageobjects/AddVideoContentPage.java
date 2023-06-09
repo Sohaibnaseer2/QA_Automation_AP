@@ -87,8 +87,8 @@ public class AddVideoContentPage extends TestBase {
     public void addVideoFileFromLocalRepository() throws AWTException {
 
     	builder.moveToElement(addFileButton).click().build().perform();
-    	addFileButton.sendKeys("/home/testadmin/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp");
-    	//addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\Desktop\\APvideo.mp4");
+    	addFileButton.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp");
+    	//addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APvideo.mp4");
     	
 
         }

@@ -1,120 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="22" passed="20" failed="0" skipped="0">
+<testng-results ignored="5" total="41" passed="36" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-08T15:51:31 PKT" name="Suite" finished-at="2023-06-08T15:52:07 PKT" duration-ms="35923">
+  <suite started-at="2023-06-09T18:37:09 PKT" name="Suite" finished-at="2023-06-09T18:38:17 PKT" duration-ms="68007">
     <groups>
     </groups>
-    <test started-at="2023-06-08T15:51:31 PKT" name="Regression Test Suite " finished-at="2023-06-08T15:52:07 PKT" duration-ms="35923">
-      <class name="com.apdr.testcases.AddNewsStoryContent">
-        <test-method is-config="true" signature="addNewsStoryContentInitialization()[pri:0, instance:com.apdr.testcases.AddNewsStoryContent@49964d75]" started-at="2023-06-08T15:51:43 PKT" name="addNewsStoryContentInitialization" finished-at="2023-06-08T15:51:43 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="24" status="PASS">
+    <test started-at="2023-06-09T18:37:09 PKT" name="Regression Test Suite " finished-at="2023-06-09T18:38:17 PKT" duration-ms="68007">
+      <class name="com.apdr.testcases.DeleteNewsAlertContent">
+        <test-method is-config="true" signature="DeletecontentInitialization()[pri:0, instance:com.apdr.testcases.DeleteNewsAlertContent@3d3e5463]" started-at="2023-06-09T18:37:17 PKT" name="DeletecontentInitialization" finished-at="2023-06-09T18:37:17 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewsStoryContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddNewsStoryContent@49964d75]" started-at="2023-06-08T15:52:02 PKT" name="hover_Over_Content_Button" finished-at="2023-06-08T15:52:03 PKT" duration-ms="899" status="PASS">
+        </test-method> <!-- DeletecontentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.DeleteNewsAlertContent@3d3e5463]" started-at="2023-06-09T18:37:59 PKT" name="hover_Over_Content_Button" finished-at="2023-06-09T18:38:00 PKT" duration-ms="1339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="clickOnNewsStoryLink()[pri:2, instance:com.apdr.testcases.AddNewsStoryContent@49964d75]" started-at="2023-06-08T15:52:03 PKT" name="clickOnNewsStoryLink" finished-at="2023-06-08T15:52:04 PKT" duration-ms="1339" status="PASS">
+        <test-method signature="Enter_Title_For_Delete_NewsAlert_Content()[pri:2, instance:com.apdr.testcases.DeleteNewsAlertContent@3d3e5463]" started-at="2023-06-09T18:38:00 PKT" name="Enter_Title_For_Delete_NewsAlert_Content" finished-at="2023-06-09T18:38:00 PKT" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnNewsStoryLink -->
-        <test-method signature="addSlugForNewStory(java.lang.String)[pri:3, instance:com.apdr.testcases.AddNewsStoryContent@49964d75]" started-at="2023-06-08T15:52:04 PKT" name="addSlugForNewStory" data-provider="newsStoryContent" finished-at="2023-06-08T15:52:04 PKT" duration-ms="68" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Enter_Title_For_Delete_NewsAlert_Content -->
+        <test-method signature="Select_Value_From_Content_Type()[pri:3, instance:com.apdr.testcases.DeleteNewsAlertContent@3d3e5463]" started-at="2023-06-09T18:38:00 PKT" name="Select_Value_From_Content_Type" finished-at="2023-06-09T18:38:00 PKT" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addSlugForNewStory -->
-        <test-method signature="addheadLineForNewStory(java.lang.String)[pri:4, instance:com.apdr.testcases.AddNewsStoryContent@49964d75]" started-at="2023-06-08T15:52:04 PKT" name="addheadLineForNewStory" data-provider="newsStoryContent" finished-at="2023-06-08T15:52:04 PKT" duration-ms="73" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Select_Value_From_Content_Type -->
+        <test-method signature="Filter_Selection()[pri:4, instance:com.apdr.testcases.DeleteNewsAlertContent@3d3e5463]" started-at="2023-06-09T18:38:00 PKT" name="Filter_Selection" finished-at="2023-06-09T18:38:05 PKT" duration-ms="4678" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addheadLineForNewStory -->
-        <test-method signature="addsummaryForNewStory(java.lang.String)[pri:5, instance:com.apdr.testcases.AddNewsStoryContent@49964d75]" started-at="2023-06-08T15:52:04 PKT" name="addsummaryForNewStory" data-provider="newsStoryContent" finished-at="2023-06-08T15:52:04 PKT" duration-ms="47" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Filter_Selection -->
+        <test-method signature="View_Selection()[pri:5, instance:com.apdr.testcases.DeleteNewsAlertContent@3d3e5463]" started-at="2023-06-09T18:38:05 PKT" name="View_Selection" finished-at="2023-06-09T18:38:06 PKT" duration-ms="904" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addsummaryForNewStory -->
-        <test-method signature="addbodyForNewStory(java.lang.String)[pri:6, instance:com.apdr.testcases.AddNewsStoryContent@49964d75]" started-at="2023-06-08T15:52:04 PKT" name="addbodyForNewStory" data-provider="newsStoryContent" finished-at="2023-06-08T15:52:04 PKT" duration-ms="57" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- View_Selection -->
+        <test-method signature="Delete_Selection()[pri:6, instance:com.apdr.testcases.DeleteNewsAlertContent@3d3e5463]" started-at="2023-06-09T18:38:06 PKT" name="Delete_Selection" finished-at="2023-06-09T18:38:07 PKT" duration-ms="1057" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addbodyForNewStory -->
-        <test-method signature="addByLineAndByTitleForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@49964d75]" started-at="2023-06-08T15:52:04 PKT" name="addByLineAndByTitleForNewStory" data-provider="newsStoryContent" finished-at="2023-06-08T15:52:05 PKT" duration-ms="134" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Delete_Selection -->
+        <test-method signature="Banner_Deleted_Successfully()[pri:7, instance:com.apdr.testcases.DeleteNewsAlertContent@3d3e5463]" started-at="2023-06-09T18:38:07 PKT" name="Banner_Deleted_Successfully" finished-at="2023-06-09T18:38:08 PKT" duration-ms="1509" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addByLineAndByTitleForNewStory -->
-        <test-method signature="adddateLineForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@49964d75]" started-at="2023-06-08T15:52:05 PKT" name="adddateLineForNewStory" data-provider="newsStoryContent" finished-at="2023-06-08T15:52:05 PKT" duration-ms="82" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Banner_Deleted_Successfully -->
+      </class> <!-- com.apdr.testcases.DeleteNewsAlertContent -->
+      <class name="com.apdr.testcases.DeletePhotoContent">
+        <test-method is-config="true" signature="DeletecontentInitialization()[pri:0, instance:com.apdr.testcases.DeletePhotoContent@2bd08376]" started-at="2023-06-09T18:37:17 PKT" name="DeletecontentInitialization" finished-at="2023-06-09T18:37:17 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adddateLineForNewStory -->
-        <test-method signature="selectNewsStoryCategory()[pri:8, instance:com.apdr.testcases.AddNewsStoryContent@49964d75]" started-at="2023-06-08T15:52:05 PKT" name="selectNewsStoryCategory" finished-at="2023-06-08T15:52:05 PKT" duration-ms="92" status="PASS">
+        </test-method> <!-- DeletecontentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.DeletePhotoContent@2bd08376]" started-at="2023-06-09T18:37:39 PKT" name="hover_Over_Content_Button" finished-at="2023-06-09T18:37:40 PKT" duration-ms="1291" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectNewsStoryCategory -->
-        <test-method signature="addEdsNoteForNewStory(java.lang.String)[pri:9, instance:com.apdr.testcases.AddNewsStoryContent@49964d75]" started-at="2023-06-08T15:52:05 PKT" name="addEdsNoteForNewStory" data-provider="newsStoryContent" finished-at="2023-06-08T15:52:05 PKT" duration-ms="58" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[upgraded Automation Script Testing.,Monitor the web for interesting new content. ,At New Story, we're rallying the generous, the dreamers, the changemakers ,Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children,find the best stock byline photo,find the best byTitile photo,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- hover_Over_Content_Button -->
+        <test-method signature="Enter_Title_For_Delete_NewStory_Content()[pri:2, instance:com.apdr.testcases.DeletePhotoContent@2bd08376]" started-at="2023-06-09T18:37:40 PKT" name="Enter_Title_For_Delete_NewStory_Content" finished-at="2023-06-09T18:37:40 PKT" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEdsNoteForNewStory -->
-        <test-method signature="clickOnSaveButton()[pri:10, instance:com.apdr.testcases.AddNewsStoryContent@49964d75]" started-at="2023-06-08T15:52:05 PKT" name="clickOnSaveButton" finished-at="2023-06-08T15:52:07 PKT" duration-ms="1909" status="PASS">
+        </test-method> <!-- Enter_Title_For_Delete_NewStory_Content -->
+        <test-method signature="Select_Value_From_Content_Type()[pri:3, instance:com.apdr.testcases.DeletePhotoContent@2bd08376]" started-at="2023-06-09T18:37:40 PKT" name="Select_Value_From_Content_Type" finished-at="2023-06-09T18:37:41 PKT" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnSaveButton -->
-      </class> <!-- com.apdr.testcases.AddNewsStoryContent -->
+        </test-method> <!-- Select_Value_From_Content_Type -->
+        <test-method signature="Filter_Selection()[pri:4, instance:com.apdr.testcases.DeletePhotoContent@2bd08376]" started-at="2023-06-09T18:37:41 PKT" name="Filter_Selection" finished-at="2023-06-09T18:37:45 PKT" duration-ms="4199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Filter_Selection -->
+        <test-method signature="View_Selection()[pri:5, instance:com.apdr.testcases.DeletePhotoContent@2bd08376]" started-at="2023-06-09T18:37:45 PKT" name="View_Selection" finished-at="2023-06-09T18:37:46 PKT" duration-ms="1246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- View_Selection -->
+        <test-method signature="Delete_Selection()[pri:6, instance:com.apdr.testcases.DeletePhotoContent@2bd08376]" started-at="2023-06-09T18:37:46 PKT" name="Delete_Selection" finished-at="2023-06-09T18:37:47 PKT" duration-ms="1183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Delete_Selection -->
+        <test-method signature="Banner_Deleted_Successfully()[pri:7, instance:com.apdr.testcases.DeletePhotoContent@2bd08376]" started-at="2023-06-09T18:37:47 PKT" name="Banner_Deleted_Successfully" finished-at="2023-06-09T18:37:49 PKT" duration-ms="1562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Banner_Deleted_Successfully -->
+      </class> <!-- com.apdr.testcases.DeletePhotoContent -->
       <class name="com.apdr.testcases.LogInTestCases">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@3f9342d4]" started-at="2023-06-08T15:51:31 PKT" name="initialization" finished-at="2023-06-08T15:51:43 PKT" duration-ms="11734" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@29526c05]" started-at="2023-06-09T18:37:09 PKT" name="initialization" finished-at="2023-06-09T18:37:17 PKT" duration-ms="7868" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@3f9342d4]" started-at="2023-06-08T15:51:43 PKT" name="loginIntialization" finished-at="2023-06-08T15:51:43 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@29526c05]" started-at="2023-06-09T18:37:17 PKT" name="loginIntialization" finished-at="2023-06-09T18:37:17 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntialization -->
-        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@3f9342d4]" started-at="2023-06-08T15:51:43 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-06-08T15:51:55 PKT" duration-ms="12057" status="PASS">
+        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@29526c05]" started-at="2023-06-09T18:37:17 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-06-09T18:37:28 PKT" duration-ms="11493" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,79 +95,108 @@
           </reporter-output>
         </test-method> <!-- loginToApDr -->
       </class> <!-- com.apdr.testcases.LogInTestCases -->
-      <class name="com.apdr.testcases.NewsAlertContent">
-        <test-method is-config="true" signature="addNewsAlertContentInitialization()[pri:0, instance:com.apdr.testcases.NewsAlertContent@d62fe5b]" started-at="2023-06-08T15:51:43 PKT" name="addNewsAlertContentInitialization" finished-at="2023-06-08T15:51:43 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="3" status="PASS">
+      <class name="com.apdr.testcases.DeleteNewStoryContent">
+        <test-method is-config="true" signature="DeletecontentInitialization()[pri:0, instance:com.apdr.testcases.DeleteNewStoryContent@e70f13a]" started-at="2023-06-09T18:37:17 PKT" name="DeletecontentInitialization" finished-at="2023-06-09T18:37:17 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewsAlertContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.NewsAlertContent@d62fe5b]" started-at="2023-06-08T15:51:55 PKT" name="hover_Over_Content_Button" finished-at="2023-06-08T15:51:56 PKT" duration-ms="1238" status="PASS">
+        </test-method> <!-- DeletecontentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.DeleteNewStoryContent@e70f13a]" started-at="2023-06-09T18:37:49 PKT" name="hover_Over_Content_Button" finished-at="2023-06-09T18:37:50 PKT" duration-ms="1303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addVideoContent(java.lang.String)[pri:2, instance:com.apdr.testcases.NewsAlertContent@d62fe5b]" started-at="2023-06-08T15:51:56 PKT" name="addVideoContent" data-provider="newsAlertContent" finished-at="2023-06-08T15:51:59 PKT" duration-ms="2617" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Jenkins pipeline Automation,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="Enter_Title_For_Delete_NewStory_Content()[pri:2, instance:com.apdr.testcases.DeleteNewStoryContent@e70f13a]" started-at="2023-06-09T18:37:50 PKT" name="Enter_Title_For_Delete_NewStory_Content" finished-at="2023-06-09T18:37:50 PKT" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addVideoContent -->
-        <test-method signature="add_News_Alert_Slug(java.lang.String)[pri:3, instance:com.apdr.testcases.NewsAlertContent@d62fe5b]" started-at="2023-06-08T15:51:59 PKT" name="add_News_Alert_Slug" data-provider="newsAlertContent" finished-at="2023-06-08T15:51:59 PKT" duration-ms="58" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Jenkins pipeline Automation,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Enter_Title_For_Delete_NewStory_Content -->
+        <test-method signature="Select_Value_From_Content_Type()[pri:3, instance:com.apdr.testcases.DeleteNewStoryContent@e70f13a]" started-at="2023-06-09T18:37:50 PKT" name="Select_Value_From_Content_Type" finished-at="2023-06-09T18:37:50 PKT" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add_News_Alert_Slug -->
-        <test-method signature="add__Alert_News(java.lang.String)[pri:4, instance:com.apdr.testcases.NewsAlertContent@d62fe5b]" started-at="2023-06-08T15:51:59 PKT" name="add__Alert_News" data-provider="newsAlertContent" finished-at="2023-06-08T15:51:59 PKT" duration-ms="68" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Jenkins pipeline Automation,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Select_Value_From_Content_Type -->
+        <test-method signature="Filter_Selection()[pri:4, instance:com.apdr.testcases.DeleteNewStoryContent@e70f13a]" started-at="2023-06-09T18:37:50 PKT" name="Filter_Selection" finished-at="2023-06-09T18:37:55 PKT" duration-ms="4222" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add__Alert_News -->
-        <test-method signature="add_DateLine_For_News_Alert(java.lang.String)[pri:5, instance:com.apdr.testcases.NewsAlertContent@d62fe5b]" started-at="2023-06-08T15:51:59 PKT" name="add_DateLine_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-06-08T15:51:59 PKT" duration-ms="51" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Jenkins pipeline Automation,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Filter_Selection -->
+        <test-method signature="View_Selection()[pri:5, instance:com.apdr.testcases.DeleteNewStoryContent@e70f13a]" started-at="2023-06-09T18:37:55 PKT" name="View_Selection" finished-at="2023-06-09T18:37:56 PKT" duration-ms="1171" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add_DateLine_For_News_Alert -->
-        <test-method signature="select_News_Alert_Category()[pri:6, instance:com.apdr.testcases.NewsAlertContent@d62fe5b]" started-at="2023-06-08T15:51:59 PKT" name="select_News_Alert_Category" finished-at="2023-06-08T15:51:59 PKT" duration-ms="89" status="PASS">
+        </test-method> <!-- View_Selection -->
+        <test-method signature="Delete_Selection()[pri:6, instance:com.apdr.testcases.DeleteNewStoryContent@e70f13a]" started-at="2023-06-09T18:37:56 PKT" name="Delete_Selection" finished-at="2023-06-09T18:37:57 PKT" duration-ms="1108" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- select_News_Alert_Category -->
-        <test-method signature="add_EdsNote_For_News_Alert(java.lang.String)[pri:7, instance:com.apdr.testcases.NewsAlertContent@d62fe5b]" started-at="2023-06-08T15:51:59 PKT" name="add_EdsNote_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-06-08T15:51:59 PKT" duration-ms="51" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Jenkins pipeline Automation,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Delete_Selection -->
+        <test-method signature="Banner_Deleted_Successfully()[pri:7, instance:com.apdr.testcases.DeleteNewStoryContent@e70f13a]" started-at="2023-06-09T18:37:57 PKT" name="Banner_Deleted_Successfully" finished-at="2023-06-09T18:37:59 PKT" duration-ms="1619" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add_EdsNote_For_News_Alert -->
-        <test-method signature="click_Save_Button()[pri:8, instance:com.apdr.testcases.NewsAlertContent@d62fe5b]" started-at="2023-06-08T15:51:59 PKT" name="click_Save_Button" finished-at="2023-06-08T15:52:02 PKT" duration-ms="3007" status="PASS">
+        </test-method> <!-- Banner_Deleted_Successfully -->
+      </class> <!-- com.apdr.testcases.DeleteNewStoryContent -->
+      <class name="com.apdr.testcases.DeleteAudioContent">
+        <test-method is-config="true" signature="DeletecontentInitialization()[pri:0, instance:com.apdr.testcases.DeleteAudioContent@50d13246]" started-at="2023-06-09T18:37:17 PKT" name="DeletecontentInitialization" finished-at="2023-06-09T18:37:17 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- click_Save_Button -->
-      </class> <!-- com.apdr.testcases.NewsAlertContent -->
+        </test-method> <!-- DeletecontentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.DeleteAudioContent@50d13246]" started-at="2023-06-09T18:37:28 PKT" name="hover_Over_Content_Button" finished-at="2023-06-09T18:37:30 PKT" duration-ms="1241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_Content_Button -->
+        <test-method signature="Enter_Title_For_Delete_NewStory_Content()[pri:2, instance:com.apdr.testcases.DeleteAudioContent@50d13246]" started-at="2023-06-09T18:37:30 PKT" name="Enter_Title_For_Delete_NewStory_Content" finished-at="2023-06-09T18:37:30 PKT" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Enter_Title_For_Delete_NewStory_Content -->
+        <test-method signature="Select_Value_From_Content_Type()[pri:3, instance:com.apdr.testcases.DeleteAudioContent@50d13246]" started-at="2023-06-09T18:37:30 PKT" name="Select_Value_From_Content_Type" finished-at="2023-06-09T18:37:30 PKT" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Select_Value_From_Content_Type -->
+        <test-method signature="Filter_Selection()[pri:4, instance:com.apdr.testcases.DeleteAudioContent@50d13246]" started-at="2023-06-09T18:37:30 PKT" name="Filter_Selection" finished-at="2023-06-09T18:37:34 PKT" duration-ms="3926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Filter_Selection -->
+        <test-method signature="View_Selection()[pri:5, instance:com.apdr.testcases.DeleteAudioContent@50d13246]" started-at="2023-06-09T18:37:34 PKT" name="View_Selection" finished-at="2023-06-09T18:37:36 PKT" duration-ms="2392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- View_Selection -->
+        <test-method signature="Delete_Selection()[pri:6, instance:com.apdr.testcases.DeleteAudioContent@50d13246]" started-at="2023-06-09T18:37:36 PKT" name="Delete_Selection" finished-at="2023-06-09T18:37:37 PKT" duration-ms="1352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Delete_Selection -->
+        <test-method signature="Banner_Deleted_Successfully()[pri:7, instance:com.apdr.testcases.DeleteAudioContent@50d13246]" started-at="2023-06-09T18:37:37 PKT" name="Banner_Deleted_Successfully" finished-at="2023-06-09T18:37:39 PKT" duration-ms="1626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Banner_Deleted_Successfully -->
+      </class> <!-- com.apdr.testcases.DeleteAudioContent -->
+      <class name="com.apdr.testcases.Deletecontent">
+        <test-method is-config="true" signature="DeletecontentInitialization()[pri:0, instance:com.apdr.testcases.Deletecontent@64a40280]" started-at="2023-06-09T18:37:17 PKT" name="DeletecontentInitialization" finished-at="2023-06-09T18:37:17 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeletecontentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.Deletecontent@64a40280]" started-at="2023-06-09T18:38:08 PKT" name="hover_Over_Content_Button" finished-at="2023-06-09T18:38:09 PKT" duration-ms="1049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_Content_Button -->
+        <test-method signature="Enter_Title_For_Delete_Content()[pri:2, instance:com.apdr.testcases.Deletecontent@64a40280]" started-at="2023-06-09T18:38:09 PKT" name="Enter_Title_For_Delete_Content" finished-at="2023-06-09T18:38:09 PKT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Enter_Title_For_Delete_Content -->
+        <test-method signature="Select_Value_From_Content_Type()[pri:3, instance:com.apdr.testcases.Deletecontent@64a40280]" started-at="2023-06-09T18:38:09 PKT" name="Select_Value_From_Content_Type" finished-at="2023-06-09T18:38:10 PKT" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Select_Value_From_Content_Type -->
+        <test-method signature="Filter_Selection()[pri:4, instance:com.apdr.testcases.Deletecontent@64a40280]" started-at="2023-06-09T18:38:10 PKT" name="Filter_Selection" finished-at="2023-06-09T18:38:13 PKT" duration-ms="3897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Filter_Selection -->
+        <test-method signature="View_Selection()[pri:5, instance:com.apdr.testcases.Deletecontent@64a40280]" started-at="2023-06-09T18:38:13 PKT" name="View_Selection" finished-at="2023-06-09T18:38:14 PKT" duration-ms="821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- View_Selection -->
+        <test-method signature="Delete_Selection()[pri:6, instance:com.apdr.testcases.Deletecontent@64a40280]" started-at="2023-06-09T18:38:14 PKT" name="Delete_Selection" finished-at="2023-06-09T18:38:15 PKT" duration-ms="1039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Delete_Selection -->
+        <test-method signature="Banner_Deleted_Successfully()[pri:7, instance:com.apdr.testcases.Deletecontent@64a40280]" started-at="2023-06-09T18:38:15 PKT" name="Banner_Deleted_Successfully" finished-at="2023-06-09T18:38:17 PKT" duration-ms="1470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Banner_Deleted_Successfully -->
+      </class> <!-- com.apdr.testcases.Deletecontent -->
     </test> <!-- Regression Test Suite  -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -69,7 +69,7 @@ public class AddAudioContentPage extends TestBase {
     	builder.moveToElement(chooseFileBtn).click().build().perform();
     	//chooseFileBtn.click();
 
-    	chooseFileBtn.sendKeys("/home/testadmin/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
+    	chooseFileBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
     	//chooseFileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APaudio.mp3");
     	Thread.sleep(2000);
 		    }

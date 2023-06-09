@@ -10,29 +10,28 @@
 		<classes>
 
 			<class name="com.apdr.testcases.LogInTestCases"></class>
+
 			<class name="com.apdr.testcases.NewsAlertContent"></class>
 			<class name="com.apdr.testcases.AddNewsStoryContent"></class>
-			
-			<!--<class name="com.apdr.testcases.AddPhotoContent"></class>
-			
+			<class name="com.apdr.testcases.AddPhotoContent"></class>
 			<class name="com.apdr.testcases.AddAudioContent"></class>
-			
-			<class name="com.apdr.testcases.AddAudioContent"></class>
-			
 			<class name="com.apdr.testcases.BannerContent"></class>
-			<class name="com.apdr.testcases.AddUser"></class>-->
-			
-			
-			<!--<class name="com.apdr.testcases.Adduploadcsvcontent"></class>
+			<class name="com.apdr.testcases.AddUser"></class>
+			<class name="com.apdr.testcases.Adduploadcsvcontent"></class>
 			<class name="com.apdr.testcases.Importusers"></class>
-			<class name="com.apdr.testcases.AddVideoContent"></class>
-			<class name="com.apdr.testcases.Notifyusers"></class>
-			<class name="com.apdr.testcases.DeleteAudioContent"></class>
+			
+			
+		<!--	<class name="com.apdr.testcases.Notifyusers"></class>
+			<class name="com.apdr.testcases.DeleteVideoContent"></class>
+			<class name="com.apdr.testcases.AddVideoContent"></class>-->
+			
+			
+			<!--<class name="com.apdr.testcases.DeleteAudioContent"></class>
 			<class name="com.apdr.testcases.DeletePhotoContent"></class>
 			<class name="com.apdr.testcases.DeleteNewStoryContent"></class>
-			<class name="com.apdr.testcases.DeleteVideoContent"></class>
 			<class name="com.apdr.testcases.DeleteNewsAlertContent"></class>
 			<class name="com.apdr.testcases.Deletecontent"></class>-->
+			
 		</classes>
 
 	</test>

@@ -53,22 +53,18 @@ public class TestBase {
 			  //WebDriverManager.chromedriver().setup(); 
 			  //driver = new ChromeDriver();
 			  
-			 
-			
-			
+
 			  ChromeOptions options = new ChromeOptions();
-			  options.addArguments("--headless");
-			  options.addArguments("--no-sandbox");
-			  options.addArguments("window-size=1200,1100"); 
+				
+				  options.addArguments("--no-sandbox"); 
+				  options.addArguments("--headless");
+				  
+				  options.addArguments("window-size=1200,1100");
+				 
 			  driver = new ChromeDriver(options);
 			 
 
-			/*
-			 * FirefoxOptions options1 = new FirefoxOptions();
-			 * options1.addArguments("--headless");
-			 * options1.addArguments("window-size=1200,1100"); driver = new
-			 * FirefoxDriver(options1);
-			 */
+			
 				 
 		}
 
