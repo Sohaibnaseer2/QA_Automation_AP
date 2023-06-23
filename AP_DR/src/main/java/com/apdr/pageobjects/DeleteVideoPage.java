@@ -16,32 +16,32 @@ import com.apdr.utalities.WaitUtils;
 
 public class DeleteVideoPage extends TestBase {
 
-    public DeleteVideoPage() {
-        PageFactory.initElements(driver, this);
-    }
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
-    JavascriptExecutor js = (JavascriptExecutor) driver;
-    Actions builder = new Actions(driver);
-	
+	public DeleteVideoPage() {
+		PageFactory.initElements(driver, this);
+	}
 
-    //Search field for Content Listing
-    @FindBy(xpath = "//input[@id='edit-title']")
-    WebElement searchfield;
-    
-    //Content Type
-    @FindBy(id = "edit-type")
-    WebElement ContentType;
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	Actions builder = new Actions(driver);
 
-    public void Titlesearchfield() {
+	// Search field for Content Listing
+	@FindBy(xpath = "//input[@id='edit-title']")
+	WebElement searchfield;
+
+	// Content Type
+	@FindBy(id = "edit-type")
+	WebElement ContentType;
+
+	public void Titlesearchfield() {
 		wait.until(ExpectedConditions.visibilityOf(searchfield));
-		searchfield.sendKeys("test");}
-	
+		searchfield.sendKeys("test");
+	}
+
 	public void contenttype() throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(ContentType));
 		ContentType.click();
 		Select select = new Select(ContentType);
 		select.selectByValue("video");
 	}
-    
-    
+
 }

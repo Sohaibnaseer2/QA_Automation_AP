@@ -56,7 +56,7 @@ public class AddAudioMediaPage extends TestBase {
     public void AddAudioFile() throws AWTException {
         wait.until(ExpectedConditions.elementToBeClickable(chooseAudioFile));
         builder.moveToElement(chooseAudioFile).click().build().perform();
-        StringSelection ss = new StringSelection("C:\\Users\\muhammad.sabahat\\Desktop\\ApVideoUpload\\Audio.mp3");
+        StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APaudio.mp3");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
         //imitate mouse events like ENTER, CTRL+C, CTRL+V

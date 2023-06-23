@@ -6,21 +6,17 @@
   </listeners>
   <test thread-count="5" name="Regression Test Suite (failed)">
     <classes>
-      <class name="com.apdr.testcases.AddPhotoContent">
+      <class name="com.apdr.testcases.NewsAlertContent">
         <methods>
-          <include name="addPhotoContent" invocation-numbers="0"/>
+          <include name="addVideoContent" invocation-numbers="0"/>
           <include name="initialization"/>
-          <include name="teardown"/>
-          <include name="addContentInitialization"/>
+          <include name="add_DateLine_For_News_Alert" invocation-numbers="0"/>
+          <include name="add_EdsNote_For_News_Alert" invocation-numbers="0"/>
+          <include name="add__Alert_News" invocation-numbers="0"/>
+          <include name="select_News_Alert_Category"/>
+          <include name="addNewsAlertContentInitialization"/>
         </methods>
-      </class> <!-- com.apdr.testcases.AddPhotoContent -->
-      <class name="com.apdr.testcases.Adduploadcsvcontent">
-        <methods>
-          <include name="initialization"/>
-          <include name="addFiletest"/>
-          <include name="addContentInitialization"/>
-        </methods>
-      </class> <!-- com.apdr.testcases.Adduploadcsvcontent -->
+      </class> <!-- com.apdr.testcases.NewsAlertContent -->
     </classes>
   </test> <!-- Regression Test Suite (failed) -->
 </suite> <!-- Failed suite [Suite] -->

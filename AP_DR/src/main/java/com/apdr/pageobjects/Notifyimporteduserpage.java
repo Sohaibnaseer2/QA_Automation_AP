@@ -11,26 +11,28 @@ import com.apdr.setup.TestBase;
 import com.apdr.utalities.WaitUtils;
 
 public class Notifyimporteduserpage extends TestBase {
-	
+
 	public Notifyimporteduserpage() {
 
-        PageFactory.initElements(driver, this);
-    }
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
-	
-    @FindBy(linkText = "Import/Notify Users")
-   	WebElement ClicktabImportUsers;
-    
-    @FindBy(linkText = "//a[contains(text(),'Notify imported Users')]") 
+		PageFactory.initElements(driver, this);
+	}
+
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
+
+	@FindBy(linkText = "Import/Notify Users")
+	WebElement ClicktabImportUsers;
+
+	@FindBy(linkText = "//a[contains(text(),'Notify imported Users')]")
 	WebElement Notifyusers;
-    
-    public void Click_Importusertab() {
-	wait.until(ExpectedConditions.elementToBeClickable(ClicktabImportUsers));
-	ClicktabImportUsers.click();}
-    
-	 
-	 public void Click_Notify_user() {
-	 wait.until(ExpectedConditions.elementToBeClickable(Notifyusers));
-	 Notifyusers.click();}
-    
+
+	public void Click_Importusertab() {
+		wait.until(ExpectedConditions.elementToBeClickable(ClicktabImportUsers));
+		ClicktabImportUsers.click();
+	}
+
+	public void Click_Notify_user() {
+		wait.until(ExpectedConditions.elementToBeClickable(Notifyusers));
+		Notifyusers.click();
+	}
+
 }

@@ -49,34 +49,25 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("chrome")) {
 
-			
-			  //WebDriverManager.chromedriver().setup(); 
-			  //driver = new ChromeDriver();
-			  
+			ChromeOptions options = new ChromeOptions();
+			driver = new ChromeDriver(options);
+	
+			/*
+			 * options.addArguments("--no-sandbox"); options.addArguments("--headless");
+			 * 
+			 * options.addArguments("window-size=1200,1100");
+			 */
 
-			  ChromeOptions options = new ChromeOptions();
-				
-				  options.addArguments("--no-sandbox"); 
-				  options.addArguments("--headless");
-				  
-				  options.addArguments("window-size=1200,1100");
-				 
-			  driver = new ChromeDriver(options);
-			 
-
-			
-				 
 		}
 
-		//driver.manage().window().maximize();
-		driver.manage().window().setSize(new Dimension(1200,1100));
+		driver.manage().window().maximize();
+		// driver.manage().window().setSize(new Dimension(1200,1100));
 
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtils.IMPLICIT_WAIT));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(WaitUtils.PAGE_LOAD_TIMEOUT));
 
 		driver.get(prop.getProperty("url"));
- 
 	}
 
 	public static WebDriver getDriver() {

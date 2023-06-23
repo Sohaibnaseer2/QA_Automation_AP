@@ -56,7 +56,7 @@ public class AddImageMediaFile extends TestBase {
     public void AddMediaImageFile() throws AWTException {
         wait.until(ExpectedConditions.elementToBeClickable(chooseImage));
         builder.moveToElement(chooseImage).click().build().perform();
-        StringSelection ss = new StringSelection("C:\\Users\\muhammad.sabahat\\Desktop\\ApVideoUpload\\logo.JPG");
+        StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APaudio.mp3");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
         //imitate mouse events like ENTER, CTRL+C, CTRL+V

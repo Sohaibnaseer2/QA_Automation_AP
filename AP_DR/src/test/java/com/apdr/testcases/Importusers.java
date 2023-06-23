@@ -14,41 +14,39 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 
 public class Importusers extends TestBase {
-	
-	public Importusers(){
-        super();
-    }
 
-    HomePage homeObj;
-    Importuserspage Importfileobj;
-    AddVideoContentPage addcontentobj;
-    
-    
-    	@BeforeTest
-        public void addContentInitialization(){
+	public Importusers() {
+		super();
+	}
 
-            homeObj= new HomePage();
-            Importfileobj= new Importuserspage();
-            
-        }
+	HomePage homeObj;
+	Importuserspage Importfileobj;
+	AddVideoContentPage addcontentobj;
 
-    	 @Test(priority = 1)
-         @Description("Admin will click on the Import user tab ")
-         @Feature("Import User")
-         @Story("As a Admin I need to click the Import user tab")
-         public void hover_Over_Import_Button() throws InterruptedException {
+	@BeforeTest
+	public void addContentInitialization() {
 
-    		 Importfileobj.Click_Importusertab();
-         }	
-    	
-    	
-    	 @Test(priority = 2 )
-         @Description("Admin will click on the Import file ")
-         @Feature("Import File")
-         @Story("As a Admin I need to click on the Import file")
-         public void hover_Over_Import_file() throws InterruptedException {
+		homeObj = new HomePage();
+		Importfileobj = new Importuserspage();
 
-    		 Importfileobj.Click_Importfile();
-         }
-    	
+	}
+
+	@Test(priority = 1)
+	@Description("Admin will click on the Import user tab ")
+	@Feature("Import User")
+	@Story("As a Admin I need to click the Import user tab")
+	public void hover_Over_Import_Button() throws InterruptedException {
+
+		Importfileobj.Click_Importusertab();
+	}
+
+	@Test(priority = 2)
+	@Description("Admin will click on the Import file ")
+	@Feature("Import File")
+	@Story("As a Admin I need to click on the Import file")
+	public void hover_Over_Import_file() throws InterruptedException {
+
+		Importfileobj.Click_Importfile();
+	}
+
 }

@@ -52,7 +52,7 @@ public class AddDocumentMediaFile extends TestBase {
     public void AddMediaDocumentFile() throws AWTException {
         wait.until(ExpectedConditions.elementToBeClickable(chooseFileBtn));
         builder.moveToElement(chooseFileBtn).click().build().perform();
-        StringSelection ss = new StringSelection("C:\\Users\\muhammad.sabahat\\Desktop\\ApVideoUpload\\Auto.pdf");
+        StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APaudio.mp3");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
         //imitate mouse events like ENTER, CTRL+C, CTRL+V

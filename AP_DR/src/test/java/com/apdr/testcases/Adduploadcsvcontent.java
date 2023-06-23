@@ -18,50 +18,47 @@ import io.qameta.allure.Story;
 
 public class Adduploadcsvcontent extends TestBase {
 
-    public Adduploadcsvcontent(){
-        super();
-    }
+	public Adduploadcsvcontent() {
+		super();
+	}
 
-    HomePage homeObj;
-    Adduploadcsvpage addfileobj;
-    AddVideoContentPage addcontentobj;
-    
-    
-    	@BeforeTest
-        public void addContentInitialization(){
+	HomePage homeObj;
+	Adduploadcsvpage addfileobj;
+	AddVideoContentPage addcontentobj;
 
-            homeObj= new HomePage();
-            addfileobj= new Adduploadcsvpage();
-            addcontentobj = new AddVideoContentPage();
-            
-        }
-	
+	@BeforeTest
+	public void addContentInitialization() {
 
-        @Test(priority = 1)
-        @Description("Admin will Hover the Upload file link ")
-        @Feature("Add content")
-        @Story("As a Admin I need to hover the Upload file button")
-        public void hover_Over_Content_Button() throws InterruptedException {
+		homeObj = new HomePage();
+		addfileobj = new Adduploadcsvpage();
+		addcontentobj = new AddVideoContentPage();
 
-        	addfileobj.Uploaduserscsvfile();
-        }
-        
+	}
 
-		  @Test(priority = 2)
-		  @Description("Admin will select add file from local repo and will upload to APDR")
-		  @Feature("Add file upload")
-		  @Story("As a Admin I need to upload a document file") 
-		  public void addFiletest() throws AWTException { 
-			  addfileobj.FileClickable();
-			  
-		}
-		 
-		  @Test(priority = 3)
-		    @Description("Admin will click on the save button ")
-		    @Feature("Add Audio content")
-		    @Story("As a Admin I need to click on the save button to add Audio with content on APDR")
-		    public void click_On_SaveButton() throws InterruptedException{
-			  addcontentobj.clickOnSaveButton();
-		    }
+	@Test(priority = 1)
+	@Description("Admin will Hover the Upload file link ")
+	@Feature("Add content")
+	@Story("As a Admin I need to hover the Upload file button")
+	public void hover_Over_Content_Button() throws InterruptedException {
+
+		addfileobj.Uploaduserscsvfile();
+	}
+
+	@Test(priority = 2)
+	@Description("Admin will select add file from local repo and will upload to APDR")
+	@Feature("Add file upload")
+	@Story("As a Admin I need to upload a document file")
+	public void addFiletest() throws AWTException {
+		addfileobj.FileClickable();
+
+	}
+
+	@Test(priority = 3)
+	@Description("Admin will click on the save button ")
+	@Feature("Add Audio content")
+	@Story("As a Admin I need to click on the save button to add Audio with content on APDR")
+	public void click_On_SaveButton() throws InterruptedException {
+		addcontentobj.clickOnSaveButton();
+	}
 
 }

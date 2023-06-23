@@ -111,10 +111,10 @@ public class AddPhotoContentPage extends TestBase {
 	// Alternative text input field locator
 	@FindBy(name = "field_photo[0][alt]")
 	WebElement alternativeTxtInput;
-	
+
 	@FindBy(name = "field_audio_file_0_remove_button")
-    WebElement removeBtn;
-	
+	WebElement removeBtn;
+
 	// Save button locator
 	@FindBy(id = "edit-submit")
 	WebElement saveBtn;
@@ -134,9 +134,9 @@ public class AddPhotoContentPage extends TestBase {
 	public void add_Image_file() throws AWTException, InterruptedException {
 
 		builder.moveToElement(chooseImgBtn).click().build().perform();
-		chooseImgBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/AP Testimages.jpg");
-		//chooseImgBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\AP Testimages.jpg");
-		
+		//chooseImgBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/AP Testimages.jpg");
+		 chooseImgBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\AP Testimages.jpg");
+
 	}
 
 	/*

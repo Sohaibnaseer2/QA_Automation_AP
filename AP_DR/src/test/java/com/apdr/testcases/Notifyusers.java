@@ -13,41 +13,38 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 
 public class Notifyusers extends TestBase {
-		
-		public Notifyusers(){
-	        super();
-	    }
 
-	    HomePage homeObj;
-	    Notifyimporteduserpage Notifyobj;
-	    
-	    @BeforeTest
-        public void addContentInitialization(){
+	public Notifyusers() {
+		super();
+	}
 
-            homeObj= new HomePage();
-            Notifyobj = new Notifyimporteduserpage();
-            
-        }
+	HomePage homeObj;
+	Notifyimporteduserpage Notifyobj;
 
-    	 @Test(priority = 1)
-         @Description("Admin will click on the Import user tab ")
-         @Feature("Import User")
-         @Story("As a Admin I need to click the Import user tab")
-         public void hover_Over_Import_Link() throws InterruptedException {
+	@BeforeTest
+	public void addContentInitialization() {
 
-    		 Notifyobj.Click_Importusertab();
-         }	
+		homeObj = new HomePage();
+		Notifyobj = new Notifyimporteduserpage();
 
+	}
 
-    	 @Test(priority = 2)
-         @Description("Admin will click on the Notify imported user link ")
-         @Feature("Notify User")
-         @Story("As a Admin I need to click the Notify imported user link")
-         public void hover_Over_Notify_Link() throws InterruptedException {
+	@Test(priority = 1)
+	@Description("Admin will click on the Import user tab ")
+	@Feature("Import User")
+	@Story("As a Admin I need to click the Import user tab")
+	public void hover_Over_Import_Link() throws InterruptedException {
 
-    		 Notifyobj.Click_Notify_user();
-         }	
+		Notifyobj.Click_Importusertab();
+	}
 
-    	 
-    	 
+	@Test(priority = 2)
+	@Description("Admin will click on the Notify imported user link ")
+	@Feature("Notify User")
+	@Story("As a Admin I need to click the Notify imported user link")
+	public void hover_Over_Notify_Link() throws InterruptedException {
+
+		Notifyobj.Click_Notify_user();
+	}
+
 }

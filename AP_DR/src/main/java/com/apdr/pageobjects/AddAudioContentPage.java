@@ -16,70 +16,75 @@ import java.time.Duration;
 
 public class AddAudioContentPage extends TestBase {
 
-    public AddAudioContentPage() {
-        PageFactory.initElements(driver, this);
-    }
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
-    Actions builder = new Actions(driver);
-	
-    
-    //Audio link locator
-    @FindBy(linkText = "Audio")
-    WebElement audioBtn;
+	public AddAudioContentPage() {
+		PageFactory.initElements(driver, this);
+	}
 
-    //create video text locator
-    @FindBy(css = ".page-title")
-    WebElement createTxt;
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
+	Actions builder = new Actions(driver);
 
-    //Speaker input field locator
-    @FindBy(id = "edit-field-speaker-0-value")
-    WebElement speakerInputField;
+	// Audio link locator
+	@FindBy(linkText = "Audio")
+	WebElement audioBtn;
 
-    //Intro input field locator
-    @FindBy(id = "edit-field-intro-0-value")
-    WebElement introInputField;
+	// create video text locator
+	@FindBy(css = ".page-title")
+	WebElement createTxt;
 
-    //choose file button locator
-    @FindBy(xpath = "//input[@id='edit-field-audio-file-0-upload']")
-    WebElement chooseFileBtn;
+	// Speaker input field locator
+	@FindBy(id = "edit-field-speaker-0-value")
+	WebElement speakerInputField;
 
-    //Remove button locator
-    @FindBy(name = "field_audio_file_0_remove_button")
-    WebElement removeBtn;
+	// Intro input field locator
+	@FindBy(id = "edit-field-intro-0-value")
+	WebElement introInputField;
 
-  //submit button locator
-    @FindBy(id = "edit-submit")
-    WebElement saveBtn;
+	// choose file button locator
+	@FindBy(xpath = "//input[@id='edit-field-audio-file-0-upload']")
+	WebElement chooseFileBtn;
 
-    public String clickOnAudioButton(){
-        wait.until(ExpectedConditions.elementToBeClickable(audioBtn));
-        audioBtn.click();
-        wait.until(ExpectedConditions.visibilityOf(createTxt));
-        String message=createTxt.getText();
-        return message;
-    }
+	// Remove button locator
+	@FindBy(name = "field_audio_file_0_remove_button")
+	WebElement removeBtn;
 
-    public void add_Speaker_And_Intro(String _speaker, String _intro){
-        wait.until(ExpectedConditions.elementToBeClickable(speakerInputField));
-        speakerInputField.sendKeys(_speaker);
-        introInputField.sendKeys(_intro);
-    }
+	// submit button locator
+	@FindBy(id = "edit-submit")
+	WebElement saveBtn;
 
-    public void add_Audio_file() throws AWTException, InterruptedException{
-    	builder.moveToElement(chooseFileBtn).click().build().perform();
-    	//chooseFileBtn.click();
+	public String clickOnAudioButton() {
+		wait.until(ExpectedConditions.elementToBeClickable(audioBtn));
+		audioBtn.click();
+		wait.until(ExpectedConditions.visibilityOf(createTxt));
+		String message = createTxt.getText();
+		return message;
+	}
 
-    	chooseFileBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
-    	//chooseFileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APaudio.mp3");
-    	Thread.sleep(2000);
-		    }
+	public void add_Speaker_And_Intro(String _speaker, String _intro) {
+		wait.until(ExpectedConditions.elementToBeClickable(speakerInputField));
+		speakerInputField.sendKeys(_speaker);
+		introInputField.sendKeys(_intro);
+	}
 
-    public void viewAudioRemoveButton(){
-        wait.until(ExpectedConditions.visibilityOf(removeBtn));
-    }
-    public void clickOnSaveButton() throws InterruptedException{
-    	Thread.sleep(10000);
-        saveBtn.click();
-    }
+	public void add_Audio_file() throws AWTException, InterruptedException {
+		builder.moveToElement(chooseFileBtn).click().build().perform();
+		// chooseFileBtn.click();
+
+		//chooseFileBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
+		chooseFileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APaudio.mp3");
+		Thread.sleep(2000);
+		if (chooseFileBtn.isDisplayed())
+			System.out.println("File upload element is displayed. A file may have been uploaded.");
+		else
+				System.out.println("File upload element is not displayed. No file has been uploaded.");
+	}
+
+	public void viewAudioRemoveButton() {
+		wait.until(ExpectedConditions.visibilityOf(removeBtn));
+	}
+
+	public void clickOnSaveButton() throws InterruptedException {
+		Thread.sleep(10000);
+		saveBtn.click();
+	}
 
 }

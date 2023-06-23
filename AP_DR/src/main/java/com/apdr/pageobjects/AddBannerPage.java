@@ -15,32 +15,29 @@ import com.apdr.utalities.WaitUtils;
 public class AddBannerPage extends TestBase {
 
 	public AddBannerPage() {
-	PageFactory.initElements(driver, this);
-}
-WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
+		PageFactory.initElements(driver, this);
+	}
+
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
 
 //Audio link locator
-@FindBy(linkText = "Banner")
-WebElement BannerBtn;
+	@FindBy(linkText = "Banner")
+	WebElement BannerBtn;
 
 //create video text locator
-@FindBy(xpath= "//input[@id='edit-title-0-value']")
-WebElement BannerTxt;
+	@FindBy(xpath = "//input[@id='edit-title-0-value']")
+	WebElement BannerTxt;
 
-public void clickOnBannerButton(){
-    wait.until(ExpectedConditions.elementToBeClickable(BannerBtn));
-    BannerBtn.click();
+	public void clickOnBannerButton() {
+		wait.until(ExpectedConditions.elementToBeClickable(BannerBtn));
+		BannerBtn.click();
 
-}
+	}
 
-public void Banner_Title(){
-    wait.until(ExpectedConditions.elementToBeClickable(BannerTxt));
-    BannerTxt.sendKeys("Automation Script Banner");
-    
+	public void Banner_Title() {
+		wait.until(ExpectedConditions.elementToBeClickable(BannerTxt));
+		BannerTxt.sendKeys("Automation Script Banner");
 
-}
-
-
-
+	}
 
 }

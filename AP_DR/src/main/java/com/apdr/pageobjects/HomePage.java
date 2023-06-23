@@ -38,9 +38,9 @@ public class HomePage extends TestBase {
 
 	// content button locator
 
-	@FindBy(xpath = "//a[normalize-space()='Add Content']") 
+	@FindBy(xpath = "//a[normalize-space()='Add Content']")
 	WebElement contentBtn;
-	 	 
+
 	// add role button locator
 	@FindBy(css = "a.button.button-action.button--primary.button--small")
 	WebElement addroleBtn;
@@ -64,8 +64,10 @@ public class HomePage extends TestBase {
 	/// click on Content Listing
 	@FindBy(xpath = "//a[normalize-space()='Content Listing']")
 	WebElement contentlisting;
-	
-	
+
+	@FindBy(xpath = "//a[normalize-space()='User Listing']")
+	WebElement Userlisting;
+
 	public boolean is_User_Profile_Is_Displayed_On_Home_Page() {
 		wait.until(ExpectedConditions.visibilityOf(userProfile));
 		boolean profileIcon = userProfile.isDisplayed();
@@ -73,7 +75,7 @@ public class HomePage extends TestBase {
 	}
 
 	public void hoverOnContentButton() throws InterruptedException {
-		
+
 		wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
 		builder.moveToElement(contentBtn).build().perform();
 		contentBtn.click();
@@ -109,13 +111,19 @@ public class HomePage extends TestBase {
 
 		wait.until(ExpectedConditions.elementToBeClickable(AddUserBtn));
 		AddUserBtn.click();
-		
+
 	}
 
-   public void hoverOnContentListingButton() throws InterruptedException {		
+	public void hoverOnContentListingButton() throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(contentlisting));
 		builder.moveToElement(contentlisting).build().perform();
 		contentlisting.click();
 	}
-	
+
+	public void hoverOnUserListingButton() throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(Userlisting));
+		builder.moveToElement(Userlisting).build().perform();
+		Userlisting.click();
+	}
+
 }

@@ -15,85 +15,83 @@ import io.qameta.allure.Story;
 
 public class DeleteNewStoryContent extends TestBase {
 
-    public DeleteNewStoryContent(){
-        super();
-    }
+	public DeleteNewStoryContent() {
+		super();
+	}
 
-    HomePage homeObj;
-    DeleteContentPage Deleteobj;
-    DeleteNewsAlertPage DeleteNewsAlert;
-    DeleteNewStoryPage DeleteNewsStory;
+	HomePage homeObj;
+	DeleteContentPage Deleteobj;
+	DeleteNewsAlertPage DeleteNewsAlert;
+	DeleteNewStoryPage DeleteNewsStory;
 
-    
-    @BeforeTest
-    public void DeletecontentInitialization(){
+	@BeforeTest
+	public void DeletecontentInitialization() {
 
-        homeObj= new HomePage();
-        Deleteobj = new DeleteContentPage();
-        DeleteNewsAlert = new DeleteNewsAlertPage();
-        DeleteNewsStory = new DeleteNewStoryPage();
-    }
-	
-	
-    @Test(priority = 1)
-    @Description("Admin will Hover the content link ")
-    @Feature("Add content")
-    @Story("As a Admin I need to hover the content button")
-    public void hover_Over_Content_Button() throws InterruptedException {
+		homeObj = new HomePage();
+		Deleteobj = new DeleteContentPage();
+		DeleteNewsAlert = new DeleteNewsAlertPage();
+		DeleteNewsStory = new DeleteNewStoryPage();
+	}
 
-        homeObj.hoverOnContentListingButton();
-    }
-    
-    @Test(priority = 2)
-    @Description("Admin will Hover the content link ")
-    @Feature("Add content")
-    @Story("As a Admin I need to hover the content button")
-    public void Enter_Title_For_Delete_NewStory_Content() throws InterruptedException {
+	@Test(priority = 1)
+	@Description("Admin will Hover the content link ")
+	@Feature("Add content")
+	@Story("As a Admin I need to hover the content button")
+	public void hover_Over_Content_Button() throws InterruptedException {
 
-    	DeleteNewsStory.Titlesearchfield();
-    }
+		homeObj.hoverOnContentListingButton();
+	}
 
-    @Test(priority = 3)
-    @Description("Admin will Hover the content link ")
-    @Feature("Add content")
-    @Story("As a Admin I need to hover the content button")
-    public void Select_Value_From_Content_Type() throws InterruptedException {
+	@Test(priority = 2)
+	@Description("Admin will Hover the content link ")
+	@Feature("Add content")
+	@Story("As a Admin I need to hover the content button")
+	public void Enter_Title_For_Delete_NewStory_Content() throws InterruptedException {
 
-    	DeleteNewsStory.contenttype();
-    }
-    
-    @Test(priority = 4)
-    @Description("Admin will Hover the content link ")
-    @Feature("Add content")
-    @Story("As a Admin I need to hover the content button")
-    public void Filter_Selection() throws InterruptedException {
+		DeleteNewsStory.Titlesearchfield();
+	}
 
-    	Deleteobj.Filterclick();
-    }
-    @Test(priority = 5)
-    @Description("Admin will Hover the content link ")
-    @Feature("Add content")
-    @Story("As a Admin I need to hover the content button")
-    public void View_Selection() throws InterruptedException {
+	@Test(priority = 3)
+	@Description("Admin will Hover the content link ")
+	@Feature("Add content")
+	@Story("As a Admin I need to hover the content button")
+	public void Select_Value_From_Content_Type() throws InterruptedException {
 
-    	Deleteobj.Viewclick();
-    }
-    
-    @Test(priority = 6)
-    @Description("Admin will Hover the content link ")
-    @Feature("Add content")
-    @Story("As a Admin I need to hover the content button")
-    public void Delete_Selection() throws InterruptedException {
-    	Deleteobj.Deleteclick();
-    }
-    
-    @Test(priority = 7)
-    @Description("Admin will Hover the content link ")
-    @Feature("Add content")
-    @Story("As a Admin I need to hover the content button")
-    public void Banner_Deleted_Successfully() throws InterruptedException {
-    	Deleteobj.Click_delete_button();
-    }
-    
-    
+		DeleteNewsStory.contenttype();
+	}
+
+	@Test(priority = 4)
+	@Description("Admin will Hover the content link ")
+	@Feature("Add content")
+	@Story("As a Admin I need to hover the content button")
+	public void Filter_Selection() throws InterruptedException {
+
+		Deleteobj.Filterclick();
+	}
+
+	@Test(priority = 5)
+	@Description("Admin will Hover the content link ")
+	@Feature("Add content")
+	@Story("As a Admin I need to hover the content button")
+	public void View_Selection() throws InterruptedException {
+
+		Deleteobj.Viewclick();
+	}
+
+	@Test(priority = 6)
+	@Description("Admin will Hover the content link ")
+	@Feature("Add content")
+	@Story("As a Admin I need to hover the content button")
+	public void Delete_Selection() throws InterruptedException {
+		Deleteobj.Deleteclick();
+	}
+
+	@Test(priority = 7)
+	@Description("Admin will Hover the content link ")
+	@Feature("Add content")
+	@Story("As a Admin I need to hover the content button")
+	public void Banner_Deleted_Successfully() throws InterruptedException {
+		Deleteobj.Click_delete_button();
+	}
+
 }

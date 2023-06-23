@@ -1,55 +1,55 @@
- {
-    "video-content": [
-    {
-      "slug" : "Video upload through upgraded Automation testing script",
-      "headline" : "Top Rank university",
-      "source": "HEC",
-      "body": "Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan."
-    }
-    ],
-    "audio-content": [
-    {
-      "slug" : "Audio upload through upgraded Automation testing script",
-      "speaker" : "Audionic",
-      "intro": "Audionic is the #1 Audio Brand in Pakistan."
-    }
-      ],
-   "image-content": [
-     {
-       "slug" : "Image upload through upgraded Automation testing script",
-       "Caption" : "Nature scenre",
-       "Instructions": "Add pakistani Mountaine images",
-       "Country": "Pakistan",
-       "State": "punjab",
-       "city": "Islamabad",
-       "Byline": "find the best stock byline photo",
-       "Bytitile": "find the best byTitile photo",
-       "source": "AP",
-       "Credit line": "find the best credit line photo",
-       "Copywrite notice": "Please don't copy this image",
-       "Transref": "add transref for the best photo",
-       "Supp. Cat": "International Category",
-       "AltText" : "verification test"
-     }
-   ],
-   "news-alert": [
-     {
-       "slug" : "Jenkins pipeline Automation",
-       "Alert" : "Monitor the web for interesting new content. ",
-       "Dateline": "NEW. S30 E27 | 05/20/22",
-       "edsNote": "EDS Notes means the 7.450% notes due 2029 issued"
-     }
-   ],
-   "news-story": [
-     {
-       "slug" : "upgraded Automation Script Testing.",
-       "headline" : "Monitor the web for interesting new content. ",
-       "summary" : "At New Story, we're rallying the generous, the dreamers, the changemakers ",
-       "body": "Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children",
-       "Byline": "find the best stock byline photo",
-       "Bytitile": "find the best byTitile photo",
-       "Dateline": "NEW. S30 E27 | 05/20/22",
-       "edsNote": "EDS Notes means the 7.450% notes due 2029 issued"
-     }
-   ]
- }
+{
+	"video-content": [
+		{
+			"slug": "Video upload through upgraded Automation testing script",
+			"headline": "Top Rank university",
+			"source": "HEC",
+			"body": "Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan."
+		}
+	],
+	"audio-content": [
+		{
+			"slug": "Audio upload through upgraded Automation testing script",
+			"speaker": "Audionic",
+			"intro": "Audionic is the #1 Audio Brand in Pakistan."
+		}
+	],
+	"image-content": [
+		{
+			"slug": "Image upload through upgraded Automation testing script",
+			"Caption": "Nature scenre",
+			"Instructions": "Add pakistani Mountaine images",
+			"Country": "Pakistan",
+			"State": "punjab",
+			"city": "Islamabad",
+			"Byline": "find the best stock byline photo",
+			"Bytitile": "find the best byTitile photo",
+			"source": "AP",
+			"Credit line": "find the best credit line photo",
+			"Copywrite notice": "Please don't copy this image",
+			"Transref": "add transref for the best photo",
+			"Supp. Cat": "International Category",
+			"AltText": "verification test"
+		}
+	],
+	"news-alert": [
+		{
+			"slug": "Jenkins pipeline Automation",
+			"Alert": "Monitor the web for interesting new content. ",
+			"Dateline": "NEW. S30 E27 | 05/20/22",
+			"edsNote": "EDS Notes means the 7.450% notes due 2029 issued"
+		}
+	],
+	"news-story": [
+		{
+			"slug": "upgraded Automation Script Testing.",
+			"headline": "Monitor the web for interesting new content. ",
+			"summary": "At New Story, we're rallying the generous, the dreamers, the changemakers ",
+			"body": "Welcome. New Story Counseling Services is a mental health counseling office that provides safe, inclusive, and progressive care to children",
+			"Byline": "find the best stock byline photo",
+			"Bytitile": "find the best byTitile photo",
+			"Dateline": "NEW. S30 E27 | 05/20/22",
+			"edsNote": "EDS Notes means the 7.450% notes due 2029 issued"
+		}
+	]
+}

@@ -18,33 +18,30 @@ import com.apdr.setup.TestBase;
 import com.apdr.utalities.WaitUtils;
 
 public class Adduploadcsvpage extends TestBase {
-	
+
 	public Adduploadcsvpage() {
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
 	Actions builder = new Actions(driver);
-	
+
 	@FindBy(linkText = "Upload User's CSV")
 	WebElement Uploaduserscsvfile;
-	
-	
+
 	@FindBy(xpath = "//input[@id='edit-field-media-document-0-upload']")
-    WebElement selecfileBtn;
-	
+	WebElement selecfileBtn;
+
 	public void Uploaduserscsvfile() {
 		wait.until(ExpectedConditions.elementToBeClickable(Uploaduserscsvfile));
-		Uploaduserscsvfile.click();}
-	
-	
-    public void FileClickable() throws AWTException {
-    	builder.moveToElement(selecfileBtn).click().build().perform();
-    	selecfileBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/TEstUserfile.csv");
-    	//selecfileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\TEstUserfile.csv");
-    	
-    	
-    }
-    	
+		Uploaduserscsvfile.click();
 	}
 
+	public void FileClickable() throws AWTException {
+		builder.moveToElement(selecfileBtn).click().build().perform();
+		selecfileBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/TEstUserfile.csv");
+		// selecfileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\TEstUserfile.csv");
+
+	}
+
+}

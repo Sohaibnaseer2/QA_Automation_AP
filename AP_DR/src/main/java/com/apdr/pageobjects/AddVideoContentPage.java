@@ -17,96 +17,96 @@ import java.time.Duration;
 
 public class AddVideoContentPage extends TestBase {
 
-    public AddVideoContentPage() {
+	public AddVideoContentPage() {
 
-        PageFactory.initElements(driver, this);
-    }
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
-    JavascriptExecutor js = ((JavascriptExecutor) driver);
-    Actions builder = new Actions(driver);
+		PageFactory.initElements(driver, this);
+	}
 
-    //video link text locator
-    @FindBy(linkText = "Video")
-    WebElement videoBtn;
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WaitUtils.DURATION));
+	JavascriptExecutor js = ((JavascriptExecutor) driver);
+	Actions builder = new Actions(driver);
 
-    //create video text locator
-    @FindBy(css = ".page-title")
-    WebElement createTxt;
+	// video link text locator
+	@FindBy(linkText = "Video")
+	WebElement videoBtn;
 
-    //Slug input field locator
-    @FindBy(id = "edit-title-0-value")
-    WebElement slugInputField;
+	// create video text locator
+	@FindBy(css = ".page-title")
+	WebElement createTxt;
 
-    //Headline Input field locator
-    @FindBy(id = "edit-field-headline-0-value")
-    WebElement headlineInputField;
+	// Slug input field locator
+	@FindBy(id = "edit-title-0-value")
+	WebElement slugInputField;
 
-    //Source Input field locator
-    @FindBy(id = "edit-field-source-0-value")
-    WebElement sourceInputField;
+	// Headline Input field locator
+	@FindBy(id = "edit-field-headline-0-value")
+	WebElement headlineInputField;
 
-    //Add files button locator to upload video file
-    @FindBy(id = "edit-field-video-file-2-0-upload--2_browse")
-    WebElement addFileButton;
+	// Source Input field locator
+	@FindBy(id = "edit-field-source-0-value")
+	WebElement sourceInputField;
 
-    //remove button locator
-    @FindBy(xpath = "//input[@id='edit-field-video-file-2-0-remove-button--5B0MBvXCuTQ']")
-    WebElement removeBtn;
+	// Add files button locator to upload video file
+	@FindBy(id = "edit-field-video-file-2-0-upload--2_browse")
+	WebElement addFileButton;
 
-    //Body Input Field locator
-    @FindBy(id = "edit-body-0-value")
-    WebElement bodyInputField;
+	// remove button locator
+	@FindBy(xpath = "//input[@id='edit-field-video-file-2-0-remove-button--5B0MBvXCuTQ']")
+	WebElement removeBtn;
 
-    //Save as Drop down field locator
-    @FindBy(id = "edit-moderation-state-0-state")
-    WebElement saveAsDropDown;
+	// Body Input Field locator
+	@FindBy(id = "edit-body-0-value")
+	WebElement bodyInputField;
 
-    //Save button locator
-    @FindBy(id = "edit-submit")
-    WebElement saveBtn;
+	// Save as Drop down field locator
+	@FindBy(id = "edit-moderation-state-0-state")
+	WebElement saveAsDropDown;
 
+	// Save button locator
+	@FindBy(id = "edit-submit")
+	WebElement saveBtn;
 
-    public String clickOnVideoButton(){
-        wait.until(ExpectedConditions.elementToBeClickable(videoBtn));
-        videoBtn.click();
-        wait.until(ExpectedConditions.visibilityOf(createTxt));
-        String message=createTxt.getText();
-        return message;
-    }
+	public String clickOnVideoButton() {
+		wait.until(ExpectedConditions.elementToBeClickable(videoBtn));
+		videoBtn.click();
+		wait.until(ExpectedConditions.visibilityOf(createTxt));
+		String message = createTxt.getText();
+		return message;
+	}
 
-    public void addSlug(String slug){
-        slugInputField.sendKeys(slug);
+	public void addSlug(String slug) {
+		slugInputField.sendKeys(slug);
 
-    }
-    public void add_Headline_Source( String headline, String source){
-        headlineInputField.sendKeys(headline);
-        sourceInputField.clear();
-        sourceInputField.sendKeys(source);
-    }
+	}
 
-    public void addVideoFileFromLocalRepository() throws AWTException {
+	public void add_Headline_Source(String headline, String source) {
+		headlineInputField.sendKeys(headline);
+		sourceInputField.clear();
+		sourceInputField.sendKeys(source);
+	}
 
-    	builder.moveToElement(addFileButton).click().build().perform();
-    	addFileButton.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp");
-    	//addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APvideo.mp4");
-    	
+	public void addVideoFileFromLocalRepository() throws AWTException {
 
-        }
+		builder.moveToElement(addFileButton).click().build().perform();
+		addFileButton.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp");
+		// addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APvideo.mp4");
 
-    public void addBodyForVideo(String body) throws InterruptedException{
-    	Thread.sleep(10000);
-        js.executeScript("arguments[0].scrollIntoView(true);",bodyInputField);
-        bodyInputField.sendKeys(body);
-    }	
+	}
 
-	  public void viewRemoveButton() throws InterruptedException{
-		  Thread.sleep(3000);
-	  wait.until(ExpectedConditions.visibilityOf(removeBtn));
-	  }
-	 
-     public void clickOnSaveButton() throws InterruptedException {
-    	 Thread.sleep(5000);
-        saveBtn.click();
-    }
+	public void addBodyForVideo(String body) throws InterruptedException {
+		Thread.sleep(10000);
+		js.executeScript("arguments[0].scrollIntoView(true);", bodyInputField);
+		bodyInputField.sendKeys(body);
+	}
+
+	public void viewRemoveButton() throws InterruptedException {
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(removeBtn));
+	}
+
+	public void clickOnSaveButton() throws InterruptedException {
+		Thread.sleep(5000);
+		saveBtn.click();
+	}
 
 }
