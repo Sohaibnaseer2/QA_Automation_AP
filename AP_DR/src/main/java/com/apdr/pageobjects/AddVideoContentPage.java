@@ -85,12 +85,31 @@ public class AddVideoContentPage extends TestBase {
 		sourceInputField.sendKeys(source);
 	}
 
-	public void addVideoFileFromLocalRepository() throws AWTException {
+	public void addVideoFileFromLocalRepository() throws AWTException, InterruptedException {
 
 		builder.moveToElement(addFileButton).click().build().perform();
-		addFileButton.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp");
-		// addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APvideo.mp4");
+		//addFileButton.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp4");
+		/*
+		 * addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\Desktop\\Test1.MP4");
+		 * Thread.sleep(10000);
+		 */
+		 
+		 
+		 	StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\Test1.mp4");
+	        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
+	      //imitate mouse events like ENTER, CTRL+C, CTRL+V
+
+	        Robot robot = new Robot();
+	        robot.setAutoDelay(500);
+	        robot.keyPress(KeyEvent.VK_CONTROL);
+	        robot.keyPress(KeyEvent.VK_V);
+	        robot.keyRelease(KeyEvent.VK_CONTROL);
+	        robot.keyRelease(KeyEvent.VK_K);
+	        robot.keyPress(KeyEvent.VK_ENTER);
+	        robot.setAutoDelay(500);
+	        robot.keyPress(KeyEvent.VK_ENTER);
+	        robot.keyRelease(KeyEvent.VK_ENTER);
 	}
 
 	public void addBodyForVideo(String body) throws InterruptedException {

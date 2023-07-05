@@ -32,6 +32,7 @@ public class DeleteNewsAlertPage extends TestBase {
 	@FindBy(id = "edit-type")
 	WebElement ContentType;
 
+	
 	public void Titlesearchfield() {
 		wait.until(ExpectedConditions.visibilityOf(searchfield));
 		searchfield.sendKeys("Jenkins pipeline Automation");

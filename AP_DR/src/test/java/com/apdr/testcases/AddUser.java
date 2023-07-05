@@ -50,18 +50,15 @@ public class AddUser extends TestBase {
 
 	}
 
-	/*
-	 * @Test(priority = 4)
-	 * 
-	 * @Description("Admin will select user role")
-	 * 
-	 * @Feature("Add users")
-	 * 
-	 * @Story("As a Admin I need to select user role") public void
-	 * select_Users_role() { addUserObj.Roleselection(); }
-	 */
+	
+	  @Test(priority = 4)
+	  @Description("Admin will select user role")
+	  @Feature("Add users")
+	  @Story("As a Admin I need to select user role")
+	  public void select_Users_role() { addUserObj.Roleselection(); }
+	 
 
-	@Test(priority = 4, dataProviderClass = DataUtils.class, dataProvider = "addUserData")
+	@Test(priority = 5, dataProviderClass = DataUtils.class, dataProvider = "addUserData")
 	@Description("Admin will add organisation Name and Org Id ")
 	@Feature("Add users")
 	@Story("As a Admin I need to add user org name and org id")
@@ -71,7 +68,7 @@ public class AddUser extends TestBase {
 
 	}
 
-	@Test(priority = 5, dataProviderClass = DataUtils.class, dataProvider = "addUserData")
+	@Test(priority = 6, dataProviderClass = DataUtils.class, dataProvider = "addUserData")
 	@Description("Admin will add MDMID")
 	@Feature("Add users")
 	@Story("As a Admin I need to add MDMID")
@@ -81,7 +78,7 @@ public class AddUser extends TestBase {
 
 	}
 
-	@Test(priority = 6, dataProviderClass = DataUtils.class, dataProvider = "addUserData")
+	@Test(priority = 7, dataProviderClass = DataUtils.class, dataProvider = "addUserData")
 	@Description("Admin will add user information")
 	@Feature("Add users")
 	@Story("As a Admin I need to add user information")
@@ -91,11 +88,11 @@ public class AddUser extends TestBase {
 
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 8)
 	@Description("Admin will click on create new account button")
 	@Feature("Add users")
 	@Story("As a Admin I need to click on create new account button")
-	public void click_On_Create_New_Account_Button() {
+	public void click_On_Create_New_Account_Button() throws InterruptedException {
 		addUserObj.clickOnCreateUser();
 	}
 

@@ -57,15 +57,15 @@ public class AddPhotoContent extends TestBase {
 		Assert.assertEquals(titleTxt, "Create Photo", "Admin is able to click on the Photo button");
 
 		addPhoteContentObj.addImgSlug(formInfo[0]);
-
+		addPhoteContentObj.add_Image_file();
 		addPhoteContentObj.addImageCaptionAndInstructions(formInfo[1], formInfo[2]);
 		/* addPhoteContentObj.inputdate(); */
 		addPhoteContentObj.addImageCountryDetails(formInfo[3], formInfo[4], formInfo[5]);
 		addPhoteContentObj.addImageBylineAndBytitle(formInfo[6], formInfo[7]);
 		addPhoteContentObj.add_Image_Source_creditline_Copywrite_transref_SuppCategory(formInfo[8], formInfo[9],
 				formInfo[10], formInfo[11], formInfo[12]);
-		addPhoteContentObj.add_Image_file();
-		addPhoteContentObj.Add_text_of_Alternative(formInfo[13]);
+		
+		/* addPhoteContentObj.Add_text_of_Alternative(formInfo[13]); */
 
 	}
 

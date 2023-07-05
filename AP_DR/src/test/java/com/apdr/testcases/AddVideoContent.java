@@ -62,7 +62,7 @@ public class AddVideoContent extends TestBase {
 	@Description("Admin will select video file from local repo and will upload to APDR ")
 	@Feature("Add video content")
 	@Story("As a Admin I need to upload a video file")
-	public void addVideoFile() throws AWTException {
+	public void addVideoFile() throws AWTException, InterruptedException {
 		addcontentobj.addVideoFileFromLocalRepository();
 	}
 

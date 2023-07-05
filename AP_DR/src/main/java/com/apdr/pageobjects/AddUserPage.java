@@ -6,7 +6,9 @@ import com.apdr.utalities.WaitUtils;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -29,9 +31,10 @@ public class AddUserPage extends TestBase {
 	WebElement emailInputField;
 
 	// author role check box locator
-	@FindBy(id = "//input[@id='edit-roles-customer']")
+	@FindBy(xpath = "//label[@for='edit-role-change-customer']")
 	WebElement authorCheckbox;
-
+	
+	
 	// password input field locator
 	@FindBy(css = "input.password-field.js-password-field.form-text.required")
 	WebElement passwordInputField;
@@ -108,11 +111,14 @@ public class AddUserPage extends TestBase {
 
 	public void Roleselection() {
 		wait.until(ExpectedConditions.elementToBeClickable(authorCheckbox));
-		authorCheckbox.click();
+		Actions action = new Actions((driver) );
+		action.moveToElement(authorCheckbox).click().perform();
+		//authorCheckbox.click();
 	}
 
-	public void clickOnCreateUser() {
+	public void clickOnCreateUser() throws InterruptedException {
 		createNewAcc.click();
+		Thread.sleep(3000);
 	}
 
 }

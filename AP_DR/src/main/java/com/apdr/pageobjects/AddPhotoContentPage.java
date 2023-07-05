@@ -133,10 +133,12 @@ public class AddPhotoContentPage extends TestBase {
 
 	public void add_Image_file() throws AWTException, InterruptedException {
 
-		builder.moveToElement(chooseImgBtn).click().build().perform();
+		//builder.moveToElement(chooseImgBtn).click().build().perform();
 		//chooseImgBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/AP Testimages.jpg");
 		 chooseImgBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\AP Testimages.jpg");
-
+		 Thread.sleep(3000);
+		 
+		 
 	}
 
 	/*
