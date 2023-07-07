@@ -4,29 +4,16 @@
   <listeners>
     <listener class-name="com.apdr.listeners.TestListener"/>
   </listeners>
-  <test thread-count="5" name="Regression Test Suite (failed)">
+  <test thread-count="5" name=" TestCases for Admin Role (failed)">
     <classes>
-      <class name="com.apdr.testcases.AddUser">
+      <class name="com.apdr.testcases.AddAudioContent">
         <methods>
+          <include name="addVideoFile"/>
           <include name="initialization"/>
-          <include name="add_Org_Name_And_Org_Id"/>
-          <include name="add_Role_For_Users"/>
-          <include name="click_On_Create_New_Account_Button"/>
-          <include name="add_User_Informtion"/>
-          <include name="hover_Over_AddUser_Link"/>
-          <include name="select_Users_role"/>
-          <include name="add_Pass_And_Confirm_Password"/>
-          <include name="add_User_MDMID"/>
-          <include name="addUserInitialization"/>
+          <include name="teardown"/>
+          <include name="addContentInitialization"/>
         </methods>
-      </class> <!-- com.apdr.testcases.AddUser -->
-      <class name="com.apdr.testcases.LogInTestCases">
-        <methods>
-          <include name="loginToApDr"/>
-          <include name="loginIntialization"/>
-          <include name="initialization"/>
-        </methods>
-      </class> <!-- com.apdr.testcases.LogInTestCases -->
+      </class> <!-- com.apdr.testcases.AddAudioContent -->
     </classes>
-  </test> <!-- Regression Test Suite (failed) -->
+  </test> <!--  TestCases for Admin Role (failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -30,10 +30,11 @@ public class InitialPasswordUser extends TestBase {
 	}
 
 	
-	@Test(priority = 1 , enabled = true)
+	@Test(priority = 1 , enabled = true , dataProviderClass = DataUtils.class, dataProvider = "addUserData")
 	@Description("Cilck on Mailinator Email ")
-	public void OpenNewMailbox() throws InterruptedException {
-		InitialPassObj.Mail_Initial_Click();
+	public void OpenNewMailbox(String data) throws InterruptedException {
+		String[] formInfo = data.split(",");
+		InitialPassObj.Mail_Initial_Click(formInfo[0]);
 	}
 	
 	
@@ -51,13 +52,14 @@ public class InitialPasswordUser extends TestBase {
 	}
 
 	
-	@Test(priority = 4 , enabled = true)
+	@Test(priority = 4 , enabled = true,dataProviderClass = DataUtils.class, dataProvider = "addUserData" )
 	@Description("User submit button ")
-	public void OpenMailbox() throws InterruptedException {
-		InitialPassObj.Mail_Click();
+	public void OpenMailbox(String data) throws InterruptedException {
+		String[] formInfo = data.split(",");
+		InitialPassObj.Mail_Click(formInfo[0]);
 	}
 
-	@Test(priority = 5 , enabled = true ,dataProviderClass = DataUtils.class, dataProvider = "addUserData")
+	@Test(priority = 5 , enabled = true , dataProviderClass = DataUtils.class, dataProvider = "addUserData")
 	@Description("User submit button ")
 	public void NewPass(String data) throws InterruptedException {
 		String[] formInfo = data.split(",");

@@ -39,8 +39,9 @@ public class Adduploadcsvpage extends TestBase {
 
 	public void FileClickable() throws AWTException {
 		builder.moveToElement(selecfileBtn).click().build().perform();
-		selecfileBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/TEstUserfile.csv");
-		// selecfileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\TEstUserfile.csv");
+		//First line for Server side
+		//selecfileBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/TEstUserfile.csv");
+		 selecfileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\TEstUserfile.csv");
 
 	}
 

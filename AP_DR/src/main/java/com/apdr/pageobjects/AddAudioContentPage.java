@@ -40,7 +40,10 @@ public class AddAudioContentPage extends TestBase {
 	WebElement introInputField;
 
 	// choose file button locator
-	@FindBy(xpath = "//input[@id='edit-field-audio-file-0-upload']")
+	
+	
+	@FindBy(name = "files[field_audio_file_0]")
+	//@FindBy(xpath = "//input[@id='edit-field-audio-file-0-upload']")
 	WebElement chooseFileBtn;
 
 	// Remove button locator
@@ -66,16 +69,13 @@ public class AddAudioContentPage extends TestBase {
 	}
 
 	public void add_Audio_file() throws AWTException, InterruptedException {
-		builder.moveToElement(chooseFileBtn).click().build().perform();
+		//builder.moveToElement(chooseFileBtn).click().build().perform();
 		// chooseFileBtn.click();
-
+		
+		//First line for Server side
 		//chooseFileBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
 		chooseFileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APaudio.mp3");
 		Thread.sleep(2000);
-		if (chooseFileBtn.isDisplayed())
-			System.out.println("File upload element is displayed. A file may have been uploaded.");
-		else
-				System.out.println("File upload element is not displayed. No file has been uploaded.");
 	}
 
 	public void viewAudioRemoveButton() {
@@ -83,7 +83,7 @@ public class AddAudioContentPage extends TestBase {
 	}
 
 	public void clickOnSaveButton() throws InterruptedException {
-		Thread.sleep(10000);
+		Thread.sleep(2000);
 		saveBtn.click();
 	}
 

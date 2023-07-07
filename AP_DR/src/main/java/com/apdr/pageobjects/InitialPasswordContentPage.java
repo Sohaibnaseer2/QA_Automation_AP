@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
@@ -29,9 +30,11 @@ public class InitialPasswordContentPage extends TestBase {
 	@FindBy(xpath = "//td[@class='ng-binding'][normalize-space()='IMPORTANT NOTIFICATION: AP Backup Website']")
 	WebElement Initiallink;
 
-	// @FindBy(xpath =
-	// "//a[contains(text(),'https://newsqa.apbackup.org/auth/set-password?e=sohai')]")
-	@FindBy(xpath = "//a[normalize-space()='https://newsqa.apbackup.org/auth/set-password']")
+	@FindBy(xpath = "/html/body/div[1]/header[1]/div[1]/div/div/div[1]/div/input")
+	WebElement MailinatorEmailField;
+	
+	 @FindBy(xpath ="/html[1]/body[1]/a[1]")
+	//@FindBy(xpath = "//a[normalize-space()='https://newsqa.apbackup.org/auth/set-password']")
 	WebElement MailpathClickInitialPass;
 
 	/// Reset password
@@ -48,7 +51,9 @@ public class InitialPasswordContentPage extends TestBase {
 	@FindBy(xpath = "//td[normalize-space()='[AP] Your AP Backup password request']")
 	WebElement Mailnatorpath;
 
-	@FindBy(xpath = "//a[contains(text(),'https://newsqa.apbackup.org/auth/set-password?e=soha')]")
+	// Previous followed xpath .
+	//@FindBy(xpath = "//a[contains(text(),'https://newsqa.apbackup.org/auth/set-password?e=soha')]")
+	@FindBy(xpath = "/html[1]/body[1]/a[1]")
 	WebElement MailpathClick;
 
 	@FindBy(xpath = "//input[@id='mat-input-0']")
@@ -87,16 +92,23 @@ public class InitialPasswordContentPage extends TestBase {
 
 	}
 
-	public void Mail_Initial_Click() throws InterruptedException {
+	public void Mail_Initial_Click(String _email) throws InterruptedException {
 
 		((JavascriptExecutor) driver).executeScript("window.open(arguments[0])",
-				"https://www.mailinator.com/v4/public/inboxes.jsp?to=sohaib21");
+				"https://www.mailinator.com/");
+
+		
 		// Switch to the new tab
 		ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
 
 		driver.switchTo().window(tabs.get(1));
+		wait.until(ExpectedConditions.elementToBeClickable(MailinatorEmailField));
+		MailinatorEmailField.sendKeys(_email);
+		MailinatorEmailField.sendKeys(Keys.ENTER);
+		
 		// driver.get("https://www.mailinator.com/v4/public/inboxes.jsp?to=sohaib");
 		Thread.sleep(3000);
+		wait.until(ExpectedConditions.elementToBeClickable(Initiallink));
 		Initiallink.click();
 		Thread.sleep(3000);
 		driver.switchTo().frame("texthtml_msg_body");
@@ -107,14 +119,17 @@ public class InitialPasswordContentPage extends TestBase {
 
 	}
 
-	public void Mail_Click() throws InterruptedException {
+	public void Mail_Click(String _email) throws InterruptedException {
 
 		((JavascriptExecutor) driver).executeScript("window.open(arguments[0])",
-				"https://www.mailinator.com/v4/public/inboxes.jsp?to=sohaib21");
+				"https://www.mailinator.com/");
 		// Switch to the new tab
 		ArrayList<String> tabs1 = new ArrayList<>(driver.getWindowHandles());
 
 		driver.switchTo().window(tabs1.get(3));
+		wait.until(ExpectedConditions.elementToBeClickable(MailinatorEmailField));
+		MailinatorEmailField.sendKeys(_email);
+		MailinatorEmailField.sendKeys(Keys.ENTER);
 		// driver.get("https://www.mailinator.com/v4/public/inboxes.jsp?to=sohaib");
 		Thread.sleep(3000);
 		Mailnatorpath.click();
