@@ -30,11 +30,19 @@ public class AddUserPage extends TestBase {
 	@FindBy(id = "edit-mail")
 	WebElement emailInputField;
 
-	// author role check box locator
-	@FindBy(xpath = "//label[@for='edit-role-change-customer']")
+	@FindBy(xpath = "//label[normalize-space()='Admin']")
+	WebElement adminCheckbox;
+
+	@FindBy(xpath = "//label[normalize-space()='Customer Support']")
+	WebElement customer_supportCheckbox;
+
+	@FindBy(xpath = "//label[normalize-space()='Author']")
 	WebElement authorCheckbox;
-	
-	
+
+	// Customer role check box locator
+	@FindBy(xpath = "//label[normalize-space()='Customer']")
+	WebElement CustomerCheckbox;
+
 	// password input field locator
 	@FindBy(css = "input.password-field.js-password-field.form-text.required")
 	WebElement passwordInputField;
@@ -80,9 +88,9 @@ public class AddUserPage extends TestBase {
 		emailInputField.sendKeys(_email);
 	}
 
-	public void selectUserRole() {
-		authorCheckbox.click();
-	}
+	/*
+	 * public void selectUserRole() { authorCheckbox.click(); }
+	 */
 
 	public void addPassAndConfirmPass(String _pass, String _confPass) {
 		passwordInputField.sendKeys(_pass);
@@ -109,11 +117,36 @@ public class AddUserPage extends TestBase {
 
 	}
 
-	public void Roleselection() {
+	public void RoleselectionForAdmin() throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(adminCheckbox));
+		Thread.sleep(2000);
+		Actions action = new Actions((driver));
+		action.moveToElement(adminCheckbox).click().perform();
+
+	}
+
+	public void RoleselectionForCustomer_Support() throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(customer_supportCheckbox));
+		Thread.sleep(2000);
+		Actions action = new Actions((driver));
+		action.moveToElement(customer_supportCheckbox).click().perform();
+
+	}
+
+	public void RoleselectionForAuthor() throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(authorCheckbox));
-		Actions action = new Actions((driver) );
+		Thread.sleep(2000);
+		Actions action = new Actions((driver));
 		action.moveToElement(authorCheckbox).click().perform();
-		//authorCheckbox.click();
+
+	}
+
+	public void RoleselectionForCustomer() throws InterruptedException {
+		wait.until(ExpectedConditions.elementToBeClickable(CustomerCheckbox));
+		Thread.sleep(2000);
+		Actions action = new Actions((driver));
+		action.moveToElement(CustomerCheckbox).click().perform();
+
 	}
 
 	public void clickOnCreateUser() throws InterruptedException {

@@ -51,7 +51,7 @@ public class AddVideoContentPage extends TestBase {
 	WebElement addFileButton;
 
 	// remove button locator
-	@FindBy(xpath = "//input[@id='edit-field-video-file-2-0-remove-button--5B0MBvXCuTQ']")
+	@FindBy(name = "field_photo_0_remove_button")
 	WebElement removeBtn;
 
 	// Body Input Field locator
@@ -63,7 +63,7 @@ public class AddVideoContentPage extends TestBase {
 	WebElement saveAsDropDown;
 
 	// Save button locator
-	@FindBy(id = "edit-submit")
+	@FindBy(xpath = "//input[@id='edit-submit']")
 	WebElement saveBtn;
 
 	public String clickOnVideoButton() {
@@ -93,8 +93,8 @@ public class AddVideoContentPage extends TestBase {
 		 * addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\Desktop\\Test1.MP4");
 		 * Thread.sleep(10000);
 		 */
-		 
-		 
+		//First line for Server side
+		//StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\Test1.mp4");
 		 	StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\Test1.mp4");
 	        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 

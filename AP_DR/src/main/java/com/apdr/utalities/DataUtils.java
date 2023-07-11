@@ -108,7 +108,7 @@ public class DataUtils {
 	}
 	
 	@DataProvider
-	public Object[] AutherCredentials() {	
+	public Object[] AuthorCredentials() {	
 		// String array to store JSONArray data
 		Object[] dataArray = credentials("Author");
 		return dataArray;

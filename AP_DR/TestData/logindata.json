@@ -9,14 +9,14 @@
 	],
 	"Customer_support": [
 		{
-			"email": "Customer1234@mailinator.com",
+			"email": "APCustomerSupport@mailinator.com",
 			"password": "Test@123..."	
 		}
 	],
 	
 	"Author": [
 		{
-			"email": "sohaib123@mailinator.com",
+			"email": "APAuthor@mailinator.com",
 			"password": "Test@123..."	
 		}
 	],
@@ -29,7 +29,7 @@
 	
 	"add-user": [
 		{
-			"email": "sohaib21@mailinator.com",
+			"email": "APCustomer@mailinator.com",
 			"password": "Test@123...",
 			"org": "software Testing ",
 			"orgId": "ap786",

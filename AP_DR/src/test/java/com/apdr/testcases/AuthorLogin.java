@@ -29,7 +29,7 @@ public class AuthorLogin extends TestBase {
 		homeObj = new HomePage();
 	}
 
-	@Test(priority = 1, dataProviderClass = DataUtils.class, dataProvider = "AutherCredentials", enabled = true)
+	@Test(priority = 1, dataProviderClass = DataUtils.class, dataProvider = "AuthorCredentials", enabled = true)
 	@Description("User will hit the url and when user will land on the Login page then user will enter email and password and "
 			+ "then user will click on the login button ")
 	@Feature("LogIn")

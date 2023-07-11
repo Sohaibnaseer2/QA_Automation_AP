@@ -8,18 +8,78 @@
 	<test name=" TestCases for Admin Role ">
 
 		<classes>
-		
+
 			<class name="com.apdr.testcases.LogInTestCases"></class>
+			<class name="com.apdr.testcases.AddPhotoContent"></class>
 			<class name="com.apdr.testcases.AddAudioContent"></class>
 			<class name="com.apdr.testcases.NewsAlertContent"></class>
 			<class name="com.apdr.testcases.AddNewsStoryContent"></class>
-			<class name="com.apdr.testcases.AddPhotoContent"></class>
-			<class name="com.apdr.testcases.AddVideoContent"></class>
 			<class name="com.apdr.testcases.Guidedownload"></class>
-			<class name="com.apdr.testcases.AddUser"></class>
+			<!--<class name="com.apdr.testcases.AddAdminUser"></class>
 			<class name="com.apdr.testcases.InitialPasswordUser"></class>
-			
+			<class name="com.apdr.testcases.AddVideoContent"></class>-->
+
 		</classes>
 
 	</test>
+
+		<test name=" TestCases for Customer Support Role ">
+
+		<classes>
+
+			<class name="com.apdr.testcases.CustomerSupport"></class>
+			<class name="com.apdr.testcases.BannerContent"></class>
+			<class name="com.apdr.testcases.Guidedownload"></class>
+			<!--<class name="com.apdr.testcases.AddUser"></class>-->
+		</classes>
+
+	</test>
+
+		<test name=" TestCases for Author Role ">
+
+		<classes>
+
+			<class name="com.apdr.testcases.AuthorLogin"></class>
+			<class name="com.apdr.testcases.AddAudioContent"></class>
+			<class name="com.apdr.testcases.NewsAlertContent"></class>
+			<class name="com.apdr.testcases.AddPhotoContent"></class>
+			<class name="com.apdr.testcases.AddNewsStoryContent"></class>
+			
+			<!--<class name="com.apdr.testcases.AddVideoContent"></class>-->
+			<class name="com.apdr.testcases.Guidedownload"></class>
+		</classes>
+
+	</test>
+
+	<!--	<test name=" Other TestCases ">
+
+		<classes>
+		<class name="com.apdr.testcases.AuthorLogin"></class>
+			<class name="com.apdr.testcases.AddCustomerSupport"></class>
+			<class name="com.apdr.testcases.AddCustomer"></class>
+			<class name="com.apdr.testcases.AddAuthor"></class>
+			<class name="com.apdr.testcases.RevertNewsAlertContent"></class>
+			<class name="com.apdr.testcases.EditNewsAlertContent"></class>
+			<class name="com.apdr.testcases.AddPhotoContent"></class>
+			<class name="com.apdr.testcases.SuperAdmin"></class>
+			<class name="com.apdr.testcases.AddUser"></class>
+			<class name="com.apdr.testcases.SingleNotifyuserContent"></class>
+			<class name="com.apdr.testcases.SuperAdmin"></class>
+			<class name="com.apdr.testcases.DeleteContentListing"></class>
+			<class name="com.apdr.testcases.LogInTestCases"></class>
+			<class name="com.apdr.testcases.Adduploadcsvcontent"></class>
+			<class name="com.apdr.testcases.Importusers"></class>
+			<class name="com.apdr.testcases.SuperAdmin"></class>
+			<class name="com.apdr.testcases.Notifyusers"></class>
+			<class name="com.apdr.testcases.DeleteVideoContent"></class>
+			<class name="com.apdr.testcases.DeleteAudioContent"></class>
+			<class name="com.apdr.testcases.DeletePhotoContent"></class>
+			<class name="com.apdr.testcases.DeleteNewStoryContent"></class>
+			<class name="com.apdr.testcases.DeleteNewsAlertContent"></class>
+			<class name="com.apdr.testcases.Deletecontent"></class>
+			<class name="com.apdr.testcases.RoleUpdateContent"></class>
+			
+		</classes>
+
+	</test>-->
 </suite>

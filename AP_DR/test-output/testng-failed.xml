@@ -6,14 +6,22 @@
   </listeners>
   <test thread-count="5" name=" TestCases for Admin Role (failed)">
     <classes>
-      <class name="com.apdr.testcases.AddAudioContent">
+      <class name="com.apdr.testcases.AddPhotoContent">
         <methods>
-          <include name="addVideoFile"/>
+          <include name="hover_Over_Content_Button"/>
+          <include name="addPhotoContent"/>
           <include name="initialization"/>
-          <include name="teardown"/>
+          <include name="click_On_SaveButton"/>
           <include name="addContentInitialization"/>
         </methods>
-      </class> <!-- com.apdr.testcases.AddAudioContent -->
+      </class> <!-- com.apdr.testcases.AddPhotoContent -->
+      <class name="com.apdr.testcases.LogInTestCases">
+        <methods>
+          <include name="loginToApDr"/>
+          <include name="initialization"/>
+          <include name="loginIntialization"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.LogInTestCases -->
     </classes>
   </test> <!--  TestCases for Admin Role (failed) -->
 </suite> <!-- Failed suite [Suite] -->

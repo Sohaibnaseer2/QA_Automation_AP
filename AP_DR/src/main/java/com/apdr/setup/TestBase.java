@@ -50,18 +50,15 @@ public class TestBase {
 		if (browserName.equals("chrome")) {
 
 			ChromeOptions options = new ChromeOptions();
-			driver = new ChromeDriver(options);
-	
-			/*
-			 * options.addArguments("--no-sandbox"); options.addArguments("--headless");
-			 * 
-			 * options.addArguments("window-size=1200,1100");
-			 */
+			  options.addArguments("--no-sandbox"); 
+			  options.addArguments("--headless");
+			  options.addArguments("window-size=1200,1100");
+			  driver = new ChromeDriver(options);
 
 		}
 
-		driver.manage().window().maximize();
-		// driver.manage().window().setSize(new Dimension(1200,1100));
+		//driver.manage().window().maximize();
+		 driver.manage().window().setSize(new Dimension(1200,1100));
 
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtils.IMPLICIT_WAIT));

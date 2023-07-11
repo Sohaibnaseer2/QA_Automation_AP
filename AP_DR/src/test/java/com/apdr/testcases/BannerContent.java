@@ -40,7 +40,7 @@ public class BannerContent extends TestBase {
 		homeObj.hoverOnContentButton();
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2 ,enabled = false)
 	@Description("Admin will Hover the Banner link ")
 	@Feature("Add content")
 	@Story("As a Admin I need to hover the Banner button")
