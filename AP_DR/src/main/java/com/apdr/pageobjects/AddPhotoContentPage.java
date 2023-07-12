@@ -119,6 +119,10 @@ public class AddPhotoContentPage extends TestBase {
 	@FindBy(id = "edit-submit")
 	WebElement saveBtn;
 
+	@FindBy(xpath = "//div[@class='field field--name-field-photo field--type-image field--label-visually_hidden']//div[@class='field__item']")
+	WebElement PhotoPresent;
+	
+	
 	public String clickOnPhotoLink() {
 		wait.until(ExpectedConditions.elementToBeClickable(photoBtn));
 		photoBtn.click();
@@ -136,41 +140,13 @@ public class AddPhotoContentPage extends TestBase {
 		//builder.moveToElement(chooseImgBtn).click().build().perform();
 		 //First line for Server side
 		//chooseImgBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/AP Testimages.jpg");
-		 chooseImgBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\AP Testimages.jpg");
-		 Thread.sleep(5000);
+		chooseImgBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\AP Testimages.jpg");
+		Thread.sleep(5000);
 		 
 		 
 	}
 
-	/*
-	 * public void inputdate() throws InterruptedException {
-	 * 
-	 * 
-	 * 
-	 * LocalDate currentDate = LocalDate.now(); String formattedDate =
-	 * currentDate.format(DateTimeFormatter.ofPattern("mm/dd/yyyy"));
-	 * System.out.println(formattedDate);
-	 * calenderInputField.sendKeys(formattedDate);
-	 * 
-	 * 
-	 * 
-	 * DateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy"); Date date = new
-	 * Date(); System.out.println(dateFormat.format(date));
-	 * calenderInputField.sendKeys(dateFormat.format(date));
-	 * 
-	 * 
-	 * 
-	 * 
-	 * calenderInputField.sendKeys("12-May-2023");
-	 * 
-	 * 
-	 * String pattern = "hh:mm:ss a"; //1. LocalTime LocalTime now =
-	 * LocalTime.now();
-	 * System.out.println(now.format(DateTimeFormatter.ofPattern(pattern)));
-	 * timeInputField.sendKeys(now.format(DateTimeFormatter.ofPattern(pattern)));
-	 * 
-	 * }
-	 */
+	
 
 	public void addImageCaptionAndInstructions(String caption, String instruction) {
 		captionTxtInput.sendKeys(caption);
@@ -214,4 +190,10 @@ public class AddPhotoContentPage extends TestBase {
 		saveBtn.click();
 	}
 
+	// Verify Photo is displayed or not.
+		public boolean Photo_File_Present() {
+			boolean isPhotoDisplayed = PhotoPresent.isDisplayed();
+			return isPhotoDisplayed;
+		}
+	
 }

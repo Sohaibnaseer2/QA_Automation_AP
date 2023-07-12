@@ -43,7 +43,6 @@ public class AddPhotoContent extends TestBase {
 	@Feature("Add content")
 	@Story("As a Admin I need to hover the content button")
 	public void hover_Over_Content_Button() throws InterruptedException {
-
 		homeObj.hoverOnContentButton();
 	}
 
@@ -51,35 +50,32 @@ public class AddPhotoContent extends TestBase {
 	@Description("Admin will click on the video link ")
 	@Feature("Add video content")
 	@Story("As a Admin I need to click on the video button link")
-	public void addPhotoContent(String data) throws AWTException, InterruptedException {
+	public void Upload_Photo(String data) throws AWTException, InterruptedException {
 		String[] formInfo = data.split(",");
 		String titleTxt = addPhoteContentObj.clickOnPhotoLink();
 		Assert.assertEquals(titleTxt, "Create Photo", "Admin is able to click on the Photo button");
-
 		addPhoteContentObj.addImgSlug(formInfo[0]);
-		
 		addPhoteContentObj.addImageCaptionAndInstructions(formInfo[1], formInfo[2]);
-		/* addPhoteContentObj.inputdate(); */
 		addPhoteContentObj.addImageCountryDetails(formInfo[3], formInfo[4], formInfo[5]);
 		addPhoteContentObj.addImageBylineAndBytitle(formInfo[6], formInfo[7]);
 		addPhoteContentObj.add_Image_Source_creditline_Copywrite_transref_SuppCategory(formInfo[8], formInfo[9],
 				formInfo[10], formInfo[11], formInfo[12]);
 		addPhoteContentObj.add_Image_file();
-		 addPhoteContentObj.Add_text_of_Alternative(formInfo[13]); 
+		addPhoteContentObj.Add_text_of_Alternative(formInfo[13]);
 
 	}
-
-	/*
-	 * public void viewAudioRemoveButton(){
-	 * wait.until(ExpectedConditions.visibilityOf(removeBtn));
-	 */
 
 	@Test(priority = 3)
 	public void click_On_SaveButton() throws InterruptedException {
-		addcontentobj.viewRemoveButton(); 
 		addPhoteContentObj.clickOnSaveButton();
 	}
 
+	@Test(priority = 4)
+	@Description("Verify that Photo is Uploaded or not ? ")
+	public void Photo_Verification() throws InterruptedException {
+		boolean Photochecking = addPhoteContentObj.Photo_File_Present();
+		Assert.assertTrue(Photochecking, "Photo is not uploaded. Please check.");
+	}
 	/*
 	 * @AfterTest public void teardown() { driver.quit(); }
 	 */

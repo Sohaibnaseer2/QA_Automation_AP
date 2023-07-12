@@ -1,58 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="13" total="76" passed="63" failed="0" skipped="0">
+<testng-results ignored="19" total="122" passed="103" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-11T18:00:13 PKT" name="Suite" finished-at="2023-07-11T18:02:52 PKT" duration-ms="158245">
+  <suite started-at="2023-07-12T21:27:57 PKT" name="Suite" finished-at="2023-07-12T21:32:56 PKT" duration-ms="298556">
     <groups>
     </groups>
-    <test started-at="2023-07-11T18:00:13 PKT" name=" TestCases for Admin Role " finished-at="2023-07-11T18:01:19 PKT" duration-ms="65351">
-      <class name="com.apdr.testcases.AddAudioContent">
-        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddAudioContent@53f6fd09]" started-at="2023-07-11T18:00:23 PKT" name="addContentInitialization" finished-at="2023-07-11T18:00:23 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="23" status="PASS">
+    <test started-at="2023-07-12T21:27:57 PKT" name=" Super Admin Create Admin " finished-at="2023-07-12T21:28:27 PKT" duration-ms="29987">
+      <class name="com.apdr.testcases.AddAdminUser">
+        <test-method is-config="true" signature="addUserInitialization()[pri:0, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-12T21:28:04 PKT" name="addUserInitialization" finished-at="2023-07-12T21:28:05 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddAudioContent@53f6fd09]" started-at="2023-07-11T18:00:52 PKT" name="hover_Over_Content_Button" finished-at="2023-07-11T18:00:53 PKT" duration-ms="781" status="PASS">
+        </test-method> <!-- addUserInitialization -->
+        <test-method signature="hover_Over_AddUser_Link()[pri:1, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-12T21:28:18 PKT" name="hover_Over_AddUser_Link" finished-at="2023-07-12T21:28:20 PKT" duration-ms="1513" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddAudioContent@53f6fd09]" started-at="2023-07-11T18:00:53 PKT" name="addVideoContent" finished-at="2023-07-11T18:00:54 PKT" duration-ms="985" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addVideoContent -->
-        <test-method signature="add_Slug_Speaker_Intro_For_Audio(java.lang.String)[pri:3, instance:com.apdr.testcases.AddAudioContent@53f6fd09]" started-at="2023-07-11T18:00:54 PKT" name="add_Slug_Speaker_Intro_For_Audio" data-provider="audioDataProvider" finished-at="2023-07-11T18:00:54 PKT" duration-ms="227" status="PASS">
+        </test-method> <!-- hover_Over_AddUser_Link -->
+        <test-method signature="add_Role_For_Users(java.lang.String)[pri:2, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-12T21:28:20 PKT" name="add_Role_For_Users" data-provider="adminCredentials" finished-at="2023-07-12T21:28:20 PKT" duration-ms="232" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Audio upload through upgraded Automation testing script,Audionic,Audionic is the #1 Audio Brand in Pakistan.]]>
+                <![CDATA[sohaib.naseer@visionetsystems.com,Test@123...,Test engineer,aptest]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add_Slug_Speaker_Intro_For_Audio -->
-        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddAudioContent@53f6fd09]" started-at="2023-07-11T18:00:54 PKT" name="addVideoFile" finished-at="2023-07-11T18:00:56 PKT" duration-ms="2043" status="PASS">
+        </test-method> <!-- add_Role_For_Users -->
+        <test-method signature="select_Users_role()[pri:3, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-12T21:28:20 PKT" name="select_Users_role" finished-at="2023-07-12T21:28:22 PKT" duration-ms="2189" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addVideoFile -->
-        <test-method signature="clickOnSaveButton()[pri:5, instance:com.apdr.testcases.AddAudioContent@53f6fd09]" started-at="2023-07-11T18:00:56 PKT" name="clickOnSaveButton" finished-at="2023-07-11T18:01:00 PKT" duration-ms="3968" status="PASS">
+        </test-method> <!-- select_Users_role -->
+        <test-method signature="add_Org_Name_And_Org_Id(java.lang.String)[pri:4, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-12T21:28:22 PKT" name="add_Org_Name_And_Org_Id" data-provider="addUserData" finished-at="2023-07-12T21:28:22 PKT" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[APCustomer@mailinator.com,Test@123...,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnSaveButton -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.AddAudioContent@53f6fd09]" started-at="2023-07-11T18:01:19 PKT" name="teardown" finished-at="2023-07-11T18:01:19 PKT" duration-ms="121" status="PASS">
+        </test-method> <!-- add_Org_Name_And_Org_Id -->
+        <test-method signature="add_User_MDMID(java.lang.String)[pri:5, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-12T21:28:22 PKT" name="add_User_MDMID" data-provider="addUserData" finished-at="2023-07-12T21:28:22 PKT" duration-ms="56" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[APCustomer@mailinator.com,Test@123...,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.apdr.testcases.AddAudioContent -->
+        </test-method> <!-- add_User_MDMID -->
+        <test-method signature="add_User_Informtion(java.lang.String)[pri:6, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-12T21:28:22 PKT" name="add_User_Informtion" data-provider="addUserData" finished-at="2023-07-12T21:28:22 PKT" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[APCustomer@mailinator.com,Test@123...,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_User_Informtion -->
+        <test-method signature="click_On_Create_New_Account_Button()[pri:7, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-12T21:28:22 PKT" name="click_On_Create_New_Account_Button" finished-at="2023-07-12T21:28:27 PKT" duration-ms="4776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_On_Create_New_Account_Button -->
+      </class> <!-- com.apdr.testcases.AddAdminUser -->
+      <class name="com.apdr.testcases.SuperAdmin">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.SuperAdmin@c94fd30]" started-at="2023-07-12T21:27:57 PKT" name="initialization" finished-at="2023-07-12T21:28:04 PKT" duration-ms="7233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.SuperAdmin@c94fd30]" started-at="2023-07-12T21:28:05 PKT" name="loginIntialization" finished-at="2023-07-12T21:28:05 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntialization -->
+        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.SuperAdmin@c94fd30]" started-at="2023-07-12T21:28:05 PKT" name="loginToApDr" data-provider="SuperAdminCredentials" finished-at="2023-07-12T21:28:18 PKT" duration-ms="13434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ripcord@ap.org,admin,null,null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApDr -->
+      </class> <!-- com.apdr.testcases.SuperAdmin -->
+    </test> <!--  Super Admin Create Admin  -->
+    <test started-at="2023-07-12T21:28:27 PKT" name=" TestCases for Admin Role " finished-at="2023-07-12T21:30:23 PKT" duration-ms="115378">
       <class name="com.apdr.testcases.AddPhotoContent">
-        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddPhotoContent@38aa816f]" started-at="2023-07-11T18:00:23 PKT" name="addContentInitialization" finished-at="2023-07-11T18:00:23 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddPhotoContent@5e4bd84a]" started-at="2023-07-12T21:28:33 PKT" name="addContentInitialization" finished-at="2023-07-12T21:28:33 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddPhotoContent@38aa816f]" started-at="2023-07-11T18:00:34 PKT" name="hover_Over_Content_Button" finished-at="2023-07-11T18:00:34 PKT" duration-ms="894" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddPhotoContent@5e4bd84a]" started-at="2023-07-12T21:29:23 PKT" name="hover_Over_Content_Button" finished-at="2023-07-12T21:29:24 PKT" duration-ms="798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addPhotoContent(java.lang.String)[pri:2, instance:com.apdr.testcases.AddPhotoContent@38aa816f]" started-at="2023-07-11T18:00:34 PKT" name="addPhotoContent" data-provider="imageDataProvider" finished-at="2023-07-11T18:00:43 PKT" duration-ms="8864" status="PASS">
+        <test-method signature="addPhotoContent(java.lang.String)[pri:2, instance:com.apdr.testcases.AddPhotoContent@5e4bd84a]" started-at="2023-07-12T21:29:24 PKT" name="addPhotoContent" data-provider="imageDataProvider" finished-at="2023-07-12T21:29:31 PKT" duration-ms="7587" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,25 +111,158 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPhotoContent -->
-        <test-method signature="click_On_SaveButton()[pri:3, instance:com.apdr.testcases.AddPhotoContent@38aa816f]" started-at="2023-07-11T18:00:43 PKT" name="click_On_SaveButton" finished-at="2023-07-11T18:00:52 PKT" duration-ms="8661" status="PASS">
+        <test-method signature="click_On_SaveButton()[pri:3, instance:com.apdr.testcases.AddPhotoContent@5e4bd84a]" started-at="2023-07-12T21:29:31 PKT" name="click_On_SaveButton" finished-at="2023-07-12T21:29:35 PKT" duration-ms="3595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_On_SaveButton -->
-      </class> <!-- com.apdr.testcases.AddPhotoContent -->
-      <class name="com.apdr.testcases.AddNewsStoryContent">
-        <test-method is-config="true" signature="addNewsStoryContentInitialization()[pri:0, instance:com.apdr.testcases.AddNewsStoryContent@1b84f475]" started-at="2023-07-11T18:00:23 PKT" name="addNewsStoryContentInitialization" finished-at="2023-07-11T18:00:23 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method signature="Photo_Verification()[pri:4, instance:com.apdr.testcases.AddPhotoContent@5e4bd84a]" started-at="2023-07-12T21:29:35 PKT" name="Photo_Verification" finished-at="2023-07-12T21:29:35 PKT" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewsStoryContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddNewsStoryContent@1b84f475]" started-at="2023-07-11T18:01:03 PKT" name="hover_Over_Content_Button" finished-at="2023-07-11T18:01:04 PKT" duration-ms="754" status="PASS">
+        </test-method> <!-- Photo_Verification -->
+      </class> <!-- com.apdr.testcases.AddPhotoContent -->
+      <class name="com.apdr.testcases.AddAudioContent">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddAudioContent@4b6e2263]" started-at="2023-07-12T21:28:33 PKT" name="addContentInitialization" finished-at="2023-07-12T21:28:33 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addContentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddAudioContent@4b6e2263]" started-at="2023-07-12T21:28:52 PKT" name="hover_Over_Content_Button" finished-at="2023-07-12T21:28:53 PKT" duration-ms="1514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="clickOnNewsStoryLink()[pri:2, instance:com.apdr.testcases.AddNewsStoryContent@1b84f475]" started-at="2023-07-11T18:01:04 PKT" name="clickOnNewsStoryLink" finished-at="2023-07-11T18:01:05 PKT" duration-ms="1036" status="PASS">
+        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddAudioContent@4b6e2263]" started-at="2023-07-12T21:28:53 PKT" name="addVideoContent" finished-at="2023-07-12T21:28:56 PKT" duration-ms="2509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addVideoContent -->
+        <test-method signature="add_Slug_Speaker_Intro_For_Audio(java.lang.String)[pri:3, instance:com.apdr.testcases.AddAudioContent@4b6e2263]" started-at="2023-07-12T21:28:56 PKT" name="add_Slug_Speaker_Intro_For_Audio" data-provider="audioDataProvider" finished-at="2023-07-12T21:28:56 PKT" duration-ms="240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Audio upload through upgraded Automation testing script,Audionic,Audionic is the #1 Audio Brand in Pakistan.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Slug_Speaker_Intro_For_Audio -->
+        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddAudioContent@4b6e2263]" started-at="2023-07-12T21:28:56 PKT" name="addVideoFile" finished-at="2023-07-12T21:29:01 PKT" duration-ms="5052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addVideoFile -->
+        <test-method signature="clickOnSaveButton()[pri:5, instance:com.apdr.testcases.AddAudioContent@4b6e2263]" started-at="2023-07-12T21:29:01 PKT" name="clickOnSaveButton" finished-at="2023-07-12T21:29:10 PKT" duration-ms="8821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSaveButton -->
+        <test-method signature="Audio_File_Verification()[pri:6, instance:com.apdr.testcases.AddAudioContent@4b6e2263]" started-at="2023-07-12T21:29:10 PKT" name="Audio_File_Verification" finished-at="2023-07-12T21:29:10 PKT" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Audio_File_Verification -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.AddAudioContent@4b6e2263]" started-at="2023-07-12T21:30:22 PKT" name="teardown" finished-at="2023-07-12T21:30:23 PKT" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.apdr.testcases.AddAudioContent -->
+      <class name="com.apdr.testcases.AddCustomerSupport">
+        <test-method is-config="true" signature="addUserInitialization()[pri:0, instance:com.apdr.testcases.AddCustomerSupport@53de625d]" started-at="2023-07-12T21:28:33 PKT" name="addUserInitialization" finished-at="2023-07-12T21:28:33 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserInitialization -->
+        <test-method signature="hover_Over_AddUser_Link()[pri:1, instance:com.apdr.testcases.AddCustomerSupport@53de625d]" started-at="2023-07-12T21:30:10 PKT" name="hover_Over_AddUser_Link" finished-at="2023-07-12T21:30:12 PKT" duration-ms="2495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_AddUser_Link -->
+        <test-method signature="add_Role_For_Users(java.lang.String)[pri:2, instance:com.apdr.testcases.AddCustomerSupport@53de625d]" started-at="2023-07-12T21:30:12 PKT" name="add_Role_For_Users" data-provider="customerSupportCredentials" finished-at="2023-07-12T21:30:12 PKT" duration-ms="193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[APCustomerSupport@mailinator.com,Test@123...,null,null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Role_For_Users -->
+        <test-method signature="select_Users_role()[pri:3, instance:com.apdr.testcases.AddCustomerSupport@53de625d]" started-at="2023-07-12T21:30:12 PKT" name="select_Users_role" finished-at="2023-07-12T21:30:15 PKT" duration-ms="2212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_Users_role -->
+        <test-method signature="add_Org_Name_And_Org_Id(java.lang.String)[pri:4, instance:com.apdr.testcases.AddCustomerSupport@53de625d]" started-at="2023-07-12T21:30:15 PKT" name="add_Org_Name_And_Org_Id" data-provider="addUserData" finished-at="2023-07-12T21:30:22 PKT" duration-ms="7763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[APCustomer@mailinator.com,Test@123...,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Org_Name_And_Org_Id -->
+      </class> <!-- com.apdr.testcases.AddCustomerSupport -->
+      <class name="com.apdr.testcases.AddVideoContent">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddVideoContent@648c94da]" started-at="2023-07-12T21:28:33 PKT" name="addContentInitialization" finished-at="2023-07-12T21:28:33 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addContentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddVideoContent@648c94da]" started-at="2023-07-12T21:29:35 PKT" name="hover_Over_Content_Button" finished-at="2023-07-12T21:29:36 PKT" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_Content_Button -->
+        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddVideoContent@648c94da]" started-at="2023-07-12T21:29:36 PKT" name="addVideoContent" finished-at="2023-07-12T21:29:37 PKT" duration-ms="1086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addVideoContent -->
+        <test-method signature="add_Slug_Headline_Source_For_Video(java.lang.String)[pri:3, instance:com.apdr.testcases.AddVideoContent@648c94da]" started-at="2023-07-12T21:29:37 PKT" name="add_Slug_Headline_Source_For_Video" data-provider="videoDataProvider" finished-at="2023-07-12T21:29:37 PKT" duration-ms="203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Video upload through upgraded Automation testing script.,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Slug_Headline_Source_For_Video -->
+        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddVideoContent@648c94da]" started-at="2023-07-12T21:29:37 PKT" name="addVideoFile" finished-at="2023-07-12T21:29:42 PKT" duration-ms="5049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addVideoFile -->
+        <test-method signature="add_Body_For_Video(java.lang.String)[pri:5, instance:com.apdr.testcases.AddVideoContent@648c94da]" started-at="2023-07-12T21:29:42 PKT" name="add_Body_For_Video" data-provider="videoDataProvider" finished-at="2023-07-12T21:29:52 PKT" duration-ms="10109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Video upload through upgraded Automation testing script.,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Body_For_Video -->
+        <test-method signature="clickOnSaveButton()[pri:6, instance:com.apdr.testcases.AddVideoContent@648c94da]" started-at="2023-07-12T21:29:52 PKT" name="clickOnSaveButton" finished-at="2023-07-12T21:29:58 PKT" duration-ms="6175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSaveButton -->
+        <test-method signature="Video_File_Verification()[pri:7, instance:com.apdr.testcases.AddVideoContent@648c94da]" started-at="2023-07-12T21:29:58 PKT" name="Video_File_Verification" finished-at="2023-07-12T21:29:58 PKT" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Video_File_Verification -->
+        <test-method signature="Verify_Title()[pri:8, instance:com.apdr.testcases.AddVideoContent@648c94da]" started-at="2023-07-12T21:29:58 PKT" name="Verify_Title" finished-at="2023-07-12T21:29:58 PKT" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Title -->
+      </class> <!-- com.apdr.testcases.AddVideoContent -->
+      <class name="com.apdr.testcases.AddNewsStoryContent">
+        <test-method is-config="true" signature="addNewsStoryContentInitialization()[pri:0, instance:com.apdr.testcases.AddNewsStoryContent@1b7c473a]" started-at="2023-07-12T21:28:33 PKT" name="addNewsStoryContentInitialization" finished-at="2023-07-12T21:28:33 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewsStoryContentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddNewsStoryContent@1b7c473a]" started-at="2023-07-12T21:29:16 PKT" name="hover_Over_Content_Button" finished-at="2023-07-12T21:29:17 PKT" duration-ms="779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_Content_Button -->
+        <test-method signature="clickOnNewsStoryLink()[pri:2, instance:com.apdr.testcases.AddNewsStoryContent@1b7c473a]" started-at="2023-07-12T21:29:17 PKT" name="clickOnNewsStoryLink" finished-at="2023-07-12T21:29:20 PKT" duration-ms="3356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnNewsStoryLink -->
-        <test-method signature="addSlugForNewStory(java.lang.String)[pri:3, instance:com.apdr.testcases.AddNewsStoryContent@1b84f475]" started-at="2023-07-11T18:01:05 PKT" name="addSlugForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:01:05 PKT" duration-ms="57" status="PASS">
+        <test-method signature="addSlugForNewStory(java.lang.String)[pri:3, instance:com.apdr.testcases.AddNewsStoryContent@1b7c473a]" started-at="2023-07-12T21:29:20 PKT" name="addSlugForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:29:20 PKT" duration-ms="58" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,7 +273,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addSlugForNewStory -->
-        <test-method signature="addheadLineForNewStory(java.lang.String)[pri:4, instance:com.apdr.testcases.AddNewsStoryContent@1b84f475]" started-at="2023-07-11T18:01:05 PKT" name="addheadLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:01:05 PKT" duration-ms="65" status="PASS">
+        <test-method signature="addheadLineForNewStory(java.lang.String)[pri:4, instance:com.apdr.testcases.AddNewsStoryContent@1b7c473a]" started-at="2023-07-12T21:29:20 PKT" name="addheadLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:29:20 PKT" duration-ms="91" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -103,7 +284,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addheadLineForNewStory -->
-        <test-method signature="addsummaryForNewStory(java.lang.String)[pri:5, instance:com.apdr.testcases.AddNewsStoryContent@1b84f475]" started-at="2023-07-11T18:01:05 PKT" name="addsummaryForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:01:05 PKT" duration-ms="63" status="PASS">
+        <test-method signature="addsummaryForNewStory(java.lang.String)[pri:5, instance:com.apdr.testcases.AddNewsStoryContent@1b7c473a]" started-at="2023-07-12T21:29:20 PKT" name="addsummaryForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:29:20 PKT" duration-ms="71" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,7 +295,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addsummaryForNewStory -->
-        <test-method signature="addbodyForNewStory(java.lang.String)[pri:6, instance:com.apdr.testcases.AddNewsStoryContent@1b84f475]" started-at="2023-07-11T18:01:05 PKT" name="addbodyForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:01:06 PKT" duration-ms="98" status="PASS">
+        <test-method signature="addbodyForNewStory(java.lang.String)[pri:6, instance:com.apdr.testcases.AddNewsStoryContent@1b7c473a]" started-at="2023-07-12T21:29:20 PKT" name="addbodyForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:29:21 PKT" duration-ms="111" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,7 +306,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addbodyForNewStory -->
-        <test-method signature="addByLineAndByTitleForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@1b84f475]" started-at="2023-07-11T18:01:06 PKT" name="addByLineAndByTitleForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:01:06 PKT" duration-ms="107" status="PASS">
+        <test-method signature="addByLineAndByTitleForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@1b7c473a]" started-at="2023-07-12T21:29:21 PKT" name="addByLineAndByTitleForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:29:21 PKT" duration-ms="162" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -136,7 +317,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addByLineAndByTitleForNewStory -->
-        <test-method signature="adddateLineForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@1b84f475]" started-at="2023-07-11T18:01:06 PKT" name="adddateLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:01:06 PKT" duration-ms="50" status="PASS">
+        <test-method signature="adddateLineForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@1b7c473a]" started-at="2023-07-12T21:29:21 PKT" name="adddateLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:29:21 PKT" duration-ms="56" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,11 +328,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adddateLineForNewStory -->
-        <test-method signature="selectNewsStoryCategory()[pri:8, instance:com.apdr.testcases.AddNewsStoryContent@1b84f475]" started-at="2023-07-11T18:01:06 PKT" name="selectNewsStoryCategory" finished-at="2023-07-11T18:01:06 PKT" duration-ms="80" status="PASS">
+        <test-method signature="selectNewsStoryCategory()[pri:8, instance:com.apdr.testcases.AddNewsStoryContent@1b7c473a]" started-at="2023-07-12T21:29:21 PKT" name="selectNewsStoryCategory" finished-at="2023-07-12T21:29:21 PKT" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectNewsStoryCategory -->
-        <test-method signature="addEdsNoteForNewStory(java.lang.String)[pri:9, instance:com.apdr.testcases.AddNewsStoryContent@1b84f475]" started-at="2023-07-11T18:01:06 PKT" name="addEdsNoteForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:01:06 PKT" duration-ms="51" status="PASS">
+        <test-method signature="addEdsNoteForNewStory(java.lang.String)[pri:9, instance:com.apdr.testcases.AddNewsStoryContent@1b7c473a]" started-at="2023-07-12T21:29:21 PKT" name="addEdsNoteForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:29:21 PKT" duration-ms="61" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -162,31 +343,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEdsNoteForNewStory -->
-        <test-method signature="clickOnSaveButton()[pri:10, instance:com.apdr.testcases.AddNewsStoryContent@1b84f475]" started-at="2023-07-11T18:01:06 PKT" name="clickOnSaveButton" finished-at="2023-07-11T18:01:07 PKT" duration-ms="1548" status="PASS">
+        <test-method signature="clickOnSaveButton()[pri:10, instance:com.apdr.testcases.AddNewsStoryContent@1b7c473a]" started-at="2023-07-12T21:29:21 PKT" name="clickOnSaveButton" finished-at="2023-07-12T21:29:23 PKT" duration-ms="1952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSaveButton -->
       </class> <!-- com.apdr.testcases.AddNewsStoryContent -->
       <class name="com.apdr.testcases.Guidedownload">
-        <test-method is-config="true" signature="GuidedownloadInitialization()[pri:0, instance:com.apdr.testcases.Guidedownload@7749bf93]" started-at="2023-07-11T18:00:23 PKT" name="GuidedownloadInitialization" finished-at="2023-07-11T18:00:23 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="GuidedownloadInitialization()[pri:0, instance:com.apdr.testcases.Guidedownload@2a62b5bc]" started-at="2023-07-12T21:28:33 PKT" name="GuidedownloadInitialization" finished-at="2023-07-12T21:28:33 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GuidedownloadInitialization -->
-        <test-method signature="Click_On_Reference_Button()[pri:1, instance:com.apdr.testcases.Guidedownload@7749bf93]" started-at="2023-07-11T18:01:07 PKT" name="Click_On_Reference_Button" finished-at="2023-07-11T18:01:19 PKT" duration-ms="11296" status="PASS">
+        <test-method signature="Click_On_Reference_Button()[pri:1, instance:com.apdr.testcases.Guidedownload@2a62b5bc]" started-at="2023-07-12T21:29:58 PKT" name="Click_On_Reference_Button" finished-at="2023-07-12T21:30:10 PKT" duration-ms="11352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_Reference_Button -->
       </class> <!-- com.apdr.testcases.Guidedownload -->
       <class name="com.apdr.testcases.LogInTestCases">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@466276d8]" started-at="2023-07-11T18:00:13 PKT" name="initialization" finished-at="2023-07-11T18:00:23 PKT" duration-ms="9732" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@6e4566f1]" started-at="2023-07-12T21:28:27 PKT" name="initialization" finished-at="2023-07-12T21:28:33 PKT" duration-ms="5938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@466276d8]" started-at="2023-07-11T18:00:23 PKT" name="loginIntialization" finished-at="2023-07-11T18:00:23 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@6e4566f1]" started-at="2023-07-12T21:28:33 PKT" name="loginIntialization" finished-at="2023-07-12T21:28:33 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntialization -->
-        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@466276d8]" started-at="2023-07-11T18:00:23 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-07-11T18:00:33 PKT" duration-ms="10177" status="PASS">
+        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@6e4566f1]" started-at="2023-07-12T21:28:33 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-07-12T21:28:52 PKT" duration-ms="18707" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -199,15 +380,15 @@
         </test-method> <!-- loginToApDr -->
       </class> <!-- com.apdr.testcases.LogInTestCases -->
       <class name="com.apdr.testcases.NewsAlertContent">
-        <test-method is-config="true" signature="addNewsAlertContentInitialization()[pri:0, instance:com.apdr.testcases.NewsAlertContent@6bffbc6d]" started-at="2023-07-11T18:00:23 PKT" name="addNewsAlertContentInitialization" finished-at="2023-07-11T18:00:23 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="addNewsAlertContentInitialization()[pri:0, instance:com.apdr.testcases.NewsAlertContent@344f4dea]" started-at="2023-07-12T21:28:33 PKT" name="addNewsAlertContentInitialization" finished-at="2023-07-12T21:28:33 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewsAlertContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.NewsAlertContent@6bffbc6d]" started-at="2023-07-11T18:01:00 PKT" name="hover_Over_Content_Button" finished-at="2023-07-11T18:01:01 PKT" duration-ms="772" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.NewsAlertContent@344f4dea]" started-at="2023-07-12T21:29:10 PKT" name="hover_Over_Content_Button" finished-at="2023-07-12T21:29:11 PKT" duration-ms="835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addVideoContent(java.lang.String)[pri:2, instance:com.apdr.testcases.NewsAlertContent@6bffbc6d]" started-at="2023-07-11T18:01:01 PKT" name="addVideoContent" data-provider="newsAlertContent" finished-at="2023-07-11T18:01:02 PKT" duration-ms="872" status="PASS">
+        <test-method signature="Click_On_News_Alert(java.lang.String)[pri:2, instance:com.apdr.testcases.NewsAlertContent@344f4dea]" started-at="2023-07-12T21:29:11 PKT" name="Click_On_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-12T21:29:13 PKT" duration-ms="1586" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -217,8 +398,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addVideoContent -->
-        <test-method signature="add_News_Alert_Slug(java.lang.String)[pri:3, instance:com.apdr.testcases.NewsAlertContent@6bffbc6d]" started-at="2023-07-11T18:01:02 PKT" name="add_News_Alert_Slug" data-provider="newsAlertContent" finished-at="2023-07-11T18:01:02 PKT" duration-ms="61" status="PASS">
+        </test-method> <!-- Click_On_News_Alert -->
+        <test-method signature="add_News_Alert_Slug(java.lang.String)[pri:3, instance:com.apdr.testcases.NewsAlertContent@344f4dea]" started-at="2023-07-12T21:29:13 PKT" name="add_News_Alert_Slug" data-provider="newsAlertContent" finished-at="2023-07-12T21:29:13 PKT" duration-ms="60" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -229,7 +410,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_News_Alert_Slug -->
-        <test-method signature="add__Alert_News(java.lang.String)[pri:4, instance:com.apdr.testcases.NewsAlertContent@6bffbc6d]" started-at="2023-07-11T18:01:02 PKT" name="add__Alert_News" data-provider="newsAlertContent" finished-at="2023-07-11T18:01:02 PKT" duration-ms="70" status="PASS">
+        <test-method signature="add__Alert_News(java.lang.String)[pri:4, instance:com.apdr.testcases.NewsAlertContent@344f4dea]" started-at="2023-07-12T21:29:13 PKT" name="add__Alert_News" data-provider="newsAlertContent" finished-at="2023-07-12T21:29:13 PKT" duration-ms="69" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -240,7 +421,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add__Alert_News -->
-        <test-method signature="add_DateLine_For_News_Alert(java.lang.String)[pri:5, instance:com.apdr.testcases.NewsAlertContent@6bffbc6d]" started-at="2023-07-11T18:01:02 PKT" name="add_DateLine_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-11T18:01:02 PKT" duration-ms="60" status="PASS">
+        <test-method signature="add_DateLine_For_News_Alert(java.lang.String)[pri:5, instance:com.apdr.testcases.NewsAlertContent@344f4dea]" started-at="2023-07-12T21:29:13 PKT" name="add_DateLine_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-12T21:29:13 PKT" duration-ms="56" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -251,11 +432,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_DateLine_For_News_Alert -->
-        <test-method signature="select_News_Alert_Category()[pri:6, instance:com.apdr.testcases.NewsAlertContent@6bffbc6d]" started-at="2023-07-11T18:01:02 PKT" name="select_News_Alert_Category" finished-at="2023-07-11T18:01:02 PKT" duration-ms="118" status="PASS">
+        <test-method signature="select_News_Alert_Category()[pri:6, instance:com.apdr.testcases.NewsAlertContent@344f4dea]" started-at="2023-07-12T21:29:13 PKT" name="select_News_Alert_Category" finished-at="2023-07-12T21:29:13 PKT" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_News_Alert_Category -->
-        <test-method signature="add_EdsNote_For_News_Alert(java.lang.String)[pri:7, instance:com.apdr.testcases.NewsAlertContent@6bffbc6d]" started-at="2023-07-11T18:01:02 PKT" name="add_EdsNote_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-11T18:01:02 PKT" duration-ms="54" status="PASS">
+        <test-method signature="add_EdsNote_For_News_Alert(java.lang.String)[pri:7, instance:com.apdr.testcases.NewsAlertContent@344f4dea]" started-at="2023-07-12T21:29:13 PKT" name="add_EdsNote_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-12T21:29:13 PKT" duration-ms="59" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -266,51 +447,123 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_EdsNote_For_News_Alert -->
-        <test-method signature="click_Save_Button()[pri:8, instance:com.apdr.testcases.NewsAlertContent@6bffbc6d]" started-at="2023-07-11T18:01:02 PKT" name="click_Save_Button" finished-at="2023-07-11T18:01:03 PKT" duration-ms="1445" status="PASS">
+        <test-method signature="click_Save_Button()[pri:8, instance:com.apdr.testcases.NewsAlertContent@344f4dea]" started-at="2023-07-12T21:29:13 PKT" name="click_Save_Button" finished-at="2023-07-12T21:29:16 PKT" duration-ms="3164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_Save_Button -->
       </class> <!-- com.apdr.testcases.NewsAlertContent -->
     </test> <!--  TestCases for Admin Role  -->
-    <test started-at="2023-07-11T18:01:19 PKT" name=" TestCases for Customer Support Role " finished-at="2023-07-11T18:01:55 PKT" duration-ms="36085">
+    <test started-at="2023-07-12T21:30:23 PKT" name=" TestCases for Customer Support Role " finished-at="2023-07-12T21:31:18 PKT" duration-ms="54900">
       <class name="com.apdr.testcases.BannerContent">
-        <test-method is-config="true" signature="BannerContentInitialization()[pri:0, instance:com.apdr.testcases.BannerContent@3d1848cc]" started-at="2023-07-11T18:01:25 PKT" name="BannerContentInitialization" finished-at="2023-07-11T18:01:25 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BannerContentInitialization()[pri:0, instance:com.apdr.testcases.BannerContent@6138e79a]" started-at="2023-07-12T21:30:29 PKT" name="BannerContentInitialization" finished-at="2023-07-12T21:30:29 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BannerContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.BannerContent@3d1848cc]" started-at="2023-07-11T18:01:34 PKT" name="hover_Over_Content_Button" finished-at="2023-07-11T18:01:37 PKT" duration-ms="3491" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.BannerContent@6138e79a]" started-at="2023-07-12T21:30:39 PKT" name="hover_Over_Content_Button" finished-at="2023-07-12T21:30:41 PKT" duration-ms="2037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="Banner_Title_Text()[pri:3, instance:com.apdr.testcases.BannerContent@3d1848cc]" started-at="2023-07-11T18:01:37 PKT" name="Banner_Title_Text" finished-at="2023-07-11T18:01:37 PKT" duration-ms="70" status="PASS">
+        <test-method signature="Banner_Title_Text()[pri:3, instance:com.apdr.testcases.BannerContent@6138e79a]" started-at="2023-07-12T21:30:41 PKT" name="Banner_Title_Text" finished-at="2023-07-12T21:30:41 PKT" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Banner_Title_Text -->
-        <test-method signature="click_On_Save_Button()[pri:4, instance:com.apdr.testcases.BannerContent@3d1848cc]" started-at="2023-07-11T18:01:37 PKT" name="click_On_Save_Button" finished-at="2023-07-11T18:01:44 PKT" duration-ms="6825" status="PASS">
+        <test-method signature="click_On_Save_Button()[pri:4, instance:com.apdr.testcases.BannerContent@6138e79a]" started-at="2023-07-12T21:30:41 PKT" name="click_On_Save_Button" finished-at="2023-07-12T21:30:47 PKT" duration-ms="5839" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_On_Save_Button -->
       </class> <!-- com.apdr.testcases.BannerContent -->
+      <class name="com.apdr.testcases.AddCustomer">
+        <test-method is-config="true" signature="addUserInitialization()[pri:0, instance:com.apdr.testcases.AddCustomer@21a21c64]" started-at="2023-07-12T21:30:29 PKT" name="addUserInitialization" finished-at="2023-07-12T21:30:29 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserInitialization -->
+        <test-method signature="hover_Over_AddUser_Link()[pri:1, instance:com.apdr.testcases.AddCustomer@21a21c64]" started-at="2023-07-12T21:31:09 PKT" name="hover_Over_AddUser_Link" finished-at="2023-07-12T21:31:10 PKT" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_AddUser_Link -->
+        <test-method signature="add_Role_For_Users(java.lang.String)[pri:2, instance:com.apdr.testcases.AddCustomer@21a21c64]" started-at="2023-07-12T21:31:10 PKT" name="add_Role_For_Users" data-provider="addUserData" finished-at="2023-07-12T21:31:10 PKT" duration-ms="227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[APCustomer@mailinator.com,Test@123...,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Role_For_Users -->
+        <test-method signature="select_Users_role()[pri:3, instance:com.apdr.testcases.AddCustomer@21a21c64]" started-at="2023-07-12T21:31:10 PKT" name="select_Users_role" finished-at="2023-07-12T21:31:13 PKT" duration-ms="2200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_Users_role -->
+        <test-method signature="add_Org_Name_And_Org_Id(java.lang.String)[pri:4, instance:com.apdr.testcases.AddCustomer@21a21c64]" started-at="2023-07-12T21:31:13 PKT" name="add_Org_Name_And_Org_Id" data-provider="addUserData" finished-at="2023-07-12T21:31:18 PKT" duration-ms="4974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[APCustomer@mailinator.com,Test@123...,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Org_Name_And_Org_Id -->
+      </class> <!-- com.apdr.testcases.AddCustomer -->
+      <class name="com.apdr.testcases.AddAuthor">
+        <test-method is-config="true" signature="addUserInitialization()[pri:0, instance:com.apdr.testcases.AddAuthor@388526fb]" started-at="2023-07-12T21:30:29 PKT" name="addUserInitialization" finished-at="2023-07-12T21:30:29 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserInitialization -->
+        <test-method signature="hover_Over_AddUser_Link()[pri:1, instance:com.apdr.testcases.AddAuthor@388526fb]" started-at="2023-07-12T21:30:59 PKT" name="hover_Over_AddUser_Link" finished-at="2023-07-12T21:31:01 PKT" duration-ms="2538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_AddUser_Link -->
+        <test-method signature="add_Role_For_Users(java.lang.String)[pri:2, instance:com.apdr.testcases.AddAuthor@388526fb]" started-at="2023-07-12T21:31:01 PKT" name="add_Role_For_Users" data-provider="AuthorCredentials" finished-at="2023-07-12T21:31:01 PKT" duration-ms="203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[APAuthor@mailinator.com,Test@123...,null,null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Role_For_Users -->
+        <test-method signature="select_Users_role()[pri:3, instance:com.apdr.testcases.AddAuthor@388526fb]" started-at="2023-07-12T21:31:01 PKT" name="select_Users_role" finished-at="2023-07-12T21:31:04 PKT" duration-ms="2198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_Users_role -->
+        <test-method signature="add_Org_Name_And_Org_Id(java.lang.String)[pri:4, instance:com.apdr.testcases.AddAuthor@388526fb]" started-at="2023-07-12T21:31:04 PKT" name="add_Org_Name_And_Org_Id" data-provider="addUserData" finished-at="2023-07-12T21:31:09 PKT" duration-ms="5931" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[APCustomer@mailinator.com,Test@123...,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Org_Name_And_Org_Id -->
+      </class> <!-- com.apdr.testcases.AddAuthor -->
       <class name="com.apdr.testcases.Guidedownload">
-        <test-method is-config="true" signature="GuidedownloadInitialization()[pri:0, instance:com.apdr.testcases.Guidedownload@7dda48d9]" started-at="2023-07-11T18:01:25 PKT" name="GuidedownloadInitialization" finished-at="2023-07-11T18:01:25 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="GuidedownloadInitialization()[pri:0, instance:com.apdr.testcases.Guidedownload@2dcd168a]" started-at="2023-07-12T21:30:29 PKT" name="GuidedownloadInitialization" finished-at="2023-07-12T21:30:29 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GuidedownloadInitialization -->
-        <test-method signature="Click_On_Reference_Button()[pri:1, instance:com.apdr.testcases.Guidedownload@7dda48d9]" started-at="2023-07-11T18:01:44 PKT" name="Click_On_Reference_Button" finished-at="2023-07-11T18:01:55 PKT" duration-ms="11024" status="PASS">
+        <test-method signature="Click_On_Reference_Button()[pri:1, instance:com.apdr.testcases.Guidedownload@2dcd168a]" started-at="2023-07-12T21:30:47 PKT" name="Click_On_Reference_Button" finished-at="2023-07-12T21:30:59 PKT" duration-ms="11312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_Reference_Button -->
       </class> <!-- com.apdr.testcases.Guidedownload -->
       <class name="com.apdr.testcases.CustomerSupport">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.CustomerSupport@34f22f9d]" started-at="2023-07-11T18:01:19 PKT" name="initialization" finished-at="2023-07-11T18:01:25 PKT" duration-ms="5690" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.CustomerSupport@2ea6e30c]" started-at="2023-07-12T21:30:23 PKT" name="initialization" finished-at="2023-07-12T21:30:29 PKT" duration-ms="6186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.CustomerSupport@34f22f9d]" started-at="2023-07-11T18:01:25 PKT" name="loginIntialization" finished-at="2023-07-11T18:01:25 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.CustomerSupport@2ea6e30c]" started-at="2023-07-12T21:30:29 PKT" name="loginIntialization" finished-at="2023-07-12T21:30:29 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntialization -->
-        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.CustomerSupport@34f22f9d]" started-at="2023-07-11T18:01:25 PKT" name="loginToApDr" data-provider="customerSupportCredentials" finished-at="2023-07-11T18:01:34 PKT" duration-ms="8966" status="PASS">
+        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.CustomerSupport@2ea6e30c]" started-at="2023-07-12T21:30:29 PKT" name="loginToApDr" data-provider="customerSupportCredentials" finished-at="2023-07-12T21:30:39 PKT" duration-ms="10375" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -323,17 +576,17 @@
         </test-method> <!-- loginToApDr -->
       </class> <!-- com.apdr.testcases.CustomerSupport -->
     </test> <!--  TestCases for Customer Support Role  -->
-    <test started-at="2023-07-11T18:01:55 PKT" name=" TestCases for Author Role " finished-at="2023-07-11T18:02:52 PKT" duration-ms="56749">
+    <test started-at="2023-07-12T21:31:18 PKT" name=" TestCases for Author Role " finished-at="2023-07-12T21:32:56 PKT" duration-ms="98192">
       <class name="com.apdr.testcases.AddPhotoContent">
-        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddPhotoContent@2a62b5bc]" started-at="2023-07-11T18:02:00 PKT" name="addContentInitialization" finished-at="2023-07-11T18:02:00 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddPhotoContent@16fdec90]" started-at="2023-07-12T21:31:27 PKT" name="addContentInitialization" finished-at="2023-07-12T21:31:27 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddPhotoContent@2a62b5bc]" started-at="2023-07-11T18:02:21 PKT" name="hover_Over_Content_Button" finished-at="2023-07-11T18:02:22 PKT" duration-ms="786" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddPhotoContent@16fdec90]" started-at="2023-07-12T21:32:09 PKT" name="hover_Over_Content_Button" finished-at="2023-07-12T21:32:09 PKT" duration-ms="793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addPhotoContent(java.lang.String)[pri:2, instance:com.apdr.testcases.AddPhotoContent@2a62b5bc]" started-at="2023-07-11T18:02:22 PKT" name="addPhotoContent" data-provider="imageDataProvider" finished-at="2023-07-11T18:02:28 PKT" duration-ms="6531" status="PASS">
+        <test-method signature="addPhotoContent(java.lang.String)[pri:2, instance:com.apdr.testcases.AddPhotoContent@16fdec90]" started-at="2023-07-12T21:32:09 PKT" name="addPhotoContent" data-provider="imageDataProvider" finished-at="2023-07-12T21:32:17 PKT" duration-ms="7046" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -344,25 +597,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPhotoContent -->
-        <test-method signature="click_On_SaveButton()[pri:3, instance:com.apdr.testcases.AddPhotoContent@2a62b5bc]" started-at="2023-07-11T18:02:28 PKT" name="click_On_SaveButton" finished-at="2023-07-11T18:02:35 PKT" duration-ms="6668" status="PASS">
+        <test-method signature="click_On_SaveButton()[pri:3, instance:com.apdr.testcases.AddPhotoContent@16fdec90]" started-at="2023-07-12T21:32:17 PKT" name="click_On_SaveButton" finished-at="2023-07-12T21:32:21 PKT" duration-ms="4019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_On_SaveButton -->
+        <test-method signature="Photo_Verification()[pri:4, instance:com.apdr.testcases.AddPhotoContent@16fdec90]" started-at="2023-07-12T21:32:21 PKT" name="Photo_Verification" finished-at="2023-07-12T21:32:21 PKT" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Photo_Verification -->
       </class> <!-- com.apdr.testcases.AddPhotoContent -->
       <class name="com.apdr.testcases.AddAudioContent">
-        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddAudioContent@5e4bd84a]" started-at="2023-07-11T18:02:00 PKT" name="addContentInitialization" finished-at="2023-07-11T18:02:00 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddAudioContent@6f3c660a]" started-at="2023-07-12T21:31:27 PKT" name="addContentInitialization" finished-at="2023-07-12T21:31:27 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddAudioContent@5e4bd84a]" started-at="2023-07-11T18:02:09 PKT" name="hover_Over_Content_Button" finished-at="2023-07-11T18:02:10 PKT" duration-ms="817" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddAudioContent@6f3c660a]" started-at="2023-07-12T21:31:40 PKT" name="hover_Over_Content_Button" finished-at="2023-07-12T21:31:41 PKT" duration-ms="910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddAudioContent@5e4bd84a]" started-at="2023-07-11T18:02:10 PKT" name="addVideoContent" finished-at="2023-07-11T18:02:11 PKT" duration-ms="1454" status="PASS">
+        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddAudioContent@6f3c660a]" started-at="2023-07-12T21:31:41 PKT" name="addVideoContent" finished-at="2023-07-12T21:31:43 PKT" duration-ms="2146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVideoContent -->
-        <test-method signature="add_Slug_Speaker_Intro_For_Audio(java.lang.String)[pri:3, instance:com.apdr.testcases.AddAudioContent@5e4bd84a]" started-at="2023-07-11T18:02:11 PKT" name="add_Slug_Speaker_Intro_For_Audio" data-provider="audioDataProvider" finished-at="2023-07-11T18:02:11 PKT" duration-ms="167" status="PASS">
+        <test-method signature="add_Slug_Speaker_Intro_For_Audio(java.lang.String)[pri:3, instance:com.apdr.testcases.AddAudioContent@6f3c660a]" started-at="2023-07-12T21:31:43 PKT" name="add_Slug_Speaker_Intro_For_Audio" data-provider="audioDataProvider" finished-at="2023-07-12T21:31:43 PKT" duration-ms="270" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -373,29 +630,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_Slug_Speaker_Intro_For_Audio -->
-        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddAudioContent@5e4bd84a]" started-at="2023-07-11T18:02:11 PKT" name="addVideoFile" finished-at="2023-07-11T18:02:13 PKT" duration-ms="2036" status="PASS">
+        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddAudioContent@6f3c660a]" started-at="2023-07-12T21:31:43 PKT" name="addVideoFile" finished-at="2023-07-12T21:31:48 PKT" duration-ms="5052" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVideoFile -->
-        <test-method signature="clickOnSaveButton()[pri:5, instance:com.apdr.testcases.AddAudioContent@5e4bd84a]" started-at="2023-07-11T18:02:13 PKT" name="clickOnSaveButton" finished-at="2023-07-11T18:02:17 PKT" duration-ms="4069" status="PASS">
+        <test-method signature="clickOnSaveButton()[pri:5, instance:com.apdr.testcases.AddAudioContent@6f3c660a]" started-at="2023-07-12T21:31:48 PKT" name="clickOnSaveButton" finished-at="2023-07-12T21:31:58 PKT" duration-ms="9385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSaveButton -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.AddAudioContent@5e4bd84a]" started-at="2023-07-11T18:02:52 PKT" name="teardown" finished-at="2023-07-11T18:02:52 PKT" duration-ms="122" status="PASS">
+        <test-method signature="Audio_File_Verification()[pri:6, instance:com.apdr.testcases.AddAudioContent@6f3c660a]" started-at="2023-07-12T21:31:58 PKT" name="Audio_File_Verification" finished-at="2023-07-12T21:31:58 PKT" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Audio_File_Verification -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.AddAudioContent@6f3c660a]" started-at="2023-07-12T21:32:56 PKT" name="teardown" finished-at="2023-07-12T21:32:56 PKT" duration-ms="243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.apdr.testcases.AddAudioContent -->
       <class name="com.apdr.testcases.AuthorLogin">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.AuthorLogin@1b7c473a]" started-at="2023-07-11T18:01:55 PKT" name="initialization" finished-at="2023-07-11T18:02:00 PKT" duration-ms="5511" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.AuthorLogin@460ebd80]" started-at="2023-07-12T21:31:18 PKT" name="initialization" finished-at="2023-07-12T21:31:27 PKT" duration-ms="8948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.AuthorLogin@1b7c473a]" started-at="2023-07-11T18:02:00 PKT" name="loginIntialization" finished-at="2023-07-11T18:02:00 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.AuthorLogin@460ebd80]" started-at="2023-07-12T21:31:27 PKT" name="loginIntialization" finished-at="2023-07-12T21:31:27 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntialization -->
-        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.AuthorLogin@1b7c473a]" started-at="2023-07-11T18:02:00 PKT" name="loginToApDr" data-provider="AuthorCredentials" finished-at="2023-07-11T18:02:09 PKT" duration-ms="8339" status="PASS">
+        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.AuthorLogin@460ebd80]" started-at="2023-07-12T21:31:27 PKT" name="loginToApDr" data-provider="AuthorCredentials" finished-at="2023-07-12T21:31:40 PKT" duration-ms="13244" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -407,20 +668,72 @@
           </reporter-output>
         </test-method> <!-- loginToApDr -->
       </class> <!-- com.apdr.testcases.AuthorLogin -->
-      <class name="com.apdr.testcases.AddNewsStoryContent">
-        <test-method is-config="true" signature="addNewsStoryContentInitialization()[pri:0, instance:com.apdr.testcases.AddNewsStoryContent@53de625d]" started-at="2023-07-11T18:02:00 PKT" name="addNewsStoryContentInitialization" finished-at="2023-07-11T18:02:00 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="0" status="PASS">
+      <class name="com.apdr.testcases.AddVideoContent">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddVideoContent@1afdd473]" started-at="2023-07-12T21:31:27 PKT" name="addContentInitialization" finished-at="2023-07-12T21:31:27 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewsStoryContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddNewsStoryContent@53de625d]" started-at="2023-07-11T18:02:35 PKT" name="hover_Over_Content_Button" finished-at="2023-07-11T18:02:36 PKT" duration-ms="1212" status="PASS">
+        </test-method> <!-- addContentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddVideoContent@1afdd473]" started-at="2023-07-12T21:32:21 PKT" name="hover_Over_Content_Button" finished-at="2023-07-12T21:32:22 PKT" duration-ms="1325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="clickOnNewsStoryLink()[pri:2, instance:com.apdr.testcases.AddNewsStoryContent@53de625d]" started-at="2023-07-11T18:02:36 PKT" name="clickOnNewsStoryLink" finished-at="2023-07-11T18:02:38 PKT" duration-ms="2140" status="PASS">
+        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddVideoContent@1afdd473]" started-at="2023-07-12T21:32:22 PKT" name="addVideoContent" finished-at="2023-07-12T21:32:23 PKT" duration-ms="929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addVideoContent -->
+        <test-method signature="add_Slug_Headline_Source_For_Video(java.lang.String)[pri:3, instance:com.apdr.testcases.AddVideoContent@1afdd473]" started-at="2023-07-12T21:32:23 PKT" name="add_Slug_Headline_Source_For_Video" data-provider="videoDataProvider" finished-at="2023-07-12T21:32:23 PKT" duration-ms="219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Video upload through upgraded Automation testing script.,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Slug_Headline_Source_For_Video -->
+        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddVideoContent@1afdd473]" started-at="2023-07-12T21:32:23 PKT" name="addVideoFile" finished-at="2023-07-12T21:32:28 PKT" duration-ms="5042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addVideoFile -->
+        <test-method signature="add_Body_For_Video(java.lang.String)[pri:5, instance:com.apdr.testcases.AddVideoContent@1afdd473]" started-at="2023-07-12T21:32:28 PKT" name="add_Body_For_Video" data-provider="videoDataProvider" finished-at="2023-07-12T21:32:38 PKT" duration-ms="10130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Video upload through upgraded Automation testing script.,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Body_For_Video -->
+        <test-method signature="clickOnSaveButton()[pri:6, instance:com.apdr.testcases.AddVideoContent@1afdd473]" started-at="2023-07-12T21:32:38 PKT" name="clickOnSaveButton" finished-at="2023-07-12T21:32:44 PKT" duration-ms="5932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSaveButton -->
+        <test-method signature="Video_File_Verification()[pri:7, instance:com.apdr.testcases.AddVideoContent@1afdd473]" started-at="2023-07-12T21:32:44 PKT" name="Video_File_Verification" finished-at="2023-07-12T21:32:44 PKT" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Video_File_Verification -->
+        <test-method signature="Verify_Title()[pri:8, instance:com.apdr.testcases.AddVideoContent@1afdd473]" started-at="2023-07-12T21:32:44 PKT" name="Verify_Title" finished-at="2023-07-12T21:32:44 PKT" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Title -->
+      </class> <!-- com.apdr.testcases.AddVideoContent -->
+      <class name="com.apdr.testcases.AddNewsStoryContent">
+        <test-method is-config="true" signature="addNewsStoryContentInitialization()[pri:0, instance:com.apdr.testcases.AddNewsStoryContent@25aca718]" started-at="2023-07-12T21:31:27 PKT" name="addNewsStoryContentInitialization" finished-at="2023-07-12T21:31:27 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewsStoryContentInitialization -->
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddNewsStoryContent@25aca718]" started-at="2023-07-12T21:32:04 PKT" name="hover_Over_Content_Button" finished-at="2023-07-12T21:32:05 PKT" duration-ms="826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hover_Over_Content_Button -->
+        <test-method signature="clickOnNewsStoryLink()[pri:2, instance:com.apdr.testcases.AddNewsStoryContent@25aca718]" started-at="2023-07-12T21:32:05 PKT" name="clickOnNewsStoryLink" finished-at="2023-07-12T21:32:06 PKT" duration-ms="1110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnNewsStoryLink -->
-        <test-method signature="addSlugForNewStory(java.lang.String)[pri:3, instance:com.apdr.testcases.AddNewsStoryContent@53de625d]" started-at="2023-07-11T18:02:38 PKT" name="addSlugForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:02:38 PKT" duration-ms="54" status="PASS">
+        <test-method signature="addSlugForNewStory(java.lang.String)[pri:3, instance:com.apdr.testcases.AddNewsStoryContent@25aca718]" started-at="2023-07-12T21:32:06 PKT" name="addSlugForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:32:06 PKT" duration-ms="76" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -431,7 +744,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addSlugForNewStory -->
-        <test-method signature="addheadLineForNewStory(java.lang.String)[pri:4, instance:com.apdr.testcases.AddNewsStoryContent@53de625d]" started-at="2023-07-11T18:02:38 PKT" name="addheadLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:02:38 PKT" duration-ms="65" status="PASS">
+        <test-method signature="addheadLineForNewStory(java.lang.String)[pri:4, instance:com.apdr.testcases.AddNewsStoryContent@25aca718]" started-at="2023-07-12T21:32:06 PKT" name="addheadLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:32:07 PKT" duration-ms="89" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -442,7 +755,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addheadLineForNewStory -->
-        <test-method signature="addsummaryForNewStory(java.lang.String)[pri:5, instance:com.apdr.testcases.AddNewsStoryContent@53de625d]" started-at="2023-07-11T18:02:38 PKT" name="addsummaryForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:02:38 PKT" duration-ms="58" status="PASS">
+        <test-method signature="addsummaryForNewStory(java.lang.String)[pri:5, instance:com.apdr.testcases.AddNewsStoryContent@25aca718]" started-at="2023-07-12T21:32:07 PKT" name="addsummaryForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:32:07 PKT" duration-ms="82" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -453,7 +766,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addsummaryForNewStory -->
-        <test-method signature="addbodyForNewStory(java.lang.String)[pri:6, instance:com.apdr.testcases.AddNewsStoryContent@53de625d]" started-at="2023-07-11T18:02:38 PKT" name="addbodyForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:02:39 PKT" duration-ms="83" status="PASS">
+        <test-method signature="addbodyForNewStory(java.lang.String)[pri:6, instance:com.apdr.testcases.AddNewsStoryContent@25aca718]" started-at="2023-07-12T21:32:07 PKT" name="addbodyForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:32:07 PKT" duration-ms="144" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -464,7 +777,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addbodyForNewStory -->
-        <test-method signature="addByLineAndByTitleForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@53de625d]" started-at="2023-07-11T18:02:39 PKT" name="addByLineAndByTitleForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:02:39 PKT" duration-ms="106" status="PASS">
+        <test-method signature="addByLineAndByTitleForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@25aca718]" started-at="2023-07-12T21:32:07 PKT" name="addByLineAndByTitleForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:32:07 PKT" duration-ms="174" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -475,7 +788,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addByLineAndByTitleForNewStory -->
-        <test-method signature="adddateLineForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@53de625d]" started-at="2023-07-11T18:02:39 PKT" name="adddateLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:02:39 PKT" duration-ms="46" status="PASS">
+        <test-method signature="adddateLineForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@25aca718]" started-at="2023-07-12T21:32:07 PKT" name="adddateLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:32:07 PKT" duration-ms="67" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -486,11 +799,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adddateLineForNewStory -->
-        <test-method signature="selectNewsStoryCategory()[pri:8, instance:com.apdr.testcases.AddNewsStoryContent@53de625d]" started-at="2023-07-11T18:02:39 PKT" name="selectNewsStoryCategory" finished-at="2023-07-11T18:02:39 PKT" duration-ms="78" status="PASS">
+        <test-method signature="selectNewsStoryCategory()[pri:8, instance:com.apdr.testcases.AddNewsStoryContent@25aca718]" started-at="2023-07-12T21:32:07 PKT" name="selectNewsStoryCategory" finished-at="2023-07-12T21:32:07 PKT" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectNewsStoryCategory -->
-        <test-method signature="addEdsNoteForNewStory(java.lang.String)[pri:9, instance:com.apdr.testcases.AddNewsStoryContent@53de625d]" started-at="2023-07-11T18:02:39 PKT" name="addEdsNoteForNewStory" data-provider="newsStoryContent" finished-at="2023-07-11T18:02:39 PKT" duration-ms="64" status="PASS">
+        <test-method signature="addEdsNoteForNewStory(java.lang.String)[pri:9, instance:com.apdr.testcases.AddNewsStoryContent@25aca718]" started-at="2023-07-12T21:32:07 PKT" name="addEdsNoteForNewStory" data-provider="newsStoryContent" finished-at="2023-07-12T21:32:07 PKT" duration-ms="83" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -501,31 +814,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEdsNoteForNewStory -->
-        <test-method signature="clickOnSaveButton()[pri:10, instance:com.apdr.testcases.AddNewsStoryContent@53de625d]" started-at="2023-07-11T18:02:39 PKT" name="clickOnSaveButton" finished-at="2023-07-11T18:02:40 PKT" duration-ms="1434" status="PASS">
+        <test-method signature="clickOnSaveButton()[pri:10, instance:com.apdr.testcases.AddNewsStoryContent@25aca718]" started-at="2023-07-12T21:32:07 PKT" name="clickOnSaveButton" finished-at="2023-07-12T21:32:09 PKT" duration-ms="1470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSaveButton -->
       </class> <!-- com.apdr.testcases.AddNewsStoryContent -->
       <class name="com.apdr.testcases.Guidedownload">
-        <test-method is-config="true" signature="GuidedownloadInitialization()[pri:0, instance:com.apdr.testcases.Guidedownload@535779e4]" started-at="2023-07-11T18:02:00 PKT" name="GuidedownloadInitialization" finished-at="2023-07-11T18:02:00 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="GuidedownloadInitialization()[pri:0, instance:com.apdr.testcases.Guidedownload@40238dd0]" started-at="2023-07-12T21:31:27 PKT" name="GuidedownloadInitialization" finished-at="2023-07-12T21:31:27 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GuidedownloadInitialization -->
-        <test-method signature="Click_On_Reference_Button()[pri:1, instance:com.apdr.testcases.Guidedownload@535779e4]" started-at="2023-07-11T18:02:40 PKT" name="Click_On_Reference_Button" finished-at="2023-07-11T18:02:52 PKT" duration-ms="11327" status="PASS">
+        <test-method signature="Click_On_Reference_Button()[pri:1, instance:com.apdr.testcases.Guidedownload@40238dd0]" started-at="2023-07-12T21:32:44 PKT" name="Click_On_Reference_Button" finished-at="2023-07-12T21:32:56 PKT" duration-ms="11313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_Reference_Button -->
       </class> <!-- com.apdr.testcases.Guidedownload -->
       <class name="com.apdr.testcases.NewsAlertContent">
-        <test-method is-config="true" signature="addNewsAlertContentInitialization()[pri:0, instance:com.apdr.testcases.NewsAlertContent@648c94da]" started-at="2023-07-11T18:02:00 PKT" name="addNewsAlertContentInitialization" finished-at="2023-07-11T18:02:00 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="addNewsAlertContentInitialization()[pri:0, instance:com.apdr.testcases.NewsAlertContent@74f5ce22]" started-at="2023-07-12T21:31:27 PKT" name="addNewsAlertContentInitialization" finished-at="2023-07-12T21:31:27 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewsAlertContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.NewsAlertContent@648c94da]" started-at="2023-07-11T18:02:17 PKT" name="hover_Over_Content_Button" finished-at="2023-07-11T18:02:18 PKT" duration-ms="567" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.NewsAlertContent@74f5ce22]" started-at="2023-07-12T21:31:58 PKT" name="hover_Over_Content_Button" finished-at="2023-07-12T21:32:00 PKT" duration-ms="2847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addVideoContent(java.lang.String)[pri:2, instance:com.apdr.testcases.NewsAlertContent@648c94da]" started-at="2023-07-11T18:02:18 PKT" name="addVideoContent" data-provider="newsAlertContent" finished-at="2023-07-11T18:02:19 PKT" duration-ms="1252" status="PASS">
+        <test-method signature="Click_On_News_Alert(java.lang.String)[pri:2, instance:com.apdr.testcases.NewsAlertContent@74f5ce22]" started-at="2023-07-12T21:32:00 PKT" name="Click_On_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-12T21:32:02 PKT" duration-ms="1462" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -535,8 +848,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addVideoContent -->
-        <test-method signature="add_News_Alert_Slug(java.lang.String)[pri:3, instance:com.apdr.testcases.NewsAlertContent@648c94da]" started-at="2023-07-11T18:02:19 PKT" name="add_News_Alert_Slug" data-provider="newsAlertContent" finished-at="2023-07-11T18:02:19 PKT" duration-ms="48" status="PASS">
+        </test-method> <!-- Click_On_News_Alert -->
+        <test-method signature="add_News_Alert_Slug(java.lang.String)[pri:3, instance:com.apdr.testcases.NewsAlertContent@74f5ce22]" started-at="2023-07-12T21:32:02 PKT" name="add_News_Alert_Slug" data-provider="newsAlertContent" finished-at="2023-07-12T21:32:02 PKT" duration-ms="72" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -547,7 +860,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_News_Alert_Slug -->
-        <test-method signature="add__Alert_News(java.lang.String)[pri:4, instance:com.apdr.testcases.NewsAlertContent@648c94da]" started-at="2023-07-11T18:02:19 PKT" name="add__Alert_News" data-provider="newsAlertContent" finished-at="2023-07-11T18:02:19 PKT" duration-ms="54" status="PASS">
+        <test-method signature="add__Alert_News(java.lang.String)[pri:4, instance:com.apdr.testcases.NewsAlertContent@74f5ce22]" started-at="2023-07-12T21:32:02 PKT" name="add__Alert_News" data-provider="newsAlertContent" finished-at="2023-07-12T21:32:02 PKT" duration-ms="84" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -558,7 +871,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add__Alert_News -->
-        <test-method signature="add_DateLine_For_News_Alert(java.lang.String)[pri:5, instance:com.apdr.testcases.NewsAlertContent@648c94da]" started-at="2023-07-11T18:02:19 PKT" name="add_DateLine_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-11T18:02:19 PKT" duration-ms="45" status="PASS">
+        <test-method signature="add_DateLine_For_News_Alert(java.lang.String)[pri:5, instance:com.apdr.testcases.NewsAlertContent@74f5ce22]" started-at="2023-07-12T21:32:02 PKT" name="add_DateLine_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-12T21:32:02 PKT" duration-ms="71" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -569,11 +882,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_DateLine_For_News_Alert -->
-        <test-method signature="select_News_Alert_Category()[pri:6, instance:com.apdr.testcases.NewsAlertContent@648c94da]" started-at="2023-07-11T18:02:19 PKT" name="select_News_Alert_Category" finished-at="2023-07-11T18:02:19 PKT" duration-ms="75" status="PASS">
+        <test-method signature="select_News_Alert_Category()[pri:6, instance:com.apdr.testcases.NewsAlertContent@74f5ce22]" started-at="2023-07-12T21:32:02 PKT" name="select_News_Alert_Category" finished-at="2023-07-12T21:32:02 PKT" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_News_Alert_Category -->
-        <test-method signature="add_EdsNote_For_News_Alert(java.lang.String)[pri:7, instance:com.apdr.testcases.NewsAlertContent@648c94da]" started-at="2023-07-11T18:02:19 PKT" name="add_EdsNote_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-11T18:02:19 PKT" duration-ms="39" status="PASS">
+        <test-method signature="add_EdsNote_For_News_Alert(java.lang.String)[pri:7, instance:com.apdr.testcases.NewsAlertContent@74f5ce22]" started-at="2023-07-12T21:32:02 PKT" name="add_EdsNote_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-12T21:32:02 PKT" duration-ms="66" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -584,7 +897,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_EdsNote_For_News_Alert -->
-        <test-method signature="click_Save_Button()[pri:8, instance:com.apdr.testcases.NewsAlertContent@648c94da]" started-at="2023-07-11T18:02:19 PKT" name="click_Save_Button" finished-at="2023-07-11T18:02:21 PKT" duration-ms="1389" status="PASS">
+        <test-method signature="click_Save_Button()[pri:8, instance:com.apdr.testcases.NewsAlertContent@74f5ce22]" started-at="2023-07-12T21:32:02 PKT" name="click_Save_Button" finished-at="2023-07-12T21:32:04 PKT" duration-ms="2049" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_Save_Button -->

@@ -8,20 +8,11 @@
     <classes>
       <class name="com.apdr.testcases.AddPhotoContent">
         <methods>
-          <include name="hover_Over_Content_Button"/>
-          <include name="addPhotoContent"/>
+          <include name="addPhotoContent" invocation-numbers="0"/>
           <include name="initialization"/>
-          <include name="click_On_SaveButton"/>
           <include name="addContentInitialization"/>
         </methods>
       </class> <!-- com.apdr.testcases.AddPhotoContent -->
-      <class name="com.apdr.testcases.LogInTestCases">
-        <methods>
-          <include name="loginToApDr"/>
-          <include name="initialization"/>
-          <include name="loginIntialization"/>
-        </methods>
-      </class> <!-- com.apdr.testcases.LogInTestCases -->
     </classes>
   </test> <!--  TestCases for Admin Role (failed) -->
 </suite> <!-- Failed suite [Suite] -->

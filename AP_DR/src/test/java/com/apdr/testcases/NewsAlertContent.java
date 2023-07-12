@@ -41,11 +41,10 @@ public class NewsAlertContent extends TestBase {
 	@Description("Admin will click on the News Alert link ")
 	@Feature("Add News Alert Content")
 	@Story("As a Admin I need to click on the News Alert link")
-	public void addVideoContent(String data) throws InterruptedException {
+	public void Click_On_News_Alert(String data) throws InterruptedException {
 		String[] formInfo = data.split(",");
 		String titleTxt = newsAlertObj.clickOnNewsAlertLink();
 		Assert.assertEquals(titleTxt, "Create News Alert", "Admin is not able to click on the News Alert Link");
-
 		newsAlertObj.addEdsNote(formInfo[3]);
 
 	}

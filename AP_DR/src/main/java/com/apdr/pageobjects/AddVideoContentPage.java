@@ -47,11 +47,11 @@ public class AddVideoContentPage extends TestBase {
 	WebElement sourceInputField;
 
 	// Add files button locator to upload video file
-	@FindBy(id = "edit-field-video-file-2-0-upload--2_browse")
+	@FindBy(id = "edit-field-video-file-2-0-upload")
 	WebElement addFileButton;
 
 	// remove button locator
-	@FindBy(name = "field_photo_0_remove_button")
+	@FindBy(name = "#edit-field-video-file-2-0-remove-button")
 	WebElement removeBtn;
 
 	// Body Input Field locator
@@ -66,6 +66,15 @@ public class AddVideoContentPage extends TestBase {
 	@FindBy(xpath = "//input[@id='edit-submit']")
 	WebElement saveBtn;
 
+	
+	@FindBy(xpath = "//span[@class='field field--name-title field--type-string field--label-hidden']")
+	WebElement VerifyTitle;
+	
+	
+	@FindBy(xpath = "//video[@controls='controls']")
+	WebElement VideoFilepresent;
+	
+	
 	public String clickOnVideoButton() {
 		wait.until(ExpectedConditions.elementToBeClickable(videoBtn));
 		videoBtn.click();
@@ -76,8 +85,10 @@ public class AddVideoContentPage extends TestBase {
 
 	public void addSlug(String slug) {
 		slugInputField.sendKeys(slug);
-
+		//String ValueSlug = slugInputField.getText();
+		//return ValueSlug;
 	}
+	
 
 	public void add_Headline_Source(String headline, String source) {
 		headlineInputField.sendKeys(headline);
@@ -87,29 +98,11 @@ public class AddVideoContentPage extends TestBase {
 
 	public void addVideoFileFromLocalRepository() throws AWTException, InterruptedException {
 
-		builder.moveToElement(addFileButton).click().build().perform();
-		//addFileButton.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APvideo.mp4");
-		/*
-		 * addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\Desktop\\Test1.MP4");
-		 * Thread.sleep(10000);
-		 */
-		//First line for Server side
-		//StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\Test1.mp4");
-		 	StringSelection ss = new StringSelection("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\Test1.mp4");
-	        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
-
-	      //imitate mouse events like ENTER, CTRL+C, CTRL+V
-
-	        Robot robot = new Robot();
-	        robot.setAutoDelay(500);
-	        robot.keyPress(KeyEvent.VK_CONTROL);
-	        robot.keyPress(KeyEvent.VK_V);
-	        robot.keyRelease(KeyEvent.VK_CONTROL);
-	        robot.keyRelease(KeyEvent.VK_K);
-	        robot.keyPress(KeyEvent.VK_ENTER);
-	        robot.setAutoDelay(500);
-	        robot.keyPress(KeyEvent.VK_ENTER);
-	        robot.keyRelease(KeyEvent.VK_ENTER);
+		//builder.moveToElement(addFileButton).click().build().perform();
+		addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\Test1.mp4");
+		//wait.until(ExpectedConditions.visibilityOf(removeBtn));
+		Thread.sleep(5000);
+	
 	}
 
 	public void addBodyForVideo(String body) throws InterruptedException {
@@ -124,8 +117,20 @@ public class AddVideoContentPage extends TestBase {
 	}
 
 	public void clickOnSaveButton() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		saveBtn.click();
+		Thread.sleep(2000);
 	}
-
+	
+	public String Verify_Title() throws InterruptedException {
+		wait.until(ExpectedConditions.visibilityOf(VerifyTitle));
+		String Expected = VerifyTitle.getText();
+		return Expected;
+		}
+	
+	// Verify Video File is displayed or not.
+	public boolean Video_File_Present() {
+		boolean isFileDisplayed = VideoFilepresent.isDisplayed();
+		return 	isFileDisplayed;
+}
 }

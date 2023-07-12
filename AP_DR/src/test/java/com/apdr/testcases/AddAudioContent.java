@@ -56,6 +56,8 @@ public class AddAudioContent extends TestBase {
 	public void addVideoContent() {
 		String titleTxt = addAudioContentObj.clickOnAudioButton();
 		Assert.assertEquals(titleTxt, "Create Audio", "Admin is not able to click on the Audio button");
+		
+		//Assert.assertEquals(titleTxt, "Create Audio | Associated Press", "Admin is not able to click on the Audio button");
 	}
 
 	@Test(priority = 3, dataProviderClass = DataUtils.class, dataProvider = "audioDataProvider")
@@ -66,13 +68,14 @@ public class AddAudioContent extends TestBase {
 		String[] formInfo = data.split(",");
 		addcontentobj.addSlug(formInfo[0]);
 		addAudioContentObj.add_Speaker_And_Intro(formInfo[1], formInfo[2]);
+		
 	}
 
 	@Test(priority = 4)
 	@Description("Admin will select Audio file from local repo and will upload to APDR ")
 	@Feature("Add Audio content")
 	@Story("As a Admin I need to upload a Audio file")
-	public void addVideoFile() throws AWTException, InterruptedException {
+	public void Upload_Audio_File() throws AWTException, InterruptedException {
 		addAudioContentObj.add_Audio_file();
 	}
 
@@ -82,9 +85,19 @@ public class AddAudioContent extends TestBase {
 	@Story("As a Admin I need to click on the save button to add Audio with content on APDR")
 	public void clickOnSaveButton() throws InterruptedException {
 		// addAudioContentObj.viewAudioRemoveButton();
-		addAudioContentObj.clickOnSaveButton();
+		String titleTxt = addAudioContentObj.clickOnSaveButton();
+		Assert.assertEquals(titleTxt, "Audio upload through upgraded Automation testing script | Associated Press", "Audio module save successfully.");
 	}
 
+	
+	@Test(priority = 6)
+	@Description("Verify that Audio File is Uploaded or not ? ")
+	public void Audio_File_Verification() throws InterruptedException {
+		boolean Filechecking = addAudioContentObj.Audio_File_Present();	
+		Assert.assertTrue(Filechecking, "Audio File is not uploaded. Please check." );
+	}
+
+	
 	@AfterTest
 	public void teardown() {
 		driver.quit();

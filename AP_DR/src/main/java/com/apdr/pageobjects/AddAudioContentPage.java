@@ -40,10 +40,9 @@ public class AddAudioContentPage extends TestBase {
 	WebElement introInputField;
 
 	// choose file button locator
-	
-	
+
 	@FindBy(name = "files[field_audio_file_0]")
-	//@FindBy(xpath = "//input[@id='edit-field-audio-file-0-upload']")
+	// @FindBy(xpath = "//input[@id='edit-field-audio-file-0-upload']")
 	WebElement chooseFileBtn;
 
 	// Remove button locator
@@ -53,6 +52,11 @@ public class AddAudioContentPage extends TestBase {
 	// submit button locator
 	@FindBy(id = "edit-submit")
 	WebElement saveBtn;
+
+	// Verify Audio File present or not.
+
+	@FindBy(xpath = "//audio[@controls='controls']")
+	WebElement AudioFilepresent;
 
 	public String clickOnAudioButton() {
 		wait.until(ExpectedConditions.elementToBeClickable(audioBtn));
@@ -69,22 +73,31 @@ public class AddAudioContentPage extends TestBase {
 	}
 
 	public void add_Audio_file() throws AWTException, InterruptedException {
-		//builder.moveToElement(chooseFileBtn).click().build().perform();
+		// builder.moveToElement(chooseFileBtn).click().build().perform();
 		// chooseFileBtn.click();
-		
-		//First line for Server side
-		//chooseFileBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
+
+		// First line for Server side
+		// chooseFileBtn.sendKeys("/home/AdminAccount/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
 		chooseFileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APaudio.mp3");
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 	}
 
 	public void viewAudioRemoveButton() {
 		wait.until(ExpectedConditions.visibilityOf(removeBtn));
 	}
 
-	public void clickOnSaveButton() throws InterruptedException {
-		Thread.sleep(2000);
+	public String clickOnSaveButton() throws InterruptedException {
 		saveBtn.click();
+		Thread.sleep(5000);
+		String message = driver.getTitle();
+		return message;
+
+	}
+
+	// Verify Audio File is displayed or not.
+	public boolean Audio_File_Present() {
+		boolean isFileDisplayed = AudioFilepresent.isDisplayed();
+		return isFileDisplayed;
 	}
 
 }

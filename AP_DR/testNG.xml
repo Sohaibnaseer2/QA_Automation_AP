@@ -5,7 +5,7 @@
 		<listener class-name="com.apdr.listeners.TestListener" />
 	</listeners>
 
-	<test name=" Super Admin Create Admin ">
+		<test name=" Super Admin Create Admin ">
 
 		<classes>
 			<class name="com.apdr.testcases.SuperAdmin"></class>
@@ -13,20 +13,19 @@
 		</classes>
 
 	</test>
-	
+
 	<test name=" TestCases for Admin Role ">
 
 		<classes>
 
 			<class name="com.apdr.testcases.LogInTestCases"></class>
-			<class name="com.apdr.testcases.AddPhotoContent"></class>
 			<class name="com.apdr.testcases.AddAudioContent"></class>
 			<class name="com.apdr.testcases.NewsAlertContent"></class>
 			<class name="com.apdr.testcases.AddNewsStoryContent"></class>
+			<class name="com.apdr.testcases.AddPhotoContent"></class>
+			<class name="com.apdr.testcases.AddVideoContent"></class>
 			<class name="com.apdr.testcases.Guidedownload"></class>
-			<!--<class name="com.apdr.testcases.AddVideoContent"></class>-->
 			<class name="com.apdr.testcases.AddCustomerSupport"></class>
-			
 
 		</classes>
 
@@ -41,23 +40,24 @@
 			<class name="com.apdr.testcases.Guidedownload"></class>
 			<class name="com.apdr.testcases.AddAuthor"></class>
 			<class name="com.apdr.testcases.AddCustomer"></class>
-			<class name="com.apdr.testcases.InitialPasswordUser"></class>
+			
 			
 		</classes>
 
 	</test>
 
-	<test name=" TestCases for Author Role ">
+		<test name=" TestCases for Author Role ">
 
 		<classes>
 
 			<class name="com.apdr.testcases.AuthorLogin"></class>
 			<class name="com.apdr.testcases.AddAudioContent"></class>
 			<class name="com.apdr.testcases.NewsAlertContent"></class>
-			<class name="com.apdr.testcases.AddPhotoContent"></class>
 			<class name="com.apdr.testcases.AddNewsStoryContent"></class>
-			<!--<class name="com.apdr.testcases.AddVideoContent"></class>-->
+			<class name="com.apdr.testcases.AddPhotoContent"></class>
+			<class name="com.apdr.testcases.AddVideoContent"></class>
 			<class name="com.apdr.testcases.Guidedownload"></class>
+			
 		</classes>
 
 	</test>
@@ -65,6 +65,7 @@
 	<!--	<test name=" Other TestCases ">
 
 		<classes>
+		<class name="com.apdr.testcases.InitialPasswordUser"></class>
 		<class name="com.apdr.testcases.AuthorLogin"></class>
 			<class name="com.apdr.testcases.AddCustomerSupport"></class>
 			<class name="com.apdr.testcases.AddCustomer"></class>
