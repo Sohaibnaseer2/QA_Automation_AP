@@ -51,10 +51,10 @@ public class TestBase {
 
 			ChromeOptions options = new ChromeOptions();
 			
-			/*
-			 * options.addArguments("--no-sandbox"); options.addArguments("--headless");
-			 * options.addArguments("window-size=1200,1100");
-			 */
+			
+			  options.addArguments("--no-sandbox"); options.addArguments("--headless");
+			  options.addArguments("window-size=1200,1100");
+			 
 			 
 			  driver = new ChromeDriver(options);
 

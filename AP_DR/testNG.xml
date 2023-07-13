@@ -5,14 +5,14 @@
 		<listener class-name="com.apdr.listeners.TestListener" />
 	</listeners>
 
-		<test name=" Super Admin Create Admin ">
+	<!--	<test name=" Super Admin Create Admin ">
 
 		<classes>
 			<class name="com.apdr.testcases.SuperAdmin"></class>
 			<class name="com.apdr.testcases.AddAdminUser"></class>
 		</classes>
 
-	</test>
+	</test>-->
 
 	<test name=" TestCases for Admin Role ">
 

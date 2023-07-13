@@ -1,106 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="19" total="122" passed="103" failed="0" skipped="0">
+<testng-results ignored="18" total="113" passed="89" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-13T13:53:34 PKT" name="Suite" finished-at="2023-07-13T13:58:45 PKT" duration-ms="311726">
+  <suite started-at="2023-07-13T16:02:01 PKT" name="Suite" finished-at="2023-07-13T16:10:28 PKT" duration-ms="507071">
     <groups>
     </groups>
-    <test started-at="2023-07-13T13:53:34 PKT" name=" Super Admin Create Admin " finished-at="2023-07-13T13:54:08 PKT" duration-ms="34004">
-      <class name="com.apdr.testcases.AddAdminUser">
-        <test-method is-config="true" signature="addUserInitialization()[pri:0, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-13T13:53:42 PKT" name="addUserInitialization" finished-at="2023-07-13T13:53:42 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="29" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addUserInitialization -->
-        <test-method signature="hover_Over_AddUser_Link()[pri:1, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-13T13:53:55 PKT" name="hover_Over_AddUser_Link" finished-at="2023-07-13T13:53:58 PKT" duration-ms="2885" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hover_Over_AddUser_Link -->
-        <test-method signature="add_Role_For_Users(java.lang.String)[pri:2, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-13T13:53:58 PKT" name="add_Role_For_Users" data-provider="adminCredentials" finished-at="2023-07-13T13:53:58 PKT" duration-ms="223" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sohaib.naseer@visionetsystems.com,Test@123...,Test engineer,aptest]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_Role_For_Users -->
-        <test-method signature="select_Users_role()[pri:3, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-13T13:53:58 PKT" name="select_Users_role" finished-at="2023-07-13T13:54:00 PKT" duration-ms="2206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- select_Users_role -->
-        <test-method signature="add_Org_Name_And_Org_Id(java.lang.String)[pri:4, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-13T13:54:00 PKT" name="add_Org_Name_And_Org_Id" data-provider="addUserData" finished-at="2023-07-13T13:54:01 PKT" duration-ms="139" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[APCustomer@mailinator.com,Test@123...,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_Org_Name_And_Org_Id -->
-        <test-method signature="add_User_MDMID(java.lang.String)[pri:5, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-13T13:54:01 PKT" name="add_User_MDMID" data-provider="addUserData" finished-at="2023-07-13T13:54:01 PKT" duration-ms="62" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[APCustomer@mailinator.com,Test@123...,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_User_MDMID -->
-        <test-method signature="add_User_Informtion(java.lang.String)[pri:6, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-13T13:54:01 PKT" name="add_User_Informtion" data-provider="addUserData" finished-at="2023-07-13T13:54:01 PKT" duration-ms="202" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[APCustomer@mailinator.com,Test@123...,software Testing ,ap786,786ap,Auto7090,engineer11,automation01,customer]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_User_Informtion -->
-        <test-method signature="click_On_Create_New_Account_Button()[pri:7, instance:com.apdr.testcases.AddAdminUser@29526c05]" started-at="2023-07-13T13:54:01 PKT" name="click_On_Create_New_Account_Button" finished-at="2023-07-13T13:54:08 PKT" duration-ms="6765" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- click_On_Create_New_Account_Button -->
-      </class> <!-- com.apdr.testcases.AddAdminUser -->
-      <class name="com.apdr.testcases.SuperAdmin">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.SuperAdmin@c94fd30]" started-at="2023-07-13T13:53:34 PKT" name="initialization" finished-at="2023-07-13T13:53:42 PKT" duration-ms="8390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.SuperAdmin@c94fd30]" started-at="2023-07-13T13:53:42 PKT" name="loginIntialization" finished-at="2023-07-13T13:53:42 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginIntialization -->
-        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.SuperAdmin@c94fd30]" started-at="2023-07-13T13:53:42 PKT" name="loginToApDr" data-provider="SuperAdminCredentials" finished-at="2023-07-13T13:53:55 PKT" duration-ms="12937" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ripcord@ap.org,admin,null,null]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApDr -->
-      </class> <!-- com.apdr.testcases.SuperAdmin -->
-    </test> <!--  Super Admin Create Admin  -->
-    <test started-at="2023-07-13T13:54:08 PKT" name=" TestCases for Admin Role " finished-at="2023-07-13T13:55:58 PKT" duration-ms="110588">
+    <test started-at="2023-07-13T16:02:01 PKT" name=" TestCases for Admin Role " finished-at="2023-07-13T16:05:51 PKT" duration-ms="230333">
       <class name="com.apdr.testcases.AddPhotoContent">
-        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddPhotoContent@648c94da]" started-at="2023-07-13T13:54:14 PKT" name="addContentInitialization" finished-at="2023-07-13T13:54:14 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddPhotoContent@55493582]" started-at="2023-07-13T16:02:07 PKT" name="addContentInitialization" finished-at="2023-07-13T16:02:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddPhotoContent@648c94da]" started-at="2023-07-13T13:54:58 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T13:55:00 PKT" duration-ms="1540" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddPhotoContent@55493582]" started-at="2023-07-13T16:02:46 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T16:02:46 PKT" duration-ms="893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="Upload_Photo(java.lang.String)[pri:2, instance:com.apdr.testcases.AddPhotoContent@648c94da]" started-at="2023-07-13T13:55:00 PKT" name="Upload_Photo" data-provider="imageDataProvider" finished-at="2023-07-13T13:55:07 PKT" duration-ms="6947" status="PASS">
+        <test-method signature="Upload_Photo(java.lang.String)[pri:2, instance:com.apdr.testcases.AddPhotoContent@55493582]" started-at="2023-07-13T16:02:47 PKT" name="Upload_Photo" data-provider="imageDataProvider" finished-at="2023-07-13T16:04:15 PKT" duration-ms="88310" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -108,32 +23,109 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.name: field_photo[0][alt]' (tried for 60 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.name: field_photo[0][alt]' (tried for 60 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.apdr.pageobjects.AddPhotoContentPage.Add_text_of_Alternative(AddPhotoContentPage.java:182)
+at com.apdr.testcases.AddPhotoContent.Upload_Photo(AddPhotoContent.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='field_photo[0][alt]']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a79583a628baa4def17e2ef08f1d4a3a, findElement {using=name, value=field_photo[0][alt]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60932}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60932/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a79583a628baa4def17e2ef08f1d4a3a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Upload_Photo -->
-        <test-method signature="click_On_SaveButton()[pri:3, instance:com.apdr.testcases.AddPhotoContent@648c94da]" started-at="2023-07-13T13:55:07 PKT" name="click_On_SaveButton" finished-at="2023-07-13T13:55:11 PKT" duration-ms="3908" status="PASS">
+        <test-method signature="click_On_SaveButton()[pri:3, instance:com.apdr.testcases.AddPhotoContent@55493582]" started-at="2023-07-13T16:04:15 PKT" name="click_On_SaveButton" finished-at="2023-07-13T16:04:19 PKT" duration-ms="4092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_On_SaveButton -->
-        <test-method signature="Photo_Verification()[pri:4, instance:com.apdr.testcases.AddPhotoContent@648c94da]" started-at="2023-07-13T13:55:11 PKT" name="Photo_Verification" finished-at="2023-07-13T13:55:11 PKT" duration-ms="32" status="PASS">
+        <test-method signature="Photo_Verification()[pri:4, instance:com.apdr.testcases.AddPhotoContent@55493582]" started-at="2023-07-13T16:04:19 PKT" name="Photo_Verification" finished-at="2023-07-13T16:04:19 PKT" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Photo_Verification -->
       </class> <!-- com.apdr.testcases.AddPhotoContent -->
       <class name="com.apdr.testcases.AddAudioContent">
-        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddAudioContent@344f4dea]" started-at="2023-07-13T13:54:14 PKT" name="addContentInitialization" finished-at="2023-07-13T13:54:14 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddAudioContent@5812f68b]" started-at="2023-07-13T16:02:07 PKT" name="addContentInitialization" finished-at="2023-07-13T16:02:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="45" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddAudioContent@344f4dea]" started-at="2023-07-13T13:54:27 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T13:54:28 PKT" duration-ms="1079" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddAudioContent@5812f68b]" started-at="2023-07-13T16:02:16 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T16:02:17 PKT" duration-ms="1092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddAudioContent@344f4dea]" started-at="2023-07-13T13:54:28 PKT" name="addVideoContent" finished-at="2023-07-13T13:54:31 PKT" duration-ms="2853" status="PASS">
+        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddAudioContent@5812f68b]" started-at="2023-07-13T16:02:17 PKT" name="addVideoContent" finished-at="2023-07-13T16:02:20 PKT" duration-ms="2517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVideoContent -->
-        <test-method signature="add_Slug_Speaker_Intro_For_Audio(java.lang.String)[pri:3, instance:com.apdr.testcases.AddAudioContent@344f4dea]" started-at="2023-07-13T13:54:31 PKT" name="add_Slug_Speaker_Intro_For_Audio" data-provider="audioDataProvider" finished-at="2023-07-13T13:54:31 PKT" duration-ms="238" status="PASS">
+        <test-method signature="add_Slug_Speaker_Intro_For_Audio(java.lang.String)[pri:3, instance:com.apdr.testcases.AddAudioContent@5812f68b]" started-at="2023-07-13T16:02:20 PKT" name="add_Slug_Speaker_Intro_For_Audio" data-provider="audioDataProvider" finished-at="2023-07-13T16:02:20 PKT" duration-ms="252" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -144,33 +136,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_Slug_Speaker_Intro_For_Audio -->
-        <test-method signature="Upload_Audio_File()[pri:4, instance:com.apdr.testcases.AddAudioContent@344f4dea]" started-at="2023-07-13T13:54:31 PKT" name="Upload_Audio_File" finished-at="2023-07-13T13:54:36 PKT" duration-ms="5048" status="PASS">
+        <test-method signature="Upload_Audio_File()[pri:4, instance:com.apdr.testcases.AddAudioContent@5812f68b]" started-at="2023-07-13T16:02:20 PKT" name="Upload_Audio_File" finished-at="2023-07-13T16:02:25 PKT" duration-ms="5044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Upload_Audio_File -->
-        <test-method signature="click_On_SaveButton()[pri:5, instance:com.apdr.testcases.AddAudioContent@344f4dea]" started-at="2023-07-13T13:54:36 PKT" name="click_On_SaveButton" finished-at="2023-07-13T13:54:46 PKT" duration-ms="9216" status="PASS">
+        <test-method signature="click_On_SaveButton()[pri:5, instance:com.apdr.testcases.AddAudioContent@5812f68b]" started-at="2023-07-13T16:02:25 PKT" name="click_On_SaveButton" finished-at="2023-07-13T16:02:34 PKT" duration-ms="9535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_On_SaveButton -->
-        <test-method signature="Audio_File_Verification()[pri:6, instance:com.apdr.testcases.AddAudioContent@344f4dea]" started-at="2023-07-13T13:54:46 PKT" name="Audio_File_Verification" finished-at="2023-07-13T13:54:46 PKT" duration-ms="31" status="PASS">
+        <test-method signature="Audio_File_Verification()[pri:6, instance:com.apdr.testcases.AddAudioContent@5812f68b]" started-at="2023-07-13T16:02:34 PKT" name="Audio_File_Verification" finished-at="2023-07-13T16:02:34 PKT" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Audio_File_Verification -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.AddAudioContent@344f4dea]" started-at="2023-07-13T13:55:58 PKT" name="teardown" finished-at="2023-07-13T13:55:58 PKT" duration-ms="258" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.AddAudioContent@5812f68b]" started-at="2023-07-13T16:05:51 PKT" name="teardown" finished-at="2023-07-13T16:05:51 PKT" duration-ms="243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.apdr.testcases.AddAudioContent -->
       <class name="com.apdr.testcases.AddCustomerSupport">
-        <test-method is-config="true" signature="addUserInitialization()[pri:0, instance:com.apdr.testcases.AddCustomerSupport@535779e4]" started-at="2023-07-13T13:54:14 PKT" name="addUserInitialization" finished-at="2023-07-13T13:54:14 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="addUserInitialization()[pri:0, instance:com.apdr.testcases.AddCustomerSupport@336f1079]" started-at="2023-07-13T16:02:07 PKT" name="addUserInitialization" finished-at="2023-07-13T16:02:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserInitialization -->
-        <test-method signature="hover_Over_AddUser_Link()[pri:1, instance:com.apdr.testcases.AddCustomerSupport@535779e4]" started-at="2023-07-13T13:55:47 PKT" name="hover_Over_AddUser_Link" finished-at="2023-07-13T13:55:49 PKT" duration-ms="1931" status="PASS">
+        <test-method signature="hover_Over_AddUser_Link()[pri:1, instance:com.apdr.testcases.AddCustomerSupport@336f1079]" started-at="2023-07-13T16:05:34 PKT" name="hover_Over_AddUser_Link" finished-at="2023-07-13T16:05:37 PKT" duration-ms="2818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_AddUser_Link -->
-        <test-method signature="add_Role_For_Users(java.lang.String)[pri:2, instance:com.apdr.testcases.AddCustomerSupport@535779e4]" started-at="2023-07-13T13:55:49 PKT" name="add_Role_For_Users" data-provider="customerSupportCredentials" finished-at="2023-07-13T13:55:49 PKT" duration-ms="207" status="PASS">
+        <test-method signature="add_Role_For_Users(java.lang.String)[pri:2, instance:com.apdr.testcases.AddCustomerSupport@336f1079]" started-at="2023-07-13T16:05:37 PKT" name="add_Role_For_Users" data-provider="customerSupportCredentials" finished-at="2023-07-13T16:05:37 PKT" duration-ms="234" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,11 +173,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_Role_For_Users -->
-        <test-method signature="select_Users_role()[pri:3, instance:com.apdr.testcases.AddCustomerSupport@535779e4]" started-at="2023-07-13T13:55:49 PKT" name="select_Users_role" finished-at="2023-07-13T13:55:51 PKT" duration-ms="2226" status="PASS">
+        <test-method signature="select_Users_role()[pri:3, instance:com.apdr.testcases.AddCustomerSupport@336f1079]" started-at="2023-07-13T16:05:37 PKT" name="select_Users_role" finished-at="2023-07-13T16:05:44 PKT" duration-ms="7212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_Users_role -->
-        <test-method signature="add_Org_Name_And_Org_Id(java.lang.String)[pri:4, instance:com.apdr.testcases.AddCustomerSupport@535779e4]" started-at="2023-07-13T13:55:51 PKT" name="add_Org_Name_And_Org_Id" data-provider="addUserData" finished-at="2023-07-13T13:55:58 PKT" duration-ms="6547" status="PASS">
+        <test-method signature="add_Org_Name_And_Org_Id(java.lang.String)[pri:4, instance:com.apdr.testcases.AddCustomerSupport@336f1079]" started-at="2023-07-13T16:05:44 PKT" name="add_Org_Name_And_Org_Id" data-provider="addUserData" finished-at="2023-07-13T16:05:51 PKT" duration-ms="6212" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -198,19 +190,19 @@
         </test-method> <!-- add_Org_Name_And_Org_Id -->
       </class> <!-- com.apdr.testcases.AddCustomerSupport -->
       <class name="com.apdr.testcases.AddVideoContent">
-        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddVideoContent@2a62b5bc]" started-at="2023-07-13T13:54:14 PKT" name="addContentInitialization" finished-at="2023-07-13T13:54:14 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddVideoContent@1a20270e]" started-at="2023-07-13T16:02:07 PKT" name="addContentInitialization" finished-at="2023-07-13T16:02:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddVideoContent@2a62b5bc]" started-at="2023-07-13T13:55:11 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T13:55:12 PKT" duration-ms="987" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddVideoContent@1a20270e]" started-at="2023-07-13T16:04:19 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T16:04:20 PKT" duration-ms="1393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddVideoContent@2a62b5bc]" started-at="2023-07-13T13:55:12 PKT" name="addVideoContent" finished-at="2023-07-13T13:55:13 PKT" duration-ms="1261" status="PASS">
+        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddVideoContent@1a20270e]" started-at="2023-07-13T16:04:20 PKT" name="addVideoContent" finished-at="2023-07-13T16:04:24 PKT" duration-ms="3350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVideoContent -->
-        <test-method signature="add_Slug_Headline_Source_For_Video(java.lang.String)[pri:3, instance:com.apdr.testcases.AddVideoContent@2a62b5bc]" started-at="2023-07-13T13:55:13 PKT" name="add_Slug_Headline_Source_For_Video" data-provider="videoDataProvider" finished-at="2023-07-13T13:55:13 PKT" duration-ms="172" status="PASS">
+        <test-method signature="add_Slug_Headline_Source_For_Video(java.lang.String)[pri:3, instance:com.apdr.testcases.AddVideoContent@1a20270e]" started-at="2023-07-13T16:04:24 PKT" name="add_Slug_Headline_Source_For_Video" data-provider="videoDataProvider" finished-at="2023-07-13T16:04:24 PKT" duration-ms="230" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -221,11 +213,85 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_Slug_Headline_Source_For_Video -->
-        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddVideoContent@2a62b5bc]" started-at="2023-07-13T13:55:13 PKT" name="addVideoFile" finished-at="2023-07-13T13:55:18 PKT" duration-ms="5039" status="PASS">
+        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddVideoContent@1a20270e]" started-at="2023-07-13T16:04:24 PKT" name="addVideoFile" finished-at="2023-07-13T16:04:44 PKT" duration-ms="20034" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#edit\-field\-video\-file\-2\-0\-upload"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a79583a628baa4def17e2ef08f1d4a3a, findElement {using=id, value=edit-field-video-file-2-0-upload}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60932}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60932/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a79583a628baa4def17e2ef08f1d4a3a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#edit\-field\-video\-file\-2\-0\-upload"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a79583a628baa4def17e2ef08f1d4a3a, findElement {using=id, value=edit-field-video-file-2-0-upload}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60932}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60932/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a79583a628baa4def17e2ef08f1d4a3a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
+at com.apdr.pageobjects.AddVideoContentPage.addVideoFileFromLocalRepository(AddVideoContentPage.java:102)
+at com.apdr.testcases.AddVideoContent.addVideoFile(AddVideoContent.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVideoFile -->
-        <test-method signature="add_Body_For_Video(java.lang.String)[pri:5, instance:com.apdr.testcases.AddVideoContent@2a62b5bc]" started-at="2023-07-13T13:55:18 PKT" name="add_Body_For_Video" data-provider="videoDataProvider" finished-at="2023-07-13T13:55:28 PKT" duration-ms="10110" status="PASS">
+        <test-method signature="add_Body_For_Video(java.lang.String)[pri:5, instance:com.apdr.testcases.AddVideoContent@1a20270e]" started-at="2023-07-13T16:04:44 PKT" name="add_Body_For_Video" data-provider="videoDataProvider" finished-at="2023-07-13T16:04:54 PKT" duration-ms="10124" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -236,33 +302,107 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_Body_For_Video -->
-        <test-method signature="clickOnSaveButton()[pri:6, instance:com.apdr.testcases.AddVideoContent@2a62b5bc]" started-at="2023-07-13T13:55:28 PKT" name="clickOnSaveButton" finished-at="2023-07-13T13:55:35 PKT" duration-ms="7042" status="PASS">
+        <test-method signature="clickOnSaveButton()[pri:6, instance:com.apdr.testcases.AddVideoContent@1a20270e]" started-at="2023-07-13T16:04:54 PKT" name="clickOnSaveButton" finished-at="2023-07-13T16:05:01 PKT" duration-ms="7000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSaveButton -->
-        <test-method signature="Video_File_Verification()[pri:7, instance:com.apdr.testcases.AddVideoContent@2a62b5bc]" started-at="2023-07-13T13:55:35 PKT" name="Video_File_Verification" finished-at="2023-07-13T13:55:35 PKT" duration-ms="28" status="PASS">
+        <test-method signature="Video_File_Verification()[pri:7, instance:com.apdr.testcases.AddVideoContent@1a20270e]" started-at="2023-07-13T16:05:01 PKT" name="Video_File_Verification" finished-at="2023-07-13T16:05:21 PKT" duration-ms="20025" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//video[@controls='controls']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a79583a628baa4def17e2ef08f1d4a3a, findElement {using=xpath, value=//video[@controls='controls']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60932}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60932/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a79583a628baa4def17e2ef08f1d4a3a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//video[@controls='controls']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a79583a628baa4def17e2ef08f1d4a3a, findElement {using=xpath, value=//video[@controls='controls']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60932}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60932/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a79583a628baa4def17e2ef08f1d4a3a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+at com.apdr.pageobjects.AddVideoContentPage.Video_File_Present(AddVideoContentPage.java:133)
+at com.apdr.testcases.AddVideoContent.Video_File_Verification(AddVideoContent.java:92)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Video_File_Verification -->
-        <test-method signature="Verify_Title()[pri:8, instance:com.apdr.testcases.AddVideoContent@2a62b5bc]" started-at="2023-07-13T13:55:35 PKT" name="Verify_Title" finished-at="2023-07-13T13:55:35 PKT" duration-ms="33" status="PASS">
+        <test-method signature="Verify_Title()[pri:8, instance:com.apdr.testcases.AddVideoContent@1a20270e]" started-at="2023-07-13T16:05:22 PKT" name="Verify_Title" finished-at="2023-07-13T16:05:22 PKT" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Title -->
       </class> <!-- com.apdr.testcases.AddVideoContent -->
       <class name="com.apdr.testcases.AddNewsStoryContent">
-        <test-method is-config="true" signature="addNewsStoryContentInitialization()[pri:0, instance:com.apdr.testcases.AddNewsStoryContent@5e4bd84a]" started-at="2023-07-13T13:54:14 PKT" name="addNewsStoryContentInitialization" finished-at="2023-07-13T13:54:14 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="addNewsStoryContentInitialization()[pri:0, instance:com.apdr.testcases.AddNewsStoryContent@3c7c886c]" started-at="2023-07-13T16:02:07 PKT" name="addNewsStoryContentInitialization" finished-at="2023-07-13T16:02:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewsStoryContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddNewsStoryContent@5e4bd84a]" started-at="2023-07-13T13:54:53 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T13:54:54 PKT" duration-ms="813" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddNewsStoryContent@3c7c886c]" started-at="2023-07-13T16:02:41 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T16:02:42 PKT" duration-ms="835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="clickOnNewsStoryLink()[pri:2, instance:com.apdr.testcases.AddNewsStoryContent@5e4bd84a]" started-at="2023-07-13T13:54:54 PKT" name="clickOnNewsStoryLink" finished-at="2023-07-13T13:54:56 PKT" duration-ms="1972" status="PASS">
+        <test-method signature="clickOnNewsStoryLink()[pri:2, instance:com.apdr.testcases.AddNewsStoryContent@3c7c886c]" started-at="2023-07-13T16:02:42 PKT" name="clickOnNewsStoryLink" finished-at="2023-07-13T16:02:43 PKT" duration-ms="1067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnNewsStoryLink -->
-        <test-method signature="addSlugForNewStory(java.lang.String)[pri:3, instance:com.apdr.testcases.AddNewsStoryContent@5e4bd84a]" started-at="2023-07-13T13:54:56 PKT" name="addSlugForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:54:56 PKT" duration-ms="60" status="PASS">
+        <test-method signature="addSlugForNewStory(java.lang.String)[pri:3, instance:com.apdr.testcases.AddNewsStoryContent@3c7c886c]" started-at="2023-07-13T16:02:43 PKT" name="addSlugForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:02:43 PKT" duration-ms="61" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -273,7 +413,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addSlugForNewStory -->
-        <test-method signature="addheadLineForNewStory(java.lang.String)[pri:4, instance:com.apdr.testcases.AddNewsStoryContent@5e4bd84a]" started-at="2023-07-13T13:54:56 PKT" name="addheadLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:54:56 PKT" duration-ms="95" status="PASS">
+        <test-method signature="addheadLineForNewStory(java.lang.String)[pri:4, instance:com.apdr.testcases.AddNewsStoryContent@3c7c886c]" started-at="2023-07-13T16:02:43 PKT" name="addheadLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:02:43 PKT" duration-ms="101" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -284,7 +424,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addheadLineForNewStory -->
-        <test-method signature="addsummaryForNewStory(java.lang.String)[pri:5, instance:com.apdr.testcases.AddNewsStoryContent@5e4bd84a]" started-at="2023-07-13T13:54:56 PKT" name="addsummaryForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:54:56 PKT" duration-ms="70" status="PASS">
+        <test-method signature="addsummaryForNewStory(java.lang.String)[pri:5, instance:com.apdr.testcases.AddNewsStoryContent@3c7c886c]" started-at="2023-07-13T16:02:43 PKT" name="addsummaryForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:02:43 PKT" duration-ms="75" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -295,7 +435,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addsummaryForNewStory -->
-        <test-method signature="addbodyForNewStory(java.lang.String)[pri:6, instance:com.apdr.testcases.AddNewsStoryContent@5e4bd84a]" started-at="2023-07-13T13:54:56 PKT" name="addbodyForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:54:56 PKT" duration-ms="112" status="PASS">
+        <test-method signature="addbodyForNewStory(java.lang.String)[pri:6, instance:com.apdr.testcases.AddNewsStoryContent@3c7c886c]" started-at="2023-07-13T16:02:43 PKT" name="addbodyForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:02:43 PKT" duration-ms="123" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -306,7 +446,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addbodyForNewStory -->
-        <test-method signature="addByLineAndByTitleForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@5e4bd84a]" started-at="2023-07-13T13:54:56 PKT" name="addByLineAndByTitleForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:54:56 PKT" duration-ms="166" status="PASS">
+        <test-method signature="addByLineAndByTitleForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@3c7c886c]" started-at="2023-07-13T16:02:43 PKT" name="addByLineAndByTitleForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:02:43 PKT" duration-ms="154" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -317,7 +457,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addByLineAndByTitleForNewStory -->
-        <test-method signature="adddateLineForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@5e4bd84a]" started-at="2023-07-13T13:54:56 PKT" name="adddateLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:54:56 PKT" duration-ms="97" status="PASS">
+        <test-method signature="adddateLineForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@3c7c886c]" started-at="2023-07-13T16:02:43 PKT" name="adddateLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:02:43 PKT" duration-ms="63" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -328,11 +468,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adddateLineForNewStory -->
-        <test-method signature="selectNewsStoryCategory()[pri:8, instance:com.apdr.testcases.AddNewsStoryContent@5e4bd84a]" started-at="2023-07-13T13:54:56 PKT" name="selectNewsStoryCategory" finished-at="2023-07-13T13:54:56 PKT" duration-ms="119" status="PASS">
+        <test-method signature="selectNewsStoryCategory()[pri:8, instance:com.apdr.testcases.AddNewsStoryContent@3c7c886c]" started-at="2023-07-13T16:02:43 PKT" name="selectNewsStoryCategory" finished-at="2023-07-13T16:02:43 PKT" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectNewsStoryCategory -->
-        <test-method signature="addEdsNoteForNewStory(java.lang.String)[pri:9, instance:com.apdr.testcases.AddNewsStoryContent@5e4bd84a]" started-at="2023-07-13T13:54:56 PKT" name="addEdsNoteForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:54:56 PKT" duration-ms="81" status="PASS">
+        <test-method signature="addEdsNoteForNewStory(java.lang.String)[pri:9, instance:com.apdr.testcases.AddNewsStoryContent@3c7c886c]" started-at="2023-07-13T16:02:43 PKT" name="addEdsNoteForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:02:43 PKT" duration-ms="66" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -343,31 +483,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEdsNoteForNewStory -->
-        <test-method signature="clickOnSaveButton()[pri:10, instance:com.apdr.testcases.AddNewsStoryContent@5e4bd84a]" started-at="2023-07-13T13:54:56 PKT" name="clickOnSaveButton" finished-at="2023-07-13T13:54:58 PKT" duration-ms="1843" status="PASS">
+        <test-method signature="clickOnSaveButton()[pri:10, instance:com.apdr.testcases.AddNewsStoryContent@3c7c886c]" started-at="2023-07-13T16:02:44 PKT" name="clickOnSaveButton" finished-at="2023-07-13T16:02:46 PKT" duration-ms="2095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSaveButton -->
       </class> <!-- com.apdr.testcases.AddNewsStoryContent -->
       <class name="com.apdr.testcases.Guidedownload">
-        <test-method is-config="true" signature="GuidedownloadInitialization()[pri:0, instance:com.apdr.testcases.Guidedownload@53de625d]" started-at="2023-07-13T13:54:14 PKT" name="GuidedownloadInitialization" finished-at="2023-07-13T13:54:14 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="GuidedownloadInitialization()[pri:0, instance:com.apdr.testcases.Guidedownload@6b88ca8c]" started-at="2023-07-13T16:02:07 PKT" name="GuidedownloadInitialization" finished-at="2023-07-13T16:02:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GuidedownloadInitialization -->
-        <test-method signature="Click_On_Reference_Button()[pri:1, instance:com.apdr.testcases.Guidedownload@53de625d]" started-at="2023-07-13T13:55:35 PKT" name="Click_On_Reference_Button" finished-at="2023-07-13T13:55:47 PKT" duration-ms="11692" status="PASS">
+        <test-method signature="Click_On_Reference_Button()[pri:1, instance:com.apdr.testcases.Guidedownload@6b88ca8c]" started-at="2023-07-13T16:05:22 PKT" name="Click_On_Reference_Button" finished-at="2023-07-13T16:05:34 PKT" duration-ms="12526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_Reference_Button -->
       </class> <!-- com.apdr.testcases.Guidedownload -->
       <class name="com.apdr.testcases.LogInTestCases">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@4b6e2263]" started-at="2023-07-13T13:54:08 PKT" name="initialization" finished-at="2023-07-13T13:54:14 PKT" duration-ms="6397" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@3ad2e17]" started-at="2023-07-13T16:02:01 PKT" name="initialization" finished-at="2023-07-13T16:02:07 PKT" duration-ms="6764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@4b6e2263]" started-at="2023-07-13T13:54:14 PKT" name="loginIntialization" finished-at="2023-07-13T13:54:14 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.LogInTestCases@3ad2e17]" started-at="2023-07-13T16:02:07 PKT" name="loginIntialization" finished-at="2023-07-13T16:02:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntialization -->
-        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@4b6e2263]" started-at="2023-07-13T13:54:14 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-07-13T13:54:27 PKT" duration-ms="13029" status="PASS">
+        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.LogInTestCases@3ad2e17]" started-at="2023-07-13T16:02:07 PKT" name="loginToApDr" data-provider="adminCredentials" finished-at="2023-07-13T16:02:16 PKT" duration-ms="8438" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -380,15 +520,15 @@
         </test-method> <!-- loginToApDr -->
       </class> <!-- com.apdr.testcases.LogInTestCases -->
       <class name="com.apdr.testcases.NewsAlertContent">
-        <test-method is-config="true" signature="addNewsAlertContentInitialization()[pri:0, instance:com.apdr.testcases.NewsAlertContent@1b7c473a]" started-at="2023-07-13T13:54:14 PKT" name="addNewsAlertContentInitialization" finished-at="2023-07-13T13:54:14 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="addNewsAlertContentInitialization()[pri:0, instance:com.apdr.testcases.NewsAlertContent@4426bff1]" started-at="2023-07-13T16:02:07 PKT" name="addNewsAlertContentInitialization" finished-at="2023-07-13T16:02:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewsAlertContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.NewsAlertContent@1b7c473a]" started-at="2023-07-13T13:54:46 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T13:54:47 PKT" duration-ms="998" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.NewsAlertContent@4426bff1]" started-at="2023-07-13T16:02:34 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T16:02:35 PKT" duration-ms="971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="Click_On_News_Alert(java.lang.String)[pri:2, instance:com.apdr.testcases.NewsAlertContent@1b7c473a]" started-at="2023-07-13T13:54:47 PKT" name="Click_On_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-13T13:54:50 PKT" duration-ms="3268" status="PASS">
+        <test-method signature="Click_On_News_Alert(java.lang.String)[pri:2, instance:com.apdr.testcases.NewsAlertContent@4426bff1]" started-at="2023-07-13T16:02:35 PKT" name="Click_On_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-13T16:02:38 PKT" duration-ms="2122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -399,7 +539,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_News_Alert -->
-        <test-method signature="add_News_Alert_Slug(java.lang.String)[pri:3, instance:com.apdr.testcases.NewsAlertContent@1b7c473a]" started-at="2023-07-13T13:54:50 PKT" name="add_News_Alert_Slug" data-provider="newsAlertContent" finished-at="2023-07-13T13:54:50 PKT" duration-ms="82" status="PASS">
+        <test-method signature="add_News_Alert_Slug(java.lang.String)[pri:3, instance:com.apdr.testcases.NewsAlertContent@4426bff1]" started-at="2023-07-13T16:02:38 PKT" name="add_News_Alert_Slug" data-provider="newsAlertContent" finished-at="2023-07-13T16:02:38 PKT" duration-ms="65" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -410,7 +550,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_News_Alert_Slug -->
-        <test-method signature="add__Alert_News(java.lang.String)[pri:4, instance:com.apdr.testcases.NewsAlertContent@1b7c473a]" started-at="2023-07-13T13:54:50 PKT" name="add__Alert_News" data-provider="newsAlertContent" finished-at="2023-07-13T13:54:50 PKT" duration-ms="88" status="PASS">
+        <test-method signature="add__Alert_News(java.lang.String)[pri:4, instance:com.apdr.testcases.NewsAlertContent@4426bff1]" started-at="2023-07-13T16:02:38 PKT" name="add__Alert_News" data-provider="newsAlertContent" finished-at="2023-07-13T16:02:38 PKT" duration-ms="114" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -421,7 +561,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add__Alert_News -->
-        <test-method signature="add_DateLine_For_News_Alert(java.lang.String)[pri:5, instance:com.apdr.testcases.NewsAlertContent@1b7c473a]" started-at="2023-07-13T13:54:50 PKT" name="add_DateLine_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-13T13:54:50 PKT" duration-ms="60" status="PASS">
+        <test-method signature="add_DateLine_For_News_Alert(java.lang.String)[pri:5, instance:com.apdr.testcases.NewsAlertContent@4426bff1]" started-at="2023-07-13T16:02:38 PKT" name="add_DateLine_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-13T16:02:38 PKT" duration-ms="64" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -432,11 +572,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_DateLine_For_News_Alert -->
-        <test-method signature="select_News_Alert_Category()[pri:6, instance:com.apdr.testcases.NewsAlertContent@1b7c473a]" started-at="2023-07-13T13:54:50 PKT" name="select_News_Alert_Category" finished-at="2023-07-13T13:54:50 PKT" duration-ms="104" status="PASS">
+        <test-method signature="select_News_Alert_Category()[pri:6, instance:com.apdr.testcases.NewsAlertContent@4426bff1]" started-at="2023-07-13T16:02:38 PKT" name="select_News_Alert_Category" finished-at="2023-07-13T16:02:38 PKT" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_News_Alert_Category -->
-        <test-method signature="add_EdsNote_For_News_Alert(java.lang.String)[pri:7, instance:com.apdr.testcases.NewsAlertContent@1b7c473a]" started-at="2023-07-13T13:54:50 PKT" name="add_EdsNote_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-13T13:54:50 PKT" duration-ms="64" status="PASS">
+        <test-method signature="add_EdsNote_For_News_Alert(java.lang.String)[pri:7, instance:com.apdr.testcases.NewsAlertContent@4426bff1]" started-at="2023-07-13T16:02:38 PKT" name="add_EdsNote_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-13T16:02:38 PKT" duration-ms="68" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -447,41 +587,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_EdsNote_For_News_Alert -->
-        <test-method signature="click_Save_Button()[pri:8, instance:com.apdr.testcases.NewsAlertContent@1b7c473a]" started-at="2023-07-13T13:54:50 PKT" name="click_Save_Button" finished-at="2023-07-13T13:54:53 PKT" duration-ms="2475" status="PASS">
+        <test-method signature="click_Save_Button()[pri:8, instance:com.apdr.testcases.NewsAlertContent@4426bff1]" started-at="2023-07-13T16:02:38 PKT" name="click_Save_Button" finished-at="2023-07-13T16:02:41 PKT" duration-ms="2861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_Save_Button -->
       </class> <!-- com.apdr.testcases.NewsAlertContent -->
     </test> <!--  TestCases for Admin Role  -->
-    <test started-at="2023-07-13T13:55:58 PKT" name=" TestCases for Customer Support Role " finished-at="2023-07-13T13:57:00 PKT" duration-ms="61294">
+    <test started-at="2023-07-13T16:05:51 PKT" name=" TestCases for Customer Support Role " finished-at="2023-07-13T16:06:55 PKT" duration-ms="64058">
       <class name="com.apdr.testcases.BannerContent">
-        <test-method is-config="true" signature="BannerContentInitialization()[pri:0, instance:com.apdr.testcases.BannerContent@2dcd168a]" started-at="2023-07-13T13:56:06 PKT" name="BannerContentInitialization" finished-at="2023-07-13T13:56:06 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="BannerContentInitialization()[pri:0, instance:com.apdr.testcases.BannerContent@16ce702d]" started-at="2023-07-13T16:05:57 PKT" name="BannerContentInitialization" finished-at="2023-07-13T16:05:57 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BannerContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.BannerContent@2dcd168a]" started-at="2023-07-13T13:56:18 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T13:56:22 PKT" duration-ms="3357" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.BannerContent@16ce702d]" started-at="2023-07-13T16:06:06 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T16:06:09 PKT" duration-ms="2416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="Banner_Title_Text()[pri:3, instance:com.apdr.testcases.BannerContent@2dcd168a]" started-at="2023-07-13T13:56:22 PKT" name="Banner_Title_Text" finished-at="2023-07-13T13:56:22 PKT" duration-ms="110" status="PASS">
+        <test-method signature="Banner_Title_Text()[pri:3, instance:com.apdr.testcases.BannerContent@16ce702d]" started-at="2023-07-13T16:06:09 PKT" name="Banner_Title_Text" finished-at="2023-07-13T16:06:09 PKT" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Banner_Title_Text -->
-        <test-method signature="click_On_Save_Button()[pri:4, instance:com.apdr.testcases.BannerContent@2dcd168a]" started-at="2023-07-13T13:56:22 PKT" name="click_On_Save_Button" finished-at="2023-07-13T13:56:28 PKT" duration-ms="6448" status="PASS">
+        <test-method signature="click_On_Save_Button()[pri:4, instance:com.apdr.testcases.BannerContent@16ce702d]" started-at="2023-07-13T16:06:09 PKT" name="click_On_Save_Button" finished-at="2023-07-13T16:06:15 PKT" duration-ms="6252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_On_Save_Button -->
       </class> <!-- com.apdr.testcases.BannerContent -->
       <class name="com.apdr.testcases.AddCustomer">
-        <test-method is-config="true" signature="addUserInitialization()[pri:0, instance:com.apdr.testcases.AddCustomer@7803bfd]" started-at="2023-07-13T13:56:06 PKT" name="addUserInitialization" finished-at="2023-07-13T13:56:06 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="addUserInitialization()[pri:0, instance:com.apdr.testcases.AddCustomer@47f9738]" started-at="2023-07-13T16:05:57 PKT" name="addUserInitialization" finished-at="2023-07-13T16:05:57 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserInitialization -->
-        <test-method signature="hover_Over_AddUser_Link()[pri:1, instance:com.apdr.testcases.AddCustomer@7803bfd]" started-at="2023-07-13T13:56:50 PKT" name="hover_Over_AddUser_Link" finished-at="2023-07-13T13:56:51 PKT" duration-ms="932" status="PASS">
+        <test-method signature="hover_Over_AddUser_Link()[pri:1, instance:com.apdr.testcases.AddCustomer@47f9738]" started-at="2023-07-13T16:06:42 PKT" name="hover_Over_AddUser_Link" finished-at="2023-07-13T16:06:43 PKT" duration-ms="1057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_AddUser_Link -->
-        <test-method signature="add_Role_For_Users(java.lang.String)[pri:2, instance:com.apdr.testcases.AddCustomer@7803bfd]" started-at="2023-07-13T13:56:51 PKT" name="add_Role_For_Users" data-provider="addUserData" finished-at="2023-07-13T13:56:51 PKT" duration-ms="193" status="PASS">
+        <test-method signature="add_Role_For_Users(java.lang.String)[pri:2, instance:com.apdr.testcases.AddCustomer@47f9738]" started-at="2023-07-13T16:06:43 PKT" name="add_Role_For_Users" data-provider="addUserData" finished-at="2023-07-13T16:06:43 PKT" duration-ms="192" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -492,11 +632,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_Role_For_Users -->
-        <test-method signature="select_Users_role()[pri:3, instance:com.apdr.testcases.AddCustomer@7803bfd]" started-at="2023-07-13T13:56:51 PKT" name="select_Users_role" finished-at="2023-07-13T13:56:54 PKT" duration-ms="2187" status="PASS">
+        <test-method signature="select_Users_role()[pri:3, instance:com.apdr.testcases.AddCustomer@47f9738]" started-at="2023-07-13T16:06:43 PKT" name="select_Users_role" finished-at="2023-07-13T16:06:50 PKT" duration-ms="7179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_Users_role -->
-        <test-method signature="add_Org_Name_And_Org_Id(java.lang.String)[pri:4, instance:com.apdr.testcases.AddCustomer@7803bfd]" started-at="2023-07-13T13:56:54 PKT" name="add_Org_Name_And_Org_Id" data-provider="addUserData" finished-at="2023-07-13T13:57:00 PKT" duration-ms="5951" status="PASS">
+        <test-method signature="add_Org_Name_And_Org_Id(java.lang.String)[pri:4, instance:com.apdr.testcases.AddCustomer@47f9738]" started-at="2023-07-13T16:06:50 PKT" name="add_Org_Name_And_Org_Id" data-provider="addUserData" finished-at="2023-07-13T16:06:55 PKT" duration-ms="4744" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -509,15 +649,15 @@
         </test-method> <!-- add_Org_Name_And_Org_Id -->
       </class> <!-- com.apdr.testcases.AddCustomer -->
       <class name="com.apdr.testcases.AddAuthor">
-        <test-method is-config="true" signature="addUserInitialization()[pri:0, instance:com.apdr.testcases.AddAuthor@21a21c64]" started-at="2023-07-13T13:56:06 PKT" name="addUserInitialization" finished-at="2023-07-13T13:56:06 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="addUserInitialization()[pri:0, instance:com.apdr.testcases.AddAuthor@7ca20101]" started-at="2023-07-13T16:05:57 PKT" name="addUserInitialization" finished-at="2023-07-13T16:05:57 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserInitialization -->
-        <test-method signature="hover_Over_AddUser_Link()[pri:1, instance:com.apdr.testcases.AddAuthor@21a21c64]" started-at="2023-07-13T13:56:40 PKT" name="hover_Over_AddUser_Link" finished-at="2023-07-13T13:56:42 PKT" duration-ms="2035" status="PASS">
+        <test-method signature="hover_Over_AddUser_Link()[pri:1, instance:com.apdr.testcases.AddAuthor@7ca20101]" started-at="2023-07-13T16:06:26 PKT" name="hover_Over_AddUser_Link" finished-at="2023-07-13T16:06:29 PKT" duration-ms="2778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_AddUser_Link -->
-        <test-method signature="add_Role_For_Users(java.lang.String)[pri:2, instance:com.apdr.testcases.AddAuthor@21a21c64]" started-at="2023-07-13T13:56:42 PKT" name="add_Role_For_Users" data-provider="AuthorCredentials" finished-at="2023-07-13T13:56:42 PKT" duration-ms="216" status="PASS">
+        <test-method signature="add_Role_For_Users(java.lang.String)[pri:2, instance:com.apdr.testcases.AddAuthor@7ca20101]" started-at="2023-07-13T16:06:29 PKT" name="add_Role_For_Users" data-provider="AuthorCredentials" finished-at="2023-07-13T16:06:29 PKT" duration-ms="207" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -528,11 +668,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_Role_For_Users -->
-        <test-method signature="select_Users_role()[pri:3, instance:com.apdr.testcases.AddAuthor@21a21c64]" started-at="2023-07-13T13:56:42 PKT" name="select_Users_role" finished-at="2023-07-13T13:56:44 PKT" duration-ms="2218" status="PASS">
+        <test-method signature="select_Users_role()[pri:3, instance:com.apdr.testcases.AddAuthor@7ca20101]" started-at="2023-07-13T16:06:29 PKT" name="select_Users_role" finished-at="2023-07-13T16:06:37 PKT" duration-ms="7192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_Users_role -->
-        <test-method signature="add_Org_Name_And_Org_Id(java.lang.String)[pri:4, instance:com.apdr.testcases.AddAuthor@21a21c64]" started-at="2023-07-13T13:56:44 PKT" name="add_Org_Name_And_Org_Id" data-provider="addUserData" finished-at="2023-07-13T13:56:50 PKT" duration-ms="6140" status="PASS">
+        <test-method signature="add_Org_Name_And_Org_Id(java.lang.String)[pri:4, instance:com.apdr.testcases.AddAuthor@7ca20101]" started-at="2023-07-13T16:06:37 PKT" name="add_Org_Name_And_Org_Id" data-provider="addUserData" finished-at="2023-07-13T16:06:42 PKT" duration-ms="5207" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -545,25 +685,25 @@
         </test-method> <!-- add_Org_Name_And_Org_Id -->
       </class> <!-- com.apdr.testcases.AddAuthor -->
       <class name="com.apdr.testcases.Guidedownload">
-        <test-method is-config="true" signature="GuidedownloadInitialization()[pri:0, instance:com.apdr.testcases.Guidedownload@388526fb]" started-at="2023-07-13T13:56:06 PKT" name="GuidedownloadInitialization" finished-at="2023-07-13T13:56:06 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="GuidedownloadInitialization()[pri:0, instance:com.apdr.testcases.Guidedownload@7b94089b]" started-at="2023-07-13T16:05:57 PKT" name="GuidedownloadInitialization" finished-at="2023-07-13T16:05:57 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GuidedownloadInitialization -->
-        <test-method signature="Click_On_Reference_Button()[pri:1, instance:com.apdr.testcases.Guidedownload@388526fb]" started-at="2023-07-13T13:56:28 PKT" name="Click_On_Reference_Button" finished-at="2023-07-13T13:56:40 PKT" duration-ms="11259" status="PASS">
+        <test-method signature="Click_On_Reference_Button()[pri:1, instance:com.apdr.testcases.Guidedownload@7b94089b]" started-at="2023-07-13T16:06:15 PKT" name="Click_On_Reference_Button" finished-at="2023-07-13T16:06:26 PKT" duration-ms="11210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_Reference_Button -->
       </class> <!-- com.apdr.testcases.Guidedownload -->
       <class name="com.apdr.testcases.CustomerSupport">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.CustomerSupport@6138e79a]" started-at="2023-07-13T13:55:58 PKT" name="initialization" finished-at="2023-07-13T13:56:06 PKT" duration-ms="7253" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.CustomerSupport@71812481]" started-at="2023-07-13T16:05:51 PKT" name="initialization" finished-at="2023-07-13T16:05:57 PKT" duration-ms="6294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.CustomerSupport@6138e79a]" started-at="2023-07-13T13:56:06 PKT" name="loginIntialization" finished-at="2023-07-13T13:56:06 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.CustomerSupport@71812481]" started-at="2023-07-13T16:05:57 PKT" name="loginIntialization" finished-at="2023-07-13T16:05:57 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntialization -->
-        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.CustomerSupport@6138e79a]" started-at="2023-07-13T13:56:06 PKT" name="loginToApDr" data-provider="customerSupportCredentials" finished-at="2023-07-13T13:56:18 PKT" duration-ms="12927" status="PASS">
+        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.CustomerSupport@71812481]" started-at="2023-07-13T16:05:57 PKT" name="loginToApDr" data-provider="customerSupportCredentials" finished-at="2023-07-13T16:06:06 PKT" duration-ms="9171" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -576,17 +716,17 @@
         </test-method> <!-- loginToApDr -->
       </class> <!-- com.apdr.testcases.CustomerSupport -->
     </test> <!--  TestCases for Customer Support Role  -->
-    <test started-at="2023-07-13T13:57:00 PKT" name=" TestCases for Author Role " finished-at="2023-07-13T13:58:45 PKT" duration-ms="105744">
+    <test started-at="2023-07-13T16:06:55 PKT" name=" TestCases for Author Role " finished-at="2023-07-13T16:10:28 PKT" duration-ms="212612">
       <class name="com.apdr.testcases.AddPhotoContent">
-        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddPhotoContent@1afdd473]" started-at="2023-07-13T13:57:07 PKT" name="addContentInitialization" finished-at="2023-07-13T13:57:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddPhotoContent@21a21c64]" started-at="2023-07-13T16:07:03 PKT" name="addContentInitialization" finished-at="2023-07-13T16:07:03 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddPhotoContent@1afdd473]" started-at="2023-07-13T13:57:55 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T13:57:57 PKT" duration-ms="1800" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddPhotoContent@21a21c64]" started-at="2023-07-13T16:07:41 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T16:07:42 PKT" duration-ms="932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="Upload_Photo(java.lang.String)[pri:2, instance:com.apdr.testcases.AddPhotoContent@1afdd473]" started-at="2023-07-13T13:57:57 PKT" name="Upload_Photo" data-provider="imageDataProvider" finished-at="2023-07-13T13:58:05 PKT" duration-ms="7591" status="PASS">
+        <test-method signature="Upload_Photo(java.lang.String)[pri:2, instance:com.apdr.testcases.AddPhotoContent@21a21c64]" started-at="2023-07-13T16:07:42 PKT" name="Upload_Photo" data-provider="imageDataProvider" finished-at="2023-07-13T16:09:10 PKT" duration-ms="88067" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -594,32 +734,109 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.name: field_photo[0][alt]' (tried for 60 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.name: field_photo[0][alt]' (tried for 60 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.apdr.pageobjects.AddPhotoContentPage.Add_text_of_Alternative(AddPhotoContentPage.java:182)
+at com.apdr.testcases.AddPhotoContent.Upload_Photo(AddPhotoContent.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='field_photo[0][alt]']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [431c32f9983c9e319c032922a03a58ff, findElement {using=name, value=field_photo[0][alt]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61183/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 431c32f9983c9e319c032922a03a58ff
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Upload_Photo -->
-        <test-method signature="click_On_SaveButton()[pri:3, instance:com.apdr.testcases.AddPhotoContent@1afdd473]" started-at="2023-07-13T13:58:05 PKT" name="click_On_SaveButton" finished-at="2023-07-13T13:58:09 PKT" duration-ms="3983" status="PASS">
+        <test-method signature="click_On_SaveButton()[pri:3, instance:com.apdr.testcases.AddPhotoContent@21a21c64]" started-at="2023-07-13T16:09:10 PKT" name="click_On_SaveButton" finished-at="2023-07-13T16:09:15 PKT" duration-ms="4797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_On_SaveButton -->
-        <test-method signature="Photo_Verification()[pri:4, instance:com.apdr.testcases.AddPhotoContent@1afdd473]" started-at="2023-07-13T13:58:09 PKT" name="Photo_Verification" finished-at="2023-07-13T13:58:09 PKT" duration-ms="29" status="PASS">
+        <test-method signature="Photo_Verification()[pri:4, instance:com.apdr.testcases.AddPhotoContent@21a21c64]" started-at="2023-07-13T16:09:15 PKT" name="Photo_Verification" finished-at="2023-07-13T16:09:15 PKT" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Photo_Verification -->
       </class> <!-- com.apdr.testcases.AddPhotoContent -->
       <class name="com.apdr.testcases.AddAudioContent">
-        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddAudioContent@74f5ce22]" started-at="2023-07-13T13:57:07 PKT" name="addContentInitialization" finished-at="2023-07-13T13:57:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddAudioContent@6138e79a]" started-at="2023-07-13T16:07:03 PKT" name="addContentInitialization" finished-at="2023-07-13T16:07:03 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddAudioContent@74f5ce22]" started-at="2023-07-13T13:57:24 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T13:57:25 PKT" duration-ms="1379" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddAudioContent@6138e79a]" started-at="2023-07-13T16:07:14 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T16:07:15 PKT" duration-ms="1111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddAudioContent@74f5ce22]" started-at="2023-07-13T13:57:25 PKT" name="addVideoContent" finished-at="2023-07-13T13:57:28 PKT" duration-ms="3194" status="PASS">
+        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddAudioContent@6138e79a]" started-at="2023-07-13T16:07:15 PKT" name="addVideoContent" finished-at="2023-07-13T16:07:17 PKT" duration-ms="2144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVideoContent -->
-        <test-method signature="add_Slug_Speaker_Intro_For_Audio(java.lang.String)[pri:3, instance:com.apdr.testcases.AddAudioContent@74f5ce22]" started-at="2023-07-13T13:57:28 PKT" name="add_Slug_Speaker_Intro_For_Audio" data-provider="audioDataProvider" finished-at="2023-07-13T13:57:29 PKT" duration-ms="254" status="PASS">
+        <test-method signature="add_Slug_Speaker_Intro_For_Audio(java.lang.String)[pri:3, instance:com.apdr.testcases.AddAudioContent@6138e79a]" started-at="2023-07-13T16:07:17 PKT" name="add_Slug_Speaker_Intro_For_Audio" data-provider="audioDataProvider" finished-at="2023-07-13T16:07:17 PKT" duration-ms="251" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -630,33 +847,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_Slug_Speaker_Intro_For_Audio -->
-        <test-method signature="Upload_Audio_File()[pri:4, instance:com.apdr.testcases.AddAudioContent@74f5ce22]" started-at="2023-07-13T13:57:29 PKT" name="Upload_Audio_File" finished-at="2023-07-13T13:57:34 PKT" duration-ms="5043" status="PASS">
+        <test-method signature="Upload_Audio_File()[pri:4, instance:com.apdr.testcases.AddAudioContent@6138e79a]" started-at="2023-07-13T16:07:17 PKT" name="Upload_Audio_File" finished-at="2023-07-13T16:07:22 PKT" duration-ms="5044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Upload_Audio_File -->
-        <test-method signature="click_On_SaveButton()[pri:5, instance:com.apdr.testcases.AddAudioContent@74f5ce22]" started-at="2023-07-13T13:57:34 PKT" name="click_On_SaveButton" finished-at="2023-07-13T13:57:43 PKT" duration-ms="9512" status="PASS">
+        <test-method signature="click_On_SaveButton()[pri:5, instance:com.apdr.testcases.AddAudioContent@6138e79a]" started-at="2023-07-13T16:07:22 PKT" name="click_On_SaveButton" finished-at="2023-07-13T16:07:32 PKT" duration-ms="9495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_On_SaveButton -->
-        <test-method signature="Audio_File_Verification()[pri:6, instance:com.apdr.testcases.AddAudioContent@74f5ce22]" started-at="2023-07-13T13:57:43 PKT" name="Audio_File_Verification" finished-at="2023-07-13T13:57:43 PKT" duration-ms="31" status="PASS">
+        <test-method signature="Audio_File_Verification()[pri:6, instance:com.apdr.testcases.AddAudioContent@6138e79a]" started-at="2023-07-13T16:07:32 PKT" name="Audio_File_Verification" finished-at="2023-07-13T16:07:32 PKT" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Audio_File_Verification -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.AddAudioContent@74f5ce22]" started-at="2023-07-13T13:58:45 PKT" name="teardown" finished-at="2023-07-13T13:58:45 PKT" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.apdr.testcases.AddAudioContent@6138e79a]" started-at="2023-07-13T16:10:27 PKT" name="teardown" finished-at="2023-07-13T16:10:28 PKT" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.apdr.testcases.AddAudioContent -->
       <class name="com.apdr.testcases.AuthorLogin">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.AuthorLogin@6f3c660a]" started-at="2023-07-13T13:57:00 PKT" name="initialization" finished-at="2023-07-13T13:57:07 PKT" duration-ms="7883" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.apdr.testcases.AuthorLogin@2ea6e30c]" started-at="2023-07-13T16:06:55 PKT" name="initialization" finished-at="2023-07-13T16:07:03 PKT" duration-ms="7992" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.AuthorLogin@6f3c660a]" started-at="2023-07-13T13:57:07 PKT" name="loginIntialization" finished-at="2023-07-13T13:57:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="loginIntialization()[pri:0, instance:com.apdr.testcases.AuthorLogin@2ea6e30c]" started-at="2023-07-13T16:07:03 PKT" name="loginIntialization" finished-at="2023-07-13T16:07:03 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginIntialization -->
-        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.AuthorLogin@6f3c660a]" started-at="2023-07-13T13:57:07 PKT" name="loginToApDr" data-provider="AuthorCredentials" finished-at="2023-07-13T13:57:24 PKT" duration-ms="16270" status="PASS">
+        <test-method signature="loginToApDr(java.lang.String)[pri:1, instance:com.apdr.testcases.AuthorLogin@2ea6e30c]" started-at="2023-07-13T16:07:03 PKT" name="loginToApDr" data-provider="AuthorCredentials" finished-at="2023-07-13T16:07:14 PKT" duration-ms="10757" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -669,19 +886,19 @@
         </test-method> <!-- loginToApDr -->
       </class> <!-- com.apdr.testcases.AuthorLogin -->
       <class name="com.apdr.testcases.AddVideoContent">
-        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddVideoContent@40238dd0]" started-at="2023-07-13T13:57:07 PKT" name="addContentInitialization" finished-at="2023-07-13T13:57:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="addContentInitialization()[pri:0, instance:com.apdr.testcases.AddVideoContent@7803bfd]" started-at="2023-07-13T16:07:03 PKT" name="addContentInitialization" finished-at="2023-07-13T16:07:03 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddVideoContent@40238dd0]" started-at="2023-07-13T13:58:09 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T13:58:09 PKT" duration-ms="803" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddVideoContent@7803bfd]" started-at="2023-07-13T16:09:15 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T16:09:16 PKT" duration-ms="1358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddVideoContent@40238dd0]" started-at="2023-07-13T13:58:09 PKT" name="addVideoContent" finished-at="2023-07-13T13:58:11 PKT" duration-ms="1413" status="PASS">
+        <test-method signature="addVideoContent()[pri:2, instance:com.apdr.testcases.AddVideoContent@7803bfd]" started-at="2023-07-13T16:09:16 PKT" name="addVideoContent" finished-at="2023-07-13T16:09:19 PKT" duration-ms="3002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVideoContent -->
-        <test-method signature="add_Slug_Headline_Source_For_Video(java.lang.String)[pri:3, instance:com.apdr.testcases.AddVideoContent@40238dd0]" started-at="2023-07-13T13:58:11 PKT" name="add_Slug_Headline_Source_For_Video" data-provider="videoDataProvider" finished-at="2023-07-13T13:58:11 PKT" duration-ms="197" status="PASS">
+        <test-method signature="add_Slug_Headline_Source_For_Video(java.lang.String)[pri:3, instance:com.apdr.testcases.AddVideoContent@7803bfd]" started-at="2023-07-13T16:09:19 PKT" name="add_Slug_Headline_Source_For_Video" data-provider="videoDataProvider" finished-at="2023-07-13T16:09:19 PKT" duration-ms="216" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -692,11 +909,85 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_Slug_Headline_Source_For_Video -->
-        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddVideoContent@40238dd0]" started-at="2023-07-13T13:58:11 PKT" name="addVideoFile" finished-at="2023-07-13T13:58:16 PKT" duration-ms="5042" status="PASS">
+        <test-method signature="addVideoFile()[pri:4, instance:com.apdr.testcases.AddVideoContent@7803bfd]" started-at="2023-07-13T16:09:19 PKT" name="addVideoFile" finished-at="2023-07-13T16:09:39 PKT" duration-ms="20039" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#edit\-field\-video\-file\-2\-0\-upload"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [431c32f9983c9e319c032922a03a58ff, findElement {using=id, value=edit-field-video-file-2-0-upload}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61183/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 431c32f9983c9e319c032922a03a58ff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#edit\-field\-video\-file\-2\-0\-upload"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [431c32f9983c9e319c032922a03a58ff, findElement {using=id, value=edit-field-video-file-2-0-upload}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61183/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 431c32f9983c9e319c032922a03a58ff
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
+at com.apdr.pageobjects.AddVideoContentPage.addVideoFileFromLocalRepository(AddVideoContentPage.java:102)
+at com.apdr.testcases.AddVideoContent.addVideoFile(AddVideoContent.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVideoFile -->
-        <test-method signature="add_Body_For_Video(java.lang.String)[pri:5, instance:com.apdr.testcases.AddVideoContent@40238dd0]" started-at="2023-07-13T13:58:16 PKT" name="add_Body_For_Video" data-provider="videoDataProvider" finished-at="2023-07-13T13:58:26 PKT" duration-ms="10136" status="PASS">
+        <test-method signature="add_Body_For_Video(java.lang.String)[pri:5, instance:com.apdr.testcases.AddVideoContent@7803bfd]" started-at="2023-07-13T16:09:39 PKT" name="add_Body_For_Video" data-provider="videoDataProvider" finished-at="2023-07-13T16:09:50 PKT" duration-ms="10130" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -707,33 +998,107 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_Body_For_Video -->
-        <test-method signature="clickOnSaveButton()[pri:6, instance:com.apdr.testcases.AddVideoContent@40238dd0]" started-at="2023-07-13T13:58:26 PKT" name="clickOnSaveButton" finished-at="2023-07-13T13:58:33 PKT" duration-ms="7079" status="PASS">
+        <test-method signature="clickOnSaveButton()[pri:6, instance:com.apdr.testcases.AddVideoContent@7803bfd]" started-at="2023-07-13T16:09:50 PKT" name="clickOnSaveButton" finished-at="2023-07-13T16:09:56 PKT" duration-ms="6322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSaveButton -->
-        <test-method signature="Video_File_Verification()[pri:7, instance:com.apdr.testcases.AddVideoContent@40238dd0]" started-at="2023-07-13T13:58:33 PKT" name="Video_File_Verification" finished-at="2023-07-13T13:58:33 PKT" duration-ms="27" status="PASS">
+        <test-method signature="Video_File_Verification()[pri:7, instance:com.apdr.testcases.AddVideoContent@7803bfd]" started-at="2023-07-13T16:09:56 PKT" name="Video_File_Verification" finished-at="2023-07-13T16:10:16 PKT" duration-ms="20022" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//video[@controls='controls']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [431c32f9983c9e319c032922a03a58ff, findElement {using=xpath, value=//video[@controls='controls']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61183/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 431c32f9983c9e319c032922a03a58ff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//video[@controls='controls']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [431c32f9983c9e319c032922a03a58ff, findElement {using=xpath, value=//video[@controls='controls']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61183/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 431c32f9983c9e319c032922a03a58ff
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+at com.apdr.pageobjects.AddVideoContentPage.Video_File_Present(AddVideoContentPage.java:133)
+at com.apdr.testcases.AddVideoContent.Video_File_Verification(AddVideoContent.java:92)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Video_File_Verification -->
-        <test-method signature="Verify_Title()[pri:8, instance:com.apdr.testcases.AddVideoContent@40238dd0]" started-at="2023-07-13T13:58:33 PKT" name="Verify_Title" finished-at="2023-07-13T13:58:33 PKT" duration-ms="49" status="PASS">
+        <test-method signature="Verify_Title()[pri:8, instance:com.apdr.testcases.AddVideoContent@7803bfd]" started-at="2023-07-13T16:10:16 PKT" name="Verify_Title" finished-at="2023-07-13T16:10:16 PKT" duration-ms="55" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Title -->
       </class> <!-- com.apdr.testcases.AddVideoContent -->
       <class name="com.apdr.testcases.AddNewsStoryContent">
-        <test-method is-config="true" signature="addNewsStoryContentInitialization()[pri:0, instance:com.apdr.testcases.AddNewsStoryContent@16fdec90]" started-at="2023-07-13T13:57:07 PKT" name="addNewsStoryContentInitialization" finished-at="2023-07-13T13:57:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="addNewsStoryContentInitialization()[pri:0, instance:com.apdr.testcases.AddNewsStoryContent@388526fb]" started-at="2023-07-13T16:07:03 PKT" name="addNewsStoryContentInitialization" finished-at="2023-07-13T16:07:03 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewsStoryContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddNewsStoryContent@16fdec90]" started-at="2023-07-13T13:57:49 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T13:57:51 PKT" duration-ms="1250" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.AddNewsStoryContent@388526fb]" started-at="2023-07-13T16:07:36 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T16:07:37 PKT" duration-ms="811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="clickOnNewsStoryLink()[pri:2, instance:com.apdr.testcases.AddNewsStoryContent@16fdec90]" started-at="2023-07-13T13:57:51 PKT" name="clickOnNewsStoryLink" finished-at="2023-07-13T13:57:52 PKT" duration-ms="1746" status="PASS">
+        <test-method signature="clickOnNewsStoryLink()[pri:2, instance:com.apdr.testcases.AddNewsStoryContent@388526fb]" started-at="2023-07-13T16:07:37 PKT" name="clickOnNewsStoryLink" finished-at="2023-07-13T16:07:38 PKT" duration-ms="1153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnNewsStoryLink -->
-        <test-method signature="addSlugForNewStory(java.lang.String)[pri:3, instance:com.apdr.testcases.AddNewsStoryContent@16fdec90]" started-at="2023-07-13T13:57:52 PKT" name="addSlugForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:57:53 PKT" duration-ms="75" status="PASS">
+        <test-method signature="addSlugForNewStory(java.lang.String)[pri:3, instance:com.apdr.testcases.AddNewsStoryContent@388526fb]" started-at="2023-07-13T16:07:38 PKT" name="addSlugForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:07:38 PKT" duration-ms="80" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -744,7 +1109,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addSlugForNewStory -->
-        <test-method signature="addheadLineForNewStory(java.lang.String)[pri:4, instance:com.apdr.testcases.AddNewsStoryContent@16fdec90]" started-at="2023-07-13T13:57:53 PKT" name="addheadLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:57:53 PKT" duration-ms="93" status="PASS">
+        <test-method signature="addheadLineForNewStory(java.lang.String)[pri:4, instance:com.apdr.testcases.AddNewsStoryContent@388526fb]" started-at="2023-07-13T16:07:38 PKT" name="addheadLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:07:38 PKT" duration-ms="95" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -755,7 +1120,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addheadLineForNewStory -->
-        <test-method signature="addsummaryForNewStory(java.lang.String)[pri:5, instance:com.apdr.testcases.AddNewsStoryContent@16fdec90]" started-at="2023-07-13T13:57:53 PKT" name="addsummaryForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:57:53 PKT" duration-ms="84" status="PASS">
+        <test-method signature="addsummaryForNewStory(java.lang.String)[pri:5, instance:com.apdr.testcases.AddNewsStoryContent@388526fb]" started-at="2023-07-13T16:07:38 PKT" name="addsummaryForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:07:39 PKT" duration-ms="84" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -766,7 +1131,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addsummaryForNewStory -->
-        <test-method signature="addbodyForNewStory(java.lang.String)[pri:6, instance:com.apdr.testcases.AddNewsStoryContent@16fdec90]" started-at="2023-07-13T13:57:53 PKT" name="addbodyForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:57:53 PKT" duration-ms="141" status="PASS">
+        <test-method signature="addbodyForNewStory(java.lang.String)[pri:6, instance:com.apdr.testcases.AddNewsStoryContent@388526fb]" started-at="2023-07-13T16:07:39 PKT" name="addbodyForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:07:39 PKT" duration-ms="151" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -777,7 +1142,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addbodyForNewStory -->
-        <test-method signature="addByLineAndByTitleForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@16fdec90]" started-at="2023-07-13T13:57:53 PKT" name="addByLineAndByTitleForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:57:53 PKT" duration-ms="158" status="PASS">
+        <test-method signature="addByLineAndByTitleForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@388526fb]" started-at="2023-07-13T16:07:39 PKT" name="addByLineAndByTitleForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:07:39 PKT" duration-ms="170" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -788,7 +1153,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addByLineAndByTitleForNewStory -->
-        <test-method signature="adddateLineForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@16fdec90]" started-at="2023-07-13T13:57:53 PKT" name="adddateLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:57:53 PKT" duration-ms="74" status="PASS">
+        <test-method signature="adddateLineForNewStory(java.lang.String)[pri:7, instance:com.apdr.testcases.AddNewsStoryContent@388526fb]" started-at="2023-07-13T16:07:39 PKT" name="adddateLineForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:07:39 PKT" duration-ms="76" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -799,11 +1164,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adddateLineForNewStory -->
-        <test-method signature="selectNewsStoryCategory()[pri:8, instance:com.apdr.testcases.AddNewsStoryContent@16fdec90]" started-at="2023-07-13T13:57:53 PKT" name="selectNewsStoryCategory" finished-at="2023-07-13T13:57:53 PKT" duration-ms="117" status="PASS">
+        <test-method signature="selectNewsStoryCategory()[pri:8, instance:com.apdr.testcases.AddNewsStoryContent@388526fb]" started-at="2023-07-13T16:07:39 PKT" name="selectNewsStoryCategory" finished-at="2023-07-13T16:07:39 PKT" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectNewsStoryCategory -->
-        <test-method signature="addEdsNoteForNewStory(java.lang.String)[pri:9, instance:com.apdr.testcases.AddNewsStoryContent@16fdec90]" started-at="2023-07-13T13:57:53 PKT" name="addEdsNoteForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T13:57:53 PKT" duration-ms="71" status="PASS">
+        <test-method signature="addEdsNoteForNewStory(java.lang.String)[pri:9, instance:com.apdr.testcases.AddNewsStoryContent@388526fb]" started-at="2023-07-13T16:07:39 PKT" name="addEdsNoteForNewStory" data-provider="newsStoryContent" finished-at="2023-07-13T16:07:39 PKT" duration-ms="79" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -814,31 +1179,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEdsNoteForNewStory -->
-        <test-method signature="clickOnSaveButton()[pri:10, instance:com.apdr.testcases.AddNewsStoryContent@16fdec90]" started-at="2023-07-13T13:57:53 PKT" name="clickOnSaveButton" finished-at="2023-07-13T13:57:55 PKT" duration-ms="1935" status="PASS">
+        <test-method signature="clickOnSaveButton()[pri:10, instance:com.apdr.testcases.AddNewsStoryContent@388526fb]" started-at="2023-07-13T16:07:39 PKT" name="clickOnSaveButton" finished-at="2023-07-13T16:07:41 PKT" duration-ms="1561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSaveButton -->
       </class> <!-- com.apdr.testcases.AddNewsStoryContent -->
       <class name="com.apdr.testcases.Guidedownload">
-        <test-method is-config="true" signature="GuidedownloadInitialization()[pri:0, instance:com.apdr.testcases.Guidedownload@7776ab]" started-at="2023-07-13T13:57:07 PKT" name="GuidedownloadInitialization" finished-at="2023-07-13T13:57:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="GuidedownloadInitialization()[pri:0, instance:com.apdr.testcases.Guidedownload@42bc14c1]" started-at="2023-07-13T16:07:03 PKT" name="GuidedownloadInitialization" finished-at="2023-07-13T16:07:03 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GuidedownloadInitialization -->
-        <test-method signature="Click_On_Reference_Button()[pri:1, instance:com.apdr.testcases.Guidedownload@7776ab]" started-at="2023-07-13T13:58:33 PKT" name="Click_On_Reference_Button" finished-at="2023-07-13T13:58:45 PKT" duration-ms="11647" status="PASS">
+        <test-method signature="Click_On_Reference_Button()[pri:1, instance:com.apdr.testcases.Guidedownload@42bc14c1]" started-at="2023-07-13T16:10:16 PKT" name="Click_On_Reference_Button" finished-at="2023-07-13T16:10:27 PKT" duration-ms="11257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_Reference_Button -->
       </class> <!-- com.apdr.testcases.Guidedownload -->
       <class name="com.apdr.testcases.NewsAlertContent">
-        <test-method is-config="true" signature="addNewsAlertContentInitialization()[pri:0, instance:com.apdr.testcases.NewsAlertContent@25aca718]" started-at="2023-07-13T13:57:07 PKT" name="addNewsAlertContentInitialization" finished-at="2023-07-13T13:57:07 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="addNewsAlertContentInitialization()[pri:0, instance:com.apdr.testcases.NewsAlertContent@2dcd168a]" started-at="2023-07-13T16:07:03 PKT" name="addNewsAlertContentInitialization" finished-at="2023-07-13T16:07:03 PKT" depends-on-methods="com.apdr.setup.TestBase.initialization" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewsAlertContentInitialization -->
-        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.NewsAlertContent@25aca718]" started-at="2023-07-13T13:57:43 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T13:57:44 PKT" duration-ms="1076" status="PASS">
+        <test-method signature="hover_Over_Content_Button()[pri:1, instance:com.apdr.testcases.NewsAlertContent@2dcd168a]" started-at="2023-07-13T16:07:32 PKT" name="hover_Over_Content_Button" finished-at="2023-07-13T16:07:33 PKT" duration-ms="760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hover_Over_Content_Button -->
-        <test-method signature="Click_On_News_Alert(java.lang.String)[pri:2, instance:com.apdr.testcases.NewsAlertContent@25aca718]" started-at="2023-07-13T13:57:44 PKT" name="Click_On_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-13T13:57:47 PKT" duration-ms="2904" status="PASS">
+        <test-method signature="Click_On_News_Alert(java.lang.String)[pri:2, instance:com.apdr.testcases.NewsAlertContent@2dcd168a]" started-at="2023-07-13T16:07:33 PKT" name="Click_On_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-13T16:07:34 PKT" duration-ms="1528" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -849,7 +1214,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_On_News_Alert -->
-        <test-method signature="add_News_Alert_Slug(java.lang.String)[pri:3, instance:com.apdr.testcases.NewsAlertContent@25aca718]" started-at="2023-07-13T13:57:47 PKT" name="add_News_Alert_Slug" data-provider="newsAlertContent" finished-at="2023-07-13T13:57:47 PKT" duration-ms="94" status="PASS">
+        <test-method signature="add_News_Alert_Slug(java.lang.String)[pri:3, instance:com.apdr.testcases.NewsAlertContent@2dcd168a]" started-at="2023-07-13T16:07:34 PKT" name="add_News_Alert_Slug" data-provider="newsAlertContent" finished-at="2023-07-13T16:07:34 PKT" duration-ms="83" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -860,7 +1225,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_News_Alert_Slug -->
-        <test-method signature="add__Alert_News(java.lang.String)[pri:4, instance:com.apdr.testcases.NewsAlertContent@25aca718]" started-at="2023-07-13T13:57:47 PKT" name="add__Alert_News" data-provider="newsAlertContent" finished-at="2023-07-13T13:57:47 PKT" duration-ms="98" status="PASS">
+        <test-method signature="add__Alert_News(java.lang.String)[pri:4, instance:com.apdr.testcases.NewsAlertContent@2dcd168a]" started-at="2023-07-13T16:07:34 PKT" name="add__Alert_News" data-provider="newsAlertContent" finished-at="2023-07-13T16:07:34 PKT" duration-ms="115" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -871,7 +1236,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add__Alert_News -->
-        <test-method signature="add_DateLine_For_News_Alert(java.lang.String)[pri:5, instance:com.apdr.testcases.NewsAlertContent@25aca718]" started-at="2023-07-13T13:57:47 PKT" name="add_DateLine_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-13T13:57:47 PKT" duration-ms="79" status="PASS">
+        <test-method signature="add_DateLine_For_News_Alert(java.lang.String)[pri:5, instance:com.apdr.testcases.NewsAlertContent@2dcd168a]" started-at="2023-07-13T16:07:34 PKT" name="add_DateLine_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-13T16:07:34 PKT" duration-ms="79" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -882,11 +1247,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_DateLine_For_News_Alert -->
-        <test-method signature="select_News_Alert_Category()[pri:6, instance:com.apdr.testcases.NewsAlertContent@25aca718]" started-at="2023-07-13T13:57:47 PKT" name="select_News_Alert_Category" finished-at="2023-07-13T13:57:48 PKT" duration-ms="116" status="PASS">
+        <test-method signature="select_News_Alert_Category()[pri:6, instance:com.apdr.testcases.NewsAlertContent@2dcd168a]" started-at="2023-07-13T16:07:34 PKT" name="select_News_Alert_Category" finished-at="2023-07-13T16:07:35 PKT" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_News_Alert_Category -->
-        <test-method signature="add_EdsNote_For_News_Alert(java.lang.String)[pri:7, instance:com.apdr.testcases.NewsAlertContent@25aca718]" started-at="2023-07-13T13:57:48 PKT" name="add_EdsNote_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-13T13:57:48 PKT" duration-ms="69" status="PASS">
+        <test-method signature="add_EdsNote_For_News_Alert(java.lang.String)[pri:7, instance:com.apdr.testcases.NewsAlertContent@2dcd168a]" started-at="2023-07-13T16:07:35 PKT" name="add_EdsNote_For_News_Alert" data-provider="newsAlertContent" finished-at="2023-07-13T16:07:35 PKT" duration-ms="62" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -897,7 +1262,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_EdsNote_For_News_Alert -->
-        <test-method signature="click_Save_Button()[pri:8, instance:com.apdr.testcases.NewsAlertContent@25aca718]" started-at="2023-07-13T13:57:48 PKT" name="click_Save_Button" finished-at="2023-07-13T13:57:49 PKT" duration-ms="1819" status="PASS">
+        <test-method signature="click_Save_Button()[pri:8, instance:com.apdr.testcases.NewsAlertContent@2dcd168a]" started-at="2023-07-13T16:07:35 PKT" name="click_Save_Button" finished-at="2023-07-13T16:07:36 PKT" duration-ms="1692" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_Save_Button -->

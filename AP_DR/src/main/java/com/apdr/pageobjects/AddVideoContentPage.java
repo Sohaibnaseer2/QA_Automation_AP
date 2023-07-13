@@ -97,9 +97,9 @@ public class AddVideoContentPage extends TestBase {
 	}
 
 	public void addVideoFileFromLocalRepository() throws AWTException, InterruptedException {
-
 		//builder.moveToElement(addFileButton).click().build().perform();
-		addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\Test1.mp4");
+		addFileButton.sendKeys("/home/AdminAccount/DEV/QA_Automation_AP/AP_DR/AudioVideo/Test1.mp4");
+		//addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\Test1.mp4");
 		//wait.until(ExpectedConditions.visibilityOf(removeBtn));
 		Thread.sleep(5000);
 	

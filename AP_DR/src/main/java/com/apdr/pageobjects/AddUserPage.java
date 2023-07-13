@@ -119,34 +119,34 @@ public class AddUserPage extends TestBase {
 
 	public void RoleselectionForAdmin() throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(adminCheckbox));
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		Actions action = new Actions((driver));
 		action.moveToElement(adminCheckbox).click().perform();
-
+		Thread.sleep(3000);
 	}
 
 	public void RoleselectionForCustomer_Support() throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(customer_supportCheckbox));
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		Actions action = new Actions((driver));
 		action.moveToElement(customer_supportCheckbox).click().perform();
-
+		Thread.sleep(3000);
 	}
 
 	public void RoleselectionForAuthor() throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(authorCheckbox));
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		Actions action = new Actions((driver));
 		action.moveToElement(authorCheckbox).click().perform();
-
+		Thread.sleep(3000);
 	}
 
 	public void RoleselectionForCustomer() throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(CustomerCheckbox));
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		Actions action = new Actions((driver));
 		action.moveToElement(CustomerCheckbox).click().perform();
-
+		Thread.sleep(3000);
 	}
 
 	public void clickOnCreateUser() throws InterruptedException {

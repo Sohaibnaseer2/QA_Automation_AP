@@ -8,11 +8,38 @@
     <classes>
       <class name="com.apdr.testcases.AddPhotoContent">
         <methods>
-          <include name="addPhotoContent" invocation-numbers="0"/>
+          <include name="Upload_Photo" invocation-numbers="0"/>
           <include name="initialization"/>
           <include name="addContentInitialization"/>
         </methods>
       </class> <!-- com.apdr.testcases.AddPhotoContent -->
+      <class name="com.apdr.testcases.AddVideoContent">
+        <methods>
+          <include name="Video_File_Verification"/>
+          <include name="initialization"/>
+          <include name="addContentInitialization"/>
+          <include name="addVideoFile"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.AddVideoContent -->
     </classes>
   </test> <!--  TestCases for Admin Role (failed) -->
+  <test thread-count="5" name=" TestCases for Author Role (failed)">
+    <classes>
+      <class name="com.apdr.testcases.AddPhotoContent">
+        <methods>
+          <include name="Upload_Photo" invocation-numbers="0"/>
+          <include name="initialization"/>
+          <include name="addContentInitialization"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.AddPhotoContent -->
+      <class name="com.apdr.testcases.AddVideoContent">
+        <methods>
+          <include name="Video_File_Verification"/>
+          <include name="initialization"/>
+          <include name="addVideoFile"/>
+          <include name="addContentInitialization"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.AddVideoContent -->
+    </classes>
+  </test> <!--  TestCases for Author Role (failed) -->
 </suite> <!-- Failed suite [Suite] -->
