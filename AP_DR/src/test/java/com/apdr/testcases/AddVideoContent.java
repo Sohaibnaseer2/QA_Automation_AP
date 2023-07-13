@@ -86,16 +86,20 @@ public class AddVideoContent extends TestBase {
 	}
 	@Test(priority = 7)
 	@Description("Verify that Video File is Uploaded or not ? ")
+	@Feature("Add video content")
+	@Story("Verify that Video File is Uploaded or not ?")
 	public void Video_File_Verification() throws InterruptedException {
 		boolean Filechecking = addcontentobj.Video_File_Present();	
 		Assert.assertTrue(Filechecking, "Video File is not uploaded. Please check." );
 	}
 	
 	@Test(priority = 8)
-	@Description("Verify that Video File is Uploaded or not ? ")
+	@Description("Verify that title is displayed or not. ")
+	@Feature("Add video content")
+	@Story("Verify that title is displayed or not.")
 	public void Verify_Title() throws InterruptedException {
 		String MyActual = "Video upload through upgraded Automation testing script.";
 		String MyExpected = addcontentobj.Verify_Title();			
-		Assert.assertEquals(MyActual, MyExpected, "Title Verified Successfully.");
+		Assert.assertEquals(MyActual, MyExpected, "Unable to verify title.Please check.");
 	}
 }

@@ -51,7 +51,7 @@ public class AddAudioContent extends TestBase {
 
 	@Test(priority = 2)
 	@Description("Admin will click on the Audio link ")
-	@Feature("Add video content")
+	@Feature("Add Audio content")
 	@Story("As a Admin I need to click on the Audio button link")
 	public void addVideoContent() {
 		String titleTxt = addAudioContentObj.clickOnAudioButton();
@@ -82,16 +82,17 @@ public class AddAudioContent extends TestBase {
 	@Test(priority = 5)
 	@Description("Admin will click on the save button ")
 	@Feature("Add Audio content")
-	@Story("As a Admin I need to click on the save button to add Audio with content on APDR")
-	public void clickOnSaveButton() throws InterruptedException {
+	@Story("Click on the save button to add Audio file with content.")
+	public void click_On_SaveButton() throws InterruptedException {
 		// addAudioContentObj.viewAudioRemoveButton();
 		String titleTxt = addAudioContentObj.clickOnSaveButton();
 		Assert.assertEquals(titleTxt, "Audio upload through upgraded Automation testing script | Associated Press", "Audio module save successfully.");
 	}
 
-	
 	@Test(priority = 6)
 	@Description("Verify that Audio File is Uploaded or not ? ")
+	@Feature("Add Audio content")
+	@Story("Verify that Audio File is Uploaded or not ?")
 	public void Audio_File_Verification() throws InterruptedException {
 		boolean Filechecking = addAudioContentObj.Audio_File_Present();	
 		Assert.assertTrue(Filechecking, "Audio File is not uploaded. Please check." );

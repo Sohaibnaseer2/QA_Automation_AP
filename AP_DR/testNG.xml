@@ -65,8 +65,8 @@
 	<!--	<test name=" Other TestCases ">
 
 		<classes>
-		<class name="com.apdr.testcases.InitialPasswordUser"></class>
-		<class name="com.apdr.testcases.AuthorLogin"></class>
+			<class name="com.apdr.testcases.InitialPasswordUser"></class>
+			<class name="com.apdr.testcases.AuthorLogin"></class>
 			<class name="com.apdr.testcases.AddCustomerSupport"></class>
 			<class name="com.apdr.testcases.AddCustomer"></class>
 			<class name="com.apdr.testcases.AddAuthor"></class>

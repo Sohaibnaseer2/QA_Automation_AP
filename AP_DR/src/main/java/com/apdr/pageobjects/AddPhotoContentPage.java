@@ -146,7 +146,6 @@ public class AddPhotoContentPage extends TestBase {
 		 
 	}
 
-	
 
 	public void addImageCaptionAndInstructions(String caption, String instruction) {
 		captionTxtInput.sendKeys(caption);
