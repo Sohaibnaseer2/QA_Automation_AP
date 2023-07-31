@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>36/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 13 16:06:55 PKT 2023</td>
+<td>Started on:</td><td>Mon Jul 24 21:19:13 PKT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>212 seconds (212612 ms)</td>
+<tr><td>Total time:</td><td>146 seconds (146756 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.apdr.testcases.AddPhotoContent.Upload_Photo()'><b>Upload_Photo</b><br>Test class: com.apdr.testcases.AddPhotoContent<br>Parameters: Image upload through upgraded Automation testing script,Nature scenre,Add pakistani Mountaine images,Pakistan,punjab,Islamabad,find the best stock byline photo,find the best byTitile photo,AP,find the best credit line photo,Please don't copy this image,add transref for the best photo,International Category,verification test;</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.name: field_photo[0][alt]&apos; (tried for 60 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.apdr.pageobjects.AddPhotoContentPage.Add_text_of_Alternative(AddPhotoContentPage.java:182)
-	at com.apdr.testcases.AddPhotoContent.Upload_Photo(AddPhotoContent.java:64)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;field_photo[0][alt]&apos;]&quot;}
-  (Session info: chrome=114.0.5735.199)
+<td title='com.apdr.testcases.AddPhotoContent.Photo_Verification()'><b>Photo_Verification</b><br>Test class: com.apdr.testcases.AddPhotoContent</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;field field--name-field-photo field--type-image field--label-visually_hidden&apos;]//div[@class=&apos;field__item&apos;]&quot;}
+  (Session info: chrome=115.0.5790.102)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [431c32f9983c9e319c032922a03a58ff, findElement {using=name, value=field_photo[0][alt]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61183/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 431c32f9983c9e319c032922a03a58ff
+Command: [e68a86e70907d4e4c1fbae0bd0e846a6, findElement {using=xpath, value=//div[@class=&apos;field field--name-field-photo field--type-image field--label-visually_hidden&apos;]//div[@class=&apos;field__item&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63361/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e68a86e70907d4e4c1fbae0bd0e846a6
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -106,20 +100,40 @@ Session ID: 431c32f9983c9e319c032922a03a58ff
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 30 more
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace472889832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace472889832'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.name: field_photo[0][alt]&apos; (tried for 60 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.apdr.pageobjects.AddPhotoContentPage.Add_text_of_Alternative(AddPhotoContentPage.java:182)
-	at com.apdr.testcases.AddPhotoContent.Upload_Photo(AddPhotoContent.java:64)
+	at com.apdr.pageobjects.AddPhotoContentPage.Photo_File_Present(AddPhotoContentPage.java:194)
+	at com.apdr.testcases.AddPhotoContent.Photo_Verification(AddPhotoContent.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace776447774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace776447774'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;field field--name-field-photo field--type-image field--label-visually_hidden&apos;]//div[@class=&apos;field__item&apos;]&quot;}
+  (Session info: chrome=115.0.5790.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e68a86e70907d4e4c1fbae0bd0e846a6, findElement {using=xpath, value=//div[@class=&apos;field field--name-field-photo field--type-image field--label-visually_hidden&apos;]//div[@class=&apos;field__item&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63361/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e68a86e70907d4e4c1fbae0bd0e846a6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at com.apdr.pageobjects.AddPhotoContentPage.Photo_File_Present(AddPhotoContentPage.java:194)
+	at com.apdr.testcases.AddPhotoContent.Photo_Verification(AddPhotoContent.java:76)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -148,15 +162,178 @@ Session ID: 431c32f9983c9e319c032922a03a58ff
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;field_photo[0][alt]&apos;]&quot;}
-  (Session info: chrome=114.0.5735.199)
+</pre></div></td>
+<td>20</td>
+<td>com.apdr.testcases.AddPhotoContent@1afdd473</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddVideoContent.addVideoFile()'><b>addVideoFile</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
+<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e68a86e70907d4e4c1fbae0bd0e846a6, actions {actions=[org.openqa.selenium.interactions.Sequence@14d298d6]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63361/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e68a86e70907d4e4c1fbae0bd0e846a6
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:258)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at com.apdr.pageobjects.AddVideoContentPage.addVideoFileFromLocalRepository(AddVideoContentPage.java:108)
+	at com.apdr.testcases.AddVideoContent.addVideoFile(AddVideoContent.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+		at org.openqa.selenium.json.Json.toJson(Json.java:40)
+		... 38 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+	... 59 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#edit-field-video-file-2-0-upload--2_browse&quot;}
+  (Session info: chrome=115.0.5790.102)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [431c32f9983c9e319c032922a03a58ff, findElement {using=name, value=field_photo[0][alt]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61183/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 431c32f9983c9e319c032922a03a58ff
+Command: [e68a86e70907d4e4c1fbae0bd0e846a6, findElement {using=css selector, value=#edit-field-video-file-2-0-upload--2_browse}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63361/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e68a86e70907d4e4c1fbae0bd0e846a6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:269)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:218)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 63 more
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace292227890", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace292227890'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e68a86e70907d4e4c1fbae0bd0e846a6, actions {actions=[org.openqa.selenium.interactions.Sequence@14d298d6]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63361/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e68a86e70907d4e4c1fbae0bd0e846a6
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:258)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at com.apdr.pageobjects.AddVideoContentPage.addVideoFileFromLocalRepository(AddVideoContentPage.java:108)
+	at com.apdr.testcases.AddVideoContent.addVideoFile(AddVideoContent.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+		at org.openqa.selenium.json.Json.toJson(Json.java:40)
+		... 38 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+	... 59 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#edit-field-video-file-2-0-upload--2_browse&quot;}
+  (Session info: chrome=115.0.5790.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e68a86e70907d4e4c1fbae0bd0e846a6, findElement {using=css selector, value=#edit-field-video-file-2-0-upload--2_browse}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63361/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e68a86e70907d4e4c1fbae0bd0e846a6
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -175,29 +352,26 @@ Session ID: 431c32f9983c9e319c032922a03a58ff
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 30 more
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:269)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:218)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 63 more
 </pre></div></td>
-<td>88</td>
-<td>com.apdr.testcases.AddPhotoContent@21a21c64</td></tr>
+<td>20</td>
+<td>com.apdr.testcases.AddVideoContent@40238dd0</td></tr>
 <tr>
 <td title='com.apdr.testcases.AddVideoContent.Video_File_Verification()'><b>Video_File_Verification</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//video[@controls=&apos;controls&apos;]&quot;}
-  (Session info: chrome=114.0.5735.199)
+  (Session info: chrome=115.0.5790.102)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [431c32f9983c9e319c032922a03a58ff, findElement {using=xpath, value=//video[@controls=&apos;controls&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61183/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 431c32f9983c9e319c032922a03a58ff
+Command: [e68a86e70907d4e4c1fbae0bd0e846a6, findElement {using=xpath, value=//video[@controls=&apos;controls&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63361/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e68a86e70907d4e4c1fbae0bd0e846a6
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -212,19 +386,19 @@ Session ID: 431c32f9983c9e319c032922a03a58ff
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
-	at com.apdr.pageobjects.AddVideoContentPage.Video_File_Present(AddVideoContentPage.java:133)
+	at com.apdr.pageobjects.AddVideoContentPage.Video_File_Present(AddVideoContentPage.java:153)
 	at com.apdr.testcases.AddVideoContent.Video_File_Verification(AddVideoContent.java:92)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace533769848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace533769848'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//video[@controls=&apos;controls&apos;]&quot;}
-  (Session info: chrome=114.0.5735.199)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1416376514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1416376514'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//video[@controls=&apos;controls&apos;]&quot;}
+  (Session info: chrome=115.0.5790.102)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [431c32f9983c9e319c032922a03a58ff, findElement {using=xpath, value=//video[@controls=&apos;controls&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61183/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 431c32f9983c9e319c032922a03a58ff
+Command: [e68a86e70907d4e4c1fbae0bd0e846a6, findElement {using=xpath, value=//video[@controls=&apos;controls&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63361/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e68a86e70907d4e4c1fbae0bd0e846a6
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -244,7 +418,7 @@ Session ID: 431c32f9983c9e319c032922a03a58ff
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
-	at com.apdr.pageobjects.AddVideoContentPage.Video_File_Present(AddVideoContentPage.java:133)
+	at com.apdr.pageobjects.AddVideoContentPage.Video_File_Present(AddVideoContentPage.java:153)
 	at com.apdr.testcases.AddVideoContent.Video_File_Verification(AddVideoContent.java:92)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -276,97 +450,7 @@ Session ID: 431c32f9983c9e319c032922a03a58ff
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>20</td>
-<td>com.apdr.testcases.AddVideoContent@7803bfd</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddVideoContent.addVideoFile()'><b>addVideoFile</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#edit\-field\-video\-file\-2\-0\-upload&quot;}
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [431c32f9983c9e319c032922a03a58ff, findElement {using=id, value=edit-field-video-file-2-0-upload}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61183/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 431c32f9983c9e319c032922a03a58ff
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
-	at com.apdr.pageobjects.AddVideoContentPage.addVideoFileFromLocalRepository(AddVideoContentPage.java:102)
-	at com.apdr.testcases.AddVideoContent.addVideoFile(AddVideoContent.java:66)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace985324389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace985324389'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#edit\-field\-video\-file\-2\-0\-upload&quot;}
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [431c32f9983c9e319c032922a03a58ff, findElement {using=id, value=edit-field-video-file-2-0-upload}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SOHAIB~1.NAS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61183/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 431c32f9983c9e319c032922a03a58ff
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.sendKeys(Unknown Source)
-	at com.apdr.pageobjects.AddVideoContentPage.addVideoFileFromLocalRepository(AddVideoContentPage.java:102)
-	at com.apdr.testcases.AddVideoContent.addVideoFile(AddVideoContent.java:66)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>20</td>
-<td>com.apdr.testcases.AddVideoContent@7803bfd</td></tr>
+<td>com.apdr.testcases.AddVideoContent@40238dd0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -377,185 +461,185 @@ Session ID: 431c32f9983c9e319c032922a03a58ff
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.apdr.testcases.NewsAlertContent.select_News_Alert_Category()'><b>select_News_Alert_Category</b><br>Test class: com.apdr.testcases.NewsAlertContent</td>
+<td title='com.apdr.testcases.AddAudioContent.Upload_Audio_File()'><b>Upload_Audio_File</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
+<td></td>
+<td>8</td>
+<td>com.apdr.testcases.AddAudioContent@74f5ce22</td></tr>
+<tr>
+<td title='com.apdr.testcases.NewsAlertContent.add__Alert_News()'><b>add__Alert_News</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Jenkins pipeline Automation,Testing News.Air quality alerts issued for Canadian wildfire smoke. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued.</td>
 <td></td>
 <td>0</td>
-<td>com.apdr.testcases.NewsAlertContent@2dcd168a</td></tr>
+<td>com.apdr.testcases.NewsAlertContent@25aca718</td></tr>
 <tr>
-<td title='com.apdr.testcases.Guidedownload.Click_On_Reference_Button()'><b>Click_On_Reference_Button</b><br>Test class: com.apdr.testcases.Guidedownload</td>
-<td></td>
-<td>11</td>
-<td>com.apdr.testcases.Guidedownload@42bc14c1</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddAudioContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
-<td></td>
-<td>1</td>
-<td>com.apdr.testcases.AddAudioContent@6138e79a</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.add__Alert_News()'><b>add__Alert_News</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Jenkins pipeline Automation,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued.</td>
+<td title='com.apdr.testcases.AddNewsStoryContent.addEdsNoteForNewStory()'><b>addEdsNoteForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: AP Automation Script Testing Completed.,Testing News.90 million Americans across 16 states from Washington to Florida under heat alerts.,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
 <td></td>
 <td>0</td>
-<td>com.apdr.testcases.NewsAlertContent@2dcd168a</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.add_DateLine_For_News_Alert()'><b>add_DateLine_For_News_Alert</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Jenkins pipeline Automation,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued.</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.NewsAlertContent@2dcd168a</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddVideoContent.add_Body_For_Video()'><b>add_Body_For_Video</b><br>Test class: com.apdr.testcases.AddVideoContent<br>Parameters: Video upload through upgraded Automation testing script.,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.</td>
-<td></td>
-<td>10</td>
-<td>com.apdr.testcases.AddVideoContent@7803bfd</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.addsummaryForNewStory()'><b>addsummaryForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@388526fb</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.addSlugForNewStory()'><b>addSlugForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@388526fb</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.add_EdsNote_For_News_Alert()'><b>add_EdsNote_For_News_Alert</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Jenkins pipeline Automation,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued.</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.NewsAlertContent@2dcd168a</td></tr>
-<tr>
-<td title='com.apdr.testcases.AuthorLogin.loginToApDr()'><b>loginToApDr</b><br>Test class: com.apdr.testcases.AuthorLogin<br>Parameters: APAuthor@mailinator.com,Test@123...,null,null</td>
-<td></td>
-<td>10</td>
-<td>com.apdr.testcases.AuthorLogin@2ea6e30c</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddAudioContent.click_On_SaveButton()'><b>click_On_SaveButton</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
-<td></td>
-<td>9</td>
-<td>com.apdr.testcases.AddAudioContent@6138e79a</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.selectNewsStoryCategory()'><b>selectNewsStoryCategory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@388526fb</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddAudioContent.Audio_File_Verification()'><b>Audio_File_Verification</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddAudioContent@6138e79a</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.addbodyForNewStory()'><b>addbodyForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@388526fb</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddPhotoContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.AddPhotoContent</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddPhotoContent@21a21c64</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.NewsAlertContent</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.NewsAlertContent@2dcd168a</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.adddateLineForNewStory()'><b>adddateLineForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@388526fb</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.AddNewsStoryContent</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@388526fb</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.clickOnSaveButton()'><b>clickOnSaveButton</b><br>Test class: com.apdr.testcases.AddNewsStoryContent</td>
-<td></td>
-<td>1</td>
-<td>com.apdr.testcases.AddNewsStoryContent@388526fb</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddPhotoContent.click_On_SaveButton()'><b>click_On_SaveButton</b><br>Test class: com.apdr.testcases.AddPhotoContent</td>
-<td></td>
-<td>4</td>
-<td>com.apdr.testcases.AddPhotoContent@21a21c64</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.addByLineAndByTitleForNewStory()'><b>addByLineAndByTitleForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@388526fb</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.addheadLineForNewStory()'><b>addheadLineForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@388526fb</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddPhotoContent.Photo_Verification()'><b>Photo_Verification</b><br>Test class: com.apdr.testcases.AddPhotoContent</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddPhotoContent@21a21c64</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.click_Save_Button()'><b>click_Save_Button</b><br>Test class: com.apdr.testcases.NewsAlertContent</td>
-<td></td>
-<td>1</td>
-<td>com.apdr.testcases.NewsAlertContent@2dcd168a</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddVideoContent.addVideoContent()'><b>addVideoContent</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
-<td></td>
-<td>3</td>
-<td>com.apdr.testcases.AddVideoContent@7803bfd</td></tr>
+<td>com.apdr.testcases.AddNewsStoryContent@16fdec90</td></tr>
 <tr>
 <td title='com.apdr.testcases.AddVideoContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
 <td></td>
-<td>1</td>
-<td>com.apdr.testcases.AddVideoContent@7803bfd</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.clickOnNewsStoryLink()'><b>clickOnNewsStoryLink</b><br>Test class: com.apdr.testcases.AddNewsStoryContent</td>
-<td></td>
-<td>1</td>
-<td>com.apdr.testcases.AddNewsStoryContent@388526fb</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.Click_On_News_Alert()'><b>Click_On_News_Alert</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Jenkins pipeline Automation,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued.</td>
-<td></td>
-<td>1</td>
-<td>com.apdr.testcases.NewsAlertContent@2dcd168a</td></tr>
-<tr>
-<td title='com.apdr.testcases.NewsAlertContent.add_News_Alert_Slug()'><b>add_News_Alert_Slug</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Jenkins pipeline Automation,Monitor the web for interesting new content. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued.</td>
-<td></td>
 <td>0</td>
-<td>com.apdr.testcases.NewsAlertContent@2dcd168a</td></tr>
+<td>com.apdr.testcases.AddVideoContent@40238dd0</td></tr>
 <tr>
-<td title='com.apdr.testcases.AddAudioContent.addVideoContent()'><b>addVideoContent</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
+<td title='com.apdr.testcases.AddAudioContent.click_On_SaveButton()'><b>click_On_SaveButton</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
 <td></td>
-<td>2</td>
-<td>com.apdr.testcases.AddAudioContent@6138e79a</td></tr>
+<td>4</td>
+<td>com.apdr.testcases.AddAudioContent@74f5ce22</td></tr>
 <tr>
-<td title='com.apdr.testcases.AddVideoContent.clickOnSaveButton()'><b>clickOnSaveButton</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
+<td title='com.apdr.testcases.Guidedownload.Click_On_Reference_Button()'><b>Click_On_Reference_Button</b><br>Test class: com.apdr.testcases.Guidedownload</td>
 <td></td>
-<td>6</td>
-<td>com.apdr.testcases.AddVideoContent@7803bfd</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddVideoContent.Verify_Title()'><b>Verify_Title</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
-<td></td>
-<td>0</td>
-<td>com.apdr.testcases.AddVideoContent@7803bfd</td></tr>
+<td>21</td>
+<td>com.apdr.testcases.Guidedownload@7776ab</td></tr>
 <tr>
 <td title='com.apdr.testcases.AddAudioContent.add_Slug_Speaker_Intro_For_Audio()'><b>add_Slug_Speaker_Intro_For_Audio</b><br>Test class: com.apdr.testcases.AddAudioContent<br>Parameters: Audio upload through upgraded Automation testing script,Audionic,Audionic is the #1 Audio Brand in Pakistan.</td>
 <td></td>
 <td>0</td>
-<td>com.apdr.testcases.AddAudioContent@6138e79a</td></tr>
+<td>com.apdr.testcases.AddAudioContent@74f5ce22</td></tr>
+<tr>
+<td title='com.apdr.testcases.NewsAlertContent.add_News_Alert_Slug()'><b>add_News_Alert_Slug</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Jenkins pipeline Automation,Testing News.Air quality alerts issued for Canadian wildfire smoke. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued.</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.NewsAlertContent@25aca718</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddNewsStoryContent.addheadLineForNewStory()'><b>addheadLineForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: AP Automation Script Testing Completed.,Testing News.90 million Americans across 16 states from Washington to Florida under heat alerts.,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.AddNewsStoryContent@16fdec90</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddPhotoContent.click_On_SaveButton()'><b>click_On_SaveButton</b><br>Test class: com.apdr.testcases.AddPhotoContent</td>
+<td></td>
+<td>2</td>
+<td>com.apdr.testcases.AddPhotoContent@1afdd473</td></tr>
+<tr>
+<td title='com.apdr.testcases.NewsAlertContent.Click_On_News_Alert()'><b>Click_On_News_Alert</b><br>Test class: com.apdr.testcases.NewsAlertContent</td>
+<td></td>
+<td>1</td>
+<td>com.apdr.testcases.NewsAlertContent@25aca718</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddVideoContent.add_Body_For_Video()'><b>add_Body_For_Video</b><br>Test class: com.apdr.testcases.AddVideoContent<br>Parameters: Video upload through upgraded Automation testing script.,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.AddVideoContent@40238dd0</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddNewsStoryContent.addByLineAndByTitleForNewStory()'><b>addByLineAndByTitleForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: AP Automation Script Testing Completed.,Testing News.90 million Americans across 16 states from Washington to Florida under heat alerts.,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.AddNewsStoryContent@16fdec90</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddNewsStoryContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.AddNewsStoryContent</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.AddNewsStoryContent@16fdec90</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddNewsStoryContent.addsummaryForNewStory()'><b>addsummaryForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: AP Automation Script Testing Completed.,Testing News.90 million Americans across 16 states from Washington to Florida under heat alerts.,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.AddNewsStoryContent@16fdec90</td></tr>
+<tr>
+<td title='com.apdr.testcases.NewsAlertContent.add_EdsNote_For_News_Alert()'><b>add_EdsNote_For_News_Alert</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Jenkins pipeline Automation,Testing News.Air quality alerts issued for Canadian wildfire smoke. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued.</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.NewsAlertContent@25aca718</td></tr>
+<tr>
+<td title='com.apdr.testcases.NewsAlertContent.select_News_Alert_Category()'><b>select_News_Alert_Category</b><br>Test class: com.apdr.testcases.NewsAlertContent</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.NewsAlertContent@25aca718</td></tr>
+<tr>
+<td title='com.apdr.testcases.NewsAlertContent.add_DateLine_For_News_Alert()'><b>add_DateLine_For_News_Alert</b><br>Test class: com.apdr.testcases.NewsAlertContent<br>Parameters: Jenkins pipeline Automation,Testing News.Air quality alerts issued for Canadian wildfire smoke. ,NEW. S30 E27 | 05/20/22,EDS Notes means the 7.450% notes due 2029 issued.</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.NewsAlertContent@25aca718</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddVideoContent.Verify_Title()'><b>Verify_Title</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.AddVideoContent@40238dd0</td></tr>
+<tr>
+<td title='com.apdr.testcases.AuthorLogin.loginToApDr()'><b>loginToApDr</b><br>Test class: com.apdr.testcases.AuthorLogin<br>Parameters: APAuthor@mailinator.com,Test@123...,null,null</td>
+<td></td>
+<td>8</td>
+<td>com.apdr.testcases.AuthorLogin@6f3c660a</td></tr>
+<tr>
+<td title='com.apdr.testcases.NewsAlertContent.click_Save_Button()'><b>click_Save_Button</b><br>Test class: com.apdr.testcases.NewsAlertContent</td>
+<td></td>
+<td>6</td>
+<td>com.apdr.testcases.NewsAlertContent@25aca718</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddPhotoContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.AddPhotoContent</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.AddPhotoContent@1afdd473</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddVideoContent.addVideoContent()'><b>addVideoContent</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
+<td></td>
+<td>1</td>
+<td>com.apdr.testcases.AddVideoContent@40238dd0</td></tr>
+<tr>
+<td title='com.apdr.testcases.NewsAlertContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.NewsAlertContent</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.NewsAlertContent@25aca718</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddAudioContent.addVideoContent()'><b>addVideoContent</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
+<td></td>
+<td>1</td>
+<td>com.apdr.testcases.AddAudioContent@74f5ce22</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddNewsStoryContent.adddateLineForNewStory()'><b>adddateLineForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: AP Automation Script Testing Completed.,Testing News.90 million Americans across 16 states from Washington to Florida under heat alerts.,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.AddNewsStoryContent@16fdec90</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddPhotoContent.Upload_Photo()'><b>Upload_Photo</b><br>Test class: com.apdr.testcases.AddPhotoContent<br>Parameters: Image upload through upgraded Automation testing script,Nature scenre,Add pakistani Mountaine images,Pakistan,punjab,Islamabad,find the best stock byline photo,find the best byTitile photo,AP,find the best credit line photo,Please don't copy this image,add transref for the best photo,International Category,verification test;</td>
+<td></td>
+<td>7</td>
+<td>com.apdr.testcases.AddPhotoContent@1afdd473</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddAudioContent.hover_Over_Content_Button()'><b>hover_Over_Content_Button</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
+<td></td>
+<td>1</td>
+<td>com.apdr.testcases.AddAudioContent@74f5ce22</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddAudioContent.Audio_File_Verification()'><b>Audio_File_Verification</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.AddAudioContent@74f5ce22</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddNewsStoryContent.clickOnNewsStoryLink()'><b>clickOnNewsStoryLink</b><br>Test class: com.apdr.testcases.AddNewsStoryContent</td>
+<td></td>
+<td>1</td>
+<td>com.apdr.testcases.AddNewsStoryContent@16fdec90</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddVideoContent.clickOnSaveButton()'><b>clickOnSaveButton</b><br>Test class: com.apdr.testcases.AddVideoContent</td>
+<td></td>
+<td>6</td>
+<td>com.apdr.testcases.AddVideoContent@40238dd0</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddNewsStoryContent.clickOnSaveButton()'><b>clickOnSaveButton</b><br>Test class: com.apdr.testcases.AddNewsStoryContent</td>
+<td></td>
+<td>1</td>
+<td>com.apdr.testcases.AddNewsStoryContent@16fdec90</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddNewsStoryContent.addbodyForNewStory()'><b>addbodyForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: AP Automation Script Testing Completed.,Testing News.90 million Americans across 16 states from Washington to Florida under heat alerts.,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.AddNewsStoryContent@16fdec90</td></tr>
 <tr>
 <td title='com.apdr.testcases.AddVideoContent.add_Slug_Headline_Source_For_Video()'><b>add_Slug_Headline_Source_For_Video</b><br>Test class: com.apdr.testcases.AddVideoContent<br>Parameters: Video upload through upgraded Automation testing script.,Top Rank university,HEC,Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan.</td>
 <td></td>
 <td>0</td>
-<td>com.apdr.testcases.AddVideoContent@7803bfd</td></tr>
+<td>com.apdr.testcases.AddVideoContent@40238dd0</td></tr>
 <tr>
-<td title='com.apdr.testcases.AddAudioContent.Upload_Audio_File()'><b>Upload_Audio_File</b><br>Test class: com.apdr.testcases.AddAudioContent</td>
-<td></td>
-<td>5</td>
-<td>com.apdr.testcases.AddAudioContent@6138e79a</td></tr>
-<tr>
-<td title='com.apdr.testcases.AddNewsStoryContent.addEdsNoteForNewStory()'><b>addEdsNoteForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: upgraded Automation Script Testing.,Monitor the web for interesting new content. ,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
+<td title='com.apdr.testcases.AddNewsStoryContent.selectNewsStoryCategory()'><b>selectNewsStoryCategory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent</td>
 <td></td>
 <td>0</td>
-<td>com.apdr.testcases.AddNewsStoryContent@388526fb</td></tr>
+<td>com.apdr.testcases.AddNewsStoryContent@16fdec90</td></tr>
+<tr>
+<td title='com.apdr.testcases.AddNewsStoryContent.addSlugForNewStory()'><b>addSlugForNewStory</b><br>Test class: com.apdr.testcases.AddNewsStoryContent<br>Parameters: AP Automation Script Testing Completed.,Testing News.90 million Americans across 16 states from Washington to Florida under heat alerts.,where you lead the reader through your ideas. ,Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..,find the best stock byline photo.,find the best byTitle photo.,NEW. S30 E27 | 05/20/22.,EDS Notes means the 7.450% notes due 2029 issued.</td>
+<td></td>
+<td>0</td>
+<td>com.apdr.testcases.AddNewsStoryContent@16fdec90</td></tr>
 </table><p>
 </body>
 </html>

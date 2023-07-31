@@ -36,7 +36,7 @@ public class AddBannerPage extends TestBase {
 
 	public void Banner_Title() {
 		wait.until(ExpectedConditions.elementToBeClickable(BannerTxt));
-		BannerTxt.sendKeys("Automation Script Banner");
+		BannerTxt.sendKeys("Banner created through Automation Script");
 
 	}
 

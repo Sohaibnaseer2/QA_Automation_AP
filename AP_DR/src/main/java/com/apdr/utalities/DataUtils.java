@@ -14,7 +14,21 @@ public class DataUtils {
 	// read content data json file and get content for video file
 
 	@DataProvider
-	public Object[] videoDataProvider() {
+	public Object[] videoDataProvider() {	
+		// String array to store JSONArray data
+		Object[] dataArray = videoDataProvider1("video-content");
+		return dataArray;
+	}
+	
+	@DataProvider
+	public Object[] UpdatedvideoDataProvider() {	
+		// String array to store JSONArray data
+		Object[] dataArray = videoDataProvider1("Updated-video-content");
+		return dataArray;
+	}
+	
+	@DataProvider
+	public Object[] videoDataProvider1(String Key) {
 		JSONParser parser = new JSONParser();
 		JSONObject jsonObject;
 		// Read JSON file and after parsing store in java object
@@ -30,7 +44,7 @@ public class DataUtils {
 
 		// Extract array data from JSONObject
 		assert jsonObject != null;
-		JSONArray formInfo = (JSONArray) jsonObject.get("video-content");
+		JSONArray formInfo = (JSONArray) jsonObject.get(Key);
 		// String array to store JSONArray data
 		String[] dataArray = new String[formInfo.size()];
 
@@ -55,7 +69,21 @@ public class DataUtils {
 	// Read content data json file and get audio file content
 
 	@DataProvider
-	public Object[] audioDataProvider() {
+	public Object[] audioDataProvider() {	
+		// String array to store JSONArray data
+		Object[] dataArray = audioDataProvider1("audio-content");
+		return dataArray;
+	}
+	
+	@DataProvider
+	public Object[] UpdatedaudioDataProvider() {	
+		// String array to store JSONArray data
+		Object[] dataArray = audioDataProvider1("Updated-audio-content");
+		return dataArray;
+	}
+	
+	@DataProvider
+	public Object[] audioDataProvider1(String Key) {
 		JSONParser parser = new JSONParser();
 		JSONObject jsonObject;
 		// Read JSON file and after parsing store in java object
@@ -71,7 +99,7 @@ public class DataUtils {
 
 		// Extract array data from JSONObject
 		assert jsonObject != null;
-		JSONArray audioInfo = (JSONArray) jsonObject.get("audio-content");
+		JSONArray audioInfo = (JSONArray) jsonObject.get(Key);
 		// String array to store JSONArray data
 		String[] dataArray = new String[audioInfo.size()];
 
@@ -159,9 +187,23 @@ public class DataUtils {
 		return dataArray;
 	}
 
+	@DataProvider
+	public Object[] imageDataProvider() {	
+		// String array to store JSONArray data
+		Object[] dataArray = imageDataProvider1("image-content");
+		return dataArray;
+	}
+	
+	@DataProvider
+	public Object[] UpdatedimageDataProvider() {	
+		// String array to store JSONArray data
+		Object[] dataArray = imageDataProvider1("Updated-image-content");
+		return dataArray;
+	}
+	
 	// Image data provider
 	@DataProvider
-	public Object[] imageDataProvider() {
+	public Object[] imageDataProvider1(String Key) {
 		JSONParser parser = new JSONParser();
 		JSONObject jsonObject;
 		// Read JSON file and after parsing store in java object
@@ -177,7 +219,7 @@ public class DataUtils {
 
 		// Extract array data from JSONObject
 		assert jsonObject != null;
-		JSONArray audioInfo = (JSONArray) jsonObject.get("image-content");
+		JSONArray audioInfo = (JSONArray) jsonObject.get(Key);
 		// String array to store JSONArray data
 		String[] dataArray = new String[audioInfo.size()];
 
@@ -213,9 +255,25 @@ public class DataUtils {
 	}
 
 	// News alert data reader
-	// Read loginjson file and get admin related data
+		// Read loginjson file and get admin related data
 	@DataProvider
-	public Object[] newsAlertContent() {
+	public Object[] newsAlertContent() {	
+		// String array to store JSONArray data
+		Object[] dataArray = newsAlertContent1("news-alert");
+		return dataArray;
+	}
+	
+	
+	@DataProvider
+	public Object[] UpdatedNewsAlertContent() {	
+		// String array to store JSONArray data
+		Object[] dataArray = newsAlertContent1("Updated_News_Alert_Content");
+		return dataArray;
+	}
+	
+	
+	@DataProvider
+	public Object[] newsAlertContent1(String key) {
 		JSONParser parser = new JSONParser();
 		JSONObject jsonObject;
 		// Read JSON file and after parsing store in java object
@@ -231,7 +289,7 @@ public class DataUtils {
 
 		// Extract array data from JSONObject
 		assert jsonObject != null;
-		JSONArray newsInfo = (JSONArray) jsonObject.get("news-alert");
+		JSONArray newsInfo = (JSONArray) jsonObject.get(key);
 
 		// String array to store JSONArray data
 		String[] dataArray = new String[newsInfo.size()];
@@ -254,9 +312,25 @@ public class DataUtils {
 	}
 
 	// News story data reader
-	// Read loginjson file and get admin related data
+		// Read loginjson file and get admin related data
+	
 	@DataProvider
-	public Object[] newsStoryContent() {
+	public Object[] newsStoryContent() {	
+		// String array to store JSONArray data
+		Object[] dataArray = newsStoryContent1("news-story");
+		return dataArray;
+	}
+	
+	@DataProvider
+	public Object[] UpdatedNewsStoryContent() {	
+		// String array to store JSONArray data
+		Object[] dataArray = newsStoryContent1("Updated_News_Story_Content");
+		return dataArray;
+	}
+	
+
+	@DataProvider
+	public Object[] newsStoryContent1(String Key) {
 		JSONParser parser = new JSONParser();
 		JSONObject jsonObject;
 		// Read JSON file and after parsing store in java object
@@ -272,7 +346,7 @@ public class DataUtils {
 
 		// Extract array data from JSONObject
 		assert jsonObject != null;
-		JSONArray newsInfo = (JSONArray) jsonObject.get("news-story");
+		JSONArray newsInfo = (JSONArray) jsonObject.get(Key);
 
 		// String array to store JSONArray data
 		String[] dataArray = new String[newsInfo.size()];
@@ -300,8 +374,24 @@ public class DataUtils {
 	}
 
 	// Read loginjson file and get user role related data
+	
 	@DataProvider
-	public Object[] addUserData() {
+	public Object[] addUserData() {	
+		// String array to store JSONArray data
+		Object[] dataArray = addUserData1("add-user");
+		return dataArray;
+	}
+	
+	@DataProvider
+	public Object[] UpdateroleaddUserData() {	
+		// String array to store JSONArray data
+		Object[] dataArray = addUserData1("Updated_Role_add-user");
+		return dataArray;
+	}
+	
+	
+	@DataProvider
+	public Object[] addUserData1(String Key) {
 		JSONParser parser = new JSONParser();
 		JSONObject jsonObject;
 		// Read JSON file and after parsing store in java object
@@ -317,13 +407,13 @@ public class DataUtils {
 
 		// Extract array data from JSONObject
 		assert jsonObject != null;
-		JSONArray adminInfo = (JSONArray) jsonObject.get("add-user");
+		JSONArray adminInfo = (JSONArray) jsonObject.get(Key);
 		// String array to store JSONArray data
 		String[] dataArray = new String[adminInfo.size()];
 
 		// JSONObject to read each JSONArray object
 		JSONObject formInfoData;
-		String _email, _password, _org, _orgId, _mdmid, _userId, _lastName, _firstName, _sysRole;
+String _email, _password, _org, _orgId, _mdmid, _userId, _lastName, _firstName, _sysRole;
 
 		// Get data from JSONArray and store it in String array
 		for (int i = 0; i < adminInfo.size(); i++) {

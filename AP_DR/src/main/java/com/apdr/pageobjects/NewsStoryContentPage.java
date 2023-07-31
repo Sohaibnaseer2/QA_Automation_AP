@@ -113,4 +113,39 @@ public class NewsStoryContentPage extends TestBase {
 		saveBtn.click();
 	}
 
+	////Edit Test cases of News Story.
+	public void addSlug1(String _slug) {
+		slugInputField.sendKeys(_slug);
+	}
+
+	public void addHeadLine1(String _headline) {
+		headlineInputField.sendKeys(_headline);
+	}
+
+	public void addSummary1(String _summary) {
+		summaryInputField.sendKeys(_summary);
+	}
+
+	public void addBody1(String _body) {
+		bodyInputField.sendKeys(_body);
+	}
+
+	public void addByLineAndByTitle1(String _byline, String _bytitle) {
+		js.executeScript("arguments[0].scrollIntoView();", edsNoteInput);
+		byLineInput.sendKeys(_byline);
+		byTitileInput.sendKeys(_bytitle);
+	}
+
+	public void addDateline1(String _dateline) {
+		dateLineInput.sendKeys(_dateline);
+	}
+
+	public void selectCategory1() {
+		category.click();
+		artsAndEntertainment.click();
+	}
+
+	public void addEdsNote1(String _eds) {
+		edsNoteInput.sendKeys(_eds);
+	}
 }

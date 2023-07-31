@@ -7,6 +7,17 @@
 			"body": "Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan."
 		}
 	],
+	
+	
+	"Updated-video-content": [
+		{
+			"slug": "Updated Video upload through upgraded Automation testing script.",
+			"headline": "Updated Top Rank university",
+			"source": "Updated HEC",
+			"body": "Updated Quaid-i-Azam University (QAU) is the premier seat of learning in Pakistan."
+		}
+	],
+	
 	"audio-content": [
 		{
 			"slug": "Audio upload through upgraded Automation testing script",
@@ -14,6 +25,15 @@
 			"intro": "Audionic is the #1 Audio Brand in Pakistan."
 		}
 	],
+	
+	"Updated-audio-content": [
+		{
+			"slug": "Updated Audio upload through upgraded Automation testing script",
+			"speaker": "Updated Audionic",
+			"intro": "Updated Audionic is the #1 Audio Brand in Pakistan."
+		}
+	],
+	
 	"image-content": [
 		{
 			"slug": "Image upload through upgraded Automation testing script",
@@ -32,24 +52,66 @@
 			"AltText": "verification test"
 		}
 	],
+	
+	"Updated-image-content": [
+		{
+			"slug": "Updated Image upload through upgraded Automation testing script",
+			"Caption": "Updated Nature scenre",
+			"Instructions": "Updated Add pakistani Mountaine images",
+			"Country": "Pakistan",
+			"State": "punjab",
+			"city": "Islamabad",
+			"Byline": "Updated find the best stock byline photo",
+			"Bytitile": "Updated find the best byTitile photo",
+			"source": "AP",
+			"Credit line": "Updated find the best credit line photo",
+			"Copywrite notice": "Updated Please don't copy this image",
+			"Transref": "Updated add transref for the best photo",
+			"Supp. Cat": "International Category",
+			"AltText": "Updated verification test"
+		}
+	],
+	
 	"news-alert": [
 		{
 			"slug": "Jenkins pipeline Automation",
-			"Alert": "Monitor the web for interesting new content. ",
+			"Alert": "Testing News.Air quality alerts issued for Canadian wildfire smoke. ",
 			"Dateline": "NEW. S30 E27 | 05/20/22",
 			"edsNote": "EDS Notes means the 7.450% notes due 2029 issued."
 		}
 	],
+	
+	"Updated_News_Alert_Content": [
+		{
+			"slug": "State of California Missing Person Alerts Program",
+			"Alert": "Together With Our Community We Are Leading the Nation",
+			"Dateline": "Missing Person Alerts Program should be completed within one year",
+			"edsNote": "The CHP is a recognized national leader with Missing Person Alerts."
+		}
+	],
+	
 	"news-story": [
 		{
-			"slug": "upgraded Automation Script Testing.",
-			"headline": "Monitor the web for interesting new content. ",
+			"slug": "AP Automation Script Testing Completed.",
+			"headline": "Testing News.90 million Americans across 16 states from Washington to Florida under heat alerts.",
 			"summary": "where you lead the reader through your ideas. ",
 			"body": "Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..",
 			"Byline": "find the best stock byline photo.",
 			"Bytitile": "find the best byTitle photo.",
 			"Dateline": "NEW. S30 E27 | 05/20/22.",
 			"edsNote": "EDS Notes means the 7.450% notes due 2029 issued."
+		}
+	],
+	"Updated_News_Story_Content": [
+		{
+			"slug": "Updated Automation Script Testing.",
+			"headline": "Updated Testing News.90 million Americans across 16 states from Washington to Florida under heat alerts.",
+			"summary": "Updated where you lead the reader through your ideas. ",
+			"body": "Updated Mexican authorities discovered 45 bags of human remains while searching for missing seven call center workers outside Guadalajara..",
+			"Byline": "Updated find the best stock byline photo.",
+			"Bytitile": "Updated find the best byTitle photo.",
+			"Dateline": "Updated NEW. S30 E27 | 05/20/22.",
+			"edsNote": "Updated EDS Notes means the 7.450% notes due 2029 issued."
 		}
 	]
 }

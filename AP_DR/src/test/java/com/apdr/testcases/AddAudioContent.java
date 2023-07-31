@@ -95,7 +95,7 @@ public class AddAudioContent extends TestBase {
 	@Story("Verify that Audio File is Uploaded or not ?")
 	public void Audio_File_Verification() throws InterruptedException {
 		boolean Filechecking = addAudioContentObj.Audio_File_Present();	
-		Assert.assertTrue(Filechecking, "Audio File is not uploaded. Please check." );
+		Assert.assertTrue(Filechecking, "Audio File is not Displayed. Please check." );
 	}
 
 	

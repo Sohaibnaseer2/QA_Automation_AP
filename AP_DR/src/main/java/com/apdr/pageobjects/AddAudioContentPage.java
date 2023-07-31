@@ -31,6 +31,9 @@ public class AddAudioContentPage extends TestBase {
 	@FindBy(css = ".page-title")
 	WebElement createTxt;
 
+	@FindBy(id = "edit-title-0-value")
+	WebElement slugInputField;
+	
 	// Speaker input field locator
 	@FindBy(id = "edit-field-speaker-0-value")
 	WebElement speakerInputField;
@@ -46,6 +49,7 @@ public class AddAudioContentPage extends TestBase {
 	WebElement chooseFileBtn;
 
 	// Remove button locator
+	
 	@FindBy(name = "field_audio_file_0_remove_button")
 	WebElement removeBtn;
 
@@ -66,6 +70,11 @@ public class AddAudioContentPage extends TestBase {
 		return message;
 	}
 
+	public void addSlug(String slug) {
+		slugInputField.sendKeys(slug);
+		// String ValueSlug = slugInputField.getText();
+		// return ValueSlug;
+	}
 	public void add_Speaker_And_Intro(String _speaker, String _intro) {
 		wait.until(ExpectedConditions.elementToBeClickable(speakerInputField));
 		speakerInputField.sendKeys(_speaker);
@@ -77,18 +86,19 @@ public class AddAudioContentPage extends TestBase {
 		// chooseFileBtn.click();
 
 		// First line for Server side
-		 chooseFileBtn.sendKeys("/home/AdminAccount/DEV/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
-		//chooseFileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APaudio.mp3");
-		Thread.sleep(5000);
+		 //chooseFileBtn.sendKeys("/home/AdminAccount/DEV/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
+		chooseFileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\APaudio.mp3");
+		Thread.sleep(8000);
 	}
 
 	public void viewAudioRemoveButton() {
 		wait.until(ExpectedConditions.visibilityOf(removeBtn));
+		
 	}
 
 	public String clickOnSaveButton() throws InterruptedException {
 		saveBtn.click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		String message = driver.getTitle();
 		return message;
 
@@ -99,5 +109,44 @@ public class AddAudioContentPage extends TestBase {
 		boolean isFileDisplayed = AudioFilepresent.isDisplayed();
 		return isFileDisplayed;
 	}
+////////////////Edit Test cases ////////////
+	
+	public void addSlug1(String slug) {
+		slugInputField.clear();
+		slugInputField.sendKeys(slug);
+		
+		// String ValueSlug = slugInputField.getText();
+		// return ValueSlug;
+	}
+	
+	public void add_Speaker_And_Intro1(String _speaker, String _intro) {
+		wait.until(ExpectedConditions.elementToBeClickable(speakerInputField));
+		speakerInputField.clear();
+		speakerInputField.sendKeys(_speaker);
+		introInputField.clear();
+		introInputField.sendKeys(_intro);
+	}
 
+	public void add_Audio_file1() throws AWTException, InterruptedException {
+		// builder.moveToElement(chooseFileBtn).click().build().perform();
+		// chooseFileBtn.click();
+
+		// First line for Server side
+		//chooseFileBtn.sendKeys("/home/AdminAccount/DEV/QA_Automation_AP/AP_DR/AudioVideo/APaudio.mp3");
+		chooseFileBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\UpdatedAudio.mp3");
+		wait.until(ExpectedConditions.visibilityOf(removeBtn));
+		Thread.sleep(3000);
+	}
+	
+	public void RemoveAudioButton1() {
+		wait.until(ExpectedConditions.visibilityOf(removeBtn));
+		removeBtn.click();
+	}
+	
+	public void clickOnSaveButton1() throws InterruptedException {
+		saveBtn.click();
+		/*
+		 * Thread.sleep(5000); String message = driver.getTitle(); return message;
+		 */
+	}
 }

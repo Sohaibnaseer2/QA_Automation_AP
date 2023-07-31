@@ -23,15 +23,11 @@ public class ReferenceGuide extends TestBase {
 	@FindBy(xpath = "//a[normalize-space()='Reference Guide']")
 	WebElement ClickRefguide;
 	
-	public void Click_Reference() {
+	public void Click_Reference() throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(ClickRefguide));
 		ClickRefguide.click();
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Thread.sleep(20000);
+		
 	}
 
 	

@@ -32,7 +32,7 @@ public class Guidedownload extends TestBase {
 	@Description("Admin will click on the Import user tab ")
 	@Feature("Import User")
 	@Story("As a Admin I need to click the Import user tab")
-	public void Click_On_Reference_Button()  {
+	public void Click_On_Reference_Button() throws InterruptedException  {
 
 		GuideObj.Click_Reference();
 	}

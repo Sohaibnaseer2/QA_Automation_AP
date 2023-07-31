@@ -37,15 +37,14 @@ public class NewsAlertContent extends TestBase {
 		homeObj.hoverOnContentButton();
 	}
 
-	@Test(priority = 2, dataProviderClass = DataUtils.class, dataProvider = "newsAlertContent")
+	@Test(priority = 2)
 	@Description("Admin will click on the News Alert link ")
 	@Feature("Add News Alert Content")
 	@Story("As a Admin I need to click on the News Alert link")
-	public void Click_On_News_Alert(String data) throws InterruptedException {
-		String[] formInfo = data.split(",");
+	public void Click_On_News_Alert() throws InterruptedException {
 		String titleTxt = newsAlertObj.clickOnNewsAlertLink();
 		Assert.assertEquals(titleTxt, "Create News Alert", "Admin is not able to click on the News Alert Link");
-		newsAlertObj.addEdsNote(formInfo[3]);
+		//
 
 	}
 
@@ -90,14 +89,14 @@ public class NewsAlertContent extends TestBase {
 	@Story("As a Admin I need to add eds note for news alert ")
 	public void add_EdsNote_For_News_Alert(String data) {
 		String[] formInfo = data.split(",");
-		newsAlertObj.addDateLine(formInfo[2]);
+		newsAlertObj.addEdsNote(formInfo[3]);
 	}
 
 	@Test(priority = 8)
 	@Description("Admin will click on save button")
 	@Feature("Add News Alert Content")
 	@Story("As a Admin I need to click on ave button to save news alert")
-	public void click_Save_Button() {
+	public void click_Save_Button() throws InterruptedException{
 
 		newsAlertObj.clickSaveButton();
 	}

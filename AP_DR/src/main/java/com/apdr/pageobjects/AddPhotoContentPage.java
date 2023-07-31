@@ -139,8 +139,8 @@ public class AddPhotoContentPage extends TestBase {
 
 		//builder.moveToElement(chooseImgBtn).click().build().perform();
 		 //First line for Server side
-		chooseImgBtn.sendKeys("/home/AdminAccount/DEV/QA_Automation_AP/AP_DR/AudioVideo/AP Testimages.jpg");
-		//chooseImgBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\AP Testimages.jpg");
+		//chooseImgBtn.sendKeys("/home/AdminAccount/DEV/QA_Automation_AP/AP_DR/AudioVideo/AP Testimages.jpg");
+		chooseImgBtn.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\AP Testimages.jpg");
 		Thread.sleep(5000);
 		 
 		 

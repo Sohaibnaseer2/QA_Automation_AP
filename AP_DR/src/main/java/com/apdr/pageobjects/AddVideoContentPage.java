@@ -50,7 +50,15 @@ public class AddVideoContentPage extends TestBase {
 	@FindBy(id = "edit-field-video-file-2-0-upload")
 	WebElement addFileButton;
 
-	// remove button locator
+	@FindBy(css = "#edit-field-video-file-2-0-upload--2_browse")
+	WebElement addFileButtonDup09;
+	
+	// remove video button locator for Updated button
+	
+	@FindBy(css = "#edit-field-video-file-2-0-remove-button")
+	WebElement removeBtn1;
+	
+	// remove video button locator
 	@FindBy(name = "#edit-field-video-file-2-0-remove-button")
 	WebElement removeBtn;
 
@@ -66,15 +74,12 @@ public class AddVideoContentPage extends TestBase {
 	@FindBy(xpath = "//input[@id='edit-submit']")
 	WebElement saveBtn;
 
-	
 	@FindBy(xpath = "//span[@class='field field--name-title field--type-string field--label-hidden']")
 	WebElement VerifyTitle;
-	
-	
+
 	@FindBy(xpath = "//video[@controls='controls']")
 	WebElement VideoFilepresent;
-	
-	
+
 	public String clickOnVideoButton() {
 		wait.until(ExpectedConditions.elementToBeClickable(videoBtn));
 		videoBtn.click();
@@ -85,10 +90,9 @@ public class AddVideoContentPage extends TestBase {
 
 	public void addSlug(String slug) {
 		slugInputField.sendKeys(slug);
-		//String ValueSlug = slugInputField.getText();
-		//return ValueSlug;
+		// String ValueSlug = slugInputField.getText();
+		// return ValueSlug;
 	}
-	
 
 	public void add_Headline_Source(String headline, String source) {
 		headlineInputField.sendKeys(headline);
@@ -97,16 +101,40 @@ public class AddVideoContentPage extends TestBase {
 	}
 
 	public void addVideoFileFromLocalRepository() throws AWTException, InterruptedException {
-		//builder.moveToElement(addFileButton).click().build().perform();
-		addFileButton.sendKeys("/home/AdminAccount/DEV/QA_Automation_AP/AP_DR/AudioVideo/Test1.mp4");
-		//addFileButton.sendKeys("C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\Test1.mp4");
-		//wait.until(ExpectedConditions.visibilityOf(removeBtn));
-		Thread.sleep(5000);
+		
+		// addFileButton.sendKeys("/home/AdminAccount/DEV/QA_Automation_AP/AP_DR/AudioVideo/Test1.mp4");
+		
+		  addFileButton.sendKeys(
+		  "C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\Test1.mp4");
+		  //wait.until(ExpectedConditions.visibilityOf(removeBtn));
+		  Thread.sleep(15000);
+		 
+		
+		/*
+		 * builder.moveToElement(addFileButtonDup09).click().build().perform();
+		 * StringSelection ss = new StringSelection(
+		 * "C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\Test1.mp4");
+		 * Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+		 * Thread.sleep(5000); //imitate mouse events like ENTER, CTRL+C, CTRL+V
+		 * 
+		 * Robot robot = new Robot(); robot.setAutoDelay(500);
+		 * robot.keyPress(KeyEvent.VK_CONTROL); robot.keyPress(KeyEvent.VK_V);
+		 * 
+		 * robot.keyRelease(KeyEvent.VK_CONTROL); robot.keyRelease(KeyEvent.VK_K);
+		 * 
+		 * robot.keyPress(KeyEvent.VK_ENTER); robot.setAutoDelay(500);
+		 * robot.keyPress(KeyEvent.VK_ENTER); robot.keyRelease(KeyEvent.VK_ENTER);
+		 * Thread.sleep(20000);
+		 */
+		 
+		
+		
 	
+
 	}
 
 	public void addBodyForVideo(String body) throws InterruptedException {
-		Thread.sleep(10000);
+		
 		js.executeScript("arguments[0].scrollIntoView(true);", bodyInputField);
 		bodyInputField.sendKeys(body);
 	}
@@ -121,16 +149,66 @@ public class AddVideoContentPage extends TestBase {
 		saveBtn.click();
 		Thread.sleep(2000);
 	}
-	
+
 	public String Verify_Title() throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOf(VerifyTitle));
 		String Expected = VerifyTitle.getText();
 		return Expected;
-		}
-	
+	}
+
 	// Verify Video File is displayed or not.
 	public boolean Video_File_Present() {
 		boolean isFileDisplayed = VideoFilepresent.isDisplayed();
-		return 	isFileDisplayed;
-}
+		return isFileDisplayed;
+	}
+	//////////////////////////////////////
+	////////////Edit Testcases ///////////
+	
+	public void addSlug1(String slug) {
+		slugInputField.clear();
+		slugInputField.sendKeys(slug);
+		// String ValueSlug = slugInputField.getText();
+		// return ValueSlug;
+	}
+
+	public void add_Headline_Source1(String headline, String source) {
+		headlineInputField.clear();
+		headlineInputField.sendKeys(headline);
+		sourceInputField.clear();
+		sourceInputField.sendKeys(source);
+	}
+
+	public void viewRemoveButton1() throws InterruptedException {
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(removeBtn1));
+		removeBtn1.click();
+	}
+	
+	public void addVideoFileFromLocalRepository1() throws AWTException, InterruptedException {
+		
+		// addFileButton.sendKeys("/home/AdminAccount/DEV/QA_Automation_AP/AP_DR/AudioVideo/Test1.mp4");
+		
+		  addFileButton.sendKeys(
+		  "C:\\Users\\sohaib.naseer\\git\\repository\\AP_DR\\AudioVideo\\UpdatedVideo.mp4");
+		  //wait.until(ExpectedConditions.visibilityOf(removeBtn));
+		  Thread.sleep(15000);
+
+	}
+
+	public void addBodyForVideo1(String body) throws InterruptedException {
+		js.executeScript("arguments[0].scrollIntoView(true);", bodyInputField);
+		bodyInputField.clear();
+		bodyInputField.sendKeys(body);
+	}
+
+
+
+	public void clickOnSaveButton1() throws InterruptedException {
+		Thread.sleep(2000);
+		saveBtn.click();
+		Thread.sleep(2000);
+	}
+
+	
+	
 }

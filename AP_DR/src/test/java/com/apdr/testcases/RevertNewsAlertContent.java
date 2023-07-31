@@ -11,7 +11,8 @@ import com.apdr.pageobjects.DeleteContentPage;
 import com.apdr.pageobjects.DeleteNewsAlertPage;
 
 import com.apdr.pageobjects.HomePage;
-import com.apdr.pageobjects.RevertforNewsAlert;
+import com.apdr.pageobjects.RevertContent;
+
 import com.apdr.setup.TestBase;
 
 import io.qameta.allure.Description;
@@ -27,7 +28,7 @@ public class RevertNewsAlertContent extends TestBase {
 	HomePage homeObj;
 	DeleteContentPage Deleteobj;
 	DeleteNewsAlertPage DeleteNewsAlert;
-	RevertforNewsAlert RevertObj;
+	RevertContent RevertObj;
 
 	@BeforeTest
 	public void DeletecontentInitialization() {
@@ -35,7 +36,7 @@ public class RevertNewsAlertContent extends TestBase {
 		homeObj = new HomePage();
 		Deleteobj = new DeleteContentPage();
 		DeleteNewsAlert = new DeleteNewsAlertPage();
-		RevertObj = new RevertforNewsAlert();
+		RevertObj = new RevertContent();
 	}
 
 	@Test(priority = 1)
@@ -88,7 +89,7 @@ public class RevertNewsAlertContent extends TestBase {
 	@Feature("Edit NewsAlert Content")
 	@Story("As a Admin I need to Edit on NewsAlert Page")
 	public void Click_on_Revert() throws InterruptedException {
-		RevertObj.RevisionButton();
+		//RevertObj.RevisionButton();
 		RevertObj.ClickonRevertButton();
 		RevertObj.ConfirmationRevertButton();
 		RevertObj.Displayed_Message_Successfully();
@@ -102,7 +103,7 @@ public class RevertNewsAlertContent extends TestBase {
 	public void Check_Final_Text( ) throws InterruptedException {
 		
 		 RevertObj.Displayed_Message_Successfully();
-		 Assert.assertTrue(RevertforNewsAlert.Statusmsg.isDisplayed()," User is unable to revert the News Alert. Something went wrong.Please check again." ); 
+		 Assert.assertTrue(RevertContent.Statusmsg.isDisplayed()," User is unable to revert the News Alert. Something went wrong.Please check again." ); 
 		
 	}
 	

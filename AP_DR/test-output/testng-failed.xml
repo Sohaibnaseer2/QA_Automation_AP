@@ -6,40 +6,78 @@
   </listeners>
   <test thread-count="5" name=" TestCases for Admin Role (failed)">
     <classes>
-      <class name="com.apdr.testcases.AddPhotoContent">
+      <class name="com.apdr.testcases.NewsAlertContent">
         <methods>
-          <include name="Upload_Photo" invocation-numbers="0"/>
+          <include name="Click_On_News_Alert"/>
           <include name="initialization"/>
+          <include name="add_DateLine_For_News_Alert" invocation-numbers="0"/>
+          <include name="add_EdsNote_For_News_Alert" invocation-numbers="0"/>
+          <include name="add_News_Alert_Slug" invocation-numbers="0"/>
+          <include name="add__Alert_News" invocation-numbers="0"/>
+          <include name="select_News_Alert_Category"/>
+          <include name="addNewsAlertContentInitialization"/>
+          <include name="hover_Over_Content_Button"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.NewsAlertContent -->
+      <class name="com.apdr.testcases.AddNewsStoryContent">
+        <methods>
+          <include name="addNewsStoryContentInitialization"/>
+          <include name="addheadLineForNewStory" invocation-numbers="0"/>
+          <include name="initialization"/>
+          <include name="clickOnNewsStoryLink"/>
+          <include name="addByLineAndByTitleForNewStory" invocation-numbers="0"/>
+          <include name="addbodyForNewStory" invocation-numbers="0"/>
+          <include name="adddateLineForNewStory" invocation-numbers="0"/>
+          <include name="addSlugForNewStory" invocation-numbers="0"/>
+          <include name="selectNewsStoryCategory"/>
+          <include name="hover_Over_Content_Button"/>
+          <include name="addsummaryForNewStory" invocation-numbers="0"/>
+          <include name="addEdsNoteForNewStory" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.AddNewsStoryContent -->
+      <class name="com.apdr.testcases.AddAudioContent">
+        <methods>
+          <include name="hover_Over_Content_Button"/>
+          <include name="add_Slug_Speaker_Intro_For_Audio" invocation-numbers="0"/>
+          <include name="Audio_File_Verification"/>
+          <include name="initialization"/>
+          <include name="click_On_SaveButton"/>
+          <include name="addVideoContent"/>
+          <include name="teardown"/>
+          <include name="Upload_Audio_File"/>
           <include name="addContentInitialization"/>
         </methods>
-      </class> <!-- com.apdr.testcases.AddPhotoContent -->
+      </class> <!-- com.apdr.testcases.AddAudioContent -->
+      <class name="com.apdr.testcases.LogInTestCases">
+        <methods>
+          <include name="loginToApDr" invocation-numbers="0"/>
+          <include name="loginIntialization"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.LogInTestCases -->
       <class name="com.apdr.testcases.AddVideoContent">
         <methods>
           <include name="Video_File_Verification"/>
+          <include name="clickOnSaveButton"/>
+          <include name="add_Body_For_Video" invocation-numbers="0"/>
           <include name="initialization"/>
-          <include name="addContentInitialization"/>
+          <include name="Verify_Title"/>
+          <include name="hover_Over_Content_Button"/>
           <include name="addVideoFile"/>
+          <include name="addContentInitialization"/>
+          <include name="addVideoContent"/>
+          <include name="add_Slug_Headline_Source_For_Video" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.apdr.testcases.AddVideoContent -->
+      <class name="com.apdr.testcases.AddPhotoContent">
+        <methods>
+          <include name="hover_Over_Content_Button"/>
+          <include name="Upload_Photo" invocation-numbers="0"/>
+          <include name="initialization"/>
+          <include name="Photo_Verification"/>
+          <include name="addContentInitialization"/>
+        </methods>
+      </class> <!-- com.apdr.testcases.AddPhotoContent -->
     </classes>
   </test> <!--  TestCases for Admin Role (failed) -->
-  <test thread-count="5" name=" TestCases for Author Role (failed)">
-    <classes>
-      <class name="com.apdr.testcases.AddPhotoContent">
-        <methods>
-          <include name="Upload_Photo" invocation-numbers="0"/>
-          <include name="initialization"/>
-          <include name="addContentInitialization"/>
-        </methods>
-      </class> <!-- com.apdr.testcases.AddPhotoContent -->
-      <class name="com.apdr.testcases.AddVideoContent">
-        <methods>
-          <include name="Video_File_Verification"/>
-          <include name="initialization"/>
-          <include name="addVideoFile"/>
-          <include name="addContentInitialization"/>
-        </methods>
-      </class> <!-- com.apdr.testcases.AddVideoContent -->
-    </classes>
-  </test> <!--  TestCases for Author Role (failed) -->
 </suite> <!-- Failed suite [Suite] -->

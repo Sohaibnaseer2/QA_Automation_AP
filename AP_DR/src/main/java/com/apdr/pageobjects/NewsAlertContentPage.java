@@ -63,6 +63,8 @@ public class NewsAlertContentPage extends TestBase {
 	@FindBy(id = "edit-submit")
 	WebElement saveBtn;
 
+	
+	
 	/*
 	 * public void hoverOnContentButton() throws InterruptedException {
 	 * wait.until(ExpectedConditions.elementToBeClickable(contentBtn));
@@ -109,9 +111,36 @@ public class NewsAlertContentPage extends TestBase {
 		edsNoteInput.sendKeys(edsNote);
 	}
 
-	public void clickSaveButton() {
+	public void clickSaveButton() throws InterruptedException {
 
 		js.executeScript("arguments[0].scrollIntoView();", saveBtn);
 		saveBtn.click();
+		Thread.sleep(5000);
 	}
+
+////////Edit Test cases ////////////////// 
+	public void addSlug1(String slug) {
+		slugInput.clear();
+		slugInput.sendKeys(slug);
+	}
+
+	public void addAlert1(String alert) {
+		alertInput.clear();
+		alertInput.sendKeys(alert);
+	}
+
+	public void addDateLine1(String dateLine) {
+		dateLineInput.clear();
+		dateLineInput.sendKeys(dateLine);
+	}
+
+	public void selectCategory1() throws InterruptedException {
+		category.click();
+		artsAndEntertainment.click();
+	}
+
+	public void addEdsNote1(String edsNote) {
+		edsNoteInput.sendKeys(edsNote);
+	}
+
 }

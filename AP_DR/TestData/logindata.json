@@ -39,5 +39,19 @@
 			"firstName": "automation01",
 			"systemRole": "customer"
 		}
+	],
+	
+	"Updated_Role_add-user": [
+		{
+			"email": "APCustomerRoleupdate@mailinator.com",
+			"password": "Test@123...",
+			"org": "AP Testing ",
+			"orgId": "ap777",
+			"mdmid": "777ap",
+			"userId": "Auto7095",
+			"lastName": "APengineer12",
+			"firstName": "APautomation02",
+			"systemRole": "customer"
+		}
 	]
 }
